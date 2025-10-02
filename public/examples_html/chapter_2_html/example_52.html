@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.52</h3>
+
+
+<p>Find the least positive integer \( n \) such that \( 1 + 6 + 6^2 + \dots + 6^n > 5000 \).</p>
+<p>We have to find the least number of terms for which the sum must be greater than 5000.</p>
+<p>That is, to find the least value of \( n \) such that \( S_n > 5000 \).</p>
+<p>We have, \( S_n = \frac{a(r^n - 1)}{r - 1} = \frac{1(6^n - 1)}{6 - 1} = \frac{6^n - 1}{5} \).</p>
+<p>\( S_n > 5000 \Rightarrow \frac{6^n - 1}{5} > 5000 \Rightarrow 6^n - 1 > 25000 \Rightarrow 6^n > 25001 \).</p>
+<p>\( 6^5 = 7776 \) and \( 6^6 = 46656 \).</p>
+<p>The least positive value of \( n \) is 6 such that \( 1 + 6 + 6^2 + \dots + 6^n > 5000 \).</p>
+</body>
+</html>

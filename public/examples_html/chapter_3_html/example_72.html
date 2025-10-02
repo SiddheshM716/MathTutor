@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.72</h3>
+
+
+<p>If \( A = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \), \( B = \begin{bmatrix} 1 & 2 \\ -4 & 2 \end{bmatrix} \), and \( C = \begin{bmatrix} 7 & 6 \\ 3 & 2 \end{bmatrix} \), then:</p>
+<p>LHS = \( A(B + C) \)</p>
+<p>\( B + C = \begin{bmatrix} 1+7 & 2+6 \\ -4+3 & 2+2 \end{bmatrix} = \begin{bmatrix} 8 & 8 \\ -1 & 4 \end{bmatrix} \)</p>
+<p>\( A(B + C) = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 8 & 8 \\ -1 & 4 \end{bmatrix} = \begin{bmatrix} (-4)(8) + 2(-1) & (-4)(8) + 2(4) \\ (-7)(8) + 6(-1) & (-7)(8) + 6(4) \end{bmatrix} = \begin{bmatrix} -34 & -24 \\ -62 & -32 \end{bmatrix} \)</p>
+<p>RHS = \( AB + AC \)</p>
+<p>\( AB = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ -4 & 2 \end{bmatrix} = \begin{bmatrix} (-4)(1) + 2(-4) & (-4)(2) + 2(2) \\ (-7)(1) + 6(-4) & (-7)(2) + 6(2) \end{bmatrix} = \begin{bmatrix} -12 & -4 \\ -31 & -2 \end{bmatrix} \)</p>
+<p>\( AC = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 7 & 6 \\ 3 & 2 \end{bmatrix} = \begin{bmatrix} (-4)(7) + 2(3) & (-4)(6) + 2(2) \\ (-7)(7) + 6(3) & (-7)(6) + 6(2) \end{bmatrix} = \begin{bmatrix} -22 & -20 \\ -31 & -30 \end{bmatrix} \)</p>
+<p>\( AB + AC = \begin{bmatrix} -12 & -4 \\ -31 & -2 \end{bmatrix} + \begin{bmatrix} -22 & -20 \\ -31 & -30 \end{bmatrix} = \begin{bmatrix} -34 & -24 \\ -62 & -32 \end{bmatrix} \)</p>
+<p>From LHS and RHS, \( A(B + C) = AB + AC \). Hence proved.</p>
+</body>
+</html>

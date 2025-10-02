@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.8</h3>
+
+
+<p>Find the standard deviation of the following data: 7, 4, 8, 10, 11. Add 3 to all the values then find the standard deviation for the new values.</p>
+<p>Solution: Arranging the values in ascending order we get, 4, 7, 8, 10, 11 and n=5</p>
+<table>
+  <tr>
+    <th>x</th>
+    <th>x²</th>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>49</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>64</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>121</td>
+  </tr>
+</table>
+<p>Σx = 40, Σx² = 350, σ = √6 ≈ 2.45</p>
+<p>When we add 3 to all the values, we get the new values as 7, 10, 11, 13, 14.</p>
+<table>
+  <tr>
+    <th>x</th>
+    <th>x²</th>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>49</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>121</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>169</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>196</td>
+  </tr>
+</table>
+<p>Σx = 55, Σx² = 635, σ = √6 ≈ 2.45</p>
+<p>We see that the standard deviation will not change when we add some fixed constant k to all the values.</p>
+</body>
+</html>

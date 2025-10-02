@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.21</h3>
+
+  <p>Find the square root of:</p>
+  <p>\(64x^4 - 16x^3 + 17x^2 - 2x + 1\)</p>
+
+  <h3>Solution:</h3>
+  <table style="border-collapse: collapse; margin: 1em 0;">
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid; border-bottom: 1px solid;">\(8x^2 - x + 1\)</td>
+      <td style="padding: 0.5em; border-bottom: 1px solid;"></td>
+      <td style="padding: 0.5em; border-bottom: 1px solid;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(8x^2\)</td>
+      <td style="padding: 0.5em;">\(\frac{64x^4 - 16x^3 + 17x^2 - 2x + 1}{64x^4}\)</td>
+      <td style="padding: 0.5em;">\((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(16x^2 - x\)</td>
+      <td style="padding: 0.5em;">\(\frac{-16x^3 + 17x^2}{-16x^3 + x^2}\)</td>
+      <td style="padding: 0.5em;">\((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(16x^2 - 2x + 1\)</td>
+      <td style="padding: 0.5em;">\(\frac{16x^2 - 2x + 1}{16x^2 - 2x + 1}\)</td>
+      <td style="padding: 0.5em;">\((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">0</td>
+      <td style="padding: 0.5em;"></td>
+      <td style="padding: 0.5em;"></td>
+    </tr>
+  </table>
+
+  <p><strong>Note:</strong> Before proceeding to find the square root of a polynomial, one has to ensure that the degrees of the variables are in descending or ascending order.</p>
+
+  <p>Therefore, \(\sqrt{64x^4 - 16x^3 + 17x^2 - 2x + 1} = |8x^2 - x + 1|\)</p>
+</body>
+</html>

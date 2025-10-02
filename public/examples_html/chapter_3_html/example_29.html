@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.29</h3>
+
+
+<p>Solve \(\frac{1}{x-1} + \frac{1}{x} = \frac{5}{2}\)</p>
+<p>Solution: Let \(y = \frac{1}{x-1}\), then \(\frac{1}{x} = \frac{y}{y-1}\).</p>
+<p>Therefore, \(\frac{1}{x-1} + \frac{1}{x} = \frac{5}{2}\) becomes \(y + \frac{y}{y-1} = \frac{5}{2}\).</p>
+<p>This simplifies to \(2y^2 - 5y + 2 = 0\), then \(y = \frac{1}{2}\) or \(y = 2\).</p>
+<p>For \(y = \frac{1}{2}\), we get \(2x = 2 - 1\) implies \(x = -1\).</p>
+<p>For \(y = 2\), we get \(x = 2x - 2\) implies \(x = 2\).</p>
+<p>Therefore, the roots are \(x = -1, 2\).</p>
+</body>
+</html>

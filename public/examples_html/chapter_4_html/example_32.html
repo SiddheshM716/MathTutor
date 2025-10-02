@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 4.32</h3>
+
+
+<p>Show that in a triangle, the medians are concurrent.</p>
+<p>Medians are line segments joining each vertex to the midpoint of the corresponding opposite sides.</p>
+<p>Thus medians are the cevians where D, E, F are midpoints of BC, CA and AB respectively.</p>
+<p>Since D is a midpoint of BC, BD = DC so \(\frac{BD}{DC} = 1\) ... (1)</p>
+<p>Since E is a midpoint of CA, CE = EA so \(\frac{CE}{EA} = 1\) ... (2)</p>
+<p>Since F is a midpoint of AB, AF = FB so \(\frac{AF}{FB} = 1\) ... (3)</p>
+<p>Thus, multiplying (1), (2) and (3) we get,</p>
+<p>\(\frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1\)</p>
+<p>And so, Ceva’s theorem is satisfied.</p>
+<p>Hence the medians are concurrent.</p>
+</body>
+</html>

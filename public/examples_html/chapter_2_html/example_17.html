@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.17</h3>
+
+<p> A man starts his journey from Chennai to Delhi by train. He starts at 22.30 hours on Wednesday. If it takes 32 hours of travelling time and assuming that the train is not late, when will he reach Delhi?</p>
+<p>Solution: Starting time 22.30, Travelling time 32 hours. Here we use modulo 24.</p>
+<p>The reaching time is</p>
+<p>22.30 + 32 (mod 24) = 54.30 (mod 24)</p>
+<p>= 6.30 (mod 24) (since 32 = (1 × 24) + 8)</p>
+<p>Thus, he will reach Delhi on Friday at 6.30 hours.</p>
+</body>
+</html>

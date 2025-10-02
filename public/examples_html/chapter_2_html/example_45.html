@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.45</h3>
+
+
+<p>The present value of a machine is ₹40,000 and its value depreciates each year by 10%. Find the estimated value of the machine in the 6th year.</p>
+<p>Solution: The value of the machine at present is ₹40,000. Since it is depreciated at the rate of 10% after one year, the value of the machine is 90% of the initial value.</p>
+<p>That is, the value of the machine at the end of the first year is 40,000 × 0.90.</p>
+<p>After two years, the value of the machine is 90% of the value in the first year.</p>
+<p>Value of the machine at the end of the 2nd year is 40,000 × 0.90<sup>2</sup>.</p>
+<p>Continuing this way, the value of the machine depreciates in the following way:</p>
+<p>40,000, 40,000 × 0.90, 40,000 × 0.90<sup>2</sup>, 40,000 × 0.90<sup>3</sup>, ...</p>
+<p>This sequence is in the form of a G.P. with first term 40,000 and common ratio 0.90.</p>
+<p>For finding the value of the machine at the end of the 5th year (i.e., in the 6th year), we need to find the sixth term of this G.P.</p>
+<p>Thus, n = 6, a = 40,000, r = 0.90.</p>
+<p>Using t<sub>n</sub> = ar<sup>n-1</sup>, we have t<sub>6</sub> = 40,000 × 0.90<sup>5</sup>.</p>
+<p>t<sub>6</sub> = 40,000 × 0.90 × 0.90 × 0.90 × 0.90 × 0.90 = 23,619.6.</p>
+</body>
+</html>

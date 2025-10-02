@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.53</h3>
+
+<p> A person saved money every year, half as much as he could in the previous year. If he had totally saved ₹7875 in 6 years, then how much did he save in the first year?</p>
+<p>Solution: Total amount saved in 6 years is S<sub>6</sub> = 7875</p>
+<p>Since he saved half as much money every year as he saved in the previous year, we have r = 1/2 < 1</p>
+<p>S<sub>6</sub> = a(1 - r<sup>6</sup>) / (1 - r) = 7875 ⇒ a(1 - (1/2)<sup>6</sup>) / (1 - 1/2) = 7875</p>
+<p>a(1 - 1/64) / (1/2) = 7875 ⇒ a(63/64) / (1/2) = 7875</p>
+<p>a(63/32) = 7875 ⇒ a = 7875 × 32 / 63</p>
+<p>a = 4000</p>
+<p>The amount saved in the first year is ₹4000.</p>
+</body>
+</html>

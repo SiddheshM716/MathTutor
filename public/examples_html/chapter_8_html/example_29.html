@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.29</h3>
+
+
+<p>In an apartment, in selecting a house from door numbers 1 to 100 randomly, find the probability of getting the door number of the house to be an even number or a perfect square number or a perfect cube number.</p>
+<p>Solution:</p>
+<p>Total number of houses — n(S) = 100</p>
+<p>Let A be the event of getting door number even.</p>
+<p>A = {2,4,6,8,...,100}</p>
+<p>n(A) = 50</p>
+<p>P(A) = n(A)/n(S) = 50/100</p>
+<p>Let B be the event of getting door number perfect square.</p>
+<p>B = {1,4,9,16,25,36,49,64,81,100}</p>
+<p>n(B) = 10</p>
+<p>P(B) = n(B)/n(S) = 10/100</p>
+<p>Let C be the event of getting door number perfect cube.</p>
+<p>C = {1,8,27,64}</p>
+<p>n(C) = 4</p>
+<p>P(C) = n(C)/n(S) = 4/100</p>
+<p>P(A ∩ B) = P[getting even perfect square number] = 5/100</p>
+<p>P(B ∩ C) = P[getting a perfect square and perfect cube number] = 2/100</p>
+<p>P(A ∩ C) = P[getting even perfect cube number] = 2/100</p>
+<p>P(A ∩ B ∩ C) = P[getting even perfect square and perfect cube number] = 1/100</p>
+<p>Required probability</p>
+<p>P(A ∪ B ∪ C) = P(A) + P(B) + P(C) - P(A ∩ B) - P(B ∩ C) - P(A ∩ C) + P(A ∩ B ∩ C)</p>
+<p>= 50/100 + 10/100 + 4/100 - 5/100 - 2/100 - 2/100 + 1/100 = 56/100 = 14/25</p>
+</body>
+</html>

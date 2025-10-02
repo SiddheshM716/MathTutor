@@ -1,0 +1,98 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.69</h3>
+
+  
+  <p>Given matrices:</p>
+  <p>\[
+  A = \begin{pmatrix} 
+  2 & -2\sqrt{2} \\ 
+  \sqrt{2} & 2 
+  \end{pmatrix}, \quad 
+  B = \begin{pmatrix} 
+  2 & 2\sqrt{2} \\ 
+  -\sqrt{2} & 2 
+  \end{pmatrix}
+  \]</p>
+  <p>Show that \( A \) and \( B \) satisfy the commutative property of matrix multiplication (i.e., \( AB = BA \)).</p>
+
+  <h3>Solution</h3>
+  <p>We need to demonstrate that \( AB = BA \):</p>
+  
+  <h4>First compute \( AB \):</h4>
+  <p>\[
+  AB = \begin{pmatrix} 
+  2 & -2\sqrt{2} \\ 
+  \sqrt{2} & 2 
+  \end{pmatrix}
+  \begin{pmatrix} 
+  2 & 2\sqrt{2} \\ 
+  -\sqrt{2} & 2 
+  \end{pmatrix}
+  \]</p>
+  <p>\[
+  = \begin{pmatrix} 
+  2×2 + (-2\sqrt{2})×(-\sqrt{2}) & 2×2\sqrt{2} + (-2\sqrt{2})×2 \\ 
+  \sqrt{2}×2 + 2×(-\sqrt{2}) & \sqrt{2}×2\sqrt{2} + 2×2 
+  \end{pmatrix}
+  \]</p>
+  <p>\[
+  = \begin{pmatrix} 
+  4 + 4 & 4\sqrt{2} - 4\sqrt{2} \\ 
+  2\sqrt{2} - 2\sqrt{2} & 4 + 4 
+  \end{pmatrix}
+  = \begin{pmatrix} 
+  8 & 0 \\ 
+  0 & 8 
+  \end{pmatrix}
+  \]</p>
+
+  <h4>Then compute \( BA \):</h4>
+  <p>\[
+  BA = \begin{pmatrix} 
+  2 & 2\sqrt{2} \\ 
+  -\sqrt{2} & 2 
+  \end{pmatrix}
+  \begin{pmatrix} 
+  2 & -2\sqrt{2} \\ 
+  \sqrt{2} & 2 
+  \end{pmatrix}
+  \]</p>
+  <p>\[
+  = \begin{pmatrix} 
+  2×2 + 2\sqrt{2}×\sqrt{2} & 2×(-2\sqrt{2}) + 2\sqrt{2}×2 \\ 
+  -\sqrt{2}×2 + 2×\sqrt{2} & -\sqrt{2}×(-2\sqrt{2}) + 2×2 
+  \end{pmatrix}
+  \]</p>
+  <p>\[
+  = \begin{pmatrix} 
+  4 + 4 & -4\sqrt{2} + 4\sqrt{2} \\ 
+  -2\sqrt{2} + 2\sqrt{2} & 4 + 4 
+  \end{pmatrix}
+  = \begin{pmatrix} 
+  8 & 0 \\ 
+  0 & 8 
+  \end{pmatrix}
+  \]</p>
+
+  <h3>Conclusion</h3>
+  <p>Since \( AB = BA = \begin{pmatrix} 8 & 0 \\ 0 & 8 \end{pmatrix} \), the matrices \( A \) and \( B \) satisfy the commutative property of matrix multiplication.</p>
+</body>
+</html>

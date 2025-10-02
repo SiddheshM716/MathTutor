@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.65</h3>
+
+
+<p>Find the value of \( a, b, c, d \) from the following matrix equation.</p>
+<p>
+\[
+\begin{bmatrix}
+d & 8 \\
+3 & a
+\end{bmatrix}
++
+\begin{bmatrix}
+2 & 2a \\
+1 & 0
+\end{bmatrix}
+=
+\begin{bmatrix}
+3b & a \\
+-2 & -4
+\end{bmatrix}
++
+\begin{bmatrix}
+b & 4c \\
+-5 & 0
+\end{bmatrix}
+\]
+</p>
+<p>First, we add the two matrices on both left, right hand sides to get</p>
+<p>
+\[
+\begin{bmatrix}
+d+3 & 8+a \\
+3b-2 & a-4
+\end{bmatrix}
+=
+\begin{bmatrix}
+2 & 2a+1 \\
+b-5 & 4c
+\end{bmatrix}
+\]
+</p>
+<p>Equating the corresponding elements of the two matrices, we have</p>
+<p>
+\[
+d+3=2 \Rightarrow d=-1
+\]
+\[
+8+a=2a+1 \Rightarrow a=7
+\]
+\[
+3b-2=b-5 \Rightarrow b=-1.5
+\]
+\[
+a-4=4c \Rightarrow c=0.75
+\]
+</p>
+<p>Therefore, \( a = 7 \), \( b = -1.5 \), \( c = 0.75 \), \( d = -1 \).</p>
+</body>
+</html>

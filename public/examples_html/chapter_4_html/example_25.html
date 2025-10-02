@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 4.25</h3>
+
+
+<p>PQ is a chord of length 8 cm to a circle of radius 5 cm. The tangents at P and Q intersect at a point T. Find the length of the tangent TP.</p>
+<p>Solution: Let TR = y. Since OT is perpendicular bisector of PQ, PR = QR = 4 cm.</p>
+<p>In ΔORP, OP² = OR² + PR²</p>
+<p>OR² = OP² − PR²</p>
+<p>OR² = 5² − 4² = 25 − 16 = 9 ⇒ OR = 3 cm</p>
+<p>OT = OR + RT = 3 + y ... (1)</p>
+<p>In ΔPRT, TP² = TR² + PR² ... (2)</p>
+<p>In ΔOPT, OT² = TP² + OP²</p>
+<p>OT² = (TR² + PR²) + OP² (substitute for TP² from (2))</p>
+<p>(3 + y)² = y² + 4² + 5² (substitute for OT from (1))</p>
+<p>9 + 6y + y² = y² + 16 + 25</p>
+<p>6y = 41 − 9 ⇒ y = 16/3</p>
+<p>From (2), TP² = TR² + PR²</p>
+<p>TP² = (16/3)² + 4² = 256/9 + 16 = 400/9 ⇒ TP = 20/3 cm</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 1.15</h3>
+
+
+<ol>
+  <li>Let \( f \) be a function \( f : \mathbb{N} \rightarrow \mathbb{N} \) defined by \( f(x) = 3x + 2, x \in \mathbb{N} \).</li>
+  <ol type="i">
+    <li>Find the images of 1, 2, 3.</li>
+    <li>Find the pre-images of 29, 53.</li>
+    <li>Identify the type of function.</li>
+  </ol>
+  <li>Solution: The function \( f: \mathbb{N} \rightarrow \mathbb{N} \) is defined by \( f(x) = 3x + 2 \).</li>
+  <ol type="i">
+    <li>If \( x = 1 \), \( f(1) = 3(1) + 2 = 5 \).<br>
+        If \( x = 2 \), \( f(2) = 3(2) + 2 = 8 \).<br>
+        If \( x = 3 \), \( f(3) = 3(3) + 2 = 11 \).<br>
+        The images of 1, 2, 3 are 5, 8, 11 respectively.</li>
+    <li>If \( x \) is the pre-image of 29, then \( f(x) = 29 \). Hence \( 3x + 2 = 29 \),<br>
+        \( 3x = 27 \Rightarrow x = 9 \).<br>
+        Similarly, if \( x \) is the pre-image of 53, then \( f(x) = 53 \). Hence \( 3x + 2 = 53 \),<br>
+        \( 3x = 51 \Rightarrow x = 17 \).<br>
+        Thus the pre-images of 29 and 53 are 9 and 17 respectively.</li>
+    <li>Since different elements of \( \mathbb{N} \) have different images in the co-domain, the function \( f \) is one-one function.<br>
+        The co-domain of \( f \) is \( \mathbb{N} \).<br>
+        But the range of \( f = \{5, 8, 11, 14, 17, \dots\} \) is a proper subset of \( \mathbb{N} \).<br>
+        Therefore, \( f \) is not an onto function. That is, \( f \) is an into function.<br>
+        Thus \( f \) is one-one and into function.</li>
+  </ol>
+</ol>
+</body>
+</html>

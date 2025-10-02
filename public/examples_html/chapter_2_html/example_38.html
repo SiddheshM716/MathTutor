@@ -1,0 +1,34 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.38</h3>
+
+
+<p>The houses of a street are numbered from 1 to 49. Senthil’s house is numbered such that the sum of numbers of the houses prior to Senthil’s house is equal to the sum of numbers of the houses following Senthil’s house. Find Senthil’s house number?</p>
+<p>Solution: Let Senthil’s house number be \( z \).</p>
+<p>It is given that \( 1 + 2 + 3 + \dots + (z - 1) = (z + 1) + (z + 2) + \dots + 49 \).</p>
+<p>\( 1 + 2 + 3 + \dots + (z - 1) = [1 + 2 + 3 + \dots + 49] - [1 + 2 + 3 + \dots + z] \).</p>
+<p>\( \frac{z(z - 1)}{2} = \frac{49 \times 50}{2} - \frac{z(z + 1)}{2} \).</p>
+<p>\( z^2 - z = 2450 - z^2 - z \).</p>
+<p>\( 2z^2 = 2450 \).</p>
+<p>\( z^2 = 1225 \).</p>
+<p>\( z = 35 \).</p>
+<p>Therefore, Senthil’s house number is 35.</p>
+</body>
+</html>

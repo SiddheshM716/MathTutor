@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\(', '\)'], ['$', '$']],
+    displayMath: [['\[', '\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<h3>Example 3.42</h3>
+
+    <p>Prove that the equation \( x^2(p^2 + q^2) + 2x(pr + qs) + r^2 + s^2 = 0 \) has no real roots. If \( ps = qr \), then show that the roots are real and equal.</p>
+    <p><strong>Solution:</strong> The given quadratic equation is, \( x^2(p^2 + q^2) + 2x(pr + qs) + r^2 + s^2 = 0 \).</p>
+    <p>Here, \( a = p^2 + q^2 \), \( b = 2(pr + qs) \), \( c = r^2 + s^2 \).</p>
+    <p>Now, \( \Delta = b^2 - 4ac = [2(pr + qs)]^2 - 4(p^2 + q^2)(r^2 + s^2) \)</p>
+    <p>\( = 4[p^2r^2 + 2pqrs + q^2s^2 - p^2r^2 - p^2s^2 - q^2r^2 - q^2s^2] \)</p>
+    <p>\( = 4[-p^2s^2 + 2pqrs - q^2r^2] = -4[(ps - qr)^2] \leq 0 \) (1)</p>
+    <p>Since, \( \Delta = b^2 - 4ac < 0 \), the roots are not real.</p>
+    <p>If \( ps = qr \) then \( \Delta = -4[(ps - qr)^2] = -4[(qr - qr)^2] = 0 \) (using (1))</p>
+    <p>Thus, \( \Delta = 0 \) if \( ps = qr \) and so the roots will be real and equal.</p>
+</body>
+</html>

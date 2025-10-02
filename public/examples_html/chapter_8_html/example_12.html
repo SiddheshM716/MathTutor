@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.12</h3>
+
+  
+  <p>Find the standard deviation of test marks using the assumed mean method.</p>
+
+  <h4>Given Data:</h4>
+  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
+    <tr>
+      <th>Marks (x)</th><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td>
+    </tr>
+    <tr>
+      <th>Students (f)</th><td>7</td><td>3</td><td>5</td><td>9</td><td>5</td>
+    </tr>
+  </table>
+
+  <h3>Solution</h3>
+  <p>Using assumed mean A = 8:</p>
+  
+  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
+    <tr>
+      <th>xᵢ</th><th>fᵢ</th><th>dᵢ = xᵢ - 8</th><th>fᵢdᵢ</th><th>fᵢdᵢ²</th>
+    </tr>
+    <tr><td>4</td><td>7</td><td>-4</td><td>-28</td><td>112</td></tr>
+    <tr><td>6</td><td>3</td><td>-2</td><td>-6</td><td>12</td></tr>
+    <tr><td>8</td><td>5</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>10</td><td>9</td><td>2</td><td>18</td><td>36</td></tr>
+    <tr><td>12</td><td>5</td><td>4</td><td>20</td><td>80</td></tr>
+    <tr>
+      <td colspan="2"><strong>Total</strong></td>
+      <td></td>
+      <td><strong>4</strong></td>
+      <td><strong>240</strong></td>
+    </tr>
+  </table>
+
+  <h4>Calculations:</h4>
+  <p>Total students N = 29</p>
+  <p>\[
+  \sigma = \sqrt{\frac{\sum f_i d_i^2}{N} - \left(\frac{\sum f_i d_i}{N}\right)^2} = \sqrt{\frac{240}{29} - \left(\frac{4}{29}\right)^2}
+  \]</p>
+  <p>\[
+  = \sqrt{\frac{240 \times 29 - 16}{29 \times 29}} = \sqrt{\frac{6944}{841}} \approx 2.87
+  \]</p>
+
+  <h3>Alternative Methods</h3>
+  <h4>1. Mean Method (for continuous data)</h4>
+  <p>\[
+  \sigma = \sqrt{\frac{\sum f_i (x_i - \bar{x})^2}{N}}
+  \]</p>
+  <p>Where xᵢ = class midpoint, fᵢ = class frequency</p>
+
+  <h4>2. Step Deviation Method</h4>
+  <p>For class interval width c:</p>
+  <p>\[
+  \sigma = c \times \sqrt{\frac{\sum f_i d_i^2}{N} - \left(\frac{\sum f_i d_i}{N}\right)^2}
+  \]</p>
+  <p>Where \( d_i = \frac{x_i - A}{c} \)</p>
+</body>
+</html>

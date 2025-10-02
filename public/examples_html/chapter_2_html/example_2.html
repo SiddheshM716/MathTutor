@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.2</h3>
+
+
+<p>Find the quotient and remainder when a is divided by b in the following cases:</p>
+<ol>
+  <li>a = -12, b = 5</li>
+  <li>a = 17, b = -3</li>
+  <li>a = -19, b = -4</li>
+</ol>
+<p>By Euclid’s division lemma:</p>
+<p>a = bq + r, where 0 ≤ r < |b|</p>
+<ol>
+  <li>a = -12, b = 5</li>
+  <p>-12 = 5 × (-3) + 3, 0 ≤ r < |5|</p>
+  <p>Therefore, Quotient q = -3, Remainder r = 3</p>
+  <li>a = 17, b = -3</li>
+  <p>17 = (-3) × (-5) + 2, 0 ≤ r < |-3|</p>
+  <p>Therefore, Quotient q = -5, Remainder r = 2</p>
+  <li>a = -19, b = -4</li>
+  <p>-19 = (-4) × 5 + 1, 0 ≤ r < |-4|</p>
+  <p>Therefore, Quotient q = 5, Remainder r = 1</p>
+</ol>
+</body>
+</html>

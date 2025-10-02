@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<h3>Example 3.73</h3>
+
+
+<p>If \( A = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix} \) and \( B = \begin{bmatrix} -1 & 4 \\ 1 & 1 \end{bmatrix} \), show that \( (AB)^T = B^T A^T \).</p>
+<p>Solution:</p>
+<p>LHS = \( (AB)^T \)</p>
+<p>RHS = \( B^T A^T \)</p>
+<p>\( AB = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix} \begin{bmatrix} -1 & 4 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 1 \times (-1) + 2 \times 1 & 1 \times 4 + 2 \times 1 \\ 0 \times (-1) + 2 \times 1 & 0 \times 4 + 2 \times 1 \end{bmatrix} = \begin{bmatrix} 1 & 6 \\ 2 & 2 \end{bmatrix} \)</p>
+<p>\( (AB)^T = \begin{bmatrix} 1 & 2 \\ 6 & 2 \end{bmatrix} \)</p>
+<p>\( B^T = \begin{bmatrix} -1 & 1 \\ 4 & 1 \end{bmatrix} \)</p>
+<p>\( A^T = \begin{bmatrix} 1 & 0 \\ 2 & 2 \end{bmatrix} \)</p>
+<p>\( B^T A^T = \begin{bmatrix} -1 & 1 \\ 4 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 \\ 2 & 2 \end{bmatrix} = \begin{bmatrix} -1 \times 1 + 1 \times 2 & -1 \times 0 + 1 \times 2 \\ 4 \times 1 + 1 \times 2 & 4 \times 0 + 1 \times 2 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 6 & 2 \end{bmatrix} \)</p>
+<p>From (1) and (2), \( (AB)^T = B^T A^T \).</p>
+</body>
+</html>

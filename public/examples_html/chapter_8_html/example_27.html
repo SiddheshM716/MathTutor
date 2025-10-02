@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.27</h3>
+
+
+<p>Two dice are rolled together. Find the probability of getting a doublet or sum of faces as 4.</p>
+<p>When two dice are rolled together, there will be 6x6 = 36 outcomes. Let S be the sample space. Then n(S) = 36.</p>
+<p>Let A be the event of getting a doublet and B be the event of getting face sum 4.</p>
+<p>Then A = {(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)}</p>
+<p>B = {(1,3),(2,2),(3,1)}</p>
+<p>A ∩ B = {(2,2)}</p>
+<p>Then, n(A)=6, n(B)=3, n(A ∩ B)=1.</p>
+<p>P(A) = n(A)/n(S) = 6/36</p>
+<p>P(B) = n(B)/n(S) = 3/36</p>
+<p>P(A ∩ B) = n(A ∩ B)/n(S) = 1/36</p>
+<p>P(getting a doublet or a total of 4) = P(A ∪ B)</p>
+<p>P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</p>
+<p>P(A ∪ B) = 6/36 + 3/36 - 1/36 = 8/36 = 2/9</p>
+<p>Hence, the required probability is 2/9.</p>
+</body>
+</html>

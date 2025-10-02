@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.15</h3>
+
+
+<p>Show that:</p>
+<p>\[
+\frac{1 + \cot^2 A}{1 - \cot A} = \frac{1 + \tan^2 A}{1 - \tan A}
+\]</p>
+<p>Solution:</p>
+<p>LHS = RHS</p>
+<p>\[
+\frac{1 + \tan^2 A}{\tan A} = \frac{1 - \tan A}{\tan A}
+\]</p>
+<p>\[
+\frac{1 + \tan^2 A}{\tan A} = \frac{1 - \tan A}{\tan A}
+\]</p>
+<p>From (1) and (2),</p>
+<p>\[
+\frac{1 + \tan^2 A}{1 - \tan A} = \frac{1 + \cot^2 A}{1 - \cot A}
+\]</p>
+<p>\[
+\frac{(1 + \cot A + \tan A)(\sin A - \cos A)}{\sec^2 A - \csc^2 A}
+\]</p>
+<p>\[
+\frac{(1 + \cot A + \tan A)(\sin A - \cos A)}{\sec^2 A - \csc^2 A}
+\]</p>
+<p>\[
+\frac{1 + \frac{\cos A}{\sin A} + \frac{\sin A}{\cos A}}{(\sec A - \csc A)(\sec^2 A + \sec A \csc A + \csc^2 A)}
+\]</p>
+</body>
+</html>

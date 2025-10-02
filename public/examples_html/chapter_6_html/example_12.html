@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.12</h3>
+
+  
+  <p>Prove that:</p>
+  <p>\[
+  \tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}
+  \]</p>
+
+  <h3>Proof</h3>
+  <p>Starting with the left-hand side (LHS):</p>
+  <p>\[
+  \tan^2 A - \tan^2 B = \frac{\sin^2 A}{\cos^2 A} - \frac{\sin^2 B}{\cos^2 B}
+  \]</p>
+  
+  <p>Combine the fractions:</p>
+  <p>\[
+  = \frac{\sin^2 A \cos^2 B - \sin^2 B \cos^2 A}{\cos^2 A \cos^2 B}
+  \]</p>
+  
+  <p>Express \(\cos^2\) terms using \(\sin^2\):</p>
+  <p>\[
+  = \frac{\sin^2 A (1 - \sin^2 B) - \sin^2 B (1 - \sin^2 A)}{\cos^2 A \cos^2 B}
+  \]</p>
+  
+  <p>Expand the numerator:</p>
+  <p>\[
+  = \frac{\sin^2 A - \sin^2 A \sin^2 B - \sin^2 B + \sin^2 A \sin^2 B}{\cos^2 A \cos^2 B}
+  \]</p>
+  
+  <p>Simplify by canceling terms:</p>
+  <p>\[
+  = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}
+  \]</p>
+  
+  <p>Which equals the right-hand side (RHS). Therefore, the identity is proved.</p>
+</body>
+</html>

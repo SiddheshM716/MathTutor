@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.36</h3>
+
+
+<p>Find the sum of all natural numbers between 300 and 600 which are divisible by 7.</p>
+<p>Solution: The natural numbers between 300 and 600 which are divisible by 7 are 301, 308, 315, ..., 595.</p>
+<p>The sum of all natural numbers between 300 and 600 is 301 + 308 + 315 + ... + 595.</p>
+<p>The terms of the above series are in A.P.</p>
+<p>First term \( a = 301 \); common difference \( d = 7 \); Last term \( l = 595 \).</p>
+<p>\[ n = \frac{l - a}{d} + 1 = \frac{595 - 301}{7} + 1 = 43 \]</p>
+<p>Using the formula for the sum of an A.P., \( S_n = \frac{n}{2}(a + l) \), we have:</p>
+<p>\[ S_n = \frac{43}{2}(301 + 595) = 19264 \]</p>
+</body>
+</html>

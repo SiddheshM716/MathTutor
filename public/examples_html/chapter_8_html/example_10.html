@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.10</h3>
+
+  
+  <p>Find the mean and variance of the first n natural numbers.</p>
+
+  <h3>Solution</h3>
+  
+  <h4>1. Calculating the Mean</h4>
+  <p>\[
+  \text{Mean } \bar{x} = \frac{\text{Sum of numbers}}{\text{Count}} = \frac{1 + 2 + 3 + \cdots + n}{n} = \frac{\frac{n(n+1)}{2}}{n} = \frac{n+1}{2}
+  \]</p>
+
+  <h4>2. Calculating the Variance</h4>
+  <p>Using the variance formula:</p>
+  <p>\[
+  \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2
+  \]</p>
+  
+  <p>First term:</p>
+  <p>\[
+  \frac{\sum x_i^2}{n} = \frac{1^2 + 2^2 + \cdots + n^2}{n} = \frac{\frac{n(n+1)(2n+1)}{6}}{n} = \frac{(n+1)(2n+1)}{6}
+  \]</p>
+  
+  <p>Second term:</p>
+  <p>\[
+  \left(\frac{\sum x_i}{n}\right)^2 = \left(\frac{n+1}{2}\right)^2 = \frac{(n+1)^2}{4}
+  \]</p>
+  
+  <p>Combine terms:</p>
+  <p>\[
+  \sigma^2 = \frac{2n^2 + 3n + 1}{6} - \frac{n^2 + 2n + 1}{4} = \frac{4n^2 + 6n + 2 - 3n^2 - 6n - 3}{12} = \frac{n^2 - 1}{12}
+  \]</p>
+
+  <h3>Final Results</h3>
+  <p>\[
+  \text{Mean} = \frac{n+1}{2}, \quad \text{Variance} = \frac{n^2 - 1}{12}
+  \]</p>
+
+  <h3>Additional: Standard Deviation for Grouped Data</h3>
+  <p>For frequency distribution:</p>
+  <p>\[
+  \sigma = \sqrt{\frac{\sum f_i(x_i - \bar{x})^2}{N}} \quad \text{where } N = \sum f_i
+  \]</p>
+  <p>Using deviations \( d_i = x_i - \bar{x} \):</p>
+  <p>\[
+  \sigma = \sqrt{\frac{\sum f_i d_i^2}{N}}
+  \]</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 4.21</h3>
+
+
+<p>P and Q are the mid-points of the sides CA and CB respectively of a ΔABC, right angled at C. Prove that 4(AQ² + BP²) = 5AB².</p>
+<p>Solution:</p>
+<p>ΔAQC is a right triangle at C, AQ² = AC² + QC² ... (1)</p>
+<p>ΔBPC is a right triangle at C, BP² = BC² + CP² ... (2)</p>
+<p>ΔABC is a right triangle at C, AB² = AC² + BC² ... (3)</p>
+<p>From (1) and (2), AQ² + BP² = AC² + QC² + BC² + CP²</p>
+<p>4(AQ² + BP²) = 4AC² + 4QC² + 4BC² + 4CP²</p>
+<p>= 4AC² + (2QC)² + 4BC² + (2CP)²</p>
+<p>= 4AC² + BC² + 4BC² + AC² (Since P and Q are mid points)</p>
+<p>= 5(AC² + BC²) (From equation (3))</p>
+<p>4(AQ² + BP²) = 5AB²</p>
+</body>
+</html>

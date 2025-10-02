@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\(', '\)'], ['$', '$']],
+    displayMath: [['\[', '\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<h3>Example 6.9</h3>
+
+    <p>Prove that \((\csc \theta - \sin \theta) (\sec \theta - \cos \theta) (\tan \theta + \cot \theta) = 1\)</p>
+    <p>Solution:</p>
+    <p>\[
+        (\csc \theta - \sin \theta) (\sec \theta - \cos \theta) (\tan \theta + \cot \theta)
+    \]</p>
+    <p>\[
+        = \left( \frac{1 - \sin^2 \theta}{\sin \theta} \right) \left( \frac{1 - \cos^2 \theta}{\cos \theta} \right) \left( \frac{\sin \theta}{\cos \theta} + \frac{\cos \theta}{\sin \theta} \right)
+    \]</p>
+    <p>\[
+        = \left( \frac{\cos^2 \theta}{\sin \theta} \right) \left( \frac{\sin^2 \theta}{\cos \theta} \right) \left( \frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta} \right)
+    \]</p>
+    <p>\[
+        = \frac{\cos^2 \theta \sin^2 \theta \cdot 1}{\sin^2 \theta \cos^2 \theta} = 1
+    \]</p>
+</body>
+</html>

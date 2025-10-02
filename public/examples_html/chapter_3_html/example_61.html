@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.61</h3>
+
+  
+  <p>Two examinations were conducted for three groups of students (Group 1, Group 2, Group 3) and their average marks for Tamil, English, Science, and Mathematics are given below as matrices A and B. Find the total marks of both examinations for all groups.</p>
+
+  <h4>First Examination (Matrix A):</h4>
+  <p>\[
+  A = \begin{pmatrix}
+  22 & 15 & 14 & 23 \\
+  50 & 62 & 21 & 30 \\
+  53 & 80 & 32 & 40
+  \end{pmatrix}
+  \]</p>
+  <p>Where rows represent groups (1-3) and columns represent subjects (Tamil, English, Science, Mathematics).</p>
+
+  <h4>Second Examination (Matrix B):</h4>
+  <p>\[
+  B = \begin{pmatrix}
+  20 & 38 & 15 & 40 \\
+  18 & 12 & 17 & 80 \\
+  81 & 47 & 52 & 18
+  \end{pmatrix}
+  \]</p>
+
+  <h3>Solution</h3>
+  <p>The total marks is the matrix sum A + B:</p>
+  <p>\[
+  A + B = \begin{pmatrix}
+  22+20 & 15+38 & 14+15 & 23+40 \\
+  50+18 & 62+12 & 21+17 & 30+80 \\
+  53+81 & 80+47 & 32+52 & 40+18
+  \end{pmatrix}
+  = \begin{pmatrix}
+  42 & 53 & 29 & 63 \\
+  68 & 74 & 38 & 110 \\
+  134 & 127 & 84 & 58
+  \end{pmatrix}
+  \]</p>
+
+  <h4>Interpretation:</h4>
+  <p>The resulting matrix shows the combined marks across both exams:</p>
+  <p>\[
+  \begin{pmatrix}
+  \text{Group 1} & 42 (\text{Tamil}) & 53 (\text{English}) & 29 (\text{Science}) & 63 (\text{Math}) \\
+  \text{Group 2} & 68 & 74 & 38 & 110 \\
+  \text{Group 3} & 134 & 127 & 84 & 58
+  \end{pmatrix}
+  \]</p>
+</body>
+</html>

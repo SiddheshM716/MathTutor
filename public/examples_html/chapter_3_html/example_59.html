@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.59</h3>
+
+
+<p>Find the value of a, b, c, d from the equation</p>
+<p>\(\begin{bmatrix} a - b & 3 \\ 2a + c & 2a - b \end{bmatrix} = \begin{bmatrix} 1 & 5 \\ 0 & 2 \end{bmatrix}\)</p>
+<p>Solution:</p>
+<p>The given matrices are equal. Thus all corresponding elements are equal.</p>
+<p>Therefore,</p>
+<p>\(a - b = 1 \quad (1)\)</p>
+<p>\(2a + c = 5 \quad (2)\)</p>
+<p>\(2a - b = 0 \quad (3)\)</p>
+<p>\(3c + d = 2 \quad (4)\)</p>
+<p>From (3), \(2a - b = 0 \implies 2a = b \quad (5)\)</p>
+<p>Put \(2a = b\) in equation (1), \(a - 2a = 1 \implies a = -1\)</p>
+<p>Put \(a = -1\) in equation (5), \(2(-1) = b \implies b = -2\)</p>
+<p>Put \(a = -1\) in equation (2), \(2(-1) + c = 5 \implies c = 7\)</p>
+<p>Put \(c = 7\) in equation (4), \(3(7) + d = 2 \implies d = -19\)</p>
+<p>Therefore, \(a = -1, b = -2, c = 7, d = -19\)</p>
+</body>
+</html>

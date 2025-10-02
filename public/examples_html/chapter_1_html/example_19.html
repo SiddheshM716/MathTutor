@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+  <body>
+<h3>Example 1.19</h3>
+
+
+    <p>Find \( f \circ g \) and \( g \circ f \) when \( f(x) = 2x + 1 \) and \( g(x) = x^2 - 2 \).</p>
+    <p><strong>Solution:</strong></p>
+    <p>\( f(x) = 2x + 1 \), \( g(x) = x^2 - 2 \)</p>
+    <p>\( f \circ g(x) = f(g(x)) = f(x^2 - 2) = 2(x^2 - 2) + 1 = 2x^2 - 3 \)</p>
+    <p>\( g \circ f(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2 - 2 = 4x^2 + 4x - 1 \)</p>
+    <p>Thus, \( f \circ g = 2x^2 - 3 \), \( g \circ f = 4x^2 + 4x - 1 \). From the above, we see that \( f \circ g \neq g \circ f \).</p>
+  </body>
+</html>

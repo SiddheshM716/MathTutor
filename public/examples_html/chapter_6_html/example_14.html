@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.14</h3>
+
+
+<p>Prove that</p>
+<p>
+\[
+\frac{\sin A \cos A}{\sec A + \tan A - 1} + \frac{\sin A \cos A}{\csc A + \cot A - 1} = \frac{\sin A (\csc A + \cot A - 1) + \cos A (\sec A + \tan A - 1)}{(\sec A + \tan A - 1)(\csc A + \cot A - 1)}
+\]
+</p>
+<p>
+\[
+= \frac{\sin A \csc A + \sin A \cot A - \sin A + \cos A \sec A + \cos A \tan A - \cos A}{(\sec A + \tan A - 1)(\csc A + \cot A - 1)}
+\]
+</p>
+<p>
+\[
+= \frac{1 + \cos A - \sin A + 1 + \sin A - \cos A}{\left(\frac{1}{\cos A} + \frac{\sin A}{\cos A} - 1\right)\left(\frac{1}{\sin A} + \frac{\cos A}{\sin A} - 1\right)}
+\]
+</p>
+<p>
+\[
+= \frac{2}{\left(\frac{1 + \sin A - \cos A}{\cos A}\right)\left(\frac{1 + \cos A - \sin A}{\sin A}\right)}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{(1 + \sin A - \cos A)(1 + \cos A - \sin A)}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{[1 + (\sin A - \cos A)][1 - (\sin A - \cos A)]}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{1 - (\sin A - \cos A)^2}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{1 - (\sin^2 A + \cos^2 A - 2 \sin A \cos A)}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{1 - 1 + 2 \sin A \cos A}
+\]
+</p>
+<p>
+\[
+= \frac{2 \sin A \cos A}{2 \sin A \cos A} = 1
+\]
+</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html><head>
+<meta charset="utf-8"/>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<p>Question 8.<br/>
+Consider the functions f(x), g(x), h(x) as given below. Show that (fog)oh = fo(goh) in each case.<br/>
+(i) f(x) = x – 1, g(x) = 3x + 1 and h(x) = x<sup>2</sup><br/>
+(ii) f(x) = x<sup>2</sup>, g(x) = 2x and h(x) = x + 4<br/>
+(iii) f(x) = x – 4, g(x) = x<sup>2</sup> and h(x) = 3x – 5<br/>
+Solution:<br/>
+(i) f(x) = x – 1, g(x) = 3x + 1 and h(x) = x<sup>2</sup><br/>
+f(x) = x – 1<br/>
+g(x) = 3x + 1<br/>
+f(x) = x<sup>2</sup><br/>
+(fog)oh = fo(goh)<br/>
+LHS = (fog)oh<br/>
+fog = f(g(x)) = f(3x + 1) = 3x + 1 – 1 = 3x<br/>
+(fog)oh = (fog)(h(x)) = (fog)(x<sup>2 </sup>) = 3<sup>2 </sup> ……………. (1)<br/>
+RHS = fo(goh)<br/>
+goh = g(h(x)) = g(x<sup>2</sup>) = 3x<sup>2</sup> + 1<br/>
+fo(goh) = f(3x<sup>2</sup> + 1) = 3x<sup>2</sup> + 1 – 1= 3x<sup>2 </sup>………… (2)<br/>
+LHS = RHS Hence it is verified.</p><p></p><p>(ii) f(x) = x<sup>2</sup>, g(x) = 2x, h(x) = x + 4<br/>
+(fog)oh = fo(goh)<br/>
+LHS = (fog)oh<br/>
+fog = f(g(x)) = f(2x) = (2x)<sup>2</sup> = 4x<sup>2</sup><br/>
+(fog)oh = (fog) h(x) = (fog) (x + 4)<br/>
+= 4(x + 4)<sup>2</sup> = 4(x<sup>2</sup> + 8x+16)<br/>
+= 4x<sup>2</sup> + 32x + 64 ………….. (1)<br/>
+RHS = fo(goh) goh = g(h(x)) = g(x + 4)<br/>
+= 2(x + 4) = (2x + 8)<br/>
+fo(goh) = f(goh) = f(2x + 8) = (2x + 8)<sup>2</sup><br/>
+= 4x<sup>2</sup> + 32x + 64 ……………… (2)<br/>
+(1) = (2)<br/>
+LHS = RHS<br/>
+∴ (fog)oh = fo(goh) It is proved.</p><p>(iii) f(x) = x – 4, g(x) = x<sup>2</sup>, h(x) = 3x – 5<br/>
+(fog)oh = fo(goh)<br/>
+LHS = (fog)oh<br/>
+fog = f(g(x)) = f(x<sup>2</sup>) = x<sup>2</sup> – 4<br/>
+(fog)oh = (fog)(3x – 5) = (3x – 5)<sup>2</sup> – 4<br/>
+= 9x<sup>2</sup> – 30x + 25 -4<br/>
+= 9x<sup>2</sup> – 30x + 21 ………….. (1)<br/>
+∴ RHS = fo(goh)<br/>
+(goh) = g(h(x)) = g(3x – 5) = (3x – 5)<sup>2</sup><br/>
+= 9x<sup>2</sup> – 30x + 25<br/>
+fo(goh) = f(9x<sup>2</sup> – 30 x + 25)<br/>
+= 9x<sup>2</sup> – 30x + 25 – 4<br/>
+= 9x<sup>2</sup> – 30x + 21 …………… (2)<br/>
+(1) = (2)<br/>
+LHS = RHS<br/>
+∴ (fog)oh = fo(goh)<br/>
+It is proved.</p><p></p>
+</body></html>

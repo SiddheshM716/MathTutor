@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.35</h3>
+
+  <p>Solve:</p>
+  <p>\( pqx^2 - (p + q)^2 x + (p + q)^2 = 0 \)</p>
+
+  <h3>Solution:</h3>
+  <p>Compare the coefficients with the standard form \( ax^2 + bx + c = 0 \):</p>
+  <p>\[
+    a = pq, \quad b = -(p + q)^2, \quad c = (p + q)^2
+  \]</p>
+  <p>Using the quadratic formula:</p>
+  <p>\[
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+  \]</p>
+  <p>Substituting the values:</p>
+  <p>\[
+    x = \frac{(p + q)^2 \pm \sqrt{(p + q)^4 - 4(pq)(p + q)^2}}{2pq}
+  \]</p>
+  <p>Simplify the expression under the square root:</p>
+  <p>\[
+    = \frac{(p+q)^2 \pm \sqrt{(p+q)^2 [(p+q)^2 - 4pq]}}{2pq}
+  \]</p>
+  <p>\[
+    = \frac{(p+q)^2 \pm \sqrt{(p+q)^2 (p^2 + q^2 - 2pq)}}{2pq}
+  \]</p>
+  <p>\[
+    = \frac{(p+q)^2 \pm \sqrt{(p+q)^2 (p-q)^2}}{2pq}
+  \]</p>
+  <p>\[
+    = \frac{(p+q)^2 \pm (p+q)(p-q)}{2pq}
+  \]</p>
+  <p>\[
+    = \frac{(p+q)\{(p+q) \pm (p-q)\}}{2pq}
+  \]</p>
+  <p>Therefore, the solutions are:</p>
+  <p>\[
+    x = \frac{p+q}{q} \quad \text{and} \quad x = \frac{p+q}{p}
+  \]</p>
+</body>
+</html>

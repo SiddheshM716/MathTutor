@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.6</h3>
+
+  
+  <p>The marks scored by 10 students: 25, 29, 30, 33, 35, 37, 38, 40, 44, 48. Find the standard deviation.</p>
+
+  <h3>Solution</h3>
+  <p>Mean = 35.9 (not integer), so we use assumed mean method with A = 35, n = 10</p>
+
+  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
+    <tr>
+      <th>Marks (xᵢ)</th>
+      <th>Deviation (dᵢ = xᵢ - 35)</th>
+      <th>dᵢ²</th>
+    </tr>
+    <tr><td>25</td><td>-10</td><td>100</td></tr>
+    <tr><td>29</td><td>-6</td><td>36</td></tr>
+    <tr><td>30</td><td>-5</td><td>25</td></tr>
+    <tr><td>33</td><td>-2</td><td>4</td></tr>
+    <tr><td>35</td><td>0</td><td>0</td></tr>
+    <tr><td>37</td><td>2</td><td>4</td></tr>
+    <tr><td>38</td><td>3</td><td>9</td></tr>
+    <tr><td>40</td><td>5</td><td>25</td></tr>
+    <tr><td>44</td><td>9</td><td>81</td></tr>
+    <tr><td>48</td><td>13</td><td>169</td></tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td>Σdᵢ = 9</td>
+      <td>Σdᵢ² = 453</td>
+    </tr>
+  </table>
+
+  <h4>Standard Deviation Calculation:</h4>
+  <p>\[
+  \sigma = \sqrt{\frac{\Sigma d_i^2}{n} - \left(\frac{\Sigma d_i}{n}\right)^2} = \sqrt{\frac{453}{10} - \left(\frac{9}{10}\right)^2}
+  \]</p>
+  <p>\[
+  = \sqrt{45.3 - 0.81} = \sqrt{44.49} \approx 6.67
+  \]</p>
+
+  <h3>Alternative: Step Deviation Method</h3>
+  <p>When data values are large, use:</p>
+  <p>\[
+  \sigma = c \times \sqrt{\frac{\Sigma d_i^2}{n} - \left(\frac{\Sigma d_i}{n}\right)^2}
+  \]</p>
+  <p>Where \( d_i = \frac{x_i - A}{c} \) and c is a common factor of deviations.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.57</h3>
+
+
+<ol>
+  <li>Find the sum of \(1^2 + 2^2 + 3^2 + \dots + 16^2\)</li>
+  <p>Solution: \(1^2 + 2^2 + 3^2 + \dots + 16^2 = \frac{16 \times (16 + 1) \times (2 \times 16 + 1)}{6} = 1496\)</p>
+  
+  <li>Find the sum of \(9^2 + 10^2 + \dots + 21^2\)</li>
+  <p>Solution: \(9^2 + 10^2 + \dots + 21^2 = \left(1^2 + 2^2 + \dots + 21^2\right) - \left(1^2 + 2^2 + \dots + 8^2\right)\)</p>
+  <p>\(\left(\frac{21 \times (21 + 1) \times (2 \times 21 + 1)}{6}\right) - \left(\frac{8 \times (8 + 1) \times (2 \times 8 + 1)}{6}\right) = 3311 - 204 = 3107\)</p>
+</ol>
+</body>
+</html>

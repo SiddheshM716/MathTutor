@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.4</h3>
+
+
+<p>Prove that \(\sec \theta - \cos \theta = \tan \theta \sin \theta\)</p>
+<p>Solution:</p>
+<p>\[
+\sec \theta - \cos \theta = \frac{1}{\cos \theta} - \cos \theta = \frac{1 - \cos^2 \theta}{\cos \theta} = \frac{\sin^2 \theta}{\cos \theta}
+\]</p>
+<p>\[
+\frac{\sin^2 \theta}{\cos \theta} = \sin \theta \cdot \frac{\sin \theta}{\cos \theta} = \sin \theta \cdot \tan \theta = \tan \theta \sin \theta
+\]</p>
+</body>
+</html>

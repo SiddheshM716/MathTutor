@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 4.33</h3>
+
+
+<p>In ΔABC, points D, E, F lie on BC, CA, AB respectively. Suppose AB, AC, and BC have lengths 13, 14, and 15 respectively. If \(\frac{AF}{FB} = \frac{2}{5}\) and \(\frac{CE}{EA} = \frac{1}{8}\), find BD and DC.</p>
+<p>Solution: Given that AB = 13, AC = 14, and BC = 15.</p>
+<p>Let BD = x and DC = y.</p>
+<p>Using Ceva’s theorem, we have:</p>
+<p>\[
+\frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1 \quad \text{(1)}
+\]</p>
+<p>Substitute the values of \(\frac{AF}{FB}\) and \(\frac{CE}{EA}\) in (1):</p>
+<p>\[
+\frac{x}{y} \cdot \frac{1}{8} \cdot \frac{2}{5} = 1
+\]</p>
+<p>Simplifying, we get:</p>
+<p>\[
+\frac{x}{y} \cdot \frac{2}{40} = 1 \implies \frac{x}{y} = 20 \implies x = 20y \quad \text{(2)}
+\]</p>
+<p>Since BC = BD + DC = 15, we have:</p>
+<p>\[
+x + y = 15 \quad \text{(3)}
+\]</p>
+<p>From (2), using x = 20y in (3), we get:</p>
+<p>\[
+20y + y = 15 \implies 21y = 15 \implies y = \frac{15}{21} = \frac{5}{7}
+\]</p>
+<p>Substitute y = \(\frac{5}{7}\) in (3), we get:</p>
+<p>\[
+x = 20 \cdot \frac{5}{7} = \frac{100}{7}
+\]</p>
+<p>Hence, BD = \(\frac{100}{7}\), DC = \(\frac{5}{7}\).</p>
+</body>
+</html>

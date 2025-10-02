@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.21</h3>
+
+<p> What is the probability that a leap year selected at random will contain 53 Saturdays?</p>
+<p>Solution: A leap year has 366 days. So it has 52 full weeks and 2 days. 52 Saturdays must be in 52 full weeks.</p>
+<p>The possible chances for the remaining two days will be the sample space.</p>
+<p>S = {Sun-Mon, Mon-Tue, Tue-Wed, Wed-Thu, Thu-Fri, Fri-Sat, Sat-Sun}</p>
+<p>n(S) = 7</p>
+<p>Let A be the event of getting 53rd Saturday. Then A = {Fri-Sat, Sat-Sun}; n(A) = 2</p>
+<p>Probability of getting 53 Saturdays in a leap year is P(A) = n(A)/n(S) = 2/7</p>
+</body>
+</html>

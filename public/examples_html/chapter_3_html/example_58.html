@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.58</h3>
+
+
+<p>Construct a 3x3 matrix whose elements are \( a_{ij} = i^2 \times j^2 \).</p>
+<p>The general 3x3 matrix is given by:</p>
+<p>\[
+A = \begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\]</p>
+<p>Where:</p>
+<p>\[
+a_{11} = 1^2 \times 1^2 = 1; \quad a_{12} = 1^2 \times 2^2 = 4; \quad a_{13} = 1^2 \times 3^2 = 9;
+\]</p>
+<p>\[
+a_{21} = 2^2 \times 1^2 = 4; \quad a_{22} = 2^2 \times 2^2 = 16; \quad a_{23} = 2^2 \times 3^2 = 36;
+\]</p>
+<p>\[
+a_{31} = 3^2 \times 1^2 = 9; \quad a_{32} = 3^2 \times 2^2 = 36; \quad a_{33} = 3^2 \times 3^2 = 81;
+\]</p>
+<p>Hence the required matrix is:</p>
+<p>\[
+A = \begin{bmatrix}
+1 & 4 & 9 \\
+4 & 16 & 36 \\
+9 & 36 & 81
+\end{bmatrix}
+\]</p>
+</body>
+</html>

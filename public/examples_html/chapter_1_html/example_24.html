@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<h3>Example 1.24</h3>
+
+
+    <p>Find x if g ∘ f ∘ f(x) = f ∘ g ∘ g(x), given f(x) = 3x + 1 and g(x) = x + 3.</p>
+    <p>Solution:</p>
+    <p>g ∘ f ∘ f(x) = g ∘ f(f(x))</p>
+    <p>= g ∘ f(3x + 1) = g(3(3x + 1) + 1) = g(9x + 4)</p>
+    <p>g(9x + 4) = (9x + 4) + 3 = 9x + 7</p>
+    <p>f ∘ g ∘ g(x) = f ∘ g(g(x))</p>
+    <p>= f ∘ g(x + 3) = f((x + 3) + 3) = f(x + 6)</p>
+    <p>f(x + 6) = 3(x + 6) + 1 = 3x + 19</p>
+    <p>These two quantities being equal, we get 9x + 7 = 3x + 19. Solving this equation we obtain x = 2.</p>
+</body>
+</html>

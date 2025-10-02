@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 1.23</h3>
+
+
+<p>If \( f(x) = 2x + 3 \), \( g(x) = 1 - 2x \) and \( h(x) = 3x \). Prove that \( f \circ (g \circ h) = (f \circ g) \circ h \)</p>
+<p>Solution:</p>
+<p>\( f(x) = 2x + 3 \), \( g(x) = 1 - 2x \), \( h(x) = 3x \)</p>
+<p>Now, \( (f \circ g)(x) = f(g(x)) = f(1 - 2x) = 2(1 - 2x) + 3 = 5 - 4x \)</p>
+<p>Then, \( (f \circ g) \circ h(x) = (f \circ g)(h(x)) = (f \circ g)(3x) = 5 - 4(3x) = 5 - 12x \) (1)</p>
+<p>\( (g \circ h)(x) = g(h(x)) = g(3x) = 1 - 2(3x) = 1 - 6x \)</p>
+<p>\( \Rightarrow f \circ (g \circ h)(x) = f(1 - 6x) = 2(1 - 6x) + 3 = 5 - 12x \) (2)</p>
+<p>From (1) and (2), we get \( (f \circ g) \circ h = f \circ (g \circ h) \)</p>
+</body>
+</html>

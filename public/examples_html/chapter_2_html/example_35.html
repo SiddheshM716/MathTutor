@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.35</h3>
+
+
+<p>In an A.P. the sum of first n terms is \( \frac{5n^2 + 3n}{2} \). Find the 17<sup>th</sup> term.</p>
+<p>The 17<sup>th</sup> term can be obtained by subtracting the sum of first 16 terms from the sum of first 17 terms.</p>
+<p>\[
+S_{17} = \frac{5 \times 17^2 + 3 \times 17}{2} = \frac{1445 + 51}{2} = 748
+\]</p>
+<p>\[
+S_{16} = \frac{5 \times 16^2 + 3 \times 16}{2} = \frac{1280 + 48}{2} = 664
+\]</p>
+<p>Now, \( t_{17} = S_{17} - S_{16} = 748 - 664 = 84 \).</p>
+</body>
+</html>

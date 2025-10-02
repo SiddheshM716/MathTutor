@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+  <body>
+<h3>Example 8.13</h3>
+
+
+    <p>Marks of the students in a particular subject of a class are given below. Find its standard deviation.</p>
+    <table>
+      <tr>
+        <th>Marks</th>
+        <td>0-10</td>
+        <td>10-20</td>
+        <td>20-30</td>
+        <td>30-40</td>
+        <td>40-50</td>
+        <td>50-60</td>
+        <td>60-70</td>
+      </tr>
+      <tr>
+        <th>Frequency (f)</th>
+        <td>8</td>
+        <td>12</td>
+        <td>17</td>
+        <td>14</td>
+        <td>9</td>
+        <td>7</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <p>Solution: Let the assumed mean, A = 35, c = 10</p>
+    <table>
+      <tr>
+        <th>Marks (x<sub>i</sub>)</th>
+        <th>Mid value</th>
+        <th>f<sub>i</sub></th>
+        <th>d<sub>i</sub> = x<sub>i</sub> - A</th>
+        <th>u<sub>i</sub> = d<sub>i</sub>/c</th>
+        <th>f<sub>i</sub>u<sub>i</sub></th>
+        <th>f<sub>i</sub>u<sub>i</sub><sup>2</sup></th>
+      </tr>
+      <tr>
+        <td>0-10</td>
+        <td>5</td>
+        <td>8</td>
+        <td>-30</td>
+        <td>-3</td>
+        <td>-24</td>
+        <td>72</td>
+      </tr>
+      <tr>
+        <td>10-20</td>
+        <td>15</td>
+        <td>12</td>
+        <td>-20</td>
+        <td>-2</td>
+        <td>-24</td>
+        <td>48</td>
+      </tr>
+      <tr>
+        <td>20-30</td>
+        <td>25</td>
+        <td>17</td>
+        <td>-10</td>
+        <td>-1</td>
+        <td>-17</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>30-40</td>
+        <td>35</td>
+        <td>14</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>40-50</td>
+        <td>45</td>
+        <td>9</td>
+        <td>10</td>
+        <td>1</td>
+        <td>9</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>50-60</td>
+        <td>55</td>
+        <td>7</td>
+        <td>20</td>
+        <td>2</td>
+        <td>14</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>60-70</td>
+        <td>65</td>
+        <td>4</td>
+        <td>30</td>
+        <td>3</td>
+        <td>12</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <td colspan="4">N = 71</td>
+        <td>Σf<sub>i</sub>u<sub>i</sub> = -30</td>
+        <td>Σf<sub>i</sub>u<sub>i</sub><sup>2</sup> = 210</td>
+      </tr>
+    </table>
+    <p>Standard deviation σ = c × √( (Σf<sub>i</sub>u<sub>i</sub><sup>2</sup>)/N - ( (Σf<sub>i</sub>u<sub>i</sub>)/N )<sup>2</sup> )</p>
+    <p>σ = 10 × √( 210/71 - (-30/71)<sup>2</sup> )</p>
+    <p>σ = 10 × √( 2.9577 - 0.1786 )</p>
+    <p>σ = 10 × √2.7791</p>
+    <p>σ ≈ 16.67</p>
+  </body>
+</html>

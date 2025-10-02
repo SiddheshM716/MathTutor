@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.70</h3>
+
+  
+  <p>Solve the matrix equation:</p>
+  <p>\[
+  \begin{pmatrix}
+  2 & 1 \\
+  1 & 2
+  \end{pmatrix}
+  \begin{pmatrix}
+  x \\
+  y
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+  4 \\
+  5
+  \end{pmatrix}
+  \]</p>
+
+  <h3>Solution</h3>
+  <p>Performing matrix multiplication:</p>
+  <p>\[
+  \begin{pmatrix}
+  2x + y \\
+  x + 2y
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+  4 \\
+  5
+  \end{pmatrix}
+  \]</p>
+
+  <p>This gives us the system of equations:</p>
+  <p>\[
+  \begin{cases}
+  2x + y = 4 & \text{(1)} \\
+  x + 2y = 5 & \text{(2)}
+  \end{cases}
+  \]</p>
+
+  <h4>Solving the system:</h4>
+  <p>Multiply equation (2) by 2:</p>
+  <p>\[
+  2x + 4y = 10 \quad \text{(2a)}
+  \]</p>
+
+  <p>Subtract equation (1) from (2a):</p>
+  <p>\[
+  (2x + 4y) - (2x + y) = 10 - 4 \\
+  3y = 6 \\
+  y = 2
+  \]</p>
+
+  <p>Substitute y = 2 into equation (1):</p>
+  <p>\[
+  2x + 2 = 4 \\
+  2x = 2 \\
+  x = 1
+  \]</p>
+
+  <h3>Solution</h3>
+  <p>\[
+  x = 1, \quad y = 2
+  \]</p>
+</body>
+</html>

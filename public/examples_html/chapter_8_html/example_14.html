@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.14</h3>
+
+
+<p>The mean and standard deviation of 15 observations are found to be 10 and 5 respectively. On rechecking it was found that one of the observation with value 8 was incorrect. Calculate the correct mean and standard deviation if the correct observation value was 23?</p>
+<p>Solution:</p>
+<p>n = 15, \(\bar{x} = 10\), \(\sigma = 5\); \(\sum x = 15 \times 10 = 150\)</p>
+<p>Wrong observation value = 8, Correct observation value = 23.</p>
+<p>Correct total = \(150 - 8 + 23 = 165\)</p>
+<p>Correct mean \(\bar{x} = \frac{165}{15} = 11\)</p>
+<p>Standard deviation \(\sigma = \sqrt{\frac{\sum x^2}{n} - \left(\frac{\sum x}{n}\right)^2}\)</p>
+<p>Incorrect value of \(\sigma = 5 = \sqrt{\frac{\sum x^2}{15} - (10)^2}\)</p>
+<p>\(25 = \frac{\sum x^2}{15} - 100 \Rightarrow \sum x^2 = 1875\)</p>
+<p>Correct value of \(\sum x^2 = 1875 - 8^2 + 23^2 = 2340\)</p>
+<p>Correct standard deviation \(\sigma = \sqrt{\frac{2340}{15} - (11)^2} = \sqrt{156 - 121} = \sqrt{35} \approx 5.92\)</p>
+</body>
+</html>

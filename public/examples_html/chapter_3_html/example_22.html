@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.22</h3>
+
+  
+  <p>If \(9x^4 + 12x^3 + 28x^2 + ax + b\) is a perfect square, find the values of \(a\) and \(b\).</p>
+
+  <h3>Solution:</h3>
+  <table style="border-collapse: collapse; margin: 1em 0;">
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid; border-bottom: 1px solid;">\(3x^2 + 2x + 4\)</td>
+      <td style="padding: 0.5em; border-bottom: 1px solid;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(9x^4 + 12x^3 + 28x^2 + ax + b\)</td>
+      <td style="padding: 0.5em;">\((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(9x^4\)</td>
+      <td style="padding: 0.5em;"></td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(6x^2 + 2x\)</td>
+      <td style="padding: 0.5em;">\(\frac{12x^3 + 28x^2}{12x^3 + 4x^2}\) \((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">\(6x^2 + 4x + 4\)</td>
+      <td style="padding: 0.5em;">\(\frac{24x^2 + ax + b}{24x^2 + 16x + 16}\) \((-)\)</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.5em; border-right: 1px solid;">0</td>
+      <td style="padding: 0.5em;"></td>
+    </tr>
+  </table>
+
+  <p>Because the given polynomial is a perfect square:</p>
+  <p>\(a - 16 = 0\) and \(b - 16 = 0\)</p>
+  <p>Therefore \(a = 16\), \(b = 16\).</p>
+</body>
+</html>

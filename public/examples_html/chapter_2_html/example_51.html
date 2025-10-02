@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.51</h3>
+
+
+<p>Find the sum to n terms of the series 5 + 55 + 555 + ---</p>
+<p>Solution The series is neither Arithmetic nor Geometric series. So it can be split into two series and then find the sum.</p>
+<p>5 + 55 + 555 + --- + n terms = 5[1 + 11 + 111 + --- + n terms]</p>
+<p>= \(\frac{5}{9}\)[9 + 99 + 999 + --- + n terms]</p>
+<p>= \(\frac{5}{9}\)[(10 - 1) + (100 - 1) + (1000 - 1) + --- + n terms]</p>
+<p>= \(\frac{5}{9}\)[(10 + 100 + 1000 + --- + n terms) - n]</p>
+<p>= \(\frac{5}{9}\left[\frac{10(10^n - 1)}{10 - 1} - n\right]\)</p>
+</body>
+</html>

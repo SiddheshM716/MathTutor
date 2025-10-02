@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.68</h3>
+
+
+<p>If \( A = \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix} \) and \( B = \begin{bmatrix} 2 & 0 \\ 1 & 3 \end{bmatrix} \), find \( AB \) and \( BA \). Verify \( AB = BA \).</p>
+<p>Solution:</p>
+<p>We observe that \( A \) is a \( 2 \times 2 \) matrix and \( B \) is a \( 2 \times 2 \) matrix, hence \( AB \) is defined and it will be of the order \( 2 \times 2 \).</p>
+<p>\( AB = \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix} \times \begin{bmatrix} 2 & 0 \\ 1 & 3 \end{bmatrix} = \begin{bmatrix} 4+1 & 0+3 \\ 2+3 & 0+9 \end{bmatrix} = \begin{bmatrix} 5 & 3 \\ 5 & 9 \end{bmatrix} \)</p>
+<p>\( BA = \begin{bmatrix} 2 & 0 \\ 1 & 3 \end{bmatrix} \times \begin{bmatrix} 2 & 1 \\ 1 & 3 \end{bmatrix} = \begin{bmatrix} 4+0 & 2+0 \\ 2+3 & 1+9 \end{bmatrix} = \begin{bmatrix} 4 & 2 \\ 5 & 10 \end{bmatrix} \)</p>
+<p>Therefore, \( AB \neq BA \).</p>
+</body>
+</html>

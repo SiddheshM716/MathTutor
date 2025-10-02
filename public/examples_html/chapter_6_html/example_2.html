@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.2</h3>
+
+
+<p>Prove that \(\frac{1 - \cos A}{1 + \cos A} = \left(\frac{\sin A}{1 + \cos A}\right)^2\)</p>
+<p>Solution:</p>
+<p>Multiply numerator and denominator by the conjugate of \(1 + \cos A\):</p>
+<p>\[
+\frac{1 - \cos A}{1 + \cos A} \cdot \frac{1 - \cos A}{1 - \cos A} = \frac{(1 - \cos A)^2}{(1 + \cos A)(1 - \cos A)}
+\]</p>
+<p>Simplify the denominator:</p>
+<p>\[
+\frac{(1 - \cos A)^2}{1 - \cos^2 A} = \frac{(1 - \cos A)^2}{\sin^2 A}
+\]</p>
+<p>Simplify the expression:</p>
+<p>\[
+\left(\frac{1 - \cos A}{\sin A}\right)^2 = \left(\frac{\sin A}{1 + \cos A}\right)^2
+\]</p>
+</body>
+</html>

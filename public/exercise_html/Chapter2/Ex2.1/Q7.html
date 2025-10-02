@@ -1,0 +1,35 @@
+<html><head>
+<meta charset="utf-8"/>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<p>Question 7.<br/>
+Find the largest number which divides 1230 and 1926 leaving remainder 12 in each case.<br/>
+Answer:<br/>
+Find the HCF of ( 1230 – 12) and (1926- 12)<br/>
+i.e HCF of 1218 and 1914<br/>
+By Euclid’s division algorithm<br/>
+1914 = 1218 × 1 + 696<br/>
+The remainder 696 ≠ 0<br/>
+By Euclid’s division algorithm<br/>
+1218 = 696 × 1 + 522<br/>
+The remainder 522 ≠ 0<br/>
+Again by Euclid’s division algorithm<br/>
+696 = 522 × 1 + 174<br/>
+The remainder 174 ≠ 0 Again by Euclid’s division algorithm<br/>
+522 = 174 × 3 + 0<br/>
+The remainder is zero<br/>
+∴ HCF of 1218 and 1914 is 174<br/>
+The largest value is 174</p><p></p>
+</body></html>

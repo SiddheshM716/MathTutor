@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 2.5</h3>
+
+
+<p>Find the greatest number that will divide 445 and 572 leaving remainders 4 and 5 respectively.</p>
+<p>Solution: Since the remainders are 4, 5 respectively the required number is the HCF of the number 445 − 4 = 441, 572 − 5 = 567.</p>
+<p>Hence, we will determine the HCF of 441 and 567. Using Euclid’s Division Algorithm, we have,</p>
+<p>567 = 441 × 1 + 126</p>
+<p>441 = 126 × 3 + 63</p>
+<p>126 = 63 × 2 + 0</p>
+<p>Therefore, HCF of 441, 567 = 63 and so the required number is 63.</p>
+</body>
+</html>

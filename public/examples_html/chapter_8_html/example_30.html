@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 8.30</h3>
+
+
+<p>In a class of 50 students, 28 opted for NCC, 30 opted for NSS and 18 opted both NCC and NSS. One of the students is selected at random. Find the probability that</p>
+<p>(i) The student opted for NCC but not NSS.</p>
+<p>(ii) The student opted for NSS but not NCC.</p>
+<p>(iii) The student opted for exactly one of them.</p>
+<p>Solution: Total number of students n(S) = 50.</p>
+<p>Let A and B be the events of students opted for NCC and NSS respectively.</p>
+<p>n(A) = 28, n(B) = 30, n(A ∩ B) = 18</p>
+<p>P(A) = n(A)/n(S) = 28/50, P(B) = n(B)/n(S) = 30/50</p>
+<p>P(A ∩ B) = n(A ∩ B)/n(S) = 18/50</p>
+<p>(i) Probability of the students opted for NCC but not NSS</p>
+<p>P(A ∩ B') = P(A) - P(A ∩ B) = 28/50 - 18/50 = 10/50 = 1/5</p>
+<p>(ii) Probability of the students opted for NSS but not NCC</p>
+<p>P(A' ∩ B) = P(B) - P(A ∩ B) = 30/50 - 18/50 = 12/50 = 6/25</p>
+<p>(iii) Probability of the students opted for exactly one of them</p>
+<p>= P[(A ∩ B') ∪ (A' ∩ B)]</p>
+<p>= P(A ∩ B') + P(A' ∩ B)</p>
+<p>= 10/50 + 12/50 = 22/50 = 11/25</p>
+</body>
+</html>

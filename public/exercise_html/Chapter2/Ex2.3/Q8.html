@@ -1,0 +1,31 @@
+<html><head>
+<meta charset='UTF-8'>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+<p>Question 8.<br/>
+Prove that 2<sup>n</sup> + 6 × 9<sup>n</sup> is always divisible by 7 for any positive integer n.<br/>
+Solution:<br/>
+2<sup>1</sup> + 6 × 9<sup>1</sup> = 2 + 54 = 56 is divisible by 7<br/>
+When n = k,<br/>
+2<sup>k</sup> + 6 × 9<sup>k</sup> = 7 m [where m is a scalar]<br/>
+⇒ 6 × 9<sup>k</sup> = 7 m – 2<sup>k</sup> …………. (1)<br/>
+Let us prove for n = k + 1<br/>
+Consider 2<sup>k+1</sup> + 6 × 9<sup>k+1</sup> = 2<sup>k+1</sup> + 6 × 9<sup>k</sup> × 9<br/>
+= 2<sup>k+1</sup> + (7m – 2<sup>k</sup>)9 (using (1))<br/>
+= 2<sup>k+1</sup> + 63m – 9.2<sup>k</sup> = 63m + 2<sup>k</sup>.2<sup>1</sup> – 9.2<sup>k</sup><br/>
+= 63m – 2<sup>k</sup> (9 – 2) = 63m – 7.2<sup>k</sup><br/>
+= 7 (9m – 2<sup>k</sup>) which is divisible by 7<br/>
+∴ 2<sup>n</sup> + 6 × 9<sup>n</sup> is divisible by 7 for any positive integer n</p>
+</body></html>

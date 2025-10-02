@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 3.11</h3>
+
+
+<p>Find the GCD of \(6x^3 - 30x^2 + 60x - 48\) and \(3x^3 - 12x^2 + 21x - 18\).</p>
+<p>Solution: Let \(f(x) = 6x^3 - 30x^2 + 60x - 48 = 6(x^3 - 5x^2 + 10x - 8)\) and \(g(x) = 3x^3 - 12x^2 + 21x - 18 = 3(x^3 - 4x^2 + 7x - 6)\).</p>
+<p>Now, we shall find the GCD of \(x^3 - 5x^2 + 10x - 8\) and \(x^3 - 4x^2 + 7x - 6\).</p>
+<p>\[
+\begin{array}{r|l}
+x^3 - 5x^2 + 10x - 8 & x^3 - 4x^2 + 7x - 6 \\
+\hline
+x^3 - 5x^2 + 10x - 8 & (-) \\
+\hline
+x^2 - 3x + 2 & \\
+\end{array}
+\]</p>
+<p>\[
+\begin{array}{r|l}
+x - 2 & x^3 - 5x^2 + 10x - 8 \\
+\hline
+x^3 - 3x^2 + 2x & (-) \\
+\hline
+-2x^2 + 8x - 8 & \\
+-2x^2 + 6x - 4 & (-) \\
+\hline
+2x - 4 & \\
+= 2(x - 2) & \\
+\end{array}
+\]</p>
+<p>\[
+\begin{array}{r|l}
+x - 2 & x^2 - 3x + 2 \\
+\hline
+x^2 - 2x & (-) \\
+\hline
+-x + 2 & \\
+-x + 2 & (-) \\
+\hline
+0 & \\
+\end{array}
+\]</p>
+<p>Here, we get zero as remainder.</p>
+<p>GCD of leading coefficients 3 and 6 is 3.</p>
+<p>Thus, GCD of \(6x^3 - 30x^2 + 60x - 48\) and \(3x^3 - 12x^2 + 21x - 18\) is \(3(x - 2)\).</p>
+</body>
+</html>

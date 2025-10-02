@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['\\(', '\\)'], ['$', '$']],
+    displayMath: [['\\[', '\\]']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+
+
+<body>
+<h3>Example 6.8</h3>
+
+
+<p>If \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\), then prove that \(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\).</p>
+<p>Solution:</p>
+<p>Given, \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\).</p>
+<p>Squaring both sides,</p>
+<p>\((\cos\theta + \sin\theta)^2 = (\sqrt{2} \cos\phi)^2\)</p>
+<p>\(\cos^2\theta + \sin^2\theta + 2\sin\theta\cos\theta = 2\cos^2\phi\)</p>
+<p>\(2\cos^2\phi - \cos^2\theta - \sin^2\theta = 2\sin\theta\cos\theta\)</p>
+<p>\(\cos^2\theta - \sin^2\theta = 2\sin\theta\cos\theta\)</p>
+<p>\((\cos\theta + \sin\theta)(\cos\theta - \sin\theta) = 2\sin\theta\cos\theta\)</p>
+<p>\(\cos\theta - \sin\theta = \frac{2\sin\theta\cos\theta}{\cos\theta + \sin\theta}\)</p>
+<p>\(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\)</p>
+<p>Therefore, \(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\).</p>
+</body>
+</html>
