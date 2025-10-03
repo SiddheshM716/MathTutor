@@ -134,14 +134,20 @@ export default function ExamplesListPage() {
     <main className="bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 pb-24">
         <div className="mb-10">
-          <Link 
-            href="/" 
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-3 md:py-3 md:px-5 rounded-lg text-lg inline-flex items-center md:gap-3 transition-colors shadow-sm"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
-            <span className="hidden md:inline">All Chapters</span>
-          </Link>
-          <h1 className="text-4xl font-bold mt-6 capitalize text-gray-900"><span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">{chapterTitle} - Examples</span></h1>
+          {/* --- FIX: Wrapped button and title in a responsive flex container --- */}
+          <div className="flex items-center gap-4 md:block">
+            <Link
+              href="/"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-3 md:py-3 md:px-5 rounded-lg text-lg inline-flex items-center md:gap-3 transition-colors shadow-sm flex-shrink-0"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+              <span className="hidden md:inline">All Chapters</span>
+            </Link>
+            {/* --- FIX: Adjusted text size and margin for responsiveness --- */}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold md:mt-6 capitalize text-gray-900">
+              <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">{chapterTitle} - Examples</span>
+            </h1>
+          </div>
           <p className="text-lg text-gray-500 mt-2">Select an example to view the solution.</p>
         </div>
 
@@ -166,4 +172,3 @@ export default function ExamplesListPage() {
     </main>
   );
 }
-
