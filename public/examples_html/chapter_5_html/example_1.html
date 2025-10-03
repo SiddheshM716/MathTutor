@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.1</h3>
-
-
-<p>Find the area of the triangle whose vertices are (-3,5), (5,6) and (5,-2).</p>
-<p>Let the vertices be A(-3,5), B(5,-2), C(5,6).</p>
-<p>The area of ΔABC is</p>
-<p>\(\frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|\)</p>
-<p>\(\frac{1}{2} \left| (-3)(-2 - 6) + 5(6 - 5) + 5(5 - (-2)) \right|\)</p>
-<p>\(\frac{1}{2} \left| (-3)(-8) + 5(1) + 5(7) \right|\)</p>
-<p>\(\frac{1}{2} \left| 24 + 5 + 35 \right|\)</p>
-<p>\(\frac{1}{2} \times 64 = 32 \text{ sq.units}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the area of the triangle whose vertices are (-3,5), (5,6) and (5,-2).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the vertices of the triangle as A(-3,5), B(5,-2), and C(5,6).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the area formula for a triangle given its vertices \((x_1,y_1)\), \((x_2,y_2)\), \((x_3,y_3)\):</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the coordinates into the formula:</p><p>\[</p><p>\frac{1}{2} \left| (-3)(-2 - 6) + 5(6 - 5) + 5(5 - (-2)) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the calculations:</p><p>\[</p><p>\frac{1}{2} \left| (-3)(-8) + 5(1) + 5(7) \right| = \frac{1}{2} \left| 24 + 5 + 35 \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Compute the final value:</p><p>\[</p><p>\frac{1}{2} \times 64 = 32 \text{ sq.units}</p><p>\]</p></div></div><div class="final-answer"><p>The area of the triangle is \(32\) sq.units.</p></div></div>
+</div>
 </body>
 </html>

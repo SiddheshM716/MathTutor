@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.6</h3>
-
-
-<p>Find the area of the quadrilateral formed by the points (8,6), (5,11), (−5,12) and (−4,3).</p>
-<p>Let the vertices be A(8,6), B(5,11), C(−5,12) and D(−4,3).</p>
-<p>Therefore, area of the quadrilateral ABCD</p>
-<p>= ½ {(x<sub>1</sub>y<sub>2</sub> + x<sub>2</sub>y<sub>3</sub> + x<sub>3</sub>y<sub>4</sub> + x<sub>4</sub>y<sub>1</sub>) − (y<sub>1</sub>x<sub>2</sub> + y<sub>2</sub>x<sub>3</sub> + y<sub>3</sub>x<sub>4</sub> + y<sub>4</sub>x<sub>1</sub>)}</p>
-<p>= ½ {(88 + 60 − 15 − 24) − (30 − 55 − 48 + 24)}</p>
-<p>= ½ {109 + 49}</p>
-<p>= ½ {158} = 79 sq.units</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the area of the quadrilateral formed by the points (8,6), (5,11), (−5,12) and (−4,3).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Label the vertices of the quadrilateral as A(8,6), B(5,11), C(−5,12), and D(−4,3).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the shoelace formula for the area of a quadrilateral:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| (x_1y_2 + x_2y_3 + x_3y_4 + x_4y_1) - (y_1x_2 + y_2x_3 + y_3x_4 + y_4x_1) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the coordinates into the formula:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| (8 \times 11 + 5 \times 12 + (-5) \times 3 + (-4) \times 6) - (6 \times 5 + 11 \times (-5) + 12 \times (-4) + 3 \times 8) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the terms:</p><p>\[</p><p>= \frac{1}{2} \left| (88 + 60 - 15 - 24) - (30 - 55 - 48 + 24) \right|</p><p>\]</p><p>\[</p><p>= \frac{1}{2} \left| 109 - (-49) \right|</p><p>\]</p><p>\[</p><p>= \frac{1}{2} \times 158</p><p>\]</p></div></div><div class="final-answer"><p>The area of the quadrilateral is \(79\) sq.units.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,42 +1,24 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.23</h3>
-
-
-<p>Check whether the following sequences are in A.P. or not?</p>
-<p>(i) \( x + 2, 2x + 3, 3x + 4, \ldots \)</p>
-<p>Solution:</p>
-<p>To check that the given sequence is in A.P., it is enough to check if the differences between the consecutive terms are equal or not.</p>
-<p>(i) \( t_2 - t_1 = (2x + 3) - (x + 2) = x + 1 \)</p>
-<p>\( t_3 - t_2 = (3x + 4) - (2x + 3) = x + 1 \)</p>
-<p>Thus, the differences between consecutive terms are equal.</p>
-<p>Hence the sequence \( x + 2, 2x + 3, 3x + 4, \ldots \) is in A.P.</p>
-<p>(ii) \( 2, 4, 8, 16, \ldots \)</p>
-<p>\( t_2 - t_1 = 4 - 2 = 2 \)</p>
-<p>\( t_3 - t_2 = 8 - 4 = 4 \)</p>
-<p>\( t_3 - t_2 \neq t_2 - t_1 \)</p>
-<p>Thus, the differences between consecutive terms are not equal. Hence the terms of the sequence \( 2, 4, 8, 16, \ldots \) are not in A.P.</p>
-<p>(iii) \( 3\sqrt{2}, 5\sqrt{2}, 7\sqrt{2}, 9\sqrt{2}, \ldots \)</p>
-<p>\( t_2 - t_1 = 5\sqrt{2} - 3\sqrt{2} = 2\sqrt{2} \)</p>
-<p>\( t_3 - t_2 = 7\sqrt{2} - 5\sqrt{2} = 2\sqrt{2} \)</p>
-<p>\( t_4 - t_3 = 9\sqrt{2} - 7\sqrt{2} = 2\sqrt{2} \)</p>
-<p>Thus, the differences between consecutive terms are equal. Hence the terms of the sequence \( 3\sqrt{2}, 5\sqrt{2}, 7\sqrt{2}, 9\sqrt{2}, \ldots \) are in A.P.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Check whether the following sequences are in A.P. or not?</p><p>(i) \( x + 2, 2x + 3, 3x + 4, \ldots \)</p><p>(ii) \( 2, 4, 8, 16, \ldots \)</p><p>(iii) \( 3\sqrt{2}, 5\sqrt{2}, 7\sqrt{2}, 9\sqrt{2}, \ldots \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>To check if a sequence is in A.P., verify whether the differences between consecutive terms are equal.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For sequence (i), calculate \( t_2 - t_1 \) and \( t_3 - t_2 \).</p><p>\( t_2 - t_1 = (2x + 3) - (x + 2) = x + 1 \)</p><p>\( t_3 - t_2 = (3x + 4) - (2x + 3) = x + 1 \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since \( t_2 - t_1 = t_3 - t_2 \), the differences are equal.</p></div></div><div class="final-answer"><p>The sequence \( x + 2, 2x + 3, 3x + 4, \ldots \) is in A.P.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For sequence (ii), calculate \( t_2 - t_1 \) and \( t_3 - t_2 \).</p><p>\( t_2 - t_1 = 4 - 2 = 2 \)</p><p>\( t_3 - t_2 = 8 - 4 = 4 \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compare the differences.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since \( 2 \neq 4 \), the differences are not equal.</p></div></div><div class="final-answer"><p>The sequence \( 2, 4, 8, 16, \ldots \) is not in A.P.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For sequence (iii), calculate \( t_2 - t_1 \), \( t_3 - t_2 \), and \( t_4 - t_3 \).</p><p>\( t_2 - t_1 = 5\sqrt{2} - 3\sqrt{2} = 2\sqrt{2} \)</p><p>\( t_3 - t_2 = 7\sqrt{2} - 5\sqrt{2} = 2\sqrt{2} \)</p><p>\( t_4 - t_3 = 9\sqrt{2} - 7\sqrt{2} = 2\sqrt{2} \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compare the differences.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since all differences are equal (\( 2\sqrt{2} \)), the sequence is in A.P.</p></div></div><div class="final-answer"><p>The sequence \( 3\sqrt{2}, 5\sqrt{2}, 7\sqrt{2}, 9\sqrt{2}, \ldots \) is in A.P.</p></div></div>
+</div>
 </body>
 </html>

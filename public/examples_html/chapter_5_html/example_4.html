@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.4</h3>
-
-
-<p>If the points P(−1,−4), Q(b,c) and R(5,−1) are collinear and if 2b + c = 4, then find the values of b and c.</p>
-<p>Since the three points P(−1,−4), Q(b,c) and R(5,−1) are collinear, the area of triangle PQR = 0.</p>
-<p>\(\frac{1}{2} \left( (-1 \cdot c + b \cdot (-1) + 5 \cdot (-4)) - (-4 \cdot b + c \cdot 5 + (-1) \cdot (-1)) \right) = 0\)</p>
-<p>\(\frac{1}{2} \left( (-c - b - 20) - (-4b + 5c + 1) \right) = 0\)</p>
-<p>\(-c - b - 20 + 4b - 5c - 1 = 0\)</p>
-<p>\(b - 2c = 7 \quad \text{(1)}\)</p>
-<p>Also, \(2b + c = 4 \quad \text{(2)}\) (from given information)</p>
-<p>Solving (1) and (2) we get \(b = 3\), \(c = -2\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the points P(−1,−4), Q(b,c) and R(5,−1) are collinear and if 2b + c = 4, then find the values of b and c.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since the points P, Q, and R are collinear, the area of triangle PQR must be zero.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the area formula for three collinear points (x₁,y₁), (x₂,y₂), (x₃,y₃):</p><p>\[</p><p>\frac{1}{2} \left( (x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)) \right) = 0</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given points P(−1,−4), Q(b,c), R(5,−1) into the formula:</p><p>\[</p><p>\frac{1}{2} \left( (-1 \cdot (c - (-1)) + b \cdot (-1 - (-4)) + 5 \cdot (-4 - c) \right) = 0</p><p>\]</p><p>Simplify the equation:</p><p>\[</p><p>\frac{1}{2} \left( (-c - 1) + 3b + (-20 - 5c) \right) = 0</p><p>\]</p><p>\[</p><p>\frac{1}{2} \left( 3b - 6c - 21 \right) = 0</p><p>\]</p><p>Multiply both sides by 2:</p><p>\[</p><p>3b - 6c - 21 = 0</p><p>\]</p><p>Simplify further:</p><p>\[</p><p>b - 2c = 7 \quad \text{(1)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Use the given equation \(2b + c = 4\) (2) and solve the system of equations (1) and (2).</p><p>Multiply equation (1) by 2:</p><p>\[</p><p>2b - 4c = 14</p><p>\]</p><p>Subtract equation (2) from this result:</p><p>\[</p><p>(2b - 4c) - (2b + c) = 14 - 4</p><p>\]</p><p>\[</p><p>-5c = 10</p><p>\]</p><p>\[</p><p>c = -2</p><p>\]</p><p>Substitute \(c = -2\) into equation (2):</p><p>\[</p><p>2b + (-2) = 4</p><p>\]</p><p>\[</p><p>2b = 6</p><p>\]</p><p>\[</p><p>b = 3</p><p>\]</p></div></div><div class="final-answer"><p>\(b = 3\), \(c = -2\).</p></div></div>
+</div>
 </body>
 </html>

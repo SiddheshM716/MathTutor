@@ -1,47 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.18</h3>
-
-<p> If the function \( f: \mathbb{R} \rightarrow \mathbb{R} \) is defined by</p>
-<p>\[
-f(x) = 
-\begin{cases} 
-2x + 7, & x < -2 \\
-x^2 - 2, & -2 \leq x \leq 3 \\
-3x - 2, & x > 3 
-\end{cases}
-\]</p>
-<p>then find the values of</p>
-<p>(i) \( f(4) \) (ii) \( f(-2) \) (iii) \( f(4) + 2f(1) \) (iv) \( \frac{f(1) - 3f(4)}{f(-3)} \)</p>
-<p>Solution:</p>
-<p>(i) First, we see that \( x = 4 \) lies in the third interval.</p>
-<p>\( f(x) = 3x - 2; f(4) = 3(4) - 2 = 10 \)</p>
-<p>(ii) \( x = -2 \) lies in the second interval.</p>
-<p>\( f(x) = x^2 - 2; f(-2) = (-2)^2 - 2 = 2 \)</p>
-<p>(iii) From (i), \( f(4) = 10 \).</p>
-<p>To find \( f(1) \), first we see that \( x = 1 \) lies in the second interval.</p>
-<p>\( f(x) = x^2 - 2; f(1) = 1^2 - 2 = -1 \)</p>
-<p>\( f(4) + 2f(1) = 10 + 2(-1) = 8 \)</p>
-<p>(iv) We know that \( f(1) = -1 \) and \( f(4) = 10 \).</p>
-<p>For finding \( f(-3) \), we see that \( x = -3 \), lies in the first interval.</p>
-<p>\( f(x) = 2x + 7; \) thus, \( f(-3) = 2(-3) + 7 = 1 \)</p>
-<p>Hence, \( \frac{f(1) - 3f(4)}{f(-3)} = \frac{-1 - 3(10)}{1} = -31 \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the function \( f: \mathbb{R} \rightarrow \mathbb{R} \) is defined by</p><p>\[</p><p>f(x) =</p><p>\begin{cases}</p><p>2x + 7, &amp; x &lt; -2 \\</p><p>x^2 - 2, &amp; -2 \leq x \leq 3 \\</p><p>3x - 2, &amp; x &gt; 3</p><p>\end{cases}</p><p>\]</p><p>then find the values of</p><p>(i) \( f(4) \)</p><p>(ii) \( f(-2) \)</p><p>(iii) \( f(4) + 2f(1) \)</p><p>(iv) \( \frac{f(1) - 3f(4)}{f(-3)} \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), determine which interval \( x = 4 \) falls into. Since \( 4 &gt; 3 \), we use the third case of the function.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for this interval is \( f(x) = 3x - 2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate \( f(4) = 3(4) - 2 = 12 - 2 = 10 \).</p></div></div><div class="final-answer"><p>\( f(4) = 10 \)</p><p>---</p><p>Step 1: For part (ii), determine which interval \( x = -2 \) falls into. Since \( -2 \leq -2 \leq 3 \), we use the second case of the function.</p><p>Step 2: The formula for this interval is \( f(x) = x^2 - 2 \).</p><p>Step 3: Calculate \( f(-2) = (-2)^2 - 2 = 4 - 2 = 2 \).</p></div><div class="final-answer"><p>\( f(-2) = 2 \)</p><p>---</p><p>Step 1: For part (iii), we already know \( f(4) = 10 \). Now find \( f(1) \). Since \( -2 \leq 1 \leq 3 \), we use the second case.</p><p>Step 2: The formula for this interval is \( f(x) = x^2 - 2 \).</p><p>Step 3: Calculate \( f(1) = (1)^2 - 2 = 1 - 2 = -1 \).</p><p>Step 4: Compute \( f(4) + 2f(1) = 10 + 2(-1) = 10 - 2 = 8 \).</p></div><div class="final-answer"><p>\( f(4) + 2f(1) = 8 \)</p><p>---</p><p>Step 1: For part (iv), we know \( f(1) = -1 \) and \( f(4) = 10 \). Now find \( f(-3) \). Since \( -3 &lt; -2 \), we use the first case.</p><p>Step 2: The formula for this interval is \( f(x) = 2x + 7 \).</p><p>Step 3: Calculate \( f(-3) = 2(-3) + 7 = -6 + 7 = 1 \).</p><p>Step 4: Compute \( \frac{f(1) - 3f(4)}{f(-3)} = \frac{-1 - 3(10)}{1} = \frac{-1 - 30}{1} = -31 \).</p></div><div class="final-answer"><p>\( \frac{f(1) - 3f(4)}{f(-3)} = -31 \)</p></div></div>
+</div>
 </body>
 </html>

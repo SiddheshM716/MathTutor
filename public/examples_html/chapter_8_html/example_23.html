@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
-  <body>
-<h3>Example 8.23</h3>
-
-    <p> A bag contains 6 green balls, some black and red balls. Number of black balls is as twice as the number of red balls. Probability of getting a green ball is thrice the probability of getting a red ball. Find (i) number of black balls (ii) total number of balls.</p>
-    <p>Solution:</p>
-    <p>Number of green balls is n(G) = 6</p>
-    <p>Let number of red balls is n(R) = x</p>
-    <p>Therefore, number of black balls is n(B) = 2x</p>
-    <p>Total number of balls n(S) = 6 + x + 2x = 6 + 3x</p>
-    <p>It is given that, P(G) = 3 × P(R)</p>
-    <p>\(\frac{6}{6 + 3x} = 3 \times \frac{x}{6 + 3x}\)</p>
-    <p>3x = 6 gives, x = 2</p>
-    <p>(i) Number of black balls = 2 × 2 = 4</p>
-    <p>(ii) Total number of balls = 6 + (3 × 2) = 12</p>
-  </body>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A bag contains 6 green balls, some black and red balls. Number of black balls is twice the number of red balls. Probability of getting a green ball is thrice the probability of getting a red ball. Find (i) number of black balls (ii) total number of balls.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Assign variables to the unknown quantities.</p><p>Let the number of red balls be \( n(R) = x \).</p><p>Given that the number of black balls is twice the number of red balls, \( n(B) = 2x \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Express the total number of balls in terms of \( x \).</p><p>Total balls \( n(S) = \) green balls + red balls + black balls = \( 6 + x + 2x = 6 + 3x \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the given probability condition \( P(G) = 3 \times P(R) \).</p><p>Probability of green ball: \( \frac{6}{6 + 3x} \).</p><p>Probability of red ball: \( \frac{x}{6 + 3x} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Set up the equation and solve for \( x \).</p><p>\( \frac{6}{6 + 3x} = 3 \times \frac{x}{6 + 3x} \).</p><p>Simplify: \( 6 = 3x \), so \( x = 2 \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Find the number of black balls and total balls.</p><p>(i) Number of black balls \( = 2x = 4 \).</p><p>(ii) Total number of balls \( = 6 + 3x = 12 \).</p></div></div><div class="final-answer"><p>(i) Number of black balls = \( 4 \).</p><p>(ii) Total number of balls = \( 12 \).</p></div></div>
+</div>
+</body>
 </html>

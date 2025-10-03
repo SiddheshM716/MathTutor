@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.10</h3>
-
-
-<p>The line r passes through the points (−2, 2) and (5, 8) and the line s passes through the points (−8, 7) and (−2, 0). Is the line r perpendicular to s?</p>
-<p>Solution: The slope of line r is \( m_r = \frac{8 - 2}{5 + 2} = \frac{6}{7} \).</p>
-<p>The slope of line s is \( m_s = \frac{0 - 7}{-2 + 8} = \frac{-7}{6} \).</p>
-<p>The product of slopes \( m_r \times m_s = \frac{6}{7} \times \frac{-7}{6} = -1 \).</p>
-<p>That is, \( m_r \times m_s = -1 \).</p>
-<p>Therefore, the line r is perpendicular to line s.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The line \( r \) passes through the points \( (-2, 2) \) and \( (5, 8) \), and the line \( s \) passes through the points \( (-8, 7) \) and \( (-2, 0) \). Is the line \( r \) perpendicular to \( s \)?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the slope of line \( r \) using the formula for slope between two points \( (x_1, y_1) \) and \( (x_2, y_2) \):</p><p>\[ m = \frac{y_2 - y_1}{x_2 - x_1} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the slope of line \( r \):</p><p>\[ m_r = \frac{8 - 2}{5 - (-2)} = \frac{6}{7} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the slope of line \( s \) using the same formula:</p><p>\[ m_s = \frac{0 - 7}{-2 - (-8)} = \frac{-7}{6} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Check if the lines are perpendicular by verifying if the product of their slopes is \( -1 \):</p><p>\[ m_r \times m_s = \frac{6}{7} \times \frac{-7}{6} = -1 \]</p></div></div><div class="final-answer"><p>Since \( m_r \times m_s = -1 \), the line \( r \) is perpendicular to line \( s \).</p></div></div>
+</div>
 </body>
 </html>

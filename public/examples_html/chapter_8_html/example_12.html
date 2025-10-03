@@ -1,78 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.12</h3>
-
-  
-  <p>Find the standard deviation of test marks using the assumed mean method.</p>
-
-  <h4>Given Data:</h4>
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>Marks (x)</th><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td>
-    </tr>
-    <tr>
-      <th>Students (f)</th><td>7</td><td>3</td><td>5</td><td>9</td><td>5</td>
-    </tr>
-  </table>
-
-  <h3>Solution</h3>
-  <p>Using assumed mean A = 8:</p>
-  
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>xᵢ</th><th>fᵢ</th><th>dᵢ = xᵢ - 8</th><th>fᵢdᵢ</th><th>fᵢdᵢ²</th>
-    </tr>
-    <tr><td>4</td><td>7</td><td>-4</td><td>-28</td><td>112</td></tr>
-    <tr><td>6</td><td>3</td><td>-2</td><td>-6</td><td>12</td></tr>
-    <tr><td>8</td><td>5</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>10</td><td>9</td><td>2</td><td>18</td><td>36</td></tr>
-    <tr><td>12</td><td>5</td><td>4</td><td>20</td><td>80</td></tr>
-    <tr>
-      <td colspan="2"><strong>Total</strong></td>
-      <td></td>
-      <td><strong>4</strong></td>
-      <td><strong>240</strong></td>
-    </tr>
-  </table>
-
-  <h4>Calculations:</h4>
-  <p>Total students N = 29</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\sum f_i d_i^2}{N} - \left(\frac{\sum f_i d_i}{N}\right)^2} = \sqrt{\frac{240}{29} - \left(\frac{4}{29}\right)^2}
-  \]</p>
-  <p>\[
-  = \sqrt{\frac{240 \times 29 - 16}{29 \times 29}} = \sqrt{\frac{6944}{841}} \approx 2.87
-  \]</p>
-
-  <h3>Alternative Methods</h3>
-  <h4>1. Mean Method (for continuous data)</h4>
-  <p>\[
-  \sigma = \sqrt{\frac{\sum f_i (x_i - \bar{x})^2}{N}}
-  \]</p>
-  <p>Where xᵢ = class midpoint, fᵢ = class frequency</p>
-
-  <h4>2. Step Deviation Method</h4>
-  <p>For class interval width c:</p>
-  <p>\[
-  \sigma = c \times \sqrt{\frac{\sum f_i d_i^2}{N} - \left(\frac{\sum f_i d_i}{N}\right)^2}
-  \]</p>
-  <p>Where \( d_i = \frac{x_i - A}{c} \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the standard deviation of test marks using the assumed mean method.</p><p>Given Data:</p><p>Marks (x)</p><p>4</p><p>6</p><p>8</p><p>10</p><p>12</p><p>Students (f)</p><p>7</p><p>3</p><p>5</p><p>9</p><p>5</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Using assumed mean A = 8, calculate the deviations \( d_i = x_i - 8 \) and the required sums.</p><p>xᵢ</p><p>fᵢ</p><p>dᵢ = xᵢ - 8</p><p>fᵢdᵢ</p><p>fᵢdᵢ²</p><p>4</p><p>7</p><p>-4</p><p>-28</p><p>112</p><p>6</p><p>3</p><p>-2</p><p>-6</p><p>12</p><p>8</p><p>5</p><p>0</p><p>0</p><p>0</p><p>10</p><p>9</p><p>2</p><p>18</p><p>36</p><p>12</p><p>5</p><p>4</p><p>20</p><p>80</p><p>Total</p><p>4</p><p>240</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The standard deviation formula using the assumed mean method is:</p><p>\[</p><p>\sigma = \sqrt{\frac{\sum f_i d_i^2}{N} - \left(\frac{\sum f_i d_i}{N}\right)^2}</p><p>\]</p><p>where \( N = 29 \) (total students).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values into the formula:</p><p>\[</p><p>\sigma = \sqrt{\frac{240}{29} - \left(\frac{4}{29}\right)^2} = \sqrt{\frac{240 \times 29 - 16}{29 \times 29}} = \sqrt{\frac{6944}{841}} \approx 2.87</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation of the test marks is \( \boxed{2.87} \).</p></div></div>
+</div>
 </body>
 </html>

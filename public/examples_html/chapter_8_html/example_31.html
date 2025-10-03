@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.31</h3>
-
-<p> A and B are two candidates seeking admission to IIT. The probability that A gets selected is 0.5 and the probability that both A and B get selected is 0.3. Prove that the probability of B being selected is at most 0.8.</p>
-<p>Solution:</p>
-<p>Given: \( P(A) = 0.5 \), \( P(A \cap B) = 0.3 \)</p>
-<p>We have \( P(A \cup B) \leq 1 \)</p>
-<p>\( P(A) + P(B) - P(A \cap B) \leq 1 \)</p>
-<p>\( 0.5 + P(B) - 0.3 \leq 1 \)</p>
-<p>\( P(B) \leq 1 - 0.2 \)</p>
-<p>\( P(B) \leq 0.8 \)</p>
-<p>Therefore, the probability of B getting selected is at most 0.8.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A and B are two candidates seeking admission to IIT. The probability that A gets selected is 0.5 and the probability that both A and B get selected is 0.3. Prove that the probability of B being selected is at most 0.8.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given probabilities are \( P(A) = 0.5 \) and \( P(A \cap B) = 0.3 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>We know that the probability of the union of two events satisfies \( P(A \cup B) \leq 1 \). The formula for the union is:</p><p>\[ P(A \cup B) = P(A) + P(B) - P(A \cap B) \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the inequality:</p><p>\[ 0.5 + P(B) - 0.3 \leq 1 \]</p><p>\[ 0.2 + P(B) \leq 1 \]</p><p>\[ P(B) \leq 1 - 0.2 \]</p><p>\[ P(B) \leq 0.8 \]</p></div></div><div class="final-answer"><p>The probability of B being selected is at most \( 0.8 \).</p></div></div>
+</div>
 </body>
 </html>

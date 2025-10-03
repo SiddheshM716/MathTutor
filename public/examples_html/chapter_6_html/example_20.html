@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.20</h3>
-
-
-<p>A kite is flying at a height of 75 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. Find the length of the string, assuming that there is no slack in the string.</p>
-<p>Let AB be the height of the kite above the ground. Then, AB = 75.</p>
-<p>Let AC be the length of the string.</p>
-<p>In the right angled triangle ABC, ∠ACB = 60°.</p>
-<p>sin60° = AB / AC</p>
-<p>√3/2 = 75 / AC</p>
-<p>AC = 75 * 2 / √3</p>
-<p>Hence, the length of the string is 50√3 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A kite is flying at a height of 75 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. Find the length of the string, assuming that there is no slack in the string.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AB represent the height of the kite above the ground, which is 75 m. Let AC be the length of the string. The angle between the string and the ground is 60°.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In the right-angled triangle ABC, we can use the sine formula:</p><p>\[</p><p>\sin 60° = \frac{\text{opposite side}}{\text{hypotenuse}} = \frac{AB}{AC}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values:</p><p>\[</p><p>\frac{\sqrt{3}}{2} = \frac{75}{AC}</p><p>\]</p><p>Solve for AC:</p><p>\[</p><p>AC = \frac{75 \times 2}{\sqrt{3}} = \frac{150}{\sqrt{3}} = 50\sqrt{3} \text{ m}</p><p>\]</p></div></div><div class="final-answer"><p>The length of the string is \( 50\sqrt{3} \) m.</p></div></div>
+</div>
 </body>
 </html>

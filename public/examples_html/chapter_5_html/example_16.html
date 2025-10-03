@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.16</h3>
-
-<p> Prove analytically that the line segment joining the mid-points of two sides of a triangle is parallel to the third side and is equal to half of its length.</p>
-<p>Solution Let P(a,b), Q(c,d) and R(e, f) be the vertices of a triangle. Let S be the mid-point of PQ and T be the mid-point of PR.</p>
-<p>Therefore, S = \(\left( \frac{a + c}{2}, \frac{b + d}{2} \right)\) and T = \(\left( \frac{a + e}{2}, \frac{b + f}{2} \right)\).</p>
-<p>Now, slope of ST = \(\frac{\frac{b + f}{2} - \frac{b + d}{2}}{\frac{a + e}{2} - \frac{a + c}{2}} = \frac{f - d}{e - c}\).</p>
-<p>And slope of QR = \(\frac{f - d}{e - c}\).</p>
-<p>Therefore, ST is parallel to QR (since their slopes are equal).</p>
-<p>Also, ST = \(\sqrt{\left( \frac{a + e}{2} - \frac{a + c}{2} \right)^2 + \left( \frac{b + f}{2} - \frac{b + d}{2} \right)^2} = \frac{1}{2} \sqrt{(e - c)^2 + (f - d)^2}\).</p>
-<p>ST = \(\frac{1}{2}\) QR.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove analytically that the line segment joining the mid-points of two sides of a triangle is parallel to the third side and is equal to half of its length.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( P(a,b) \), \( Q(c,d) \), and \( R(e, f) \) be the vertices of a triangle. Let \( S \) be the mid-point of \( PQ \) and \( T \) be the mid-point of \( PR \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The coordinates of the mid-points are calculated using the mid-point formula:</p><p>\[ S = \left( \frac{a + c}{2}, \frac{b + d}{2} \right) \]</p><p>\[ T = \left( \frac{a + e}{2}, \frac{b + f}{2} \right) \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>The slope of \( ST \) is calculated as:</p><p>\[ \text{Slope of } ST = \frac{\frac{b + f}{2} - \frac{b + d}{2}}{\frac{a + e}{2} - \frac{a + c}{2}} = \frac{f - d}{e - c} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The slope of \( QR \) is calculated as:</p><p>\[ \text{Slope of } QR = \frac{f - d}{e - c} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Since the slopes of \( ST \) and \( QR \) are equal, \( ST \) is parallel to \( QR \).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>The length of \( ST \) is calculated using the distance formula:</p><p>\[ ST = \sqrt{\left( \frac{a + e}{2} - \frac{a + c}{2} \right)^2 + \left( \frac{b + f}{2} - \frac{b + d}{2} \right)^2} = \frac{1}{2} \sqrt{(e - c)^2 + (f - d)^2} \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>The length of \( QR \) is:</p><p>\[ QR = \sqrt{(e - c)^2 + (f - d)^2} \]</p></div></div><div class="final-answer"><p>Therefore, \( ST \) is parallel to \( QR \) and \( ST = \frac{1}{2} QR \).</p></div></div>
+</div>
 </body>
 </html>

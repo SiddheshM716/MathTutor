@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.18</h3>
-
-
-<p>(i) Volume of cylinder = πr²h cu. units</p>
-<p>Volume of cylinder A = 22/7 × 3.5² × 21 = 808.5 cm³</p>
-<p>Volume of cylinder B = 22/7 × 10.5² × 7 = 2425.5 cm³</p>
-<p>Therefore, volume of cylinder B is greater than volume of cylinder A.</p>
-<p>(ii) T.S.A. of cylinder = 2πr(h + r) sq. units</p>
-<p>T.S.A. of cylinder A = 2 × 22/7 × 3.5 × (21 + 3.5) = 539 cm²</p>
-<p>T.S.A. of cylinder B = 2 × 22/7 × 10.5 × (7 + 10.5) = 1155 cm²</p>
-<p>Hence verified that cylinder B with greater volume has a greater surface area.</p>
-<p>(iii) Volume of cylinder A / Volume of cylinder B = 808.5 / 2425.5 = 1/3</p>
-<p>Therefore, ratio of the volumes of cylinders A and B is 1:3.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>(i) Compare the volumes of two cylinders A and B where:</p><p>Cylinder A: radius = 3.5 cm, height = 21 cm</p><p>Cylinder B: radius = 10.5 cm, height = 7 cm</p><p>(ii) Verify whether the cylinder with greater volume has a greater surface area.</p><p>(iii) Find the ratio of the volumes of cylinders A and B.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the volume of both cylinders using the formula for volume of a cylinder \( V = \pi r^2 h \).</p><p>Volume of cylinder A = \( \frac{22}{7} \times (3.5)^2 \times 21 = 808.5 \text{ cm}^3 \).</p><p>Volume of cylinder B = \( \frac{22}{7} \times (10.5)^2 \times 7 = 2425.5 \text{ cm}^3 \).</p><p>Thus, the volume of cylinder B is greater than that of cylinder A.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the total surface area (T.S.A.) of both cylinders using the formula \( \text{T.S.A.} = 2\pi r (h + r) \).</p><p>T.S.A. of cylinder A = \( 2 \times \frac{22}{7} \times 3.5 \times (21 + 3.5) = 539 \text{ cm}^2 \).</p><p>T.S.A. of cylinder B = \( 2 \times \frac{22}{7} \times 10.5 \times (7 + 10.5) = 1155 \text{ cm}^2 \).</p><p>This confirms that cylinder B, which has a greater volume, also has a greater surface area.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute the ratio of the volumes of cylinders A and B.</p><p>Volume ratio = \( \frac{808.5}{2425.5} = \frac{1}{3} \).</p></div></div><div class="final-answer"><p>The ratio of the volumes of cylinders A and B is \( 1:3 \).</p></div></div>
+</div>
 </body>
 </html>

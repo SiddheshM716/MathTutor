@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.35</h3>
-
-
-<p>In an A.P. the sum of first n terms is \( \frac{5n^2 + 3n}{2} \). Find the 17<sup>th</sup> term.</p>
-<p>The 17<sup>th</sup> term can be obtained by subtracting the sum of first 16 terms from the sum of first 17 terms.</p>
-<p>\[
-S_{17} = \frac{5 \times 17^2 + 3 \times 17}{2} = \frac{1445 + 51}{2} = 748
-\]</p>
-<p>\[
-S_{16} = \frac{5 \times 16^2 + 3 \times 16}{2} = \frac{1280 + 48}{2} = 664
-\]</p>
-<p>Now, \( t_{17} = S_{17} - S_{16} = 748 - 664 = 84 \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In an A.P. the sum of first n terms is \( \frac{5n^2 + 3n}{2} \). Find the 17</p><p>th</p><p>term.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The 17</p><p>th</p><p>term (\( t_{17} \)) can be obtained by subtracting the sum of the first 16 terms (\( S_{16} \)) from the sum of the first 17 terms (\( S_{17} \)).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>First, calculate \( S_{17} \) using the given formula \( S_n = \frac{5n^2 + 3n}{2} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute \( n = 17 \) into the formula:</p><p>\[</p><p>S_{17} = \frac{5 \times 17^2 + 3 \times 17}{2} = \frac{1445 + 51}{2} = 748</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Next, calculate \( S_{16} \) using the same formula.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute \( n = 16 \) into the formula:</p><p>\[</p><p>S_{16} = \frac{5 \times 16^2 + 3 \times 16}{2} = \frac{1280 + 48}{2} = 664</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Now, find \( t_{17} \) by subtracting \( S_{16} \) from \( S_{17} \):</p><p>\[</p><p>t_{17} = S_{17} - S_{16} = 748 - 664 = 84</p><p>\]</p></div></div><div class="final-answer"><p>The 17</p><p>th</p><p>term is \( \boxed{84} \).</p></div></div>
+</div>
 </body>
 </html>

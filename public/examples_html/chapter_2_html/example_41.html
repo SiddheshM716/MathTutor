@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.41</h3>
-
-
-<p>Find the geometric progression whose first term and common ratios are given by:</p>
-<p>(i) \( a = -7, r = 6 \)</p>
-<p>The general form of Geometric progression is \( a, ar, ar^2, \ldots \)</p>
-<p>\( a = -7, ar = -7 \times 6 = -42, ar^2 = -7 \times 6^2 = -252 \)</p>
-<p>Therefore the required Geometric Progression is \( -7, -42, -252, \ldots \)</p>
-<p>(ii) \( a = 256, r = 0.5 \)</p>
-<p>The general form of Geometric progression is \( a, ar, ar^2, \ldots \)</p>
-<p>\( a = 256, ar = 256 \times 0.5 = 128, ar^2 = 256 \times (0.5)^2 = 64 \)</p>
-<p>Therefore the required Geometric progression is \( 256, 128, 64, \ldots \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the geometric progression whose first term and common ratios are given by:</p><p>(i) \( a = -7, r = 6 \)</p><p>(ii) \( a = 256, r = 0.5 \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Recall the general form of a Geometric Progression (GP): \( a, ar, ar^2, \ldots \), where \( a \) is the first term and \( r \) is the common ratio.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), given \( a = -7 \) and \( r = 6 \), compute the first three terms using the GP formula.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the terms:</p><p>\( a = -7 \)</p><p>\( ar = -7 \times 6 = -42 \)</p><p>\( ar^2 = -7 \times 6^2 = -252 \)</p></div></div><div class="final-answer"><p>The required Geometric Progression is \( -7, -42, -252, \ldots \)</p><p>Step 1: For part (ii), given \( a = 256 \) and \( r = 0.5 \), compute the first three terms using the GP formula.</p><p>Step 2: Calculate the terms:</p><p>\( a = 256 \)</p><p>\( ar = 256 \times 0.5 = 128 \)</p><p>\( ar^2 = 256 \times (0.5)^2 = 64 \)</p></div><div class="final-answer"><p>The required Geometric Progression is \( 256, 128, 64, \ldots \)</p></div></div>
+</div>
 </body>
 </html>

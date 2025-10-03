@@ -1,61 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.11</h3>
-
-<p> Let A = {1,2,3,4} and B = {2,5,8,11,14} be two sets. Let f: A → B be a function given by f(x) = 3x - 1. Represent this function</p>
-<p>(i) by arrow diagram (ii) in a table form</p>
-<p>(iii) as a set of ordered pairs (iv) in a graphical form</p>
-<p>Solution</p>
-<p>A = {1,2,3,4}; B = {2,5,8,11,14}; f(x) = 3x - 1</p>
-<p>f(1) = 3(1) - 1 = 3 - 1 = 2; f(2) = 3(2) - 1 = 6 - 1 = 5</p>
-<p>f(3) = 3(3) - 1 = 9 - 1 = 8; f(4) = 3(4) - 1 = 12 - 1 = 11</p>
-<p>(i) Arrow diagram</p>
-<p>Let us represent the function f: A → B by an arrow diagram.</p>
-<p>(ii) Table form</p>
-<p>The given function f can be represented in a tabular form as given below</p>
-<table>
-  <tr>
-    <th>x</th>
-    <th>f(x)</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>5</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>11</td>
-  </tr>
-</table>
-<p>(iii) Set of ordered pairs</p>
-<p>The function f can be represented as a set of ordered pairs as</p>
-<p>f = {(1,2), (2,5), (3,8), (4,11)}</p>
-<p>(iv) Graphical form</p>
-<p>In the adjacent X Y-plane the points (1,2), (2,5), (3,8), (4,11) are plotted.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Let \( A = \{1, 2, 3, 4\} \) and \( B = \{2, 5, 8, 11, 14\} \) be two sets. Let \( f: A \rightarrow B \) be a function given by \( f(x) = 3x - 1 \). Represent this function:</p><p>(i) by arrow diagram</p><p>(ii) in a table form</p><p>(iii) as a set of ordered pairs</p><p>(iv) in a graphical form</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate \( f(x) \) for each \( x \in A \) using the formula \( f(x) = 3x - 1 \).</p><p>\[ f(1) = 3(1) - 1 = 2 \]</p><p>\[ f(2) = 3(2) - 1 = 5 \]</p><p>\[ f(3) = 3(3) - 1 = 8 \]</p><p>\[ f(4) = 3(4) - 1 = 11 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Represent the function as an arrow diagram.</p><p>Draw arrows from each element of \( A \) to its corresponding image in \( B \):</p><p>1 → 2, 2 → 5, 3 → 8, 4 → 11.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Represent the function in a table form.</p><p>x</p><p>f(x)</p><p>1</p><p>2</p><p>2</p><p>5</p><p>3</p><p>8</p><p>4</p><p>11</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Represent the function as a set of ordered pairs.</p><p>\[ f = \{(1, 2), (2, 5), (3, 8), (4, 11)\} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Represent the function in graphical form.</p><p>Plot the points \((1, 2)\), \((2, 5)\), \((3, 8)\), and \((4, 11)\) on the \( XY \)-plane.</p></div></div><div class="final-answer"><p>(i) Arrow diagram: 1 → 2, 2 → 5, 3 → 8, 4 → 11.</p><p>(ii) Table form: See table above.</p><p>(iii) Ordered pairs: \( \{(1, 2), (2, 5), (3, 8), (4, 11)\} \).</p><p>(iv) Graphical form: Points plotted on \( XY \)-plane.</p></div></div>
+</div>
 </body>
 </html>

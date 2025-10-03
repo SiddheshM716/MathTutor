@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.8</h3>
-
-
-<p>If ΔABC is similar to ΔDEF such that BC = 3 cm, EF = 4 cm and area of ΔABC = 54 cm². Find the area of ΔDEF.</p>
-<p>Since the ratio of area of two similar triangles is equal to the ratio of the squares of any two corresponding sides, we have</p>
-<p>\(\frac{\text{Area}(\Delta ABC)}{\text{Area}(\Delta DEF)} = \frac{BC^2}{EF^2}\)</p>
-<p>\(\frac{54}{\text{Area}(\Delta DEF)} = \frac{3^2}{4^2}\)</p>
-<p>\(\text{Area}(\Delta DEF) = \frac{54 \times 16}{9} = 96 \text{ cm}^2\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If ΔABC is similar to ΔDEF such that BC = 3 cm, EF = 4 cm and area of ΔABC = 54 cm². Find the area of ΔDEF.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since ΔABC and ΔDEF are similar, the ratio of their areas is equal to the ratio of the squares of their corresponding sides.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the ratio of areas of similar triangles is:</p><p>\[</p><p>\frac{\text{Area}(\Delta ABC)}{\text{Area}(\Delta DEF)} = \frac{BC^2}{EF^2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the formula:</p><p>\[</p><p>\frac{54}{\text{Area}(\Delta DEF)} = \frac{3^2}{4^2} = \frac{9}{16}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve for \(\text{Area}(\Delta DEF)\):</p><p>\[</p><p>\text{Area}(\Delta DEF) = \frac{54 \times 16}{9} = 96 \text{ cm}^2</p><p>\]</p></div></div><div class="final-answer"><p>The area of ΔDEF is \(\boxed{96 \text{ cm}^2}\).</p></div></div>
+</div>
 </body>
 </html>

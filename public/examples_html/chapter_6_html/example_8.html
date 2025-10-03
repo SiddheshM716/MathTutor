@@ -1,36 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.8</h3>
-
-
-<p>If \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\), then prove that \(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\).</p>
-<p>Solution:</p>
-<p>Given, \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\).</p>
-<p>Squaring both sides,</p>
-<p>\((\cos\theta + \sin\theta)^2 = (\sqrt{2} \cos\phi)^2\)</p>
-<p>\(\cos^2\theta + \sin^2\theta + 2\sin\theta\cos\theta = 2\cos^2\phi\)</p>
-<p>\(2\cos^2\phi - \cos^2\theta - \sin^2\theta = 2\sin\theta\cos\theta\)</p>
-<p>\(\cos^2\theta - \sin^2\theta = 2\sin\theta\cos\theta\)</p>
-<p>\((\cos\theta + \sin\theta)(\cos\theta - \sin\theta) = 2\sin\theta\cos\theta\)</p>
-<p>\(\cos\theta - \sin\theta = \frac{2\sin\theta\cos\theta}{\cos\theta + \sin\theta}\)</p>
-<p>\(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\)</p>
-<p>Therefore, \(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\), then prove that \(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the given equation \(\cos\theta + \sin\theta = \sqrt{2} \cos\phi\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Square both sides to eliminate the square root and expand using the identity \((a + b)^2 = a^2 + 2ab + b^2\).</p><p>\((\cos\theta + \sin\theta)^2 = (\sqrt{2} \cos\phi)^2\)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify both sides using trigonometric identities \(\cos^2\theta + \sin^2\theta = 1\) and \(2\sin\theta\cos\theta = \sin(2\theta)\).</p><p>\(\cos^2\theta + \sin^2\theta + 2\sin\theta\cos\theta = 2\cos^2\phi\)</p><p>\(1 + \sin(2\theta) = 2\cos^2\phi\)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Rearrange the equation to isolate \(\sin(2\theta)\).</p><p>\(\sin(2\theta) = 2\cos^2\phi - 1\)</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Use the double-angle identity \(\cos(2\phi) = 2\cos^2\phi - 1\).</p><p>\(\sin(2\theta) = \cos(2\phi)\)</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Express \(\cos(2\phi)\) in terms of sine using the co-function identity \(\cos(2\phi) = \sin\left(\frac{\pi}{2} - 2\phi\right)\).</p><p>\(\sin(2\theta) = \sin\left(\frac{\pi}{2} - 2\phi\right)\)</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Solve for \(\theta\) and \(\phi\) by equating the arguments of the sine functions.</p><p>\(2\theta = \frac{\pi}{2} - 2\phi + 2\pi n\) (for any integer \(n\))</p><p>\(\theta + \phi = \frac{\pi}{4} + \pi n\)</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Substitute \(\phi = \frac{\pi}{4} + \pi n - \theta\) back into the original equation to find \(\cos\theta - \sin\theta\).</p><p>\(\cos\theta - \sin\theta = \sqrt{2} \sin\left(\frac{\pi}{4} + \pi n - \theta\right)\)</p></div></div><div class="final-answer"><p>\(\cos\theta - \sin\theta = \sqrt{2} \sin\phi\) is proven.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,67 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.13</h3>
-
-
-<p>Prove that:</p>
-<p>\[
-\tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}
-\]</p>
-<p>\[
-\frac{\sin^2 A \cos^2 B - \sin^2 B \cos^2 A}{\cos^2 A \cos^2 B}
-\]</p>
-<p>\[
-\frac{\sin^2 A (1 - \sin^2 B) - \sin^2 B (1 - \sin^2 A)}{\cos^2 A \cos^2 B}
-\]</p>
-<p>\[
-\frac{\sin^2 A - \sin^2 A \sin^2 B - \sin^2 B + \sin^2 A \sin^2 B}{\cos^2 A \cos^2 B} = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}
-\]</p>
-<p>\[
-\frac{\cos^2 A + \sin^2 A}{\cos A + \sin A}
-\]</p>
-<p>\[
-\frac{\cos^2 A - \sin^2 A}{\cos A - \sin A}
-\]</p>
-<p>\[
-1 - 2 \sin A \cos A
-\]</p>
-<p>\[
-\frac{\cos^2 A - \sin^2 A}{\cos A - \sin A}
-\]</p>
-<p>\[
-\frac{\cos^2 A + \sin^2 A}{\cos A + \sin A}
-\]</p>
-<p>\[
-a^2 - b^2 = (a - b)(a^2 + b^2 + ab)
-\]</p>
-<p>\[
-(\cos A - \sin A)(\cos^2 A + \sin^2 A + \cos A \sin A)
-\]</p>
-<p>\[
-\frac{\cos A - \sin A}{a^2 + b^2 = (a + b)(a^2 + b^2 - ab)}
-\]</p>
-<p>\[
-(\cos A + \sin A)(\cos^2 A + \sin^2 A - \cos A \sin A)
-\]</p>
-<p>\[
-\frac{\cos A + \sin A}{1 + \cos A \sin A - (1 - \cos A \sin A)} = 2 \cos A \sin A
-\]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that:</p><p>\[</p><p>\tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the left-hand side (LHS) of the equation:</p><p>\[</p><p>\tan^2 A - \tan^2 B</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Express \(\tan^2 A\) and \(\tan^2 B\) in terms of sine and cosine:</p><p>\[</p><p>\tan^2 A = \frac{\sin^2 A}{\cos^2 A}, \quad \tan^2 B = \frac{\sin^2 B}{\cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute these into the LHS:</p><p>\[</p><p>\frac{\sin^2 A}{\cos^2 A} - \frac{\sin^2 B}{\cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Combine the fractions over a common denominator:</p><p>\[</p><p>\frac{\sin^2 A \cos^2 B - \sin^2 B \cos^2 A}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Use the Pythagorean identity \(\cos^2 x = 1 - \sin^2 x\) to rewrite \(\cos^2 A\) and \(\cos^2 B\):</p><p>\[</p><p>\frac{\sin^2 A (1 - \sin^2 B) - \sin^2 B (1 - \sin^2 A)}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Expand the numerator:</p><p>\[</p><p>\frac{\sin^2 A - \sin^2 A \sin^2 B - \sin^2 B + \sin^2 A \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Simplify the numerator by canceling terms:</p><p>\[</p><p>\frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div><div class="final-answer"><p>The right-hand side (RHS) matches the simplified form of the LHS, proving the identity:</p><p>\[</p><p>\tan^2 A - \tan^2 B = \frac{\sin^2 A - \sin^2 B}{\cos^2 A \cos^2 B}</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.10</h3>
-
-
-<p>Using vertical line test, determine which of the following curves (Fig.1.18(a), 1.18(b), 1.18(c), 1.18(d)) represent a function?</p>
-<p>Solution: The curves in Fig.1.18(a) and Fig.1.18(c) do not represent a function as the vertical lines meet the curves in two points P and Q.</p>
-<p>The curves in Fig.1.18(b) and Fig.1.18(d) represent a function as the vertical lines meet the curve in at most one point.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Using vertical line test, determine which of the following curves (Fig.1.18(a), 1.18(b), 1.18(c), 1.18(d)) represent a function?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Understand the vertical line test. A curve represents a function if and only if no vertical line intersects the curve more than once.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the vertical line test to each figure.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For Fig.1.18(a) and Fig.1.18(c), there exist vertical lines that intersect the curves at two points (P and Q). This violates the vertical line test.</p><p>For Fig.1.18(b) and Fig.1.18(d), every vertical line intersects the curve at most once, satisfying the vertical line test.</p></div></div><div class="final-answer"><p>The curves in Fig.1.18(b) and Fig.1.18(d) represent functions, while Fig.1.18(a) and Fig.1.18(c) do not.</p></div></div>
+</div>
 </body>
 </html>

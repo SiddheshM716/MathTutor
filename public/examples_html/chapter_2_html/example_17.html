@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.17</h3>
-
-<p> A man starts his journey from Chennai to Delhi by train. He starts at 22.30 hours on Wednesday. If it takes 32 hours of travelling time and assuming that the train is not late, when will he reach Delhi?</p>
-<p>Solution: Starting time 22.30, Travelling time 32 hours. Here we use modulo 24.</p>
-<p>The reaching time is</p>
-<p>22.30 + 32 (mod 24) = 54.30 (mod 24)</p>
-<p>= 6.30 (mod 24) (since 32 = (1 × 24) + 8)</p>
-<p>Thus, he will reach Delhi on Friday at 6.30 hours.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A man starts his journey from Chennai to Delhi by train. He starts at 22.30 hours on Wednesday. If it takes 32 hours of travelling time and assuming that the train is not late, when will he reach Delhi?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Note the starting time and travelling time. The journey begins at 22:30 hours on Wednesday and takes 32 hours.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use modulo 24 to calculate the arrival time since the clock cycles every 24 hours. The formula is:</p><p>\[ \text{Arrival time} = (\text{Starting time} + \text{Travelling time}) \mod 24 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the total time:</p><p>\[ 22.30 + 32 = 54.30 \]</p><p>Now apply modulo 24:</p><p>\[ 54.30 \mod 24 = 6.30 \]</p><p>This is because \( 32 = (1 \times 24) + 8 \), so the excess beyond 24 hours is 8 hours.</p></div></div><div class="final-answer"><p>He will reach Delhi on Friday at 6.30 hours.</p></div></div>
+</div>
 </body>
 </html>

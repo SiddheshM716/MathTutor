@@ -1,36 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.38</h3>
-
-<p> A flock of swans contained x<sup>2</sup> members. As the clouds gathered, 10x went to a lake and one-eighth of the members flew away to a garden. The remaining three pairs played about in the water. How many swans were there in total?</p>
-
-<p>Solution As given there are x<sup>2</sup> swans.</p>
-
-<p>As per the given data x<sup>2</sup> - 10x - (1/8)x<sup>2</sup> = 6 we get, 7x<sup>2</sup> - 80x - 48 = 0</p>
-
-<p>x = [-b ± √(b<sup>2</sup>-4ac)] / 2a = [80 ± √(6400 - 4(7)(-48))] / 14 = [80 ± 88] / 14</p>
-
-<p>Therefore, x = 12, -4/7.</p>
-
-<p>Here x = -4/7 is not possible as the number of swans cannot be negative.</p>
-
-<p>Hence, x = 12. Therefore total number of swans is x<sup>2</sup> = 144.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A flock of swans contained \( x^2 \) members. As the clouds gathered, \( 10x \) went to a lake and one-eighth of the members flew away to a garden. The remaining three pairs played about in the water. How many swans were there in total?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the total number of swans be \( x^2 \). According to the problem, \( 10x \) swans went to a lake, and \( \frac{1}{8}x^2 \) flew away to a garden. The remaining swans are 3 pairs, which is 6 swans.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Formulate the equation based on the given information:</p><p>\[ x^2 - 10x - \frac{1}{8}x^2 = 6 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the equation:</p><p>\[ \frac{7}{8}x^2 - 10x - 6 = 0 \]</p><p>Multiply both sides by 8 to eliminate the fraction:</p><p>\[ 7x^2 - 80x - 48 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve the quadratic equation using the quadratic formula:</p><p>\[ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p><p>Here, \( a = 7 \), \( b = -80 \), and \( c = -48 \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute the values into the formula:</p><p>\[ x = \frac{80 \pm \sqrt{6400 - 4(7)(-48)}}{14} \]</p><p>\[ x = \frac{80 \pm \sqrt{6400 + 1344}}{14} \]</p><p>\[ x = \frac{80 \pm \sqrt{7744}}{14} \]</p><p>\[ x = \frac{80 \pm 88}{14} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Evaluate the two possible solutions:</p><p>\[ x = \frac{80 + 88}{14} = \frac{168}{14} = 12 \]</p><p>\[ x = \frac{80 - 88}{14} = \frac{-8}{14} = -\frac{4}{7} \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Since the number of swans cannot be negative, discard \( x = -\frac{4}{7} \).</p></div></div><div class="final-answer"><p>The total number of swans is \( x^2 = 12^2 = 144 \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.20</h3>
-
-
-<p>Two coins are tossed together. What is the probability of getting different faces on the coins?</p>
-<p>When two coins are tossed together, the sample space is</p>
-<p>S = {HH, HT, TH, TT}; n(S) = 4</p>
-<p>Let A be the event of getting different faces on the coins.</p>
-<p>A = {HT, TH}; n(A) = 2</p>
-<p>Probability of getting different faces on the coins is P(A) = n(A)/n(S) = 2/4 = 1/2</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Two coins are tossed together. What is the probability of getting different faces on the coins?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Determine the sample space when two coins are tossed together.</p><p>The sample space \( S = \{HH, HT, TH, TT\} \) and the number of outcomes \( n(S) = 4 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Define the event \( A \) as getting different faces on the coins.</p><p>The favorable outcomes for \( A \) are \( \{HT, TH\} \), so \( n(A) = 2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the probability using the formula:</p><p>\[ P(A) = \frac{n(A)}{n(S)} \]</p><p>Substitute the values:</p><p>\[ P(A) = \frac{2}{4} = \frac{1}{2} \]</p></div></div><div class="final-answer"><p>The probability of getting different faces on the coins is \( \frac{1}{2} \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.2</h3>
-
-
-<p>The curved surface area of a right circular cylinder of height 14 cm is 88 cm². Find the diameter of the cylinder.</p>
-<p>Given that, C.S.A. of the cylinder = 88 cm²</p>
-<p>2πrh = 88</p>
-<p>2 × π × r × 14 = 88 (h = 14 cm)</p>
-<p>r = (88 × 7) / (22 × 14)</p>
-<p>Therefore, diameter = 2 cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The curved surface area of a right circular cylinder of height 14 cm is 88 cm². Find the diameter of the cylinder.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the curved surface area (C.S.A.) of the cylinder is 88 cm² and height (h) is 14 cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the curved surface area of a right circular cylinder is:</p><p>\[ \text{C.S.A.} = 2\pi rh \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula:</p><p>\[ 2 \times \pi \times r \times 14 = 88 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the equation to solve for radius (r):</p><p>\[ r = \frac{88 \times 7}{22 \times 14} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Calculate the radius:</p><p>\[ r = \frac{616}{308} = 2 \, \text{cm} \]</p></div></div><div class="final-answer"><p>The diameter of the cylinder is \( 2 \times 2 = 4 \, \text{cm} \).</p></div></div>
+</div>
 </body>
 </html>

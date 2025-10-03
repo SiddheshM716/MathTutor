@@ -1,41 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.44</h3>
-
-
-<p>If \( \alpha \) and \( \beta \) are the roots of \( x^2 + 7x + 10 = 0 \), find the values of:</p>
-<p>(i) \( \alpha - \beta \)</p>
-<p>(ii) \( \alpha^2 + \beta^2 \)</p>
-<p>(iii) \( \alpha^3 - \beta^3 \)</p>
-<p>(iv) \( \alpha^4 + \beta^4 \)</p>
-<p>(v) \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} \)</p>
-<p>(vi) \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} \)</p>
-<p>Solution:</p>
-<p>Given \( x^2 + 7x + 10 = 0 \), where \( a = 1 \), \( b = 7 \), \( c = 10 \).</p>
-<p>If \( \alpha \) and \( \beta \) are roots of the equation, then:</p>
-<p>\( \alpha + \beta = -\frac{7}{1} = -7 \); \( \alpha \beta = \frac{10}{1} = 10 \).</p>
-<p>(i) \( \alpha - \beta = \sqrt{(\alpha + \beta)^2 - 4\alpha \beta} = \sqrt{(-7)^2 - 4 \times 10} = \sqrt{49 - 40} = \sqrt{9} = 3 \).</p>
-<p>(ii) \( \alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha \beta = (-7)^2 - 2 \times 10 = 49 - 20 = 29 \).</p>
-<p>(iii) \( \alpha^3 - \beta^3 = (\alpha - \beta)^3 + 3\alpha \beta (\alpha - \beta) = (3)^3 + 3 \times 10 \times 3 = 27 + 90 = 117 \).</p>
-<p>(iv) \( \alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2\alpha^2 \beta^2 = 29^2 - 2 \times (10)^2 = 841 - 200 = 641 \).</p>
-<p>(v) \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} = \frac{\alpha^2 + \beta^2}{\alpha \beta} = \frac{29}{10} \).</p>
-<p>(vi) \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} = \frac{\alpha^4 + \beta^4}{\alpha \beta} = \frac{641}{10} \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( \alpha \) and \( \beta \) are the roots of \( x^2 + 7x + 10 = 0 \), find the values of:</p><p>(i) \( \alpha - \beta \)</p><p>(ii) \( \alpha^2 + \beta^2 \)</p><p>(iii) \( \alpha^3 - \beta^3 \)</p><p>(iv) \( \alpha^4 + \beta^4 \)</p><p>(v) \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} \)</p><p>(vi) \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the coefficients and sum/product of roots.</p><p>Given the quadratic equation \( x^2 + 7x + 10 = 0 \), we have \( a = 1 \), \( b = 7 \), \( c = 10 \).</p><p>The sum of the roots \( \alpha + \beta = -\frac{b}{a} = -7 \).</p><p>The product of the roots \( \alpha \beta = \frac{c}{a} = 10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Solve for \( \alpha - \beta \).</p><p>Using the formula \( \alpha - \beta = \sqrt{(\alpha + \beta)^2 - 4\alpha \beta} \).</p><p>Substitute the known values: \( \alpha - \beta = \sqrt{(-7)^2 - 4 \times 10} = \sqrt{49 - 40} = \sqrt{9} = 3 \).</p><p>Final Answer for (i): \( 3 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \( \alpha^2 + \beta^2 \).</p><p>Using the formula \( \alpha^2 + \beta^2 = (\alpha + \beta)^2 - 2\alpha \beta \).</p><p>Substitute the known values: \( \alpha^2 + \beta^2 = (-7)^2 - 2 \times 10 = 49 - 20 = 29 \).</p><p>Final Answer for (ii): \( 29 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve for \( \alpha^3 - \beta^3 \).</p><p>Using the formula \( \alpha^3 - \beta^3 = (\alpha - \beta)^3 + 3\alpha \beta (\alpha - \beta) \).</p><p>Substitute the known values: \( \alpha^3 - \beta^3 = (3)^3 + 3 \times 10 \times 3 = 27 + 90 = 117 \).</p><p>Final Answer for (iii): \( 117 \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \( \alpha^4 + \beta^4 \).</p><p>Using the formula \( \alpha^4 + \beta^4 = (\alpha^2 + \beta^2)^2 - 2\alpha^2 \beta^2 \).</p><p>Substitute the known values: \( \alpha^4 + \beta^4 = 29^2 - 2 \times (10)^2 = 841 - 200 = 641 \).</p><p>Final Answer for (iv): \( 641 \).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve for \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} \).</p><p>Using the formula \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} = \frac{\alpha^2 + \beta^2}{\alpha \beta} \).</p><p>Substitute the known values: \( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} = \frac{29}{10} \).</p><p>Final Answer for (v): \( \frac{29}{10} \).</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Solve for \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} \).</p><p>Using the formula \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} = \frac{\alpha^4 + \beta^4}{\alpha \beta} \).</p><p>Substitute the known values: \( \frac{\alpha^3}{\beta} + \frac{\beta^3}{\alpha} = \frac{641}{10} \).</p><p>Final Answer for (vi): \( \frac{641}{10} \).</p></div></div></div>
+</div>
 </body>
 </html>

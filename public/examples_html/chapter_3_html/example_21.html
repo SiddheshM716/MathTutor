@@ -1,58 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.21</h3>
-
-  <p>Find the square root of:</p>
-  <p>\(64x^4 - 16x^3 + 17x^2 - 2x + 1\)</p>
-
-  <h3>Solution:</h3>
-  <table style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <td style="padding: 0.5em; border-right: 1px solid; border-bottom: 1px solid;">\(8x^2 - x + 1\)</td>
-      <td style="padding: 0.5em; border-bottom: 1px solid;"></td>
-      <td style="padding: 0.5em; border-bottom: 1px solid;"></td>
-    </tr>
-    <tr>
-      <td style="padding: 0.5em; border-right: 1px solid;">\(8x^2\)</td>
-      <td style="padding: 0.5em;">\(\frac{64x^4 - 16x^3 + 17x^2 - 2x + 1}{64x^4}\)</td>
-      <td style="padding: 0.5em;">\((-)\)</td>
-    </tr>
-    <tr>
-      <td style="padding: 0.5em; border-right: 1px solid;">\(16x^2 - x\)</td>
-      <td style="padding: 0.5em;">\(\frac{-16x^3 + 17x^2}{-16x^3 + x^2}\)</td>
-      <td style="padding: 0.5em;">\((-)\)</td>
-    </tr>
-    <tr>
-      <td style="padding: 0.5em; border-right: 1px solid;">\(16x^2 - 2x + 1\)</td>
-      <td style="padding: 0.5em;">\(\frac{16x^2 - 2x + 1}{16x^2 - 2x + 1}\)</td>
-      <td style="padding: 0.5em;">\((-)\)</td>
-    </tr>
-    <tr>
-      <td style="padding: 0.5em; border-right: 1px solid;">0</td>
-      <td style="padding: 0.5em;"></td>
-      <td style="padding: 0.5em;"></td>
-    </tr>
-  </table>
-
-  <p><strong>Note:</strong> Before proceeding to find the square root of a polynomial, one has to ensure that the degrees of the variables are in descending or ascending order.</p>
-
-  <p>Therefore, \(\sqrt{64x^4 - 16x^3 + 17x^2 - 2x + 1} = |8x^2 - x + 1|\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the square root of:</p><p>\(64x^4 - 16x^3 + 17x^2 - 2x + 1\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Arrange the polynomial in descending order of degrees (already arranged).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the long division method to find the square root. The divisor starts with the square root of the first term, \(64x^4\), which is \(8x^2\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Perform the division as shown in the table:</p><p>\(8x^2 - x + 1\)</p><p>\(8x^2\)</p><p>\(\frac{64x^4 - 16x^3 + 17x^2 - 2x + 1}{64x^4}\)</p><p>\((-)\)</p><p>\(16x^2 - x\)</p><p>\(\frac{-16x^3 + 17x^2}{-16x^3 + x^2}\)</p><p>\((-)\)</p><p>\(16x^2 - 2x + 1\)</p><p>\(\frac{16x^2 - 2x + 1}{16x^2 - 2x + 1}\)</p><p>\((-)\)</p><p>0</p></div></div><div class="final-answer"><p>\(\sqrt{64x^4 - 16x^3 + 17x^2 - 2x + 1} = |8x^2 - x + 1|\)</p></div></div>
+</div>
 </body>
 </html>

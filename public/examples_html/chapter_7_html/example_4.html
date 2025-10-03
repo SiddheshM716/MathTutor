@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.4</h3>
-
-
-<p>If one litre of paint covers 10 m², how many litres of paint is required to paint the internal and external surface areas of a cylindrical tunnel whose thickness is 2 m, internal radius is 6 m and height is 25 m.</p>
-<p>Solution: Given that, height h = 25 m; thickness = 2 m</p>
-<p>Internal radius r = 6 m</p>
-<p>Now, external radius R = 6 + 2 = 8 m</p>
-<p>C.S.A. of the cylindrical tunnel = C.S.A. of the hollow cylinder</p>
-<p>C.S.A. of the hollow cylinder = 2π(R + r)h sq. units</p>
-<p>= 2π(8 + 6) × 25</p>
-<p>Hence, C.S.A. of the cylindrical tunnel = 2200 m²</p>
-<p>Area covered by one litre of paint = 10 m²</p>
-<p>Number of litres required to paint the tunnel = 2200 / 10 = 220</p>
-<p>Therefore, 220 litres of paint is needed to paint the tunnel.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If one litre of paint covers 10 m², how many litres of paint is required to paint the internal and external surface areas of a cylindrical tunnel whose thickness is 2 m, internal radius is 6 m and height is 25 m?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the height \( h = 25 \) m, thickness = 2 m, and internal radius \( r = 6 \) m.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the external radius \( R \).</p><p>Since thickness = 2 m,</p><p>\( R = r + \text{thickness} = 6 + 2 = 8 \) m.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the curved surface area (C.S.A.) of the hollow cylindrical tunnel using the formula:</p><p>\[ \text{C.S.A.} = 2\pi(R + r)h \]</p><p>Substitute the values:</p><p>\[ \text{C.S.A.} = 2\pi(8 + 6) \times 25 \]</p><p>\[ \text{C.S.A.} = 2\pi \times 14 \times 25 \]</p><p>\[ \text{C.S.A.} = 2200 \, \text{m}² \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the number of litres of paint required.</p><p>Given that 1 litre covers 10 m²,</p><p>\[ \text{Number of litres} = \frac{2200}{10} = 220 \]</p></div></div><div class="final-answer"><p>220 litres of paint is needed to paint the tunnel.</p></div></div>
+</div>
 </body>
 </html>

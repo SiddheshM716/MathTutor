@@ -1,56 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.48</h3>
-
-<p> A bus is travelling at a uniform speed of 50 km/hr. Draw the distance-time graph and hence find</p>
-<p>(i) the constant of variation</p>
-<p>(ii) how far will it travel in 90 minutes?</p>
-<p>(iii) the time required to cover a distance of 300 km from the graph.</p>
-<p>Solution</p>
-<p>Let x be the time taken in minutes and y be the distance travelled in km.</p>
-<table>
-  <tr>
-    <th>Time taken x (in minutes)</th>
-    <td>60</td>
-    <td>120</td>
-    <td>180</td>
-    <td>240</td>
-  </tr>
-  <tr>
-    <th>Distance y (in km)</th>
-    <td>50</td>
-    <td>100</td>
-    <td>150</td>
-    <td>200</td>
-  </tr>
-</table>
-<p>(i) Observe that as time increases, the distance travelled also increases. Therefore, the variation is a direct variation. It is of the form y = kx.</p>
-<p>Constant of variation</p>
-<p>\( \frac{y}{x} = \frac{50}{60} = \frac{100}{120} = \frac{150}{180} = \frac{200}{240} = \frac{5}{6} \)</p>
-<p>Hence, the relation may be given as</p>
-<p>\( y = \frac{5}{6}x \)</p>
-<p>(ii) From the graph, \( y = \frac{5}{6}x \) if \( x = 90 \),</p>
-<p>then \( y = \frac{5}{6} \times 90 = 75 \) km.</p>
-<p>The distance travelled for 90 minutes is 75 km.</p>
-<p>(iii) From the graph, \( y = \frac{5}{6}x \) if \( y = 300 \),</p>
-<p>then \( x = \frac{6}{5} \times 300 = 360 \) minutes (or) 6 hours.</p>
-<p>The time taken to cover 300 km is 360 minutes (or) 6 hours.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A bus is traveling at a uniform speed of 50 km/hr. Draw the distance-time graph and hence find:</p><p>the constant of variation</p><p>how far will it travel in 90 minutes?</p><p>the time required to cover a distance of 300 km from the graph.</p><p>Time taken x (in minutes)</p><p>60</p><p>120</p><p>180</p><p>240</p><p>Distance y (in km)</p><p>50</p><p>100</p><p>150</p><p>200</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the relationship between time (x) and distance (y). Since the bus travels at a uniform speed, the variation is direct and follows the form \( y = kx \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the constant of variation \( k \) using the formula \( k = \frac{y}{x} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Using the given data points:</p><p>\[</p><p>k = \frac{50}{60} = \frac{100}{120} = \frac{150}{180} = \frac{200}{240} = \frac{5}{6}</p><p>\]</p><p>Thus, the relationship is \( y = \frac{5}{6}x \).</p><p>Final Answer (i): The constant of variation is \( \frac{5}{6} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>To find the distance traveled in 90 minutes, substitute \( x = 90 \) into the equation \( y = \frac{5}{6}x \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Calculate \( y \):</p><p>\[</p><p>y = \frac{5}{6} \times 90 = 75 \text{ km}</p><p>\]</p><p>Final Answer (ii): The bus will travel 75 km in 90 minutes.</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>To find the time required to cover 300 km, substitute \( y = 300 \) into the equation \( y = \frac{5}{6}x \).</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Solve for \( x \):</p><p>\[</p><p>x = \frac{6}{5} \times 300 = 360 \text{ minutes (or 6 hours)}</p><p>\]</p><p>Final Answer (iii): The time required to cover 300 km is 360 minutes (or 6 hours).</p></div></div></div>
+</div>
 </body>
 </html>

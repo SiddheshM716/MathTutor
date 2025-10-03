@@ -1,45 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 2.43</h3>
-
-
-    <p>In a Geometric progression, the 4<sup>th</sup> term is <math><mfrac><mn>8</mn><mn>243</mn></mfrac></math> and the 7<sup>th</sup> term is <math><mfrac><mn>64</mn><mn>729</mn></mfrac></math>. Find the Geometric Progression.</p>
-    <p>Solution:</p>
-    <p>4<sup>th</sup> term, <math><msub><mi>t</mi><mn>4</mn></msub><mo>=</mo><mfrac><mn>8</mn><mn>243</mn></mfrac><mo>⇒</mo><mi>a</mi><msup><mi>r</mi><mn>3</mn></msup><mo>=</mo><mfrac><mn>8</mn><mn>243</mn></mfrac></math> ...(1)</p>
-    <p>7<sup>th</sup> term, <math><msub><mi>t</mi><mn>7</mn></msub><mo>=</mo><mfrac><mn>64</mn><mn>729</mn></mfrac><mo>⇒</mo><mi>a</mi><msup><mi>r</mi><mn>6</mn></msup><mo>=</mo><mfrac><mn>64</mn><mn>729</mn></mfrac></math> ...(2)</p>
-    <p>Dividing (2) by (1) we get, <math><mfrac><mrow><mi>a</mi><msup><mi>r</mi><mn>6</mn></msup></mrow><mrow><mi>a</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mfrac><mn>64</mn><mn>729</mn></mfrac><mfrac><mn>8</mn><mn>243</mn></mfrac></mfrac><mo>⇒</mo><msup><mi>r</mi><mn>3</mn></msup><mo>=</mo><mfrac><mn>8</mn><mn>27</mn></mfrac><mo>⇒</mo><mi>r</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math></p>
-    <p>Substituting the value of <math><mi>r</mi></math> in (1), we get <math><mi>a</mi><mo>×</mo><msup><mfenced><mfrac><mn>2</mn><mn>3</mn></mfrac></mfenced><mn>3</mn></msup><mo>=</mo><mfrac><mn>8</mn><mn>243</mn></mfrac><mo>⇒</mo><mi>a</mi><mo>=</mo><mfrac><mn>27</mn><mn>8</mn></mfrac></math></p>
-    <p>Therefore the Geometric Progression is <math><mi>a</mi><mo>,</mo><mi>a</mi><mi>r</mi><mo>,</mo><mi>a</mi><msup><mi>r</mi><mn>2</mn></msup><mo>,</mo><mo>...</mo></math> That is, <math><mfrac><mn>27</mn><mn>8</mn></mfrac><mo>,</mo><mfrac><mn>9</mn><mn>8</mn></mfrac><mo>,</mo><mfrac><mn>3</mn><mn>8</mn></mfrac><mo>,</mo><mo>...</mo></math></p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In a Geometric progression, the 4</p><p>th</p><p>term is \(\frac{8}{243}\) and the 7</p><p>th</p><p>term is \(\frac{64}{729}\). Find the Geometric Progression.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Write the expressions for the 4</p><p>th</p><p>and 7</p><p>th</p><p>terms using the formula for the \(n\)-th term of a GP, \(t_n = ar^{n-1}\).</p><p>For the 4</p><p>th</p><p>term:</p><p>\(t_4 = ar^3 = \frac{8}{243}\) ...(1)</p><p>For the 7</p><p>th</p><p>term:</p><p>\(t_7 = ar^6 = \frac{64}{729}\) ...(2)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Divide equation (2) by equation (1) to eliminate \(a\) and solve for \(r\).</p><p>\(\frac{ar^6}{ar^3} = \frac{\frac{64}{729}}{\frac{8}{243}}\)</p><p>Simplify:</p><p>\(r^3 = \frac{64}{729} \times \frac{243}{8} = \frac{8}{27}\)</p><p>Take the cube root:</p><p>\(r = \frac{2}{3}\)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute \(r = \frac{2}{3}\) back into equation (1) to find \(a\).</p><p>\(a \left(\frac{2}{3}\right)^3 = \frac{8}{243}\)</p><p>Calculate \(\left(\frac{2}{3}\right)^3\):</p><p>\(a \cdot \frac{8}{27} = \frac{8}{243}\)</p><p>Solve for \(a\):</p><p>\(a = \frac{8}{243} \times \frac{27}{8} = \frac{27}{8}\)</p></div></div><div class="final-answer"><p>The Geometric Progression is \(\frac{27}{8}, \frac{9}{8}, \frac{3}{8}, \dots\)</p></div></div>
+</div>
 </body>
 </html>

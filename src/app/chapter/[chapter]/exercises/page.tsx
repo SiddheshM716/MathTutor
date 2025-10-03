@@ -3,9 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 
-// Chapter data
+// Chapter data and helper functions
 const chapterList = [
   { name: "Relation and Functions", slug: "chapter_1_html" },
   { name: "Numbers and Sequences", slug: "chapter_2_html" },
@@ -29,20 +28,14 @@ const sortSets = (a: string, b: string) => {
   return aMinor - bMinor;
 };
 
-declare global {
-  interface Window {
-    MathJax: {
-      typesetPromise?: () => Promise<any>;
-    };
-  }
-}
+// --- FIX: The unnecessary 'declare global' block has been removed ---
 
 export default function ExerciseSetListPage() {
   const params = useParams();
   const chapter = params.chapter as string;
 
   const [exerciseSets, setExerciseSets] = useState<string[]>([]);
-  const [isMathJaxReady, setIsMathJaxReady] = useState(false);
+  // --- FIX: The unused 'isMathJaxReady' state has been removed ---
 
   const currentChapter = chapterList.find(c => c.slug === chapter);
   const chapterTitle = currentChapter ? currentChapter.name : "Chapter";
@@ -61,11 +54,7 @@ export default function ExerciseSetListPage() {
       });
   }, [chapter]);
 
-  useEffect(() => {
-    if (isMathJaxReady && exerciseSets.length > 0) {
-      window.MathJax?.typesetPromise?.();
-    }
-  }, [isMathJaxReady, exerciseSets]);
+  // --- FIX: The unnecessary MathJax useEffect has been removed ---
 
   if (!chapter || exerciseSets.length === 0) {
     return (
@@ -79,16 +68,16 @@ export default function ExerciseSetListPage() {
     <main className="bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-10">
-          {/* Back button and title wrapper */}
           <div className="flex items-center gap-4 md:block">
+            {/* --- FIX: Back button now navigates to the homepage --- */}
             <Link
-              href={`/chapter/${chapter}`}
+              href="/"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-3 md:py-3 md:px-5 rounded-lg text-lg inline-flex items-center md:gap-3 transition-colors shadow-sm flex-shrink-0"
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
               </svg>
-              <span className="hidden md:inline">Back</span>
+              <span className="hidden md:inline">All Chapters</span>
             </Link>
 
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold md:mt-6 capitalize text-gray-900">
@@ -97,7 +86,6 @@ export default function ExerciseSetListPage() {
               </span>
             </h1>
           </div>
-
           <p className="text-lg text-gray-500 mt-2">Select an exercise set to practice.</p>
         </div>
 
@@ -114,18 +102,11 @@ export default function ExerciseSetListPage() {
           ))}
         </ul>
       </div>
-
-      {/* MathJax Scripts for consistency */}
-      <Script id="mathjax-config" strategy="afterInteractive">
-        {`
-          window.MathJax = {
-            tex: {
-              inlineMath: [['$', '$'], ['\\\$begin:math:text$', '\\\\\\$end:math:text$']]
-            }
-          };
-        `}
-      </Script>
-      <Script id="mathjax-library" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" strategy="afterInteractive" onLoad={() => setIsMathJaxReady(true)} />
+      
+      {/* --- FIX: The unnecessary floating home button has been removed --- */}
+      {/* The back button now serves this purpose */}
+      
+      {/* --- FIX: The unnecessary MathJax Script tags have been removed --- */}
     </main>
   );
 }

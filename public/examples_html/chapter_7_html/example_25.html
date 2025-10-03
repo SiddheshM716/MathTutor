@@ -1,37 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.25</h3>
-
-<p> A jewel box is in the shape of a cuboid of dimensions 30 cm × 15 cm × 10 cm surmounted by a half part of a cylinder. Find the volume of the box.</p>
-<p>Solution:</p>
-<p>Let \( l \), \( b \), and \( h \) be the length, breadth, and height of the cuboid. Also, let \( r \) and \( h \) be the radius and height of the cylinder.</p>
-<p>Now, Volume of the box = Volume of the cuboid + (Volume of cylinder)</p>
-<p>\[
-= (l \times b \times h) + \frac{1}{2} (\pi r^2 h) \text{ cu. units}
-\]</p>
-<p>\[
-= (30 \times 15 \times 10) + \frac{1}{2} \left( \frac{22}{7} \times \left( \frac{15}{2} \right)^2 \times 30 \right)
-\]</p>
-<p>\[
-= 4500 + 2651.79 = 7151.79
-\]</p>
-<p>Therefore, Volume of the box = 7151.79 cm<sup>3</sup>.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A jewel box is in the shape of a cuboid of dimensions 30 cm × 15 cm × 10 cm surmounted by a half part of a cylinder. Find the volume of the box.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the dimensions of the cuboid and the cylinder.</p><p>Given cuboid dimensions: length \( l = 30 \) cm, breadth \( b = 15 \) cm, height \( h = 10 \) cm.</p><p>For the cylinder: radius \( r = \frac{15}{2} \) cm (since the cylinder is placed on the 15 cm side), height \( h = 30 \) cm (same as the length of the cuboid).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Write the formula for the total volume of the box.</p><p>Total Volume = Volume of the cuboid + \(\frac{1}{2}\) (Volume of the cylinder).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the volume of the cuboid.</p><p>Volume of cuboid = \( l \times b \times h = 30 \times 15 \times 10 = 4500 \) cm³.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the volume of the cylinder (half part).</p><p>Volume of cylinder = \( \pi r^2 h = \frac{22}{7} \times \left( \frac{15}{2} \right)^2 \times 30 \).</p><p>Half volume of cylinder = \( \frac{1}{2} \times \frac{22}{7} \times 56.25 \times 30 \approx 2651.79 \) cm³.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Add both volumes to get the total volume.</p><p>Total Volume = \( 4500 + 2651.79 = 7151.79 \) cm³.</p></div></div><div class="final-answer"><p>The volume of the box is \( 7151.79 \) cm³.</p></div></div>
+</div>
 </body>
 </html>

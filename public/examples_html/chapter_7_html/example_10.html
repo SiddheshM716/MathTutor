@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.10</h3>
-
-
-<p>If the base area of a hemispherical solid is 1386 sq. metres, then find its total surface area?</p>
-<p>Solution: Let \( r \) be the radius of the hemisphere.</p>
-<p>Given that, base area \( = \pi r^2 = 1386 \) sq. m and T.S.A. of a hollow sphere, the formula for finding the surface area of a hemisphere can be used.</p>
-<p>Therefore, T.S.A. of the hemispherical solid is \( 3 \times 1386 = 4158 \) m².</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the base area of a hemispherical solid is 1386 sq. metres, then find its total surface area?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( r \) be the radius of the hemisphere. The base area of the hemisphere is given as \( 1386 \) sq. metres.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The base area of a hemisphere is a circle, so its area formula is \( \pi r^2 = 1386 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>The total surface area (T.S.A.) of a solid hemisphere includes the curved surface area and the base area. The formula is \( 3\pi r^2 \), since the curved surface area is \( 2\pi r^2 \) and the base area is \( \pi r^2 \).</p><p>Given \( \pi r^2 = 1386 \), the T.S.A. is calculated as \( 3 \times 1386 = 4158 \).</p></div></div><div class="final-answer"><p>The total surface area of the hemispherical solid is \( 4158 \) m².</p></div></div>
+</div>
 </body>
 </html>

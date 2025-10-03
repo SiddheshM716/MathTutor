@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.25</h3>
-
-
-<p>Find the 15<sup>th</sup>, 24<sup>th</sup> and n<sup>th</sup> term (general term) of an A.P. given by 3, 15, 27, 39,...</p>
-<p>Solution: We have, first term = a = 3 and common difference = d = 15 - 3 = 12.</p>
-<p>We know that n<sup>th</sup> term (general term) of an A.P. with first term a and common difference d is given by t<sub>n</sub> = a + (n - 1)d</p>
-<p>t<sub>15</sub> = a + (15 - 1)d = a + 14d = 3 + 14(12) = 171</p>
-<p>t<sub>24</sub> = a + (24 - 1)d = a + 23d = 3 + 23(12) = 279</p>
-<p>The n<sup>th</sup> (general term) term is given by t<sub>n</sub> = a + (n - 1)d</p>
-<p>Thus, t<sub>n</sub> = 3 + (n - 1)12</p>
-<p>t<sub>n</sub> = 12n - 9</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the 15</p><p>th</p><p>, 24</p><p>th</p><p>and n</p><p>th</p><p>term (general term) of an A.P. given by 3, 15, 27, 39,...</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the first term (a) and common difference (d) of the A.P.</p><p>Given the sequence 3, 15, 27, 39,..., we have:</p><p>First term \( a = 3 \)</p><p>Common difference \( d = 15 - 3 = 12 \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the formula for the n</p><p>th</p><p>term of an A.P.</p><p>The n</p><p>th</p><p>term \( t_n \) is given by:</p><p>\[ t_n = a + (n - 1)d \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the 15</p><p>th</p><p>term \( t_{15} \).</p><p>\[ t_{15} = 3 + (15 - 1) \times 12 \]</p><p>\[ t_{15} = 3 + 14 \times 12 \]</p><p>\[ t_{15} = 3 + 168 \]</p><p>\[ t_{15} = 171 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the 24</p><p>th</p><p>term \( t_{24} \).</p><p>\[ t_{24} = 3 + (24 - 1) \times 12 \]</p><p>\[ t_{24} = 3 + 23 \times 12 \]</p><p>\[ t_{24} = 3 + 276 \]</p><p>\[ t_{24} = 279 \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Derive the general term \( t_n \).</p><p>\[ t_n = 3 + (n - 1) \times 12 \]</p><p>\[ t_n = 3 + 12n - 12 \]</p><p>\[ t_n = 12n - 9 \]</p></div></div><div class="final-answer"><p>15</p><p>th</p><p>term = 171,</p><p>24</p><p>th</p><p>term = 279,</p><p>General term \( t_n = 12n - 9 \).</p></div></div>
+</div>
 </body>
 </html>

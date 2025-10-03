@@ -1,49 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.2</h3>
-
-
-<p>Find the range of the following distribution.</p>
-<table>
-  <tr>
-    <th>Age (in years)</th>
-    <td>16-18</td>
-    <td>18-20</td>
-    <td>20-22</td>
-    <td>22-24</td>
-    <td>24-26</td>
-    <td>26-28</td>
-  </tr>
-  <tr>
-    <th>Number of students</th>
-    <td>0</td>
-    <td>4</td>
-    <td>6</td>
-    <td>8</td>
-    <td>2</td>
-    <td>2</td>
-  </tr>
-</table>
-<p>Largest value \( L = 28 \)</p>
-<p>Smallest value \( S = 18 \)</p>
-<p>Range \( R = L - S \)</p>
-<p>\( R = 28 - 18 = 10 \) Years</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the range of the following distribution.</p><p>Age (in years)</p><p>16-18</p><p>18-20</p><p>20-22</p><p>22-24</p><p>24-26</p><p>26-28</p><p>Number of students</p><p>0</p><p>4</p><p>6</p><p>8</p><p>2</p><p>2</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the largest value \( L \) and smallest value \( S \) from the given distribution.</p><p>Here, \( L = 28 \) (highest age limit) and \( S = 18 \) (lowest age limit).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the range formula:</p><p>\[ R = L - S \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values and calculate:</p><p>\[ R = 28 - 18 = 10 \]</p></div></div><div class="final-answer"><p>The range is \( 10 \) years.</p></div></div>
+</div>
 </body>
 </html>

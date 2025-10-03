@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
-  <body>
-<h3>Example 2.31</h3>
-
-
-    <p>Find the sum of first 15 terms of the A.P. 8, 6.5.</p>
-    <p>Solution: Here the first term a = 8, common difference d = 6.5 - 8 = -1.5;</p>
-    <p>Sum of first n terms of an A.P. S<sub>n</sub> = <sup>n</sup>&frasl;<sub>2</sub> [2a + (n - 1)d]</p>
-    <p>S<sub>15</sub> = <sup>15</sup>&frasl;<sub>2</sub> [2 × 8 + (15 - 1)(-1.5)]</p>
-    <p>S<sub>15</sub> = <sup>15</sup>&frasl;<sub>2</sub> [16 - 21] = <sup>15</sup>&frasl;<sub>2</sub> × (-5) = -37.5</p>
-  </body>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum of the first 15 terms of the A.P. 8, 6.5.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values.</p><p>First term \( a = 8 \), common difference \( d = 6.5 - 8 = -1.5 \), and number of terms \( n = 15 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the formula for the sum of the first \( n \) terms of an A.P.</p><p>The formula is:</p><p>\[ S_n = \frac{n}{2} [2a + (n - 1)d] \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values into the formula and calculate.</p><p>\[ S_{15} = \frac{15}{2} [2 \times 8 + (15 - 1)(-1.5)] \]</p><p>\[ S_{15} = \frac{15}{2} [16 + 14 \times (-1.5)] \]</p><p>\[ S_{15} = \frac{15}{2} [16 - 21] \]</p><p>\[ S_{15} = \frac{15}{2} \times (-5) \]</p><p>\[ S_{15} = -37.5 \]</p></div></div><div class="final-answer"><p>The sum of the first 15 terms is \(-37.5\).</p></div></div>
+</div>
+</body>
 </html>

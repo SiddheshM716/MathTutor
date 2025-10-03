@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.38</h3>
-
-
-<p>The houses of a street are numbered from 1 to 49. Senthil’s house is numbered such that the sum of numbers of the houses prior to Senthil’s house is equal to the sum of numbers of the houses following Senthil’s house. Find Senthil’s house number?</p>
-<p>Solution: Let Senthil’s house number be \( z \).</p>
-<p>It is given that \( 1 + 2 + 3 + \dots + (z - 1) = (z + 1) + (z + 2) + \dots + 49 \).</p>
-<p>\( 1 + 2 + 3 + \dots + (z - 1) = [1 + 2 + 3 + \dots + 49] - [1 + 2 + 3 + \dots + z] \).</p>
-<p>\( \frac{z(z - 1)}{2} = \frac{49 \times 50}{2} - \frac{z(z + 1)}{2} \).</p>
-<p>\( z^2 - z = 2450 - z^2 - z \).</p>
-<p>\( 2z^2 = 2450 \).</p>
-<p>\( z^2 = 1225 \).</p>
-<p>\( z = 35 \).</p>
-<p>Therefore, Senthil’s house number is 35.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The houses of a street are numbered from 1 to 49. Senthil’s house is numbered such that the sum of numbers of the houses prior to Senthil’s house is equal to the sum of numbers of the houses following Senthil’s house. Find Senthil’s house number?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let Senthil’s house number be \( z \). According to the problem, the sum of the house numbers before Senthil’s house equals the sum of the house numbers after Senthil’s house.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Express the given condition mathematically:</p><p>\[ 1 + 2 + 3 + \dots + (z - 1) = (z + 1) + (z + 2) + \dots + 49 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite the right-hand side using the sum of the first 49 natural numbers minus the sum of the first \( z \) natural numbers:</p><p>\[ 1 + 2 + 3 + \dots + (z - 1) = [1 + 2 + 3 + \dots + 49] - [1 + 2 + 3 + \dots + z] \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Apply the formula for the sum of the first \( n \) natural numbers, \( \frac{n(n + 1)}{2} \):</p><p>\[ \frac{z(z - 1)}{2} = \frac{49 \times 50}{2} - \frac{z(z + 1)}{2} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the equation:</p><p>\[ z^2 - z = 2450 - z^2 - z \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Combine like terms and solve for \( z \):</p><p>\[ 2z^2 = 2450 \]</p><p>\[ z^2 = 1225 \]</p><p>\[ z = 35 \]</p></div></div><div class="final-answer"><p>Senthil’s house number is \( 35 \).</p></div></div>
+</div>
 </body>
 </html>

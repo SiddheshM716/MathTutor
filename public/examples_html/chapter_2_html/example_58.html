@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.58</h3>
-
-<p> If 1 + 2 + 3 + ... + n = 666 then find n.</p>
-<p>Solution Since, 1 + 2 + 3 + ... + n = n(n + 1)/2, we have n(n + 1)/2 = 666</p>
-<p>n² + n − 1332 = 0 ⇒ (n + 37)(n − 36) = 0</p>
-<p>So, n = −37 or n = 36</p>
-<p>But n ≠ −37 (∵ n is a natural number); Hence n = 36.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \(1 + 2 + 3 + \dots + n = 666\), then find \(n\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Recognize that the sum of the first \(n\) natural numbers is given by the formula for the sum of an arithmetic series.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the sum of the first \(n\) natural numbers is:</p><p>\[</p><p>S = \frac{n(n + 1)}{2}</p><p>\]</p><p>Given \(S = 666\), substitute into the formula:</p><p>\[</p><p>\frac{n(n + 1)}{2} = 666</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Multiply both sides by 2 to eliminate the denominator:</p><p>\[</p><p>n(n + 1) = 1332</p><p>\]</p><p>Expand and rearrange the equation into standard quadratic form:</p><p>\[</p><p>n^2 + n - 1332 = 0</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Factor the quadratic equation:</p><p>\[</p><p>(n + 37)(n - 36) = 0</p><p>\]</p><p>This gives the solutions:</p><p>\[</p><p>n = -37 \quad \text{or} \quad n = 36</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Since \(n\) must be a natural number, discard \(n = -37\).</p></div></div><div class="final-answer"><p>\(n = 36\)</p></div></div>
+</div>
 </body>
 </html>

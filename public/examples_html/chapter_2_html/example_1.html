@@ -1,55 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
 <body>
-<h3>Example 2.1</h3>
-<p>We have 34 cakes. Each box can hold 5 cakes only. How many boxes we need to pack and how many cakes are unpacked?</p>
-
-<p><b>Solution</b> We see that 6 boxes are required to pack 30 cakes with 4 cakes left over. This distribution of cakes can be understood as follows:</p>
-
-<table border="1" cellspacing="0" cellpadding="8">
-  <tr>
-    <td>34</td>
-    <td>=</td>
-    <td>5</td>
-    <td>×</td>
-    <td>6</td>
-    <td>+</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>Total number of cakes</td>
-    <td>=</td>
-    <td>Number of cakes in each box</td>
-    <td>×</td>
-    <td>Number of boxes</td>
-    <td>+</td>
-    <td>Number of cakes left over</td>
-  </tr>
-  <tr>
-    <td>↓<br>(Dividend)<br>\( a \)</td>
-    <td></td>
-    <td>↓<br>(Divisor)<br>\( b \)</td>
-    <td></td>
-    <td>↓<br>(Quotient)<br>\( q \)</td>
-    <td></td>
-    <td>↓<br>(Remainder)<br>\( r \)</td>
-  </tr>
-</table>
-
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>We have 34 cakes. Each box can hold 5 cakes only. How many boxes do we need to pack, and how many cakes are left unpacked?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Understand the problem. We need to divide 34 cakes into boxes, each holding 5 cakes, and find the number of full boxes and leftover cakes.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the division formula:</p><p>\[ a = b \times q + r \]</p><p>where:</p><p>- \( a = 34 \) (total cakes),</p><p>- \( b = 5 \) (cakes per box),</p><p>- \( q \) (number of boxes),</p><p>- \( r \) (leftover cakes).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Perform the division:</p><p>\[ 34 \div 5 = 6 \) with a remainder of \( 4 \).</p><p>This gives:</p><p>\[ 34 = 5 \times 6 + 4 \]</p></div></div><div class="final-answer"><p>We need 6 boxes, and 4 cakes will remain unpacked.</p></div></div>
+</div>
 </body>
 </html>

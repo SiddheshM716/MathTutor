@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.21</h3>
-
-
-<p>The general term of a sequence is defined as</p>
-<p>\( a_n = \begin{cases} 
-n(n + 3) & \text{if } n \text{ is odd} \\
-n^2 + 1 & \text{if } n \text{ is even}
-\end{cases} \)</p>
-<p>Find the eleventh and eighteenth terms.</p>
-<p>To find \( a_{11} \), since 11 is odd, we put \( n = 11 \) in \( a_n = n(n + 3) \).</p>
-<p>Thus, the eleventh term \( a_{11} = 11(11 + 3) = 154 \).</p>
-<p>To find \( a_{18} \), since 18 is even, we put \( n = 18 \) in \( a_n = n^2 + 1 \).</p>
-<p>Thus, the eighteenth term \( a_{18} = 18^2 + 1 = 325 \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The general term of a sequence is defined as</p><p>\( a_n = \begin{cases}</p><p>n(n + 3) &amp; \text{if } n \text{ is odd} \\</p><p>n^2 + 1 &amp; \text{if } n \text{ is even}</p><p>\end{cases} \)</p><p>Find the eleventh and eighteenth terms.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify whether the term number is odd or even. For \( a_{11} \), 11 is odd. For \( a_{18} \), 18 is even.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For odd \( n \), use the formula \( a_n = n(n + 3) \). For even \( n \), use the formula \( a_n = n^2 + 1 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate \( a_{11} \) using the odd formula:</p><p>\[ a_{11} = 11(11 + 3) = 11 \times 14 = 154 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate \( a_{18} \) using the even formula:</p><p>\[ a_{18} = 18^2 + 1 = 324 + 1 = 325 \]</p></div></div><div class="final-answer"><p>The eleventh term is \( 154 \) and the eighteenth term is \( 325 \).</p></div></div>
+</div>
 </body>
 </html>

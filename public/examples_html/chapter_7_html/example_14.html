@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.14</h3>
-
-
-<p>An industrial metallic bucket is in the shape of the frustum of a right circular cone whose top and bottom diameters are 10 m and 4 m and whose height is 4 m. Find the curved and total surface area of the bucket.</p>
-<p>Let \( h \), \( l \), \( R \) and \( r \) be the height, slant height, top radius and bottom radius of the frustum.</p>
-<p>Given that, diameter of the top = 10 m; radius of the top \( R = 5 \) m. Diameter of the bottom = 4 m; radius of the bottom \( r = 2 \) m, height \( h = 4 \) m.</p>
-<p>Now, \( l = \sqrt{h^2 + (R - r)^2} \)</p>
-<p>\( l = \sqrt{16 + 9} = \sqrt{25} = 5 \) m</p>
-<p>Curved Surface Area (C.S.A.) = \( \pi(R + r)l \) sq. units</p>
-<p>\( C.S.A. = \pi(5 + 2) \times 5 = 110 \) m<sup>2</sup></p>
-<p>Total Surface Area (T.S.A.) = \( \pi(R + r)l + \pi R^2 + \pi r^2 \) sq. units</p>
-<p>\( T.S.A. = \pi[(5 + 2) \times 5 + 25 + 4] = 201.14 \) m<sup>2</sup></p>
-<p>Therefore, C.S.A. = 110 m<sup>2</sup> and T.S.A. = 201.14 m<sup>2</sup></p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>An industrial metallic bucket is in the shape of the frustum of a right circular cone whose top and bottom diameters are 10 m and 4 m and whose height is 4 m. Find the curved and total surface area of the bucket.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given parameters.</p><p>Given:</p><p>Top diameter = 10 m → Top radius \( R = 5 \) m</p><p>Bottom diameter = 4 m → Bottom radius \( r = 2 \) m</p><p>Height \( h = 4 \) m</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the slant height \( l \) using the formula:</p><p>\[ l = \sqrt{h^2 + (R - r)^2} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values into the formula:</p><p>\[ l = \sqrt{4^2 + (5 - 2)^2} = \sqrt{16 + 9} = \sqrt{25} = 5 \text{ m} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the Curved Surface Area (C.S.A.) using the formula:</p><p>\[ C.S.A. = \pi(R + r)l \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute the values:</p><p>\[ C.S.A. = \pi(5 + 2) \times 5 = 35\pi \approx 110 \text{ m}^2 \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Calculate the Total Surface Area (T.S.A.) using the formula:</p><p>\[ T.S.A. = \pi(R + r)l + \pi R^2 + \pi r^2 \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Substitute the values:</p><p>\[ T.S.A. = \pi[(5 + 2) \times 5 + 5^2 + 2^2] = \pi[35 + 25 + 4] = 64\pi \approx 201.14 \text{ m}^2 \]</p></div></div><div class="final-answer"><p>Curved Surface Area (C.S.A.) = 110 m²</p><p>Total Surface Area (T.S.A.) = 201.14 m²</p></div></div>
+</div>
 </body>
 </html>

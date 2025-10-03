@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.50</h3>
-
-
-<p>Find the rational form of the number 0.6666...</p>
-<p>Solution: We can express the number 0.6666... as follows:</p>
-<p>0.6666... = 0.6 + 0.06 + 0.006 + 0.0006 + ...</p>
-<p>We now see that numbers 0.6, 0.06, 0.006... form a G.P. whose first term \( a = 0.6 \) and common ratio \( r = 0.1 \). Also \( -1 < r = 0.1 < 1 \).</p>
-<p>Using the infinite G.P. formula, we have:</p>
-<p>\[ 0.6666... = \frac{0.6}{1 - 0.1} = \frac{0.6}{0.9} = \frac{2}{3} \]</p>
-<p>Thus the rational number equivalent of 0.6666... is \( \frac{2}{3} \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the rational form of the number 0.6666...</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Express the repeating decimal as an infinite series:</p><p>0.6666... = 0.6 + 0.06 + 0.006 + 0.0006 + ...</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Identify the series as a geometric progression (G.P.) with first term \( a = 0.6 \) and common ratio \( r = 0.1 \). Since \( -1 &lt; r &lt; 1 \), the infinite G.P. formula applies.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the infinite G.P. sum formula \( S = \frac{a}{1 - r} \):</p><p>\[ 0.6666... = \frac{0.6}{1 - 0.1} = \frac{0.6}{0.9} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the fraction:</p><p>\[ \frac{0.6}{0.9} = \frac{6}{9} = \frac{2}{3} \]</p></div></div><div class="final-answer"><p>The rational form of 0.6666... is \( \frac{2}{3} \).</p></div></div>
+</div>
 </body>
 </html>

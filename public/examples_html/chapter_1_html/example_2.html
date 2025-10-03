@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.2</h3>
-
-
-<p>If \( A \times B = \{(3,2), (3,4), (5,2), (5,4)\} \) then find \( A \) and \( B \).</p>
-<p>\( A \times B = \{(3,2), (3,4), (5,2), (5,4)\} \)</p>
-<p>We have \( A = \{ \text{set of all first coordinates of elements of } A \times B \} \). Thus, \( A = \{3,5\} \).</p>
-<p>\( B = \{ \text{set of all second coordinates of elements of } A \times B \} \). Thus, \( B = \{2,4\} \).</p>
-<p>Thus \( A = \{3,5\} \) and \( B = \{2,4\} \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A \times B = \{(3,2), (3,4), (5,2), (5,4)\} \) then find \( A \) and \( B \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the first coordinates of all ordered pairs in \( A \times B \) to determine set \( A \).</p><p>The first coordinates are \( 3, 3, 5, 5 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Remove duplicates to form set \( A \).</p><p>Thus, \( A = \{3, 5\} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Identify the second coordinates of all ordered pairs in \( A \times B \) to determine set \( B \).</p><p>The second coordinates are \( 2, 4, 2, 4 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Remove duplicates to form set \( B \).</p><p>Thus, \( B = \{2, 4\} \).</p></div></div><div class="final-answer"><p>\( A = \{3, 5\} \) and \( B = \{2, 4\} \).</p></div></div>
+</div>
 </body>
 </html>

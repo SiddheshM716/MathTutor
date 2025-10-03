@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.15</h3>
-
-
-<p>In the Fig.4.39, AD is the bisector of ∠A. If BD = 4cm, DC = 3cm and AB = 6cm, find AC.</p>
-<p>Solution: In ΔABC, AD is the bisector of ∠A.</p>
-<p>By Angle Bisector Theorem:</p>
-<p>\(\frac{BD}{DC} = \frac{AB}{AC}\)</p>
-<p>\(\frac{4}{3} = \frac{6}{AC}\)</p>
-<p>\(4 \times AC = 6 \times 3\)</p>
-<p>\(4AC = 18\)</p>
-<p>\(AC = \frac{18}{4} = 4.5\) cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In the Fig.4.39, AD is the bisector of ∠A. If BD = 4cm, DC = 3cm and AB = 6cm, find AC.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>In ΔABC, AD is the bisector of ∠A. We can use the Angle Bisector Theorem to solve for AC.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The Angle Bisector Theorem states: \(\frac{BD}{DC} = \frac{AB}{AC}\)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the theorem:</p><p>\(\frac{4}{3} = \frac{6}{AC}\)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Cross-multiply to solve for AC:</p><p>\(4 \times AC = 6 \times 3\)</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the equation:</p><p>\(4AC = 18\)</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Divide both sides by 4 to find AC:</p><p>\(AC = \frac{18}{4} = 4.5\)</p></div></div><div class="final-answer"><p>\(AC = 4.5\) cm</p></div></div>
+</div>
 </body>
 </html>

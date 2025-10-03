@@ -1,61 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.4</h3>
-
-  
-  <p>The number of televisions sold each day of a week are: 13, 8, 4, 9, 7, 12, 10. Find the standard deviation.</p>
-
-  <h3>Solution</h3>
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>Day</th>
-      <th>Sales (xᵢ)</th>
-      <th>xᵢ²</th>
-    </tr>
-    <tr><td>1</td><td>13</td><td>169</td></tr>
-    <tr><td>2</td><td>8</td><td>64</td></tr>
-    <tr><td>3</td><td>4</td><td>16</td></tr>
-    <tr><td>4</td><td>9</td><td>81</td></tr>
-    <tr><td>5</td><td>7</td><td>49</td></tr>
-    <tr><td>6</td><td>12</td><td>144</td></tr>
-    <tr><td>7</td><td>10</td><td>100</td></tr>
-    <tr>
-      <td><strong>Total</strong></td>
-      <td>Σxᵢ = 63</td>
-      <td>Σxᵢ² = 623</td>
-    </tr>
-  </table>
-
-  <p>Using the standard deviation formula:</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\Sigma x_i^2}{n} - \left(\frac{\Sigma x_i}{n}\right)^2}
-  \]</p>
-  <p>\[
-  = \sqrt{\frac{623}{7} - \left(\frac{63}{7}\right)^2} = \sqrt{89 - 81} = \sqrt{8} \approx 2.83
-  \]</p>
-
-  <h4>Alternative Mean Method</h4>
-  <p>Standard deviation can also be calculated as:</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\Sigma (x_i - \overline{x})^2}{n}}
-  \]</p>
-  <p>Where \( \overline{x} = \frac{63}{7} = 9 \) is the mean, and \( d_i = x_i - \overline{x} \) are the deviations.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The number of televisions sold each day of a week are: 13, 8, 4, 9, 7, 12, 10. Find the standard deviation.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>First, we tabulate the data and calculate the necessary sums.</p><p>Day</p><p>Sales (xᵢ)</p><p>xᵢ²</p><p>1</p><p>13</p><p>169</p><p>2</p><p>8</p><p>64</p><p>3</p><p>4</p><p>16</p><p>4</p><p>9</p><p>81</p><p>5</p><p>7</p><p>49</p><p>6</p><p>12</p><p>144</p><p>7</p><p>10</p><p>100</p><p>Total</p><p>Σxᵢ = 63</p><p>Σxᵢ² = 623</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>We use the standard deviation formula for a population:</p><p>\[</p><p>\sigma = \sqrt{\frac{\Sigma x_i^2}{n} - \left(\frac{\Sigma x_i}{n}\right)^2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values and calculate:</p><p>\[</p><p>\sigma = \sqrt{\frac{623}{7} - \left(\frac{63}{7}\right)^2} = \sqrt{89 - 81} = \sqrt{8} \approx 2.83</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation is approximately \( 2.83 \).</p></div></div>
+</div>
 </body>
 </html>

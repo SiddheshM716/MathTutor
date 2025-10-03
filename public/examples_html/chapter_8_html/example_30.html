@@ -1,41 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.30</h3>
-
-
-<p>In a class of 50 students, 28 opted for NCC, 30 opted for NSS and 18 opted both NCC and NSS. One of the students is selected at random. Find the probability that</p>
-<p>(i) The student opted for NCC but not NSS.</p>
-<p>(ii) The student opted for NSS but not NCC.</p>
-<p>(iii) The student opted for exactly one of them.</p>
-<p>Solution: Total number of students n(S) = 50.</p>
-<p>Let A and B be the events of students opted for NCC and NSS respectively.</p>
-<p>n(A) = 28, n(B) = 30, n(A ∩ B) = 18</p>
-<p>P(A) = n(A)/n(S) = 28/50, P(B) = n(B)/n(S) = 30/50</p>
-<p>P(A ∩ B) = n(A ∩ B)/n(S) = 18/50</p>
-<p>(i) Probability of the students opted for NCC but not NSS</p>
-<p>P(A ∩ B') = P(A) - P(A ∩ B) = 28/50 - 18/50 = 10/50 = 1/5</p>
-<p>(ii) Probability of the students opted for NSS but not NCC</p>
-<p>P(A' ∩ B) = P(B) - P(A ∩ B) = 30/50 - 18/50 = 12/50 = 6/25</p>
-<p>(iii) Probability of the students opted for exactly one of them</p>
-<p>= P[(A ∩ B') ∪ (A' ∩ B)]</p>
-<p>= P(A ∩ B') + P(A' ∩ B)</p>
-<p>= 10/50 + 12/50 = 22/50 = 11/25</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In a class of 50 students, 28 opted for NCC, 30 opted for NSS and 18 opted both NCC and NSS. One of the students is selected at random. Find the probability that:</p><p>(i) The student opted for NCC but not NSS.</p><p>(ii) The student opted for NSS but not NCC.</p><p>(iii) The student opted for exactly one of them.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the total number of students and the given data.</p><p>Total number of students \( n(S) = 50 \).</p><p>Let \( A \) be the event of students opting for NCC, and \( B \) be the event of students opting for NSS.</p><p>Given: \( n(A) = 28 \), \( n(B) = 30 \), \( n(A \cap B) = 18 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the probabilities of events \( A \), \( B \), and \( A \cap B \).</p><p>\( P(A) = \frac{n(A)}{n(S)} = \frac{28}{50} \).</p><p>\( P(B) = \frac{n(B)}{n(S)} = \frac{30}{50} \).</p><p>\( P(A \cap B) = \frac{n(A \cap B)}{n(S)} = \frac{18}{50} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the probability that the student opted for NCC but not NSS.</p><p>Use the formula \( P(A \cap B') = P(A) - P(A \cap B) \).</p><p>Calculation: \( P(A \cap B') = \frac{28}{50} - \frac{18}{50} = \frac{10}{50} = \frac{1}{5} \).</p><p>Final Answer (i): \( \frac{1}{5} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Find the probability that the student opted for NSS but not NCC.</p><p>Use the formula \( P(A' \cap B) = P(B) - P(A \cap B) \).</p><p>Calculation: \( P(A' \cap B) = \frac{30}{50} - \frac{18}{50} = \frac{12}{50} = \frac{6}{25} \).</p><p>Final Answer (ii): \( \frac{6}{25} \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Find the probability that the student opted for exactly one of them.</p><p>Use the formula \( P(\text{exactly one}) = P(A \cap B') + P(A' \cap B) \).</p><p>Calculation: \( \frac{10}{50} + \frac{12}{50} = \frac{22}{50} = \frac{11}{25} \).</p><p>Final Answer (iii): \( \frac{11}{25} \).</p></div></div></div>
+</div>
 </body>
 </html>

@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.10</h3>
-
-<p> 'a' and 'b' are two positive integers such that a × b = 800. Find the values of 'a' and 'b'.</p>
-<p>Solution: The number 800 can be factorized as:</p>
-<p>800 = 2 × 2 × 2 × 2 × 2 × 5 × 5 = 2<sup>5</sup> × 5<sup>2</sup></p>
-<p>Hence, a × b = 2<sup>5</sup> × 5<sup>2</sup></p>
-<p>This implies that a = 2 and b = 5 (or) a = 5 and b = 2.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>'a' and 'b' are two positive integers such that \( a \times b = 800 \). Find the values of 'a' and 'b'.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Factorize the number 800 into its prime factors.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The prime factorization of 800 is:</p><p>\[ 800 = 2 \times 2 \times 2 \times 2 \times 2 \times 5 \times 5 = 2^5 \times 5^2 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Given \( a \times b = 800 \), we can assign the prime factors to 'a' and 'b' in the simplest case:</p><p>\[ a = 2 \quad \text{and} \quad b = 2^4 \times 5^2 = 400 \]</p><p>or</p><p>\[ a = 5 \quad \text{and} \quad b = 2^5 \times 5 = 160 \]</p><p>or other combinations.</p></div></div><div class="final-answer"><p>The simplest integer pairs \((a, b)\) are \((2, 400)\) and \((5, 160)\). However, if 'a' and 'b' are required to be prime factors, then \((a, b) = (2, 5)\) or \((5, 2)\).</p></div></div>
+</div>
 </body>
 </html>

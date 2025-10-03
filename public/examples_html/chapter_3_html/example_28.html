@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.28</h3>
-
-
-<p>Solve \(x^4 - 13x^2 + 42 = 0\)</p>
-<p>Solution: Let \(x^2 = a\). Then, \(x^4 - 13x^2 + 42 = a^2 - 13a + 42 = (a - 7)(a - 6)\)</p>
-<p>Given, \((a - 7)(a - 6) = 0\) we get, \(a = 7\) or \(6\).</p>
-<p>Since \(a = x^2\), \(x^2 = 7\) then, \(x = \pm \sqrt{7}\) or \(x^2 = 6\) we get, \(x = \pm \sqrt{6}\)</p>
-<p>Therefore the roots are \(x = \pm \sqrt{7}\) or \(x = \pm \sqrt{6}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \(x^4 - 13x^2 + 42 = 0\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \(x^2 = a\). Substitute into the equation to simplify it:</p><p>\[</p><p>x^4 - 13x^2 + 42 = a^2 - 13a + 42.</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Factor the quadratic equation:</p><p>\[</p><p>a^2 - 13a + 42 = (a - 7)(a - 6).</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \(a\) by setting each factor to zero:</p><p>\[</p><p>(a - 7)(a - 6) = 0 \implies a = 7 \text{ or } a = 6.</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute back \(a = x^2\) and solve for \(x\):</p><p>\[</p><p>x^2 = 7 \implies x = \pm \sqrt{7},</p><p>\]</p><p>\[</p><p>x^2 = 6 \implies x = \pm \sqrt{6}.</p><p>\]</p></div></div><div class="final-answer"><p>The roots are \(x = \pm \sqrt{7}\) or \(x = \pm \sqrt{6}\).</p></div></div>
+</div>
 </body>
 </html>

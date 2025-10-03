@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.8</h3>
-
-
-<p>Find the diameter of a sphere whose surface area is 154 m<sup>2</sup>.</p>
-<p>Solution: Let \( r \) be the radius of the sphere.</p>
-<p>Given that, surface area of sphere = 154 m<sup>2</sup>.</p>
-<p>\[ 4\pi r^2 = 154 \]</p>
-<p>\[ 4 \times \frac{22}{7} \times r^2 = 154 \]</p>
-<p>\[ r^2 = \frac{154 \times 7}{4 \times 22} \]</p>
-<p>\[ r^2 = \frac{1078}{88} \]</p>
-<p>\[ r^2 = \frac{49}{4} \]</p>
-<p>\[ r = \frac{7}{2} \]</p>
-<p>Therefore, diameter is 7 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the diameter of a sphere whose surface area is 154 m</p><p>2</p><p>.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( r \) be the radius of the sphere. The surface area of the sphere is given as 154 m</p><p>2</p><p>.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the surface area of a sphere is \( 4\pi r^2 \).</p><p>\[ 4\pi r^2 = 154 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute \( \pi = \frac{22}{7} \) and solve for \( r^2 \):</p><p>\[ 4 \times \frac{22}{7} \times r^2 = 154 \]</p><p>\[ r^2 = \frac{154 \times 7}{4 \times 22} \]</p><p>\[ r^2 = \frac{1078}{88} \]</p><p>\[ r^2 = \frac{49}{4} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Take the square root of both sides to find \( r \):</p><p>\[ r = \frac{7}{2} \text{ m} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The diameter \( d \) is twice the radius:</p><p>\[ d = 2 \times \frac{7}{2} = 7 \text{ m} \]</p></div></div><div class="final-answer"><p>The diameter of the sphere is \( 7 \text{ m} \).</p></div></div>
+</div>
 </body>
 </html>

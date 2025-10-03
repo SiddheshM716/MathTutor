@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.37</h3>
-
-<p> A ladder 17 feet long is leaning against a wall. If the ladder, vertical wall and the floor from the bottom of the wall to the ladder form a right triangle, find the height of the wall where the top of the ladder meets if the distance between bottom of the wall to bottom of the ladder is 7 feet less than the height of the wall?</p>
-<p>Solution: Let the height of the wall AB = x feet.</p>
-<p>As per the given data BC = (x - 7) feet.</p>
-<p>In the right triangle ABC, AC = 17 ft, BC = (x - 7) feet.</p>
-<p>By Pythagoras theorem, AC² = AB² + BC².</p>
-<p>17² = x² + (x - 7)²; 289 = x² + x² - 14x + 49.</p>
-<p>2x² - 14x - 240 = 0 hence, (x - 15)(x + 8) = 0 then, x = 15 (or) -8.</p>
-<p>Therefore, height of the wall AB = 15 ft (Rejecting -8 as height cannot be negative).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A ladder 17 feet long is leaning against a wall. If the ladder, vertical wall, and the floor from the bottom of the wall to the ladder form a right triangle, find the height of the wall where the top of the ladder meets if the distance between the bottom of the wall to the bottom of the ladder is 7 feet less than the height of the wall.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the height of the wall \( AB = x \) feet. The distance from the bottom of the wall to the bottom of the ladder is given as \( BC = (x - 7) \) feet.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In the right triangle \( ABC \), the ladder \( AC = 17 \) ft is the hypotenuse. Apply the Pythagorean theorem:</p><p>\[ AC^2 = AB^2 + BC^2 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values:</p><p>\[ 17^2 = x^2 + (x - 7)^2 \]</p><p>\[ 289 = x^2 + x^2 - 14x + 49 \]</p><p>\[ 2x^2 - 14x - 240 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the quadratic equation:</p><p>\[ x^2 - 7x - 120 = 0 \]</p><p>\[ (x - 15)(x + 8) = 0 \]</p><p>\[ x = 15 \text{ or } x = -8 \]</p></div></div><div class="final-answer"><p>The height of the wall \( AB = 15 \) feet (rejecting \( -8 \) as height cannot be negative).</p></div></div>
+</div>
 </body>
 </html>

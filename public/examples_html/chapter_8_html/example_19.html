@@ -1,53 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 8.19</h3>
-
-    <p>Two dice are rolled. Find the probability that the sum of outcomes is</p>
-    <p>(i) equal to 4 (ii) greater than 10 (iii) less than 13</p>
-    <p>Solution: When we roll two dice, the sample space is given by</p>
-    <p>\[ S = \{ (1,1),(1,2),(1,3),(1,4),(1,5),(1,6), (2,1),(2,2),(2,3),(2,4),(2,5),(2,6), (3,1),(3,2),(3,3),(3,4),(3,5),(3,6), (4,1),(4,2),(4,3),(4,4),(4,5),(4,6), (5,1),(5,2),(5,3),(5,4),(5,5),(5,6), (6,1),(6,2),(6,3),(6,4),(6,5),(6,6) \}; \quad n(S) = 36 \]</p>
-    
-    <p>(i) Let A be the event of getting the sum of outcome values equal to 4.</p>
-    <p>Then \( A = \{(1,3),(2,2),(3,1)\}; \quad n(A) = 3 \).</p>
-    <p>Probability of getting the sum of outcomes equal to 4 is \( P(A) = \frac{n(A)}{n(S)} = \frac{3}{36} = \frac{1}{12} \).</p>
-    
-    <p>(ii) Let B be the event of getting the sum of outcome values greater than 10.</p>
-    <p>Then \( B = \{(5,6),(6,5),(6,6)\}; \quad n(B) = 3 \).</p>
-    <p>Probability of getting the sum of outcomes greater than 10 is \( P(B) = \frac{n(B)}{n(S)} = \frac{3}{36} = \frac{1}{12} \).</p>
-    
-    <p>(iii) Let C be the event of getting the sum of outcomes less than 13. Here all the outcomes have the sum value less than 13. Hence \( C = S \).</p>
-    <p>Therefore, \( n(C) = n(S) = 36 \).</p>
-    <p>Probability of getting the total value less than 13 is \( P(C) = \frac{n(C)}{n(S)} = \frac{36}{36} = 1 \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Two dice are rolled. Find the probability that the sum of outcomes is</p><p>(i) equal to 4</p><p>(ii) greater than 10</p><p>(iii) less than 13</p><p>The sample space when rolling two dice is:</p><p>\[ S = \{ (1,1),(1,2),...,(6,6) \}; \quad n(S) = 36 \]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), identify the event A where the sum equals 4.</p><p>The favorable outcomes are \( A = \{(1,3),(2,2),(3,1)\} \), so \( n(A) = 3 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the probability formula \( P(A) = \frac{n(A)}{n(S)} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate \( P(A) = \frac{3}{36} = \frac{1}{12} \).</p></div></div><div class="final-answer"><p>\( \boxed{\dfrac{1}{12}} \)</p><p>Step 1: For part (ii), identify the event B where the sum is greater than 10.</p><p>The favorable outcomes are \( B = \{(5,6),(6,5),(6,6)\} \), so \( n(B) = 3 \).</p><p>Step 2: Use the probability formula \( P(B) = \frac{n(B)}{n(S)} \).</p><p>Step 3: Calculate \( P(B) = \frac{3}{36} = \frac{1}{12} \).</p></div><div class="final-answer"><p>\( \boxed{\dfrac{1}{12}} \)</p><p>Step 1: For part (iii), identify the event C where the sum is less than 13.</p><p>Since all outcomes satisfy this, \( C = S \) and \( n(C) = 36 \).</p><p>Step 2: Use the probability formula \( P(C) = \frac{n(C)}{n(S)} \).</p><p>Step 3: Calculate \( P(C) = \frac{36}{36} = 1 \).</p></div><div class="final-answer"><p>\( \boxed{1} \)</p></div></div>
+</div>
 </body>
 </html>

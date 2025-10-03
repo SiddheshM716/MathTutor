@@ -1,55 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.12</h3>
-
-  
-  <p>A sphere, a cylinder and a cone have the same height which equals their radius, with the cone and cylinder having the same height. Find the ratio of their curved surface areas.</p>
-
-  <h3>Solution</h3>
-  <p>Given: For all three shapes, height (h) = radius (r)</p>
-  
-  <h4>Curved Surface Areas:</h4>
-  <ul>
-    <li><strong>Sphere:</strong> \( 4\pi r^2 \)</li>
-    <li><strong>Cylinder:</strong> \( 2\pi r h = 2\pi r^2 \) (since h = r)</li>
-    <li><strong>Cone:</strong> \( \pi r l \) where \( l = \sqrt{r^2 + h^2} = \sqrt{2}r \)</li>
-  </ul>
-
-  <p>The ratio of curved surface areas:</p>
-  <p>\[
-  \text{Sphere} : \text{Cylinder} : \text{Cone} = 4\pi r^2 : 2\pi r^2 : \pi r (\sqrt{2}r)
-  \]</p>
-  
-  <p>Simplify by dividing by \( \pi r^2 \):</p>
-  <p>\[
-  = 4 : 2 : \sqrt{2}
-  \]</p>
-  
-  <p>Multiply by \( \sqrt{2} \) to rationalize:</p>
-  <p>\[
-  = 2\sqrt{2} : \sqrt{2} : 1
-  \]</p>
-
-  <h3>Final Ratio</h3>
-  <p>\[
-  2\sqrt{2} : \sqrt{2} : 1
-  \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A sphere, a cylinder and a cone have the same height which equals their radius, with the cone and cylinder having the same height. Find the ratio of their curved surface areas.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given that for all three shapes, height \( h = r \) (radius).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the curved surface areas:</p><p>- Sphere: \( 4\pi r^2 \)</p><p>- Cylinder: \( 2\pi r h = 2\pi r^2 \) (since \( h = r \))</p><p>- Cone: \( \pi r l \), where slant height \( l = \sqrt{r^2 + h^2} = \sqrt{2}r \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Write the ratio of curved surface areas:</p><p>\[ \text{Sphere} : \text{Cylinder} : \text{Cone} = 4\pi r^2 : 2\pi r^2 : \pi r (\sqrt{2}r) \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the ratio by dividing by \( \pi r^2 \):</p><p>\[ 4 : 2 : \sqrt{2} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Multiply by \( \sqrt{2} \) to rationalize:</p><p>\[ 2\sqrt{2} : \sqrt{2} : 1 \]</p></div></div><div class="final-answer"><p>The ratio of curved surface areas is \( 2\sqrt{2} : \sqrt{2} : 1 \).</p></div></div>
+</div>
 </body>
 </html>

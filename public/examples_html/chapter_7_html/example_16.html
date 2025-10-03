@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.16</h3>
-
-
-<p>The volume of a cylindrical water tank is 1.078 x 10<sup>6</sup> litres. If the diameter of the tank is 7 m, find its height.</p>
-<p>Solution: Let <i>r</i> and <i>h</i> be the radius and height of the cylinder respectively.</p>
-<p>Given that, volume of the tank = 1.078 x 10<sup>6</sup> litres = 1078 m<sup>3</sup> (1 litre = 0.001 m<sup>3</sup>).</p>
-<p>Diameter = 7 m ⇒ radius = 3.5 m.</p>
-<p>Volume of the tank = πr<sup>2</sup>h cubic units.</p>
-<p>1078 = π(3.5)<sup>2</sup>h</p>
-<p>Therefore, height of the tank is 28 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The volume of a cylindrical water tank is 1.078 x 10</p><p>6</p><p>litres. If the diameter of the tank is 7 m, find its height.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Convert the volume from litres to cubic metres.</p><p>Given that 1 litre = 0.001 m</p><p>3</p><p>,</p><p>Volume = 1.078 x 10</p><p>6</p><p>litres × 0.001 m</p><p>3</p><p>/litre = 1078 m</p><p>3</p><p>.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the radius of the cylindrical tank.</p><p>Given diameter = 7 m,</p><p>Radius \( r = \frac{\text{diameter}}{2} = \frac{7}{2} = 3.5 \) m.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the formula for the volume of a cylinder to find the height.</p><p>Volume \( V = \pi r^2 h \).</p><p>Substitute the known values:</p><p>\( 1078 = \pi (3.5)^2 h \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve for \( h \).</p><p>\( h = \frac{1078}{\pi (3.5)^2} \).</p><p>\( h = \frac{1078}{38.4845} \approx 28 \) m.</p></div></div><div class="final-answer"><p>The height of the tank is \( 28 \) m.</p></div></div>
+</div>
 </body>
 </html>

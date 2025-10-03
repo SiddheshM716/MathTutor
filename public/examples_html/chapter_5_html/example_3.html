@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.3</h3>
-
-
-<p>If the area of the triangle formed by the vertices A(-1,2), B(k,-2) and C(7,4) (taken in order) is 22 sq. units, find the value of k.</p>
-<p>Solution: The vertices are A(-1,2), B(k,-2) and C(7,4).</p>
-<p>Area of triangle ABC is 22 sq.units.</p>
-<p>\(\frac{1}{2} \{(x_1y_2 + x_2y_3 + x_3y_1) - (x_2y_1 + x_3y_2 + x_1y_3)\} = 22\)</p>
-<p>\(\frac{1}{2} \{(2 + 4k + 14) - (2k + 14 - 4)\} = 22\)</p>
-<p>\(2k + 34 = 44\) gives \(2k = 10\) so \(k = 5\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the area of the triangle formed by the vertices A(-1,2), B(k,-2) and C(7,4) (taken in order) is 22 sq. units, find the value of k.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the vertices of the triangle as A(-1,2), B(k,-2), and C(7,4), and the area of the triangle is 22 sq. units.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the area of a triangle given its vertices \((x_1,y_1)\), \((x_2,y_2)\), and \((x_3,y_3)\) is:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| (x_1y_2 + x_2y_3 + x_3y_1) - (x_2y_1 + x_3y_2 + x_1y_3) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given coordinates into the formula:</p><p>\[</p><p>\frac{1}{2} \left\{ (-1 \cdot -2 + k \cdot 4 + 7 \cdot 2) - (k \cdot 2 + 7 \cdot -2 + -1 \cdot 4) \right\} = 22</p><p>\]</p><p>Simplify the expression:</p><p>\[</p><p>\frac{1}{2} \left\{ (2 + 4k + 14) - (2k - 14 - 4) \right\} = 22</p><p>\]</p><p>\[</p><p>\frac{1}{2} (2 + 4k + 14 - 2k + 14 + 4) = 22</p><p>\]</p><p>\[</p><p>\frac{1}{2} (2k + 34) = 22</p><p>\]</p><p>Multiply both sides by 2:</p><p>\[</p><p>2k + 34 = 44</p><p>\]</p><p>Solve for \(k\):</p><p>\[</p><p>2k = 10 \quad \Rightarrow \quad k = 5</p><p>\]</p></div></div><div class="final-answer"><p>The value of \(k\) is \(\boxed{5}\).</p></div></div>
+</div>
 </body>
 </html>

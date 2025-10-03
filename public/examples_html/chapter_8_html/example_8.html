@@ -1,82 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.8</h3>
-
-
-<p>Find the standard deviation of the following data: 7, 4, 8, 10, 11. Add 3 to all the values then find the standard deviation for the new values.</p>
-<p>Solution: Arranging the values in ascending order we get, 4, 7, 8, 10, 11 and n=5</p>
-<table>
-  <tr>
-    <th>x</th>
-    <th>x²</th>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>16</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>49</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>64</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>100</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>121</td>
-  </tr>
-</table>
-<p>Σx = 40, Σx² = 350, σ = √6 ≈ 2.45</p>
-<p>When we add 3 to all the values, we get the new values as 7, 10, 11, 13, 14.</p>
-<table>
-  <tr>
-    <th>x</th>
-    <th>x²</th>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>49</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>100</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>121</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>169</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>196</td>
-  </tr>
-</table>
-<p>Σx = 55, Σx² = 635, σ = √6 ≈ 2.45</p>
-<p>We see that the standard deviation will not change when we add some fixed constant k to all the values.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the standard deviation of the following data: 7, 4, 8, 10, 11. Add 3 to all the values then find the standard deviation for the new values.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Arrange the given data in ascending order: 4, 7, 8, 10, 11. The number of data points \( n = 5 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the sum of the data points \( \Sigma x \) and the sum of their squares \( \Sigma x^2 \).</p><p>x</p><p>x²</p><p>4</p><p>16</p><p>7</p><p>49</p><p>8</p><p>64</p><p>10</p><p>100</p><p>11</p><p>121</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute the standard deviation using the formula:</p><p>\[</p><p>\sigma = \sqrt{\frac{\Sigma x^2}{n} - \left(\frac{\Sigma x}{n}\right)^2}</p><p>\]</p><p>\[</p><p>\sigma = \sqrt{\frac{350}{5} - \left(\frac{40}{5}\right)^2} = \sqrt{70 - 64} = \sqrt{6} \approx 2.45</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation of the original data is \( \sqrt{6} \approx 2.45 \).</p><p>Step 4: Add 3 to each data point to get the new values: 7, 10, 11, 13, 14.</p><p>Step 5: Calculate \( \Sigma x \) and \( \Sigma x^2 \) for the new data.</p><p>x</p><p>x²</p><p>7</p><p>49</p><p>10</p><p>100</p><p>11</p><p>121</p><p>13</p><p>169</p><p>14</p><p>196</p><p>Step 6: Compute the standard deviation for the new data:</p><p>\[</p><p>\sigma = \sqrt{\frac{635}{5} - \left(\frac{55}{5}\right)^2} = \sqrt{127 - 121} = \sqrt{6} \approx 2.45</p><p>\]</p></div><div class="final-answer"><p>The standard deviation remains \( \sqrt{6} \approx 2.45 \) after adding 3 to each value.</p></div></div>
+</div>
 </body>
 </html>

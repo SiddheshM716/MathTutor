@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.34</h3>
-
-
-<p>The 13<sup>th</sup> term of an A.P. is 3 and the sum of first 13 terms is 234. Find the common difference and the sum of first 21 terms.</p>
-<p>Given, the 13<sup>th</sup> term = 3 so, t<sub>13</sub> = a + 12d = 3 (1)</p>
-<p>Sum of first 13 terms = 234 ⇒ S<sub>13</sub> = <sup>13</sup>&frasl;<sub>2</sub> [2a + 12d] = 234</p>
-<p>2a + 12d = 36 (2)</p>
-<p>Solving (1) and (2) we get, a = 33, d = -<sup>5</sup>&frasl;<sub>2</sub></p>
-<p>Therefore, common difference is -<sup>5</sup>&frasl;<sub>2</sub>.</p>
-<p>Sum of first 21 terms S<sub>21</sub> = <sup>21</sup>&frasl;<sub>2</sub> [2 × 33 + (21 - 1)(-<sup>5</sup>&frasl;<sub>2</sub>)] = <sup>21</sup>&frasl;<sub>2</sub> [66 - 50] = 168.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The 13</p><p>th</p><p>term of an A.P. is 3 and the sum of first 13 terms is 234. Find the common difference and the sum of first 21 terms.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the 13</p><p>th</p><p>term \( t_{13} = 3 \). Using the formula for the \( n \)-th term of an A.P., \( t_n = a + (n-1)d \), we have:</p><p>\[ t_{13} = a + 12d = 3 \quad \text{(1)} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The sum of the first 13 terms \( S_{13} = 234 \). Using the sum formula \( S_n = \frac{n}{2} [2a + (n-1)d] \), we get:</p><p>\[ S_{13} = \frac{13}{2} [2a + 12d] = 234 \]</p><p>\[ 2a + 12d = 36 \quad \text{(2)} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve equations (1) and (2) simultaneously. From equation (1), \( a = 3 - 12d \). Substitute into equation (2):</p><p>\[ 2(3 - 12d) + 12d = 36 \]</p><p>\[ 6 - 24d + 12d = 36 \]</p><p>\[ -12d = 30 \]</p><p>\[ d = -\frac{5}{2} \]</p><p>Now substitute \( d = -\frac{5}{2} \) back into equation (1):</p><p>\[ a + 12\left(-\frac{5}{2}\right) = 3 \]</p><p>\[ a - 30 = 3 \]</p><p>\[ a = 33 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Find the sum of the first 21 terms \( S_{21} \) using the sum formula:</p><p>\[ S_{21} = \frac{21}{2} \left[ 2a + 20d \right] \]</p><p>\[ S_{21} = \frac{21}{2} \left[ 2(33) + 20\left(-\frac{5}{2}\right) \right] \]</p><p>\[ S_{21} = \frac{21}{2} \left[ 66 - 50 \right] \]</p><p>\[ S_{21} = \frac{21}{2} \times 16 = 168 \]</p></div></div><div class="final-answer"><p>The common difference is \( -\frac{5}{2} \), and the sum of the first 21 terms is \( 168 \).</p></div></div>
+</div>
 </body>
 </html>

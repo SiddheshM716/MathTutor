@@ -1,39 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.59</h3>
-
-
-<p>Find the value of a, b, c, d from the equation</p>
-<p>\(\begin{bmatrix} a - b & 3 \\ 2a + c & 2a - b \end{bmatrix} = \begin{bmatrix} 1 & 5 \\ 0 & 2 \end{bmatrix}\)</p>
-<p>Solution:</p>
-<p>The given matrices are equal. Thus all corresponding elements are equal.</p>
-<p>Therefore,</p>
-<p>\(a - b = 1 \quad (1)\)</p>
-<p>\(2a + c = 5 \quad (2)\)</p>
-<p>\(2a - b = 0 \quad (3)\)</p>
-<p>\(3c + d = 2 \quad (4)\)</p>
-<p>From (3), \(2a - b = 0 \implies 2a = b \quad (5)\)</p>
-<p>Put \(2a = b\) in equation (1), \(a - 2a = 1 \implies a = -1\)</p>
-<p>Put \(a = -1\) in equation (5), \(2(-1) = b \implies b = -2\)</p>
-<p>Put \(a = -1\) in equation (2), \(2(-1) + c = 5 \implies c = 7\)</p>
-<p>Put \(c = 7\) in equation (4), \(3(7) + d = 2 \implies d = -19\)</p>
-<p>Therefore, \(a = -1, b = -2, c = 7, d = -19\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the value of \( a, b, c, d \) from the equation:</p><p>\[</p><p>\begin{bmatrix}</p><p>a - b &amp; 3 \\</p><p>2a + c &amp; 2a - b</p><p>\end{bmatrix}</p><p>=</p><p>\begin{bmatrix}</p><p>1 &amp; 5 \\</p><p>0 &amp; 2</p><p>\end{bmatrix}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since the given matrices are equal, their corresponding elements must be equal. This gives the following equations:</p><p>\[</p><p>a - b = 1 \quad (1)</p><p>\]</p><p>\[</p><p>2a + c = 5 \quad (2)</p><p>\]</p><p>\[</p><p>2a - b = 0 \quad (3)</p><p>\]</p><p>\[</p><p>3c + d = 2 \quad (4)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Solve equation (3) for \( b \):</p><p>\[</p><p>2a - b = 0 \implies b = 2a \quad (5)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute \( b = 2a \) into equation (1):</p><p>\[</p><p>a - 2a = 1 \implies -a = 1 \implies a = -1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \( a = -1 \) into equation (5) to find \( b \):</p><p>\[</p><p>b = 2(-1) \implies b = -2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute \( a = -1 \) into equation (2) to find \( c \):</p><p>\[</p><p>2(-1) + c = 5 \implies -2 + c = 5 \implies c = 7</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Substitute \( c = 7 \) into equation (4) to find \( d \):</p><p>\[</p><p>3(7) + d = 2 \implies 21 + d = 2 \implies d = -19</p><p>\]</p></div></div><div class="final-answer"><p>The values are \( a = -1 \), \( b = -2 \), \( c = 7 \), and \( d = -19 \).</p></div></div>
+</div>
 </body>
 </html>

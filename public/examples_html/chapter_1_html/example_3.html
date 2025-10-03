@@ -1,43 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 1.3</h3>
-
-    <p>Let A = {x ∈ ℕ | 1 < x < 4} = {2, 3}, B = {x ∈ 𝕎 | 0 < x < 2} = {0, 1}, C = {x ∈ ℕ | x < 3} = {1, 2}.</p>
-    <p>Then verify that:</p>
-    <p>(i) A × (B ∪ C) = (A × B) ∪ (A × C)</p>
-    <p>(ii) A × (B ∩ C) = (A × B) ∩ (A × C)</p>
-    <p>Solution:</p>
-    <p>A = {x ∈ ℕ | 1 < x < 4} = {2, 3}, B = {x ∈ 𝕎 | 0 < x < 2} = {0, 1}, C = {x ∈ ℕ | x < 3} = {1, 2}.</p>
-    <p>(i) A × (B ∪ C) = (A × B) ∪ (A × C)</p>
-    <p>B ∪ C = {0, 1} ∪ {1, 2} = {0, 1, 2}</p>
-    <p>A × (B ∪ C) = {2, 3} × {0, 1, 2} = {(2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2)} — (1)</p>
-    <p>A × B = {2, 3} × {0, 1} = {(2, 0), (2, 1), (3, 0), (3, 1)}</p>
-    <p>A × C = {2, 3} × {1, 2} = {(2, 1), (2, 2), (3, 1), (3, 2)}</p>
-    <p>(A × B) ∪ (A × C) = {(2, 0), (2, 1), (3, 0), (3, 1)} ∪ {(2, 1), (2, 2), (3, 1), (3, 2)}</p>
-    <p>= {(2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2)} — (2)</p>
-    <p>From (1) and (2), A × (B ∪ C) = (A × B) ∪ (A × C) is verified.</p>
-    <p>(ii) A × (B ∩ C) = (A × B) ∩ (A × C)</p>
-    <p>B ∩ C = {0, 1} ∩ {1, 2} = {1}</p>
-    <p>A × (B ∩ C) = {2, 3} × {1} = {(2, 1), (3, 1)} — (3)</p>
-    <p>A × B = {2, 3} × {0, 1} = {(2, 0), (2, 1), (3, 0), (3, 1)}</p>
-    <p>A × C = {2, 3} × {1, 2} = {(2, 1), (2, 2), (3, 1), (3, 2)}</p>
-    <p>(A × B) ∩ (A × C) = {(2, 0), (2, 1), (3, 0), (3, 1)} ∩ {(2, 1), (2, 2), (3, 1), (3, 2)}</p>
-    <p>= {(2, 1), (3, 1)} — (4)</p>
-    <p>From (3) and (4), A × (B ∩ C) = (A × B) ∩ (A × C) is verified.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Let \( A = \{x \in \mathbb{N} \mid 1 &lt; x &lt; 4\} = \{2, 3\} \), \( B = \{x \in \mathbb{W} \mid 0 &lt; x &lt; 2\} = \{0, 1\} \), \( C = \{x \in \mathbb{N} \mid x &lt; 3\} = \{1, 2\} \).</p><p>Then verify that:</p><p>(i) \( A \times (B \cup C) = (A \times B) \cup (A \times C) \)</p><p>(ii) \( A \times (B \cap C) = (A \times B) \cap (A \times C) \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Verify part (i) \( A \times (B \cup C) = (A \times B) \cup (A \times C) \).</p><p>First, compute \( B \cup C \):</p><p>\( B \cup C = \{0, 1\} \cup \{1, 2\} = \{0, 1, 2\} \).</p><p>Now compute \( A \times (B \cup C) \):</p><p>\( A \times (B \cup C) = \{2, 3\} \times \{0, 1, 2\} = \{(2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2)\} \) — (1).</p><p>Next, compute \( A \times B \) and \( A \times C \):</p><p>\( A \times B = \{2, 3\} \times \{0, 1\} = \{(2, 0), (2, 1), (3, 0), (3, 1)\} \).</p><p>\( A \times C = \{2, 3\} \times \{1, 2\} = \{(2, 1), (2, 2), (3, 1), (3, 2)\} \).</p><p>Now compute \( (A \times B) \cup (A \times C) \):</p><p>\( (A \times B) \cup (A \times C) = \{(2, 0), (2, 1), (3, 0), (3, 1)\} \cup \{(2, 1), (2, 2), (3, 1), (3, 2)\} \).</p><p>This simplifies to \( \{(2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2)\} \) — (2).</p><p>From (1) and (2), \( A \times (B \cup C) = (A \times B) \cup (A \times C) \) is verified.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Verify part (ii) \( A \times (B \cap C) = (A \times B) \cap (A \times C) \).</p><p>First, compute \( B \cap C \):</p><p>\( B \cap C = \{0, 1\} \cap \{1, 2\} = \{1\} \).</p><p>Now compute \( A \times (B \cap C) \):</p><p>\( A \times (B \cap C) = \{2, 3\} \times \{1\} = \{(2, 1), (3, 1)\} \) — (3).</p><p>Next, compute \( A \times B \) and \( A \times C \) (already computed in part (i)):</p><p>\( A \times B = \{(2, 0), (2, 1), (3, 0), (3, 1)\} \).</p><p>\( A \times C = \{(2, 1), (2, 2), (3, 1), (3, 2)\} \).</p><p>Now compute \( (A \times B) \cap (A \times C) \):</p><p>\( (A \times B) \cap (A \times C) = \{(2, 0), (2, 1), (3, 0), (3, 1)\} \cap \{(2, 1), (2, 2), (3, 1), (3, 2)\} \).</p><p>This simplifies to \( \{(2, 1), (3, 1)\} \) — (4).</p><p>From (3) and (4), \( A \times (B \cap C) = (A \times B) \cap (A \times C) \) is verified.</p></div></div><div class="final-answer"><p>Both (i) and (ii) are verified as true.</p></div></div>
+</div>
 </body>
 </html>

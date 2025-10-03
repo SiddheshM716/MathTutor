@@ -1,46 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.29</h3>
-
-
-<p>In an apartment, in selecting a house from door numbers 1 to 100 randomly, find the probability of getting the door number of the house to be an even number or a perfect square number or a perfect cube number.</p>
-<p>Solution:</p>
-<p>Total number of houses — n(S) = 100</p>
-<p>Let A be the event of getting door number even.</p>
-<p>A = {2,4,6,8,...,100}</p>
-<p>n(A) = 50</p>
-<p>P(A) = n(A)/n(S) = 50/100</p>
-<p>Let B be the event of getting door number perfect square.</p>
-<p>B = {1,4,9,16,25,36,49,64,81,100}</p>
-<p>n(B) = 10</p>
-<p>P(B) = n(B)/n(S) = 10/100</p>
-<p>Let C be the event of getting door number perfect cube.</p>
-<p>C = {1,8,27,64}</p>
-<p>n(C) = 4</p>
-<p>P(C) = n(C)/n(S) = 4/100</p>
-<p>P(A ∩ B) = P[getting even perfect square number] = 5/100</p>
-<p>P(B ∩ C) = P[getting a perfect square and perfect cube number] = 2/100</p>
-<p>P(A ∩ C) = P[getting even perfect cube number] = 2/100</p>
-<p>P(A ∩ B ∩ C) = P[getting even perfect square and perfect cube number] = 1/100</p>
-<p>Required probability</p>
-<p>P(A ∪ B ∪ C) = P(A) + P(B) + P(C) - P(A ∩ B) - P(B ∩ C) - P(A ∩ C) + P(A ∩ B ∩ C)</p>
-<p>= 50/100 + 10/100 + 4/100 - 5/100 - 2/100 - 2/100 + 1/100 = 56/100 = 14/25</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In an apartment, in selecting a house from door numbers 1 to 100 randomly, find the probability of getting the door number of the house to be an even number or a perfect square number or a perfect cube number.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Determine the total number of houses and define the events.</p><p>Total number of houses \( n(S) = 100 \).</p><p>Let \( A \) be the event of getting an even door number: \( A = \{2, 4, 6, \dots, 100\} \), \( n(A) = 50 \).</p><p>Let \( B \) be the event of getting a perfect square door number: \( B = \{1, 4, 9, 16, 25, 36, 49, 64, 81, 100\} \), \( n(B) = 10 \).</p><p>Let \( C \) be the event of getting a perfect cube door number: \( C = \{1, 8, 27, 64\} \), \( n(C) = 4 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate individual probabilities.</p><p>\( P(A) = \frac{n(A)}{n(S)} = \frac{50}{100} \).</p><p>\( P(B) = \frac{n(B)}{n(S)} = \frac{10}{100} \).</p><p>\( P(C) = \frac{n(C)}{n(S)} = \frac{4}{100} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate intersection probabilities.</p><p>\( P(A \cap B) = \frac{5}{100} \) (even perfect squares: 4, 16, 36, 64, 100).</p><p>\( P(B \cap C) = \frac{2}{100} \) (perfect squares and cubes: 1, 64).</p><p>\( P(A \cap C) = \frac{2}{100} \) (even perfect cubes: 8, 64).</p><p>\( P(A \cap B \cap C) = \frac{1}{100} \) (even perfect square and cube: 64).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Apply the inclusion-exclusion principle formula.</p><p>\[ P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(B \cap C) - P(A \cap C) + P(A \cap B \cap C) \]</p><p>\[ = \frac{50}{100} + \frac{10}{100} + \frac{4}{100} - \frac{5}{100} - \frac{2}{100} - \frac{2}{100} + \frac{1}{100} \]</p><p>\[ = \frac{56}{100} = \frac{14}{25} \].</p></div></div><div class="final-answer"><p>\( \frac{14}{25} \).</p></div></div>
+</div>
 </body>
 </html>

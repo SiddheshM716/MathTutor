@@ -1,36 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.16</h3>
-
-
-<p>In the Fig. 4.40, AD is the bisector of ∠BAC, if AB = 10 cm, AC = 14 cm and BC = 6 cm. Find BD and DC.</p>
-<p>Solution: Let BD = x cm, then DC = (6 - x) cm.</p>
-<p>AD is the bisector of ∠A.</p>
-<p>By Angle Bisector Theorem:</p>
-<p>\(\frac{AB}{AC} = \frac{BD}{DC}\)</p>
-<p>\(\frac{10}{14} = \frac{x}{6 - x}\)</p>
-<p>\(\frac{5}{7} = \frac{x}{6 - x}\)</p>
-<p>\(5(6 - x) = 7x\)</p>
-<p>\(30 - 5x = 7x\)</p>
-<p>\(12x = 30\)</p>
-<p>\(x = 2.5\) cm</p>
-<p>Therefore, BD = 2.5 cm, DC = 6 - 2.5 = 3.5 cm.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In the Fig. 4.40, AD is the bisector of ∠BAC, if AB = 10 cm, AC = 14 cm and BC = 6 cm. Find BD and DC.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let BD = x cm, then DC = (6 - x) cm since BC = 6 cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the Angle Bisector Theorem, which states \(\frac{AB}{AC} = \frac{BD}{DC}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the theorem:</p><p>\[</p><p>\frac{10}{14} = \frac{x}{6 - x}</p><p>\]</p><p>Simplify the fraction:</p><p>\[</p><p>\frac{5}{7} = \frac{x}{6 - x}</p><p>\]</p><p>Cross-multiply to solve for x:</p><p>\[</p><p>5(6 - x) = 7x</p><p>\]</p><p>\[</p><p>30 - 5x = 7x</p><p>\]</p><p>\[</p><p>12x = 30</p><p>\]</p><p>\[</p><p>x = 2.5 \text{ cm}</p><p>\]</p></div></div><div class="final-answer"><p>BD = 2.5 cm, DC = 6 - 2.5 = 3.5 cm.</p></div></div>
+</div>
 </body>
 </html>

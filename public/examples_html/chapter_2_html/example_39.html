@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.39</h3>
-
-<p> The sum of first n, 2n and 3n terms of an A.P. are S<sub>1</sub>, S<sub>2</sub>, and S<sub>3</sub> respectively. Prove that S<sub>3</sub> = 3(S<sub>2</sub> − S<sub>1</sub>).</p>
-<p>Solution If S<sub>1</sub>, S<sub>2</sub>, and S<sub>3</sub> are sum of first n, 2n and 3n terms of an A.P. respectively then</p>
-<p>S<sub>1</sub> = <span style="text-decoration: overline">n</span>[2a + (n − 1)d], S<sub>2</sub> = <span style="text-decoration: overline">2n</span>[2a + (2n − 1)d], S<sub>3</sub> = <span style="text-decoration: overline">3n</span>[2a + (3n − 1)d]</p>
-<p>Consider, S<sub>2</sub> − S<sub>1</sub> = <span style="text-decoration: overline">2n</span>[2a + (2n − 1)d] − <span style="text-decoration: overline">n</span>[2a + (n − 1)d]</p>
-<p>S<sub>2</sub> − S<sub>1</sub> = <span style="text-decoration: overline">n</span>[[4a + 2(2n − 1)d] − [2a + (n − 1)d]]</p>
-<p>S<sub>3</sub> − S<sub>1</sub> = <span style="text-decoration: overline">3n</span>[2a + (3n − 1)d]</p>
-<p>3(S<sub>2</sub> − S<sub>1</sub>) = <span style="text-decoration: overline">3n</span>[2a + (3n − 1)d]</p>
-<p>3(S<sub>2</sub> − S<sub>1</sub>) = S<sub>3</sub></p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The sum of first n, 2n and 3n terms of an A.P. are S</p><p>1</p><p>, S</p><p>2</p><p>, and S</p><p>3</p><p>respectively. Prove that S</p><p>3</p><p>= 3(S</p><p>2</p><p>− S</p><p>1</p><p>).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Write the sum formulas for S</p><p>1</p><p>, S</p><p>2</p><p>, and S</p><p>3</p><p>using the sum of an A.P. formula \( S_k = \frac{k}{2} [2a + (k - 1)d] \).</p><p>\[ S_1 = \frac{n}{2} [2a + (n - 1)d] \]</p><p>\[ S_2 = \frac{2n}{2} [2a + (2n - 1)d] \]</p><p>\[ S_3 = \frac{3n}{2} [2a + (3n - 1)d] \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute \( S_2 - S_1 \).</p><p>\[ S_2 - S_1 = n [2a + (2n - 1)d] - \frac{n}{2} [2a + (n - 1)d] \]</p><p>\[ S_2 - S_1 = \frac{n}{2} \left[ 4a + 2(2n - 1)d - 2a - (n - 1)d \right] \]</p><p>\[ S_2 - S_1 = \frac{n}{2} [2a + (3n - 1)d] \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Multiply \( S_2 - S_1 \) by 3 and compare with \( S_3 \).</p><p>\[ 3(S_2 - S_1) = \frac{3n}{2} [2a + (3n - 1)d] \]</p><p>\[ 3(S_2 - S_1) = S_3 \]</p></div></div><div class="final-answer"><p>We have proved that \( S_3 = 3(S_2 - S_1) \).</p></div></div>
+</div>
 </body>
 </html>

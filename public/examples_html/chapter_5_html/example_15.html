@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.15</h3>
-
-
-<p>Without using Pythagoras theorem, show that the points (1, -4), (2, -3) and (4, -7) form a right angled triangle.</p>
-<p>Solution: Let the given points be A(1, -4), B(2, -3) and C(4, -7).</p>
-<p>The slope of AB = \(\frac{-3 + 4}{2 - 1} = 1\)</p>
-<p>The slope of BC = \(\frac{-7 + 3}{4 - 2} = -2\)</p>
-<p>The slope of AC = \(\frac{-7 + 4}{4 - 1} = -1\)</p>
-<p>Slope of AB × slope of AC = (1)(-1) = -1</p>
-<p>AB is perpendicular to AC. ∠A = 90°</p>
-<p>Therefore, △ABC is a right angled triangle.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Without using Pythagoras theorem, show that the points (1, -4), (2, -3) and (4, -7) form a right angled triangle.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Label the given points as A(1, -4), B(2, -3), and C(4, -7).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the slope of AB using the formula:</p><p>\[ \text{Slope} = \frac{y_2 - y_1}{x_2 - x_1} \]</p><p>\[ \text{Slope of AB} = \frac{-3 - (-4)}{2 - 1} = \frac{1}{1} = 1 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the slope of BC:</p><p>\[ \text{Slope of BC} = \frac{-7 - (-3)}{4 - 2} = \frac{-4}{2} = -2 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the slope of AC:</p><p>\[ \text{Slope of AC} = \frac{-7 - (-4)}{4 - 1} = \frac{-3}{3} = -1 \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Check if the product of the slopes of AB and AC equals -1 (condition for perpendicularity):</p><p>\[ \text{Slope of AB} \times \text{Slope of AC} = 1 \times (-1) = -1 \]</p></div></div><div class="final-answer"><p>Since the product of the slopes of AB and AC is -1, AB is perpendicular to AC. Therefore, △ABC is a right angled triangle with the right angle at A.</p></div></div>
+</div>
 </body>
 </html>

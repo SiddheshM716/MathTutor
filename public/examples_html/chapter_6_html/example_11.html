@@ -1,46 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 6.11</h3>
-
-    <p>If cosecθ + cotθ = P, then prove that cosθ = (P² - 1)/(P² + 1)</p>
-    <p><strong>Solution:</strong></p>
-    <p>Given cosecθ + cotθ = P (1)</p>
-    <p>cosec²θ - cot²θ = 1 (identity)</p>
-    <p>cosecθ - cotθ = 1/(cosecθ + cotθ)</p>
-    <p>cosecθ - cotθ = 1/P (2)</p>
-    <p>Adding (1) and (2) we get, 2cosecθ = P + 1/P (3)</p>
-    <p>Subtracting (2) from (1), we get, 2cotθ = P - 1/P (4)</p>
-    <p>Dividing (4) by (3) we get, (2cotθ)/(2cosecθ) = (P - 1/P)/(P + 1/P) ⇒ cosθ = (P² - 1)/(P² + 1)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If $\cscθ + \cotθ = P$, then prove that $\cosθ = \frac{P² - 1}{P² + 1}$.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given $\cscθ + \cotθ = P$ (Equation 1).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the identity $\csc²θ - \cot²θ = 1$.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite the identity as $(\cscθ - \cotθ)(\cscθ + \cotθ) = 1$.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute Equation 1 into the identity to get $\cscθ - \cotθ = \frac{1}{P}$ (Equation 2).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Add Equation 1 and Equation 2 to get $2\cscθ = P + \frac{1}{P}$ (Equation 3).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Subtract Equation 2 from Equation 1 to get $2\cotθ = P - \frac{1}{P}$ (Equation 4).</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Divide Equation 4 by Equation 3 to get $\frac{\cotθ}{\cscθ} = \frac{P - \frac{1}{P}}{P + \frac{1}{P}}$.</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Simplify the right side to $\frac{P² - 1}{P² + 1}$ and note that $\frac{\cotθ}{\cscθ} = \cosθ$.</p></div></div><div class="final-answer"><p>$\cosθ = \frac{P² - 1}{P² + 1}$.</p></div></div>
+</div>
 </body>
 </html>

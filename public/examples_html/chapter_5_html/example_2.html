@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.2</h3>
-
-
-<p>Show that the points P(-1.5, 3), Q(6, -2), R(-3, 4) are collinear.</p>
-<p>Solution: The points are P(-1.5, 3), Q(6, -2), R(-3, 4).</p>
-<p>Area of ΔPQR = \(\frac{1}{2} \{(x_1y_2 + x_2y_3 + x_3y_1) - (x_2y_1 + x_3y_2 + x_1y_3)\}\)</p>
-<p>\[
-= \frac{1}{2} \{(3 + 24 - 9) - (18 + 6 - 6)\} = \frac{1}{2} \{18 - 18\} = 0
-\]</p>
-<p>Therefore, the given points are collinear.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that the points P(-1.5, 3), Q(6, -2), R(-3, 4) are collinear.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the coordinates of the points P, Q, and R.</p><p>P(-1.5, 3), Q(6, -2), R(-3, 4).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the area formula for a triangle formed by three points:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \{(x_1y_2 + x_2y_3 + x_3y_1) - (x_2y_1 + x_3y_2 + x_1y_3)\}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the coordinates into the formula and calculate:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \{(-1.5 \times -2 + 6 \times 4 + -3 \times 3) - (6 \times 3 + -3 \times -2 + -1.5 \times 4)\}</p><p>\]</p><p>\[</p><p>= \frac{1}{2} \{(3 + 24 - 9) - (18 + 6 - 6)\} = \frac{1}{2} \{18 - 18\} = 0</p><p>\]</p></div></div><div class="final-answer"><p>Since the area of ΔPQR is 0, the points P, Q, and R are collinear.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.25</h3>
-
-
-<p>PQ is a chord of length 8 cm to a circle of radius 5 cm. The tangents at P and Q intersect at a point T. Find the length of the tangent TP.</p>
-<p>Solution: Let TR = y. Since OT is perpendicular bisector of PQ, PR = QR = 4 cm.</p>
-<p>In ΔORP, OP² = OR² + PR²</p>
-<p>OR² = OP² − PR²</p>
-<p>OR² = 5² − 4² = 25 − 16 = 9 ⇒ OR = 3 cm</p>
-<p>OT = OR + RT = 3 + y ... (1)</p>
-<p>In ΔPRT, TP² = TR² + PR² ... (2)</p>
-<p>In ΔOPT, OT² = TP² + OP²</p>
-<p>OT² = (TR² + PR²) + OP² (substitute for TP² from (2))</p>
-<p>(3 + y)² = y² + 4² + 5² (substitute for OT from (1))</p>
-<p>9 + 6y + y² = y² + 16 + 25</p>
-<p>6y = 41 − 9 ⇒ y = 16/3</p>
-<p>From (2), TP² = TR² + PR²</p>
-<p>TP² = (16/3)² + 4² = 256/9 + 16 = 400/9 ⇒ TP = 20/3 cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>PQ is a chord of length 8 cm to a circle of radius 5 cm. The tangents at P and Q intersect at a point T. Find the length of the tangent TP.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let TR = y. Since OT is perpendicular bisector of PQ, PR = QR = 4 cm (half of chord length).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In right triangle ORP, apply Pythagoras theorem: OP² = OR² + PR².</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate OR:</p><p>OR² = OP² − PR² = 5² − 4² = 25 − 16 = 9 ⇒ OR = 3 cm.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Express OT in terms of y:</p><p>OT = OR + RT = 3 + y.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>In right triangle PRT, apply Pythagoras theorem:</p><p>TP² = TR² + PR².</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>In right triangle OPT, apply Pythagoras theorem:</p><p>OT² = TP² + OP² ⇒ (3 + y)² = y² + 4² + 5².</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Expand and solve for y:</p><p>9 + 6y + y² = y² + 16 + 25 ⇒ 6y = 32 ⇒ y = 16/3.</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Calculate TP using the result from</p></div></div><div class="step-box"><div class="step-bullet">9</div><div class="step-content"><p></p><p>TP² = (16/3)² + 4² = 256/9 + 16 = 400/9 ⇒ TP = 20/3 cm.</p></div></div><div class="final-answer"><p>The length of tangent TP is \(\frac{20}{3}\) cm.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.12</h3>
-
-
-<p>Determine the value of \( d \) such that \( 15 \equiv 3 \pmod{d} \).</p>
-<p>Solution: \( 15 \equiv 3 \pmod{d} \) means \( 15 - 3 = kd \), for some integer \( k \).</p>
-<p>\( 12 = kd \).</p>
-<p>\(\Rightarrow d\) divides 12.</p>
-<p>The divisors of 12 are 1, 2, 3, 4, 6, 12. But \( d \) should be larger than 3 and so the possible values for \( d \) are 4, 6, 12.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Determine the value of \( d \) such that \( 15 \equiv 3 \pmod{d} \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The congruence \( 15 \equiv 3 \pmod{d} \) implies that \( d \) divides the difference \( 15 - 3 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for congruence is \( a \equiv b \pmod{d} \) if and only if \( d \) divides \( a - b \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the difference \( 15 - 3 = 12 \). So, \( d \) must be a divisor of 12.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The positive divisors of 12 are 1, 2, 3, 4, 6, and 12. Since the remainder (3) must be less than \( d \), we exclude 1, 2, and 3.</p></div></div><div class="final-answer"><p>The possible values for \( d \) are \( \boxed{4} \), \( \boxed{6} \), and \( \boxed{12} \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.29</h3>
-
-
-<p>In an A.P., sum of four consecutive terms is 28 and the sum of their squares is 276. Find the four numbers.</p>
-<p>Solution Let us take the four terms in the form (a - 3d), (a - d), (a + d) and (a + 3d).</p>
-<p>Since, sum of the four terms is 28,</p>
-<p>a - 3d + a - d + a + d + a + 3d = 28</p>
-<p>4a = 28 ⇒ a = 7</p>
-<p>Similarly, since sum of their squares is 276,</p>
-<p>(a - 3d)<sup>2</sup> + (a - d)<sup>2</sup> + (a + d)<sup>2</sup> + (a + 3d)<sup>2</sup> = 276</p>
-<p>a<sup>2</sup> - 6ad + 9d<sup>2</sup> + a<sup>2</sup> - 2ad + d<sup>2</sup> + a<sup>2</sup> + 2ad + d<sup>2</sup> + a<sup>2</sup> + 6ad + 9d<sup>2</sup> = 276</p>
-<p>4a<sup>2</sup> + 20d<sup>2</sup> = 276 ⇒ 4(7)<sup>2</sup> + 20d<sup>2</sup> = 276</p>
-<p>20d<sup>2</sup> = 4 ⇒ d = ±√4 then, d = ±2</p>
-<p>If d = 2 then the four numbers are 7 - 3(2), 7 - 2, 7 + 2, 7 + 3(2)</p>
-<p>That is the four numbers are 1, 5, 9 and 13.</p>
-<p>If a = 7, d = -2 then the four numbers are 13, 9, 5 and 1</p>
-<p>Therefore, the four consecutive terms of the A.P. are 1, 5, 9 and 13.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In an A.P., sum of four consecutive terms is 28 and the sum of their squares is 276. Find the four numbers.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the four terms be in the form $(a - 3d)$, $(a - d)$, $(a + d)$, and $(a + 3d)$.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Sum of the four terms is 28. The formula for the sum is:</p><p>$$(a - 3d) + (a - d) + (a + d) + (a + 3d) = 28$$</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the equation:</p><p>$$4a = 28 \Rightarrow a = 7$$</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Sum of their squares is 276. The formula is:</p><p>$$(a - 3d)^2 + (a - d)^2 + (a + d)^2 + (a + 3d)^2 = 276$$</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Expand and simplify:</p><p>$$4a^2 + 20d^2 = 276$$</p><p>Substitute $a = 7$:</p><p>$$4(7)^2 + 20d^2 = 276 \Rightarrow 196 + 20d^2 = 276$$</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve for $d$:</p><p>$$20d^2 = 80 \Rightarrow d^2 = 4 \Rightarrow d = \pm 2$$</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Calculate the four numbers for $d = 2$:</p><p>$$7 - 3(2) = 1, \quad 7 - 2 = 5, \quad 7 + 2 = 9, \quad 7 + 3(2) = 13$$</p></div></div><div class="final-answer"><p>The four consecutive terms of the A.P. are $\boxed{1, 5, 9, 13}$.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.66</h3>
-
-<p> If \( A = \begin{bmatrix} 3 & 5 & 0 \\ 8 & 7 & 6 \end{bmatrix} \), \( B = \begin{bmatrix} 2 & 11 & -3 \\ 0 & 1 & 1 \end{bmatrix} \), \( C = \begin{bmatrix} -1 & -7 & 2 \\ 1 & 4 & 3 \end{bmatrix} \), compute the following:</p>
-<p>(i) \( 3A + 2B - C \)</p>
-<p>(ii) \( \frac{1}{5}A - \frac{3}{5}B \)</p>
-<p>Solution:</p>
-<p>(i) \( 3A + 2B - C = 3\begin{bmatrix} 3 & 5 & 0 \\ 8 & 7 & 6 \end{bmatrix} + 2\begin{bmatrix} 2 & 11 & -3 \\ 0 & 1 & 1 \end{bmatrix} - \begin{bmatrix} -1 & -7 & 2 \\ 1 & 4 & 3 \end{bmatrix} \)</p>
-<p>\( = \begin{bmatrix} 9 & 15 & 0 \\ 24 & 21 & 18 \end{bmatrix} + \begin{bmatrix} 4 & 22 & -6 \\ 0 & 2 & 2 \end{bmatrix} + \begin{bmatrix} 1 & 7 & -2 \\ -1 & -4 & -3 \end{bmatrix} \)</p>
-<p>\( = \begin{bmatrix} 14 & 44 & -8 \\ 23 & 19 & 17 \end{bmatrix} \)</p>
-<p>(ii) \( \frac{1}{5}A - \frac{3}{5}B = \frac{1}{5}\begin{bmatrix} 3 & 5 & 0 \\ 8 & 7 & 6 \end{bmatrix} - \frac{3}{5}\begin{bmatrix} 2 & 11 & -3 \\ 0 & 1 & 1 \end{bmatrix} \)</p>
-<p>\( = \begin{bmatrix} \frac{3}{5} & 1 & 0 \\ \frac{8}{5} & \frac{7}{5} & \frac{6}{5} \end{bmatrix} + \begin{bmatrix} -\frac{6}{5} & -\frac{33}{5} & \frac{9}{5} \\ 0 & -\frac{3}{5} & -\frac{3}{5} \end{bmatrix} \)</p>
-<p>\( = \begin{bmatrix} -\frac{3}{5} & -\frac{28}{5} & \frac{9}{5} \\ \frac{8}{5} & \frac{4}{5} & \frac{3}{5} \end{bmatrix} \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A = \begin{bmatrix} 3 &amp; 5 &amp; 0 \\ 8 &amp; 7 &amp; 6 \end{bmatrix} \), \( B = \begin{bmatrix} 2 &amp; 11 &amp; -3 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \), \( C = \begin{bmatrix} -1 &amp; -7 &amp; 2 \\ 1 &amp; 4 &amp; 3 \end{bmatrix} \), compute the following:</p><p>(i) \( 3A + 2B - C \)</p><p>(ii) \( \frac{1}{5}A - \frac{3}{5}B \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute \( 3A + 2B - C \) by first multiplying each matrix by its scalar and then performing addition/subtraction.</p><p>\( 3A = 3\begin{bmatrix} 3 &amp; 5 &amp; 0 \\ 8 &amp; 7 &amp; 6 \end{bmatrix} = \begin{bmatrix} 9 &amp; 15 &amp; 0 \\ 24 &amp; 21 &amp; 18 \end{bmatrix} \)</p><p>\( 2B = 2\begin{bmatrix} 2 &amp; 11 &amp; -3 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} = \begin{bmatrix} 4 &amp; 22 &amp; -6 \\ 0 &amp; 2 &amp; 2 \end{bmatrix} \)</p><p>\( -C = -\begin{bmatrix} -1 &amp; -7 &amp; 2 \\ 1 &amp; 4 &amp; 3 \end{bmatrix} = \begin{bmatrix} 1 &amp; 7 &amp; -2 \\ -1 &amp; -4 &amp; -3 \end{bmatrix} \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add the resulting matrices.</p><p>\( 3A + 2B - C = \begin{bmatrix} 9 &amp; 15 &amp; 0 \\ 24 &amp; 21 &amp; 18 \end{bmatrix} + \begin{bmatrix} 4 &amp; 22 &amp; -6 \\ 0 &amp; 2 &amp; 2 \end{bmatrix} + \begin{bmatrix} 1 &amp; 7 &amp; -2 \\ -1 &amp; -4 &amp; -3 \end{bmatrix} \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Perform element-wise addition.</p><p>\( 3A + 2B - C = \begin{bmatrix} 14 &amp; 44 &amp; -8 \\ 23 &amp; 19 &amp; 17 \end{bmatrix} \)</p></div></div><div class="final-answer"><p>\( 3A + 2B - C = \begin{bmatrix} 14 &amp; 44 &amp; -8 \\ 23 &amp; 19 &amp; 17 \end{bmatrix} \)</p><p>---</p><p>Step 1: Compute \( \frac{1}{5}A - \frac{3}{5}B \) by first multiplying each matrix by its scalar.</p><p>\( \frac{1}{5}A = \frac{1}{5}\begin{bmatrix} 3 &amp; 5 &amp; 0 \\ 8 &amp; 7 &amp; 6 \end{bmatrix} = \begin{bmatrix} \frac{3}{5} &amp; 1 &amp; 0 \\ \frac{8}{5} &amp; \frac{7}{5} &amp; \frac{6}{5} \end{bmatrix} \)</p><p>\( -\frac{3}{5}B = -\frac{3}{5}\begin{bmatrix} 2 &amp; 11 &amp; -3 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} = \begin{bmatrix} -\frac{6}{5} &amp; -\frac{33}{5} &amp; \frac{9}{5} \\ 0 &amp; -\frac{3}{5} &amp; -\frac{3}{5} \end{bmatrix} \)</p><p>Step 2: Add the resulting matrices.</p><p>\( \frac{1}{5}A - \frac{3}{5}B = \begin{bmatrix} \frac{3}{5} &amp; 1 &amp; 0 \\ \frac{8}{5} &amp; \frac{7}{5} &amp; \frac{6}{5} \end{bmatrix} + \begin{bmatrix} -\frac{6}{5} &amp; -\frac{33}{5} &amp; \frac{9}{5} \\ 0 &amp; -\frac{3}{5} &amp; -\frac{3}{5} \end{bmatrix} \)</p><p>Step 3: Perform element-wise addition.</p><p>\( \frac{1}{5}A - \frac{3}{5}B = \begin{bmatrix} -\frac{3}{5} &amp; -\frac{28}{5} &amp; \frac{9}{5} \\ \frac{8}{5} &amp; \frac{4}{5} &amp; \frac{3}{5} \end{bmatrix} \)</p></div><div class="final-answer"><p>\( \frac{1}{5}A - \frac{3}{5}B = \begin{bmatrix} -\frac{3}{5} &amp; -\frac{28}{5} &amp; \frac{9}{5} \\ \frac{8}{5} &amp; \frac{4}{5} &amp; \frac{3}{5} \end{bmatrix} \)</p></div></div>
+</div>
 </body>
 </html>

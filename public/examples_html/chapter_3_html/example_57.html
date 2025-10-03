@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.57</h3>
-
-
-<p>If a matrix has 16 elements, what are the possible orders it can have?</p>
-<p>We know that a matrix of order m x n, has m x n elements. Thus to find all possible orders of a matrix with 16 elements, we will find all ordered pairs of natural numbers whose product is 16.</p>
-<p>Such ordered pairs are (1,16), (16,1), (4,4), (8,2), (2,8). Hence possible orders are 1x16, 16x1, 4x4, 2x8, 8x2.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If a matrix has 16 elements, what are the possible orders it can have?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Recall that a matrix of order \( m \times n \) has \( m \times n \) elements. To find all possible orders, we need to find all ordered pairs of natural numbers \((m, n)\) such that \( m \times n = 16 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>List all the factor pairs of 16 where both factors are natural numbers.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>The ordered pairs \((m, n)\) that satisfy \( m \times n = 16 \) are:</p><p>(1, 16), (16, 1), (2, 8), (8, 2), and (4, 4).</p></div></div><div class="final-answer"><p>The possible orders of the matrix are \( 1 \times 16 \), \( 16 \times 1 \), \( 2 \times 8 \), \( 8 \times 2 \), and \( 4 \times 4 \).</p></div></div>
+</div>
 </body>
 </html>

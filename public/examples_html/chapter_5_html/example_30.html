@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.30</h3>
-
-
-<p>Find the slope of the straight line \(6x + 8y + 7 = 0\).</p>
-<p>Given \(6x + 8y + 7 = 0\), the slope \(m = -\frac{6}{8} = -\frac{3}{4}\).</p>
-<p>Therefore, the slope of the straight line is \(-\frac{3}{4}\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the slope of the straight line \(6x + 8y + 7 = 0\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The given equation of the line is \(6x + 8y + 7 = 0\). To find the slope, we first rewrite it in the slope-intercept form \(y = mx + c\), where \(m\) is the slope.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for converting the general form \(Ax + By + C = 0\) to slope-intercept form is \(y = -\frac{A}{B}x - \frac{C}{B}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substituting the given values \(A = 6\), \(B = 8\), and \(C = 7\), we get:</p><p>\[</p><p>y = -\frac{6}{8}x - \frac{7}{8} = -\frac{3}{4}x - \frac{7}{8}</p><p>\]</p><p>From this, the slope \(m = -\frac{3}{4}\).</p></div></div><div class="final-answer"><p>The slope of the straight line is \(-\frac{3}{4}\).</p></div></div>
+</div>
 </body>
 </html>

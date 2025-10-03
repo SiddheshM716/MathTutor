@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.14</h3>
-
-
-<p>Consider the graph representing growth of population (in crores). Find the slope of the line AB and hence estimate the population in the year 2030.</p>
-<p>Solution: The points A(2005, 96) and B(2015, 100) are on the line AB.</p>
-<p>Slope of AB = \(\frac{100 - 96}{2015 - 2005} = \frac{4}{10} = \frac{2}{5}\)</p>
-<p>Let the growth of population in 2030 be \(k\) crores. Assuming that the point C(2030, \(k\)) is on AB, we have:</p>
-<p>Slope of AC = Slope of AB</p>
-<p>\(\frac{k - 96}{2030 - 2005} = \frac{2}{5}\) gives \(\frac{k - 96}{25} = \frac{2}{5}\)</p>
-<p>\(k - 96 = 10\)</p>
-<p>\(k = 106\)</p>
-<p>Hence, the estimated population in 2030 = 106 crores.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Consider the graph representing growth of population (in crores). Find the slope of the line AB and hence estimate the population in the year 2030.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the points A and B on the line AB. The points are given as A(2005, 96) and B(2015, 100).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the slope of AB using the formula for slope between two points \((x_1, y_1)\) and \((x_2, y_2)\):</p><p>\[</p><p>\text{Slope} = \frac{y_2 - y_1}{x_2 - x_1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values of points A and B into the slope formula:</p><p>\[</p><p>\text{Slope of AB} = \frac{100 - 96}{2015 - 2005} = \frac{4}{10} = \frac{2}{5}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Let the population in 2030 be \(k\) crores. Since point C(2030, \(k\)) lies on the line AB, the slope of AC must equal the slope of AB.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Set up the equation using the slope formula for points A and C:</p><p>\[</p><p>\frac{k - 96}{2030 - 2005} = \frac{2}{5}</p><p>\]</p><p>\[</p><p>\frac{k - 96}{25} = \frac{2}{5}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve for \(k\):</p><p>\[</p><p>k - 96 = 10</p><p>\]</p><p>\[</p><p>k = 106</p><p>\]</p></div></div><div class="final-answer"><p>The estimated population in 2030 is \(\boxed{106}\) crores.</p></div></div>
+</div>
 </body>
 </html>

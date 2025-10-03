@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.3</h3>
-
-<p> A garden roller whose length is 3 m long and whose diameter is 2.8 m is rolled to level a garden. How much area will it cover in 8 revolutions?</p>
-<p>Solution: Given that, diameter d = 2.8 m and height = 3 m</p>
-<p>Radius r = 1.4 m</p>
-<p>Area covered in one revolution = curved surface area of the cylinder</p>
-<p>= 2πrh sq. units</p>
-<p>= 2 × π × 1.4 × 3 = 26.4</p>
-<p>Area covered in 1 revolution = 26.4 m²</p>
-<p>Area covered in 8 revolutions = 8 × 26.4 = 211.2</p>
-<p>Therefore, area covered is 211.2 m²</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A garden roller whose length is 3 m long and whose diameter is 2.8 m is rolled to level a garden. How much area will it cover in 8 revolutions?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the diameter \( d = 2.8 \, \text{m} \) and height \( h = 3 \, \text{m} \).</p><p>First, find the radius \( r \) by halving the diameter.</p><p>\[ r = \frac{d}{2} = \frac{2.8}{2} = 1.4 \, \text{m} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The area covered in one revolution is equal to the curved surface area of the cylinder.</p><p>The formula for the curved surface area of a cylinder is:</p><p>\[ \text{CSA} = 2\pi rh \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values of \( r \) and \( h \) into the formula and calculate the area for one revolution.</p><p>\[ \text{CSA} = 2 \times \pi \times 1.4 \times 3 = 26.4 \, \text{m}^2 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Multiply the area for one revolution by 8 to find the total area covered in 8 revolutions.</p><p>\[ \text{Total Area} = 8 \times 26.4 = 211.2 \, \text{m}^2 \]</p></div></div><div class="final-answer"><p>The roller will cover \( 211.2 \, \text{m}^2 \) in 8 revolutions.</p></div></div>
+</div>
 </body>
 </html>

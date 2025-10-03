@@ -1,52 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.36</h3>
-
-  
-  <p>The product of Kumaran's age (in years) two years ago and his age four years from now is one more than twice his present age. What is his present age?</p>
-
-  <h3>Solution:</h3>
-  <p>Let the present age of Kumaran be \( x \) years.</p>
-  
-  <p>Two years ago, his age \( = (x - 2) \) years.</p>
-  
-  <p>Four years from now, his age \( = (x + 4) \) years.</p>
-  
-  <p>Given:</p>
-  <p>\[
-    (x - 2)(x + 4) = 1 + 2x
-  \]</p>
-  
-  <p>Expanding and simplifying:</p>
-  <p>\[
-    x^2 + 2x - 8 = 1 + 2x
-  \]</p>
-  <p>\[
-    x^2 - 9 = 0
-  \]</p>
-  <p>\[
-    (x - 3)(x + 3) = 0
-  \]</p>
-  
-  <p>Therefore, \( x = \pm 3 \) (Rejecting \(-3\) as age cannot be negative)</p>
-  
-  <p>Kumaran's present age is <strong>3 years</strong>.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The product of Kumaran's age (in years) two years ago and his age four years from now is one more than twice his present age. What is his present age?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the present age of Kumaran be \( x \) years.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Two years ago, his age was \( (x - 2) \) years. Four years from now, his age will be \( (x + 4) \) years.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>According to the problem, the product of these ages is one more than twice his present age. This gives the equation:</p><p>\[</p><p>(x - 2)(x + 4) = 1 + 2x</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Expand and simplify the equation:</p><p>\[</p><p>x^2 + 2x - 8 = 1 + 2x</p><p>\]</p><p>\[</p><p>x^2 - 9 = 0</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Factor the quadratic equation:</p><p>\[</p><p>(x - 3)(x + 3) = 0</p><p>\]</p></div></div><div class="final-answer"><p>The solutions are \( x = 3 \) or \( x = -3 \). Since age cannot be negative, Kumaran's present age is \(\boxed{3 \text{ years}}\).</p></div></div>
+</div>
 </body>
 </html>

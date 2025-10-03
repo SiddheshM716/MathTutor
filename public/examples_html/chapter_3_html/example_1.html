@@ -1,44 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 3.1</h3>
-
-    <p>The father’s age is six times his son’s age. Six years hence the age of father will be four times his son’s age. Find the present ages (in years) of the son and father.</p>
-    <p>Solution: Let the present age of father be <i>x</i> years and the present age of son be <i>y</i> years.</p>
-    <p>Given, <i>x</i> = 6<i>y</i> ... (1)</p>
-    <p><i>x</i> + 6 = 4(<i>y</i> + 6) ... (2)</p>
-    <p>Substituting (1) in (2), 6<i>y</i> + 6 = 4(<i>y</i> + 6)</p>
-    <p>6<i>y</i> + 6 = 4<i>y</i> + 24 ⇒ <i>y</i> = 9</p>
-    <p>Therefore, son’s age = 9 years and father’s age = 54 years.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The father’s age is six times his son’s age. Six years hence the age of father will be four times his son’s age. Find the present ages (in years) of the son and father.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the present age of the father be \( x \) years and the present age of the son be \( y \) years.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Given, the father’s age is six times the son’s age.</p><p>Formula: \( x = 6y \) ... (1)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Six years later, the father’s age will be four times the son’s age.</p><p>Formula: \( x + 6 = 4(y + 6) \) ... (2)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute equation (1) into equation (2):</p><p>\( 6y + 6 = 4(y + 6) \)</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the equation:</p><p>\( 6y + 6 = 4y + 24 \)</p><p>\( 6y - 4y = 24 - 6 \)</p><p>\( 2y = 18 \)</p><p>\( y = 9 \)</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Substitute \( y = 9 \) back into equation (1):</p><p>\( x = 6 \times 9 = 54 \)</p></div></div><div class="final-answer"><p>Son’s age = 9 years, Father’s age = 54 years.</p></div></div>
+</div>
 </body>
 </html>

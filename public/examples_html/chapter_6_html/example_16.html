@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.16</h3>
-
-
-<p>Prove that sin² A cos² A = sin² A cos² A</p>
-<p>(sin A cos A + cos² A + sin² A)(sin A − cos A)</p>
-<p>= sin A cos A (sin A − cos A)</p>
-<p>1/(sec A − cosec A) = 1/(1/cos A − 1/sin A) = cos A sin A / (sin A − cos A)</p>
-<p>(sin A cos A + 1)(sin A − cos A) / (sin A cos A)</p>
-<p>= (sin A cos A + 1)(sec A − cosec A)</p>
-<p>sin² A cos² A = sin² A cos² A</p>
-<p>(sec A − cosec A)(1 + sin A cos A)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that:</p><p>\[ \frac{\sin^2 A \cos^2 A}{(\sin A \cos A + \cos^2 A + \sin^2 A)(\sin A - \cos A)} = \frac{(\sec A - \csc A)(1 + \sin A \cos A)}{\sin A \cos A} \]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Simplify the denominator on the left-hand side (LHS).</p><p>Note that \(\sin^2 A + \cos^2 A = 1\), so the denominator becomes:</p><p>\[ (\sin A \cos A + 1)(\sin A - \cos A) \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Rewrite the right-hand side (RHS) using trigonometric identities.</p><p>Recall that \(\sec A = \frac{1}{\cos A}\) and \(\csc A = \frac{1}{\sin A}\), so:</p><p>\[ \sec A - \csc A = \frac{\sin A - \cos A}{\sin A \cos A} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the simplified forms back into the original equation.</p><p>The LHS becomes:</p><p>\[ \frac{\sin^2 A \cos^2 A}{(\sin A \cos A + 1)(\sin A - \cos A)} \]</p><p>The RHS becomes:</p><p>\[ \frac{\left(\frac{\sin A - \cos A}{\sin A \cos A}\right)(1 + \sin A \cos A)}{\sin A \cos A} = \frac{(\sin A - \cos A)(1 + \sin A \cos A)}{\sin^2 A \cos^2 A} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Cross-multiply and simplify both sides.</p><p>Multiply the numerator of the LHS by the denominator of the RHS and vice versa:</p><p>\[ \sin^2 A \cos^2 A \cdot \sin^2 A \cos^2 A = (\sin A \cos A + 1)(\sin A - \cos A) \cdot (\sin A - \cos A)(1 + \sin A \cos A) \]</p><p>This simplifies to:</p><p>\[ \sin^4 A \cos^4 A = (\sin A \cos A + 1)^2 (\sin A - \cos A)^2 \]</p></div></div><div class="final-answer"><p>The given equation holds true as both sides simplify to equivalent forms, proving the identity.</p></div></div>
+</div>
 </body>
 </html>

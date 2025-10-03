@@ -2,10 +2,19 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-// Define a simple type for the data we expect from the JSON file
+// Define the shape of the data inside content_index.json
+interface ChapterExamples {
+  html_files: string[];
+  images: string[];
+}
+
+interface ChapterExercises {
+  [exerciseId: string]: string[];
+}
+
 interface ContentIndex {
-  examples: Record<string, any>;
-  exercises: Record<string, any>;
+  examples: Record<string, ChapterExamples>;
+  exercises: Record<string, ChapterExercises>;
 }
 
 // Define the ordered list of chapters with their display names and URL slugs
@@ -26,7 +35,7 @@ export default function Home() {
   useEffect(() => {
     fetch("/content_index.json")
       .then((res) => res.json())
-      .then(setData);
+      .then((json: ContentIndex) => setData(json));
   }, []);
 
   if (!data) {
@@ -40,7 +49,6 @@ export default function Home() {
   return (
     <main className="bg-gray-50 min-h-screen">
       <div className="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-        
         <header className="text-center mb-10 md:mb-14">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -48,36 +56,42 @@ export default function Home() {
             </span>
           </h1>
           <p className="mt-4 text-lg md:text-xl text-gray-500 max-w-2xl mx-auto">
-            Your personal guide to mastering mathematics. Select a chapter to begin your journey.
+            Your personal guide to mastering mathematics. Select a chapter to
+            begin your journey.
           </p>
         </header>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {chapterList.map((chapter, index) => (
-            <li key={chapter.slug}>
-              <Link
-                href={`/chapter/${chapter.slug}`}
-                className="group flex items-center p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg hover:border-blue-500 transition-all duration-300 h-full"
-              >
-                <div className="flex justify-between items-center w-full">
-                  <div className="flex items-center gap-4">
-                    {/* --- THIS IS THE CHANGE --- */}
-                    {/* The number circle now has a blue background and text by default */}
-                    <span className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-700 font-bold text-lg transition-colors">
-                      {index + 1}
-                    </span>
-                    <h2 className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
-                      {chapter.name}
-                    </h2>
-                  </div>
-
-                  <span className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-transform duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-6 h-6">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
+            <li
+              key={chapter.slug}
+              className="flex flex-col p-6 bg-white border border-gray-200 rounded-xl shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            >
+              <div className="flex-grow">
+                <div className="flex items-center gap-4">
+                  <span className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 text-blue-700 font-bold text-lg">
+                    {index + 1}
                   </span>
+                  <h2 className="font-semibold text-gray-800">
+                    {chapter.name}
+                  </h2>
                 </div>
-              </Link>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-100 flex flex-col sm:flex-row gap-3">
+                <Link
+                  href={`/chapter/${chapter.slug}/examples`}
+                  className="w-full sm:w-auto inline-flex justify-center items-center bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Examples
+                </Link>
+                <Link
+                  href={`/chapter/${chapter.slug}/exercises`}
+                  className="w-full sm:w-auto inline-flex justify-center items-center bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-2 px-4 rounded-lg transition-colors"
+                >
+                  Exercises
+                </Link>
+              </div>
             </li>
           ))}
         </ul>

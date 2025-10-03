@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.29</h3>
-
-
-<p>A metallic sphere of radius 16 cm is melted and recast into small spheres each of radius 2 cm. How many small spheres can be obtained?</p>
-<p>Let the number of small spheres obtained be \( n \).</p>
-<p>Let \( r \) be the radius of each small sphere and \( R \) be the radius of metallic sphere.</p>
-<p>Here, \( R = 16 \) cm, \( r = 2 \) cm.</p>
-<p>Now, \( n \times \) (Volume of a small sphere) = Volume of big metallic sphere</p>
-<p>\[ n \times \frac{4}{3} \pi r^3 = \frac{4}{3} \pi R^3 \]</p>
-<p>\[ n \times \frac{4}{3} \pi (2)^3 = \frac{4}{3} \pi (16)^3 \]</p>
-<p>\[ 8n = 4096 \]</p>
-<p>\[ n = 512 \]</p>
-<p>Therefore, there will be 512 small spheres.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A metallic sphere of radius 16 cm is melted and recast into small spheres each of radius 2 cm. How many small spheres can be obtained?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( n \) be the number of small spheres obtained. The radius of the big metallic sphere is \( R = 16 \) cm, and the radius of each small sphere is \( r = 2 \) cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The volume of the big metallic sphere must equal the total volume of all the small spheres. The formula for the volume of a sphere is \( V = \frac{4}{3} \pi r^3 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Set up the equation for the volumes:</p><p>\[ n \times \frac{4}{3} \pi r^3 = \frac{4}{3} \pi R^3 \]</p><p>Substitute the given values:</p><p>\[ n \times \frac{4}{3} \pi (2)^3 = \frac{4}{3} \pi (16)^3 \]</p><p>Simplify the equation:</p><p>\[ 8n = 4096 \]</p><p>Solve for \( n \):</p><p>\[ n = \frac{4096}{8} = 512 \]</p></div></div><div class="final-answer"><p>512 small spheres can be obtained.</p></div></div>
+</div>
 </body>
 </html>

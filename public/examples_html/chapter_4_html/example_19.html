@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.19</h3>
-
-
-<p>Draw a triangle ABC of base BC = 8 cm, ∠A = 60° and the bisector of ∠A meets BC at D such that BD = 6 cm.</p>
-<p>Solution:</p>
-<p>Construction:</p>
-<ol>
-  <li>Draw a line segment BC = 8 cm.</li>
-  <li>At B, draw BE such that ∠CBE = 60°.</li>
-  <li>At B, draw BF such that ∠EBF = 90°.</li>
-  <li>Draw the perpendicular bisector to BC, which intersects BF at O and BC at G.</li>
-  <li>With O as centre and OB as radius draw a circle.</li>
-  <li>From B, mark an arc of 6 cm on BC at D.</li>
-  <li>The perpendicular bisector intersects the circle at I. Join ID.</li>
-  <li>ID produced meets the circle at A. Now join AB and AC.</li>
-</ol>
-<p>Then ΔABC is the required triangle.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Draw a triangle ABC of base BC = 8 cm, ∠A = 60° and the bisector of ∠A meets BC at D such that BD = 6 cm.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Draw a line segment BC = 8 cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>At point B, construct angle ∠CBE = 60° using a protractor.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>At point B, construct angle ∠EBF = 90° such that BF is perpendicular to BE.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Draw the perpendicular bisector of BC, which intersects BF at point O and BC at point G.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Using O as the center and OB as the radius, draw a circle.</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>From point B, mark an arc of 6 cm on BC to locate point D.</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>The perpendicular bisector intersects the circle at point I. Join points I and D.</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Extend ID to meet the circle at point A. Finally, join points A to B and A to C.</p></div></div><div class="final-answer"><p>ΔABC is the required triangle with BC = 8 cm, ∠A = 60°, and BD = 6 cm.</p></div></div>
+</div>
 </body>
 </html>

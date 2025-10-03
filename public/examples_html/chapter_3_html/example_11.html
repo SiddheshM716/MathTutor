@@ -1,64 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.11</h3>
-
-
-<p>Find the GCD of \(6x^3 - 30x^2 + 60x - 48\) and \(3x^3 - 12x^2 + 21x - 18\).</p>
-<p>Solution: Let \(f(x) = 6x^3 - 30x^2 + 60x - 48 = 6(x^3 - 5x^2 + 10x - 8)\) and \(g(x) = 3x^3 - 12x^2 + 21x - 18 = 3(x^3 - 4x^2 + 7x - 6)\).</p>
-<p>Now, we shall find the GCD of \(x^3 - 5x^2 + 10x - 8\) and \(x^3 - 4x^2 + 7x - 6\).</p>
-<p>\[
-\begin{array}{r|l}
-x^3 - 5x^2 + 10x - 8 & x^3 - 4x^2 + 7x - 6 \\
-\hline
-x^3 - 5x^2 + 10x - 8 & (-) \\
-\hline
-x^2 - 3x + 2 & \\
-\end{array}
-\]</p>
-<p>\[
-\begin{array}{r|l}
-x - 2 & x^3 - 5x^2 + 10x - 8 \\
-\hline
-x^3 - 3x^2 + 2x & (-) \\
-\hline
--2x^2 + 8x - 8 & \\
--2x^2 + 6x - 4 & (-) \\
-\hline
-2x - 4 & \\
-= 2(x - 2) & \\
-\end{array}
-\]</p>
-<p>\[
-\begin{array}{r|l}
-x - 2 & x^2 - 3x + 2 \\
-\hline
-x^2 - 2x & (-) \\
-\hline
--x + 2 & \\
--x + 2 & (-) \\
-\hline
-0 & \\
-\end{array}
-\]</p>
-<p>Here, we get zero as remainder.</p>
-<p>GCD of leading coefficients 3 and 6 is 3.</p>
-<p>Thus, GCD of \(6x^3 - 30x^2 + 60x - 48\) and \(3x^3 - 12x^2 + 21x - 18\) is \(3(x - 2)\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the GCD of \(6x^3 - 30x^2 + 60x - 48\) and \(3x^3 - 12x^2 + 21x - 18\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Factor out the leading coefficients from both polynomials.</p><p>Let \(f(x) = 6x^3 - 30x^2 + 60x - 48 = 6(x^3 - 5x^2 + 10x - 8)\) and \(g(x) = 3x^3 - 12x^2 + 21x - 18 = 3(x^3 - 4x^2 + 7x - 6)\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the GCD of the reduced polynomials \(x^3 - 5x^2 + 10x - 8\) and \(x^3 - 4x^2 + 7x - 6\) using polynomial division.</p><p>\[</p><p>\begin{array}{r|l}</p><p>x^3 - 5x^2 + 10x - 8 &amp; x^3 - 4x^2 + 7x - 6 \\</p><p>\hline</p><p>x^3 - 5x^2 + 10x - 8 &amp; (-) \\</p><p>\hline</p><p>x^2 - 3x + 2 &amp; \\</p><p>\end{array}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Continue dividing until the remainder is zero.</p><p>\[</p><p>\begin{array}{r|l}</p><p>x - 2 &amp; x^3 - 5x^2 + 10x - 8 \\</p><p>\hline</p><p>x^3 - 3x^2 + 2x &amp; (-) \\</p><p>\hline</p><p>-2x^2 + 8x - 8 &amp; \\</p><p>-2x^2 + 6x - 4 &amp; (-) \\</p><p>\hline</p><p>2x - 4 &amp; \\</p><p>= 2(x - 2) &amp; \\</p><p>\end{array}</p><p>\]</p><p>\[</p><p>\begin{array}{r|l}</p><p>x - 2 &amp; x^2 - 3x + 2 \\</p><p>\hline</p><p>x^2 - 2x &amp; (-) \\</p><p>\hline</p><p>-x + 2 &amp; \\</p><p>-x + 2 &amp; (-) \\</p><p>\hline</p><p>0 &amp; \\</p><p>\end{array}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The GCD of the leading coefficients 6 and 3 is 3.</p></div></div><div class="final-answer"><p>The GCD of the given polynomials is \(3(x - 2)\).</p></div></div>
+</div>
 </body>
 </html>

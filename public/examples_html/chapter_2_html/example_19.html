@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.19</h3>
-
-
-<p>Find the next three terms of the sequences:</p>
-<p>(i) 2, 6, 10, 14,...</p>
-<p>In the above sequence, the numerators are the same and the denominator is increased by 4.</p>
-<p>So the next three terms are:</p>
-<p>a<sub>1</sub> = 1 / (14 + 4) = 1 / 18</p>
-<p>a<sub>2</sub> = 1 / (18 + 4) = 1 / 22</p>
-<p>a<sub>3</sub> = 1 / (22 + 4) = 1 / 26</p>
-<p>(ii) 5, 2, -1, -4,...</p>
-<p>Here each term is decreased by 3. So the next three terms are -7, -10, -13.</p>
-<p>(iii) 1, 0.1, 0.01,...</p>
-<p>Here each term is divided by 10. Hence, the next three terms are:</p>
-<p>a<sub>1</sub> = 0.01 / 10 = 0.001</p>
-<p>a<sub>2</sub> = 0.001 / 10 = 0.0001</p>
-<p>a<sub>3</sub> = 0.0001 / 10 = 0.00001</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the next three terms of the sequences:</p><p>(i) 2, 6, 10, 14,...</p><p>(ii) 5, 2, -1, -4,...</p><p>(iii) 1, 0.1, 0.01,...</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For sequence (i) 2, 6, 10, 14,..., observe that each term increases by 4.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The next three terms can be found by adding 4 to the last term repeatedly.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p></p><p>\( a_1 = 14 + 4 = 18 \)</p><p>\( a_2 = 18 + 4 = 22 \)</p><p>\( a_3 = 22 + 4 = 26 \)</p></div></div><div class="final-answer"><p>The next three terms are 18, 22, 26.</p><p>Step 1: For sequence (ii) 5, 2, -1, -4,..., observe that each term decreases by 3.</p><p>Step 2: The next three terms can be found by subtracting 3 from the last term repeatedly.</p><p>Step 3:</p><p>\( a_1 = -4 - 3 = -7 \)</p><p>\( a_2 = -7 - 3 = -10 \)</p><p>\( a_3 = -10 - 3 = -13 \)</p></div><div class="final-answer"><p>The next three terms are -7, -10, -13.</p><p>Step 1: For sequence (iii) 1, 0.1, 0.01,..., observe that each term is divided by 10.</p><p>Step 2: The next three terms can be found by dividing the last term by 10 repeatedly.</p><p>Step 3:</p><p>\( a_1 = 0.01 / 10 = 0.001 \)</p><p>\( a_2 = 0.001 / 10 = 0.0001 \)</p><p>\( a_3 = 0.0001 / 10 = 0.00001 \)</p></div><div class="final-answer"><p>The next three terms are 0.001, 0.0001, 0.00001.</p></div></div>
+</div>
 </body>
 </html>

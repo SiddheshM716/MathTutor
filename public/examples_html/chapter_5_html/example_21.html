@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
-  <body>
-<h3>Example 5.21</h3>
-
-
-    <p>Find the equation of a line passing through the point (3, −4) and having slope = 2.</p>
-    <p>Solution: Given, (x<sub>1</sub>, y<sub>1</sub>) = (3, −4) and m = 2.</p>
-    <p>The equation of the point-slope form of the straight line is y − y<sub>1</sub> = m(x − x<sub>1</sub>).</p>
-    <p>We write it as y + 4 = 2(x − 3).</p>
-    <p>⇒ 2x − y − 10 = 0.</p>
-  </body>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the equation of a line passing through the point (3, −4) and having slope = 2.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given point and slope.</p><p>Given point: $(x_1, y_1) = (3, -4)$</p><p>Given slope: $m = 2$</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the point-slope form of a line equation.</p><p>The formula is:</p><p>$$y - y_1 = m(x - x_1)$$</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the formula.</p><p>$$y - (-4) = 2(x - 3)$$</p><p>Simplify the equation:</p><p>$$y + 4 = 2x - 6$$</p><p>Rearrange to standard form:</p><p>$$2x - y - 10 = 0$$</p></div></div><div class="final-answer"><p>The equation of the line is $\boxed{2x - y - 10 = 0}$.</p></div></div>
+</div>
+</body>
 </html>

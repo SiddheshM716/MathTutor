@@ -1,42 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 8.15</h3>
-
-
-    <p>The mean of a data is 25.6 and its coefficient of variation is 18.75. Find the standard deviation.</p>
-    <p>Solution: Mean = 25.6, Coefficient of variation, C.V. = 18.75</p>
-    <p>Coefficient of variation, C.V. = \(\frac{\sigma}{\bar{x}} \times 100\%\)</p>
-    <p>\(18.75 = \frac{\sigma}{25.6} \times 100 \implies \sigma = 4.8\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The mean of a data is 25.6 and its coefficient of variation is 18.75. Find the standard deviation.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the mean (\(\bar{x}\)) = 25.6 and coefficient of variation (C.V.) = 18.75.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for coefficient of variation is:</p><p>\[ C.V. = \frac{\sigma}{\bar{x}} \times 100\% \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the formula:</p><p>\[ 18.75 = \frac{\sigma}{25.6} \times 100 \]</p><p>Solve for \(\sigma\):</p><p>\[ \sigma = \frac{18.75 \times 25.6}{100} = 4.8 \]</p></div></div><div class="final-answer"><p>The standard deviation (\(\sigma\)) is 4.8.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.14</h3>
-
-
-<p>Solve \( 8x \equiv 1 \pmod{11} \).</p>
-<p>Solution: \( 8x \equiv 1 \pmod{11} \) can be written as \( 8x - 1 = 11k \), for some integer \( k \).</p>
-<p>When we put \( k = 5, 13, 21, 29, \ldots \), then \( 11k + 1 \) is divisible by 8.</p>
-<p>\[
-\frac{11 \times 5 + 1}{8} = 7
-\]</p>
-<p>\[
-\frac{11 \times 13 + 1}{8} = 18
-\]</p>
-<p>The solutions are \( 7, 18, 29, 40, \ldots \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \( 8x \equiv 1 \pmod{11} \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Rewrite the congruence equation \( 8x \equiv 1 \pmod{11} \) in the form \( 8x - 1 = 11k \), where \( k \) is an integer.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>We need to find integer values of \( k \) such that \( 8x - 1 = 11k \) holds, meaning \( x = \frac{11k + 1}{8} \) must be an integer.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Test values of \( k \) to find when \( \frac{11k + 1}{8} \) is an integer. For example:</p><p>\[</p><p>k = 5 \implies x = \frac{11 \times 5 + 1}{8} = \frac{56}{8} = 7</p><p>\]</p><p>\[</p><p>k = 13 \implies x = \frac{11 \times 13 + 1}{8} = \frac{144}{8} = 18</p><p>\]</p></div></div><div class="final-answer"><p>The solutions are all integers of the form \( x = 7 + 11m \), where \( m \) is a non-negative integer. Examples include \( 7, 18, 29, 40, \ldots \).</p></div></div>
+</div>
 </body>
 </html>

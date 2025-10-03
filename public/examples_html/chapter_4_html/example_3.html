@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.3</h3>
-
-
-<p>In &#x25B3;BAC and &#x25B3;PRQ,</p>
-<p>\(\frac{AB}{RQ} = \frac{3}{6} = \frac{1}{2}\)</p>
-<p>\(\frac{BC}{QP} = \frac{6}{12} = \frac{1}{2}\)</p>
-<p>\(\frac{CA}{PR} = \frac{3\sqrt{3}}{6\sqrt{3}} = \frac{1}{2}\)</p>
-<p>Therefore, \(\frac{AB}{RQ} = \frac{BC}{QP} = \frac{CA}{PR}\)</p>
-<p>By SSS similarity, we have &#x25B3;BAC ~ &#x25B3;QRP</p>
-<p>\(\angle P = \angle C\) (since the corresponding parts of similar triangles are equal)</p>
-<p>\(\angle P = \angle C = 180° - (\angle A + \angle B) = 180° - (90° + 60°)\)</p>
-<p>\(\angle P = 180° - 150° = 30°\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In △BAC and △PRQ,</p><p>\(\frac{AB}{RQ} = \frac{3}{6} = \frac{1}{2}\)</p><p>\(\frac{BC}{QP} = \frac{6}{12} = \frac{1}{2}\)</p><p>\(\frac{CA}{PR} = \frac{3\sqrt{3}}{6\sqrt{3}} = \frac{1}{2}\)</p><p>Therefore, \(\frac{AB}{RQ} = \frac{BC}{QP} = \frac{CA}{PR}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Verify the ratios of corresponding sides of △BAC and △PRQ.</p><p>The given ratios are:</p><p>\(\frac{AB}{RQ} = \frac{1}{2}\), \(\frac{BC}{QP} = \frac{1}{2}\), and \(\frac{CA}{PR} = \frac{1}{2}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the SSS similarity criterion.</p><p>Since all corresponding sides are proportional (\(\frac{AB}{RQ} = \frac{BC}{QP} = \frac{CA}{PR}\)), △BAC ~ △QRP by SSS similarity.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the measure of angle \(P\).</p><p>Using the property of similar triangles, corresponding angles are equal: \(\angle P = \angle C\).</p><p>In △BAC, the angles are \(\angle A = 90°\), \(\angle B = 60°\), and \(\angle C = 180° - (90° + 60°) = 30°\).</p><p>Thus, \(\angle P = \angle C = 30°\).</p></div></div><div class="final-answer"><p>\(\angle P = 30°\)</p></div></div>
+</div>
 </body>
 </html>

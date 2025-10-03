@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.16</h3>
-
-<p> Find</p>
-<p>
-  (i) \(\frac{14x^7}{3y} \div \frac{7x}{16y}\)  
-  (ii) \(\frac{x^2 - 16}{x + 4} \div \frac{x - 4}{x + 4}\)  
-  (iii) \(\frac{16x^2 - 20x - 3}{3x^2 - 2x - 1} \div \frac{8x^2 + 11x + 3}{3x^2 - 11x - 4}\)
-</p>
-<p>Solution:</p>
-<p>
-  (i) \(\frac{14x^7}{3y} \div \frac{7x}{16y} = \frac{14x^7}{3y} \times \frac{16y}{7x} = 32x^6\)  
-  (ii) \(\frac{x^2 - 16}{x + 4} \div \frac{x - 4}{x + 4} = \frac{(x + 4)(x - 4)}{x + 4} \times \frac{x + 4}{x - 4} = x + 4\)  
-  (iii) \(\frac{16x^2 - 20x - 3}{3x^2 - 2x - 1} \div \frac{8x^2 + 11x + 3}{3x^2 - 11x - 4} = \frac{(8x + 3)(2x - 1)}{(3x + 1)(x - 1)} \times \frac{(3x + 1)(x - 4)}{(8x + 3)(x + 1)} = \frac{(2x - 1)(x - 4)}{(x - 1)(x + 1)} = \frac{2x^2 - 9x + 4}{x^2 - 1}\)
-</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find:</p><p>(i) \(\frac{14x^7}{3y} \div \frac{7x}{16y}\)</p><p>(ii) \(\frac{x^2 - 16}{x + 4} \div \frac{x - 4}{x + 4}\)</p><p>(iii) \(\frac{16x^2 - 20x - 3}{3x^2 - 2x - 1} \div \frac{8x^2 + 11x + 3}{3x^2 - 11x - 4}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Rewrite the division as multiplication by the reciprocal.</p><p>For (i):</p><p>\(\frac{14x^7}{3y} \div \frac{7x}{16y} = \frac{14x^7}{3y} \times \frac{16y}{7x}\)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the expression by canceling common terms.</p><p>\(\frac{14x^7 \cdot 16y}{3y \cdot 7x} = \frac{224x^7 y}{21xy}\)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Cancel \(y\) and simplify \(x^7 / x = x^6\), and \(224/21 = 32/3\).</p><p>Final simplified form: \(32x^6\)</p></div></div><div class="final-answer"><p>(i) \(32x^6\)</p><p>---</p><p>Step 1: Rewrite the division as multiplication by the reciprocal.</p><p>For (ii):</p><p>\(\frac{x^2 - 16}{x + 4} \div \frac{x - 4}{x + 4} = \frac{x^2 - 16}{x + 4} \times \frac{x + 4}{x - 4}\)</p><p>Step 2: Factor \(x^2 - 16\) as \((x + 4)(x - 4)\).</p><p>\(\frac{(x + 4)(x - 4)}{x + 4} \times \frac{x + 4}{x - 4}\)</p><p>Step 3: Cancel \((x + 4)\) and \((x - 4)\).</p><p>Simplified form: \(x + 4\)</p></div><div class="final-answer"><p>(ii) \(x + 4\)</p><p>---</p><p>Step 1: Rewrite the division as multiplication by the reciprocal.</p><p>For (iii):</p><p>\(\frac{16x^2 - 20x - 3}{3x^2 - 2x - 1} \div \frac{8x^2 + 11x + 3}{3x^2 - 11x - 4} = \frac{16x^2 - 20x - 3}{3x^2 - 2x - 1} \times \frac{3x^2 - 11x - 4}{8x^2 + 11x + 3}\)</p><p>Step 2: Factor all quadratic expressions.</p><p>Numerator 1: \(16x^2 - 20x - 3 = (8x + 3)(2x - 1)\)</p><p>Denominator 1: \(3x^2 - 2x - 1 = (3x + 1)(x - 1)\)</p><p>Numerator 2: \(3x^2 - 11x - 4 = (3x + 1)(x - 4)\)</p><p>Denominator 2: \(8x^2 + 11x + 3 = (8x + 3)(x + 1)\)</p><p>Step 3: Substitute factored forms and cancel common terms.</p><p>\(\frac{(8x + 3)(2x - 1)}{(3x + 1)(x - 1)} \times \frac{(3x + 1)(x - 4)}{(8x + 3)(x + 1)} = \frac{(2x - 1)(x - 4)}{(x - 1)(x + 1)}\)</p><p>Step 4: Expand the remaining terms.</p><p>\(\frac{2x^2 - 9x + 4}{x^2 - 1}\)</p></div><div class="final-answer"><p>(iii) \(\frac{2x^2 - 9x + 4}{x^2 - 1}\)</p></div></div>
+</div>
 </body>
 </html>

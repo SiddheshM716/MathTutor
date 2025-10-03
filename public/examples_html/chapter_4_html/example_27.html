@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.27</h3>
-
-
-<p>In Fig. 4.65, ΔABC is circumscribing a circle. Find the length of BC.</p>
-<p>Solution:</p>
-<p>AN = AM = 3 cm (Tangents drawn from same external point are equal)</p>
-<p>BN = BL = 4 cm</p>
-<p>CL = CM = AC - AM = 9 - 3 = 6 cm</p>
-<p>Therefore, BC = BL + CL = 4 + 6 = 10 cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In Fig. 4.65, ΔABC is circumscribing a circle. Find the length of BC.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the lengths of the tangents from points A and B.</p><p>AN = AM = 3 cm (Tangents drawn from the same external point are equal).</p><p>BN = BL = 4 cm (Tangents drawn from the same external point are equal).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the length of the remaining tangent segment from point C.</p><p>Given AC = 9 cm and AM = 3 cm, we find CM using:</p><p>\[ CM = AC - AM \]</p><p>\[ CM = 9 - 3 = 6 \, \text{cm} \]</p><p>Since CL = CM (Tangents from the same external point), CL = 6 cm.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute the total length of BC by adding the segments BL and CL.</p><p>\[ BC = BL + CL \]</p><p>\[ BC = 4 + 6 = 10 \, \text{cm} \]</p></div></div><div class="final-answer"><p>The length of BC is \(\boxed{10 \, \text{cm}}\).</p></div></div>
+</div>
 </body>
 </html>

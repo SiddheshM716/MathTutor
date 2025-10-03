@@ -1,43 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.28</h3>
-
-
-<p>If \( l \), \( m \) and \( n \) terms of an A.P. are \( x \), \( y \), \( z \) respectively, then show that</p>
-<p>(i) \( x(m - n) + y(n - l) + z(l - m) = 0 \)</p>
-<p>(ii) \( (x - y)n + (y - z)l + (z - x)m = 0 \)</p>
-<p>Solution:</p>
-<p>(i) Let \( a \) be the first term and \( d \) be the common difference. It is given that</p>
-<p>\( a + (l - 1)d = x \) (1)</p>
-<p>\( a + (m - 1)d = y \) (2)</p>
-<p>\( a + (n - 1)d = z \) (3)</p>
-<p>We have,</p>
-<p>\( x(m - n) + y(n - l) + z(l - m) \)</p>
-<p>\( = a[(m - n) + (n - l) + (l - m)] + d[(m - n)(l - 1) + (n - l)(m - 1) + (l - m)(n - 1)] \)</p>
-<p>\( = a[0] + d[lm - ln - m + n + mn - lm - n + l + ln - mn - l + m] \)</p>
-<p>\( = a(0) + d(0) = 0 \)</p>
-<p>(ii) On subtracting equation (2) from equation (1), equation (3) from equation (2) and equation (1) from equation (3), we get</p>
-<p>\( x - y = (l - m)d \)</p>
-<p>\( y - z = (m - n)d \)</p>
-<p>\( z - x = (n - l)d \)</p>
-<p>\( (x - y)n + (y - z)l + (z - x)m = [(l - m)n + (m - n)l + (n - l)m]d \)</p>
-<p>\( = [ln - mn + lm - nl + nm - lm]d = 0 \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( l \), \( m \) and \( n \) terms of an A.P. are \( x \), \( y \), \( z \) respectively, then show that:</p><p>(i) \( x(m - n) + y(n - l) + z(l - m) = 0 \)</p><p>(ii) \( (x - y)n + (y - z)l + (z - x)m = 0 \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( a \) be the first term and \( d \) be the common difference of the A.P. Given the \( l \)-th, \( m \)-th, and \( n \)-th terms:</p><p>\( a + (l - 1)d = x \) (1)</p><p>\( a + (m - 1)d = y \) (2)</p><p>\( a + (n - 1)d = z \) (3)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), expand \( x(m - n) + y(n - l) + z(l - m) \) using equations (1), (2), and (3):</p><p>\( x(m - n) + y(n - l) + z(l - m) = a[(m - n) + (n - l) + (l - m)] + d[(m - n)(l - 1) + (n - l)(m - 1) + (l - m)(n - 1)] \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the expression:</p><p>\( = a[0] + d[lm - ln - m + n + mn - lm - n + l + ln - mn - l + m] \)</p><p>\( = a(0) + d(0) = 0 \)</p></div></div><div class="final-answer"><p>\( x(m - n) + y(n - l) + z(l - m) = 0 \)</p><p>Step 1: For part (ii), subtract equations (1)-(2), (2)-(3), and (3)-(1):</p><p>\( x - y = (l - m)d \)</p><p>\( y - z = (m - n)d \)</p><p>\( z - x = (n - l)d \)</p><p>Step 2: Substitute these into \( (x - y)n + (y - z)l + (z - x)m \):</p><p>\( (x - y)n + (y - z)l + (z - x)m = [(l - m)n + (m - n)l + (n - l)m]d \)</p><p>Step 3: Simplify the expression:</p><p>\( = [ln - mn + lm - nl + nm - lm]d = 0 \)</p></div><div class="final-answer"><p>\( (x - y)n + (y - z)l + (z - x)m = 0 \)</p></div></div>
+</div>
 </body>
 </html>

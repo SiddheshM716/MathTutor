@@ -1,44 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.6</h3>
-
-
-<p>Solve the system of equations:</p>
-<p>3x + y - 3z = 1 ... (1)</p>
-<p>-2x - y + 2z = 1 ... (2)</p>
-<p>-x - y + 2z = 2 ... (3)</p>
-<p>Adding (1) and (2):</p>
-<p>3x + y - 3z = 1</p>
-<p>-2x - y + 2z = 1</p>
-<p>-------------------</p>
-<p>x - z = 2 ... (4)</p>
-<p>Adding (1) and (3):</p>
-<p>3x + y - 3z = 1</p>
-<p>-x - y + 2z = 2</p>
-<p>-------------------</p>
-<p>2x - z = 3 ... (5)</p>
-<p>Now, (5) - 2×(4):</p>
-<p>2x - z = 3</p>
-<p>2x - 2z = 4</p>
-<p>-------------------</p>
-<p>0 = -1</p>
-<p>This is a contradiction, so the system is inconsistent and has no solution.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve the system of equations:</p><p>\[ 3x + y - 3z = 1 \quad \text{(1)} \]</p><p>\[ -2x - y + 2z = 1 \quad \text{(2)} \]</p><p>\[ -x - y + 2z = 2 \quad \text{(3)} \]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Add equations (1) and (2) to eliminate \( y \):</p><p>\[ 3x + y - 3z = 1 \]</p><p>\[ -2x - y + 2z = 1 \]</p><p>\[ ------------------- \]</p><p>\[ x - z = 2 \quad \text{(4)} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add equations (1) and (3) to eliminate \( y \) again:</p><p>\[ 3x + y - 3z = 1 \]</p><p>\[ -x - y + 2z = 2 \]</p><p>\[ ------------------- \]</p><p>\[ 2x - z = 3 \quad \text{(5)} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Subtract \( 2 \times \text{(4)} \) from equation (5) to eliminate \( x \):</p><p>\[ 2x - z = 3 \]</p><p>\[ 2x - 2z = 4 \quad \text{(from } 2 \times \text{(4))} \]</p><p>\[ ------------------- \]</p><p>\[ 0 = -1 \]</p></div></div><div class="final-answer"><p>The system is inconsistent and has no solution.</p></div></div>
+</div>
 </body>
 </html>

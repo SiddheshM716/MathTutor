@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.2</h3>
-
-<p> Solve 2x - 3y = 6, x + y = 1</p>
-<p>Solution:</p>
-<p>2x - 3y = 6 ... (1)</p>
-<p>x + y = 1 ... (2)</p>
-<p>(1) × 1 ⇒ 2x - 3y = 6</p>
-<p>(2) × 2 ⇒ 2x + 2y = 2</p>
-<p>Subtracting: -5y = 4</p>
-<p>y = -4/5</p>
-<p>Substituting y = -4/5 in (2), x - 4/5 = 1 we get, x = 9/5</p>
-<p>Therefore, x = 9/5, y = -4/5</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve the system of equations:</p><p>\[ 2x - 3y = 6 \]</p><p>\[ x + y = 1 \]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Label the equations for clarity.</p><p>\[ 2x - 3y = 6 \quad \text{(1)} \]</p><p>\[ x + y = 1 \quad \text{(2)} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Multiply equation (2) by 2 to align coefficients of \( x \).</p><p>\[ (2) \times 2 \Rightarrow 2x + 2y = 2 \quad \text{(2a)} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Subtract equation (2a) from equation (1) to eliminate \( x \).</p><p>\[ (2x - 3y) - (2x + 2y) = 6 - 2 \]</p><p>\[ -5y = 4 \]</p><p>\[ y = -\frac{4}{5} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \( y = -\frac{4}{5} \) into equation (2) to solve for \( x \).</p><p>\[ x + \left(-\frac{4}{5}\right) = 1 \]</p><p>\[ x = 1 + \frac{4}{5} \]</p><p>\[ x = \frac{9}{5} \]</p></div></div><div class="final-answer"><p>\[ x = \frac{9}{5}, \quad y = -\frac{4}{5} \]</p></div></div>
+</div>
 </body>
 </html>

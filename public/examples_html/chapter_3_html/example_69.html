@@ -1,98 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.69</h3>
-
-  
-  <p>Given matrices:</p>
-  <p>\[
-  A = \begin{pmatrix} 
-  2 & -2\sqrt{2} \\ 
-  \sqrt{2} & 2 
-  \end{pmatrix}, \quad 
-  B = \begin{pmatrix} 
-  2 & 2\sqrt{2} \\ 
-  -\sqrt{2} & 2 
-  \end{pmatrix}
-  \]</p>
-  <p>Show that \( A \) and \( B \) satisfy the commutative property of matrix multiplication (i.e., \( AB = BA \)).</p>
-
-  <h3>Solution</h3>
-  <p>We need to demonstrate that \( AB = BA \):</p>
-  
-  <h4>First compute \( AB \):</h4>
-  <p>\[
-  AB = \begin{pmatrix} 
-  2 & -2\sqrt{2} \\ 
-  \sqrt{2} & 2 
-  \end{pmatrix}
-  \begin{pmatrix} 
-  2 & 2\sqrt{2} \\ 
-  -\sqrt{2} & 2 
-  \end{pmatrix}
-  \]</p>
-  <p>\[
-  = \begin{pmatrix} 
-  2×2 + (-2\sqrt{2})×(-\sqrt{2}) & 2×2\sqrt{2} + (-2\sqrt{2})×2 \\ 
-  \sqrt{2}×2 + 2×(-\sqrt{2}) & \sqrt{2}×2\sqrt{2} + 2×2 
-  \end{pmatrix}
-  \]</p>
-  <p>\[
-  = \begin{pmatrix} 
-  4 + 4 & 4\sqrt{2} - 4\sqrt{2} \\ 
-  2\sqrt{2} - 2\sqrt{2} & 4 + 4 
-  \end{pmatrix}
-  = \begin{pmatrix} 
-  8 & 0 \\ 
-  0 & 8 
-  \end{pmatrix}
-  \]</p>
-
-  <h4>Then compute \( BA \):</h4>
-  <p>\[
-  BA = \begin{pmatrix} 
-  2 & 2\sqrt{2} \\ 
-  -\sqrt{2} & 2 
-  \end{pmatrix}
-  \begin{pmatrix} 
-  2 & -2\sqrt{2} \\ 
-  \sqrt{2} & 2 
-  \end{pmatrix}
-  \]</p>
-  <p>\[
-  = \begin{pmatrix} 
-  2×2 + 2\sqrt{2}×\sqrt{2} & 2×(-2\sqrt{2}) + 2\sqrt{2}×2 \\ 
-  -\sqrt{2}×2 + 2×\sqrt{2} & -\sqrt{2}×(-2\sqrt{2}) + 2×2 
-  \end{pmatrix}
-  \]</p>
-  <p>\[
-  = \begin{pmatrix} 
-  4 + 4 & -4\sqrt{2} + 4\sqrt{2} \\ 
-  -2\sqrt{2} + 2\sqrt{2} & 4 + 4 
-  \end{pmatrix}
-  = \begin{pmatrix} 
-  8 & 0 \\ 
-  0 & 8 
-  \end{pmatrix}
-  \]</p>
-
-  <h3>Conclusion</h3>
-  <p>Since \( AB = BA = \begin{pmatrix} 8 & 0 \\ 0 & 8 \end{pmatrix} \), the matrices \( A \) and \( B \) satisfy the commutative property of matrix multiplication.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Given matrices:</p><p>\[</p><p>A = \begin{pmatrix}</p><p>2 &amp; -2\sqrt{2} \\</p><p>\sqrt{2} &amp; 2</p><p>\end{pmatrix}, \quad</p><p>B = \begin{pmatrix}</p><p>2 &amp; 2\sqrt{2} \\</p><p>-\sqrt{2} &amp; 2</p><p>\end{pmatrix}</p><p>\]</p><p>Show that \( A \) and \( B \) satisfy the commutative property of matrix multiplication (i.e., \( AB = BA \)).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute the product \( AB \).</p><p>\[</p><p>AB = \begin{pmatrix}</p><p>2 &amp; -2\sqrt{2} \\</p><p>\sqrt{2} &amp; 2</p><p>\end{pmatrix}</p><p>\begin{pmatrix}</p><p>2 &amp; 2\sqrt{2} \\</p><p>-\sqrt{2} &amp; 2</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the matrix multiplication formula \( (AB)_{ij} = \sum_{k} A_{ik} B_{kj} \).</p><p>\[</p><p>AB = \begin{pmatrix}</p><p>2×2 + (-2\sqrt{2})×(-\sqrt{2}) &amp; 2×2\sqrt{2} + (-2\sqrt{2})×2 \\</p><p>\sqrt{2}×2 + 2×(-\sqrt{2}) &amp; \sqrt{2}×2\sqrt{2} + 2×2</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the calculations.</p><p>\[</p><p>AB = \begin{pmatrix}</p><p>4 + 4 &amp; 4\sqrt{2} - 4\sqrt{2} \\</p><p>2\sqrt{2} - 2\sqrt{2} &amp; 4 + 4</p><p>\end{pmatrix}</p><p>= \begin{pmatrix}</p><p>8 &amp; 0 \\</p><p>0 &amp; 8</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Compute the product \( BA \).</p><p>\[</p><p>BA = \begin{pmatrix}</p><p>2 &amp; 2\sqrt{2} \\</p><p>-\sqrt{2} &amp; 2</p><p>\end{pmatrix}</p><p>\begin{pmatrix}</p><p>2 &amp; -2\sqrt{2} \\</p><p>\sqrt{2} &amp; 2</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Apply the matrix multiplication formula again.</p><p>\[</p><p>BA = \begin{pmatrix}</p><p>2×2 + 2\sqrt{2}×\sqrt{2} &amp; 2×(-2\sqrt{2}) + 2\sqrt{2}×2 \\</p><p>-\sqrt{2}×2 + 2×\sqrt{2} &amp; -\sqrt{2}×(-2\sqrt{2}) + 2×2</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Simplify the calculations.</p><p>\[</p><p>BA = \begin{pmatrix}</p><p>4 + 4 &amp; -4\sqrt{2} + 4\sqrt{2} \\</p><p>-2\sqrt{2} + 2\sqrt{2} &amp; 4 + 4</p><p>\end{pmatrix}</p><p>= \begin{pmatrix}</p><p>8 &amp; 0 \\</p><p>0 &amp; 8</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="final-answer"><p>Since \( AB = BA = \begin{pmatrix} 8 &amp; 0 \\ 0 &amp; 8 \end{pmatrix} \), the matrices \( A \) and \( B \) satisfy the commutative property of matrix multiplication.</p></div></div>
+</div>
 </body>
 </html>

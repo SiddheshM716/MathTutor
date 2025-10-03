@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.2</h3>
-
-
-<p>Is ΔABC ~ ΔPQR?</p>
-<p>In ΔABC and ΔPQR,</p>
-<p>\(\frac{PQ}{AB} = \frac{3}{6} = \frac{1}{2}\), \(\frac{QR}{BC} = \frac{4}{10} = \frac{2}{5}\)</p>
-<p>Since \(\frac{1}{2} \neq \frac{2}{5}\), the corresponding sides are not proportional.</p>
-<p>Therefore, ΔABC is not similar to ΔPQR.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Is ΔABC ~ ΔPQR?</p><p>In ΔABC and ΔPQR,</p><p>\(\frac{PQ}{AB} = \frac{3}{6} = \frac{1}{2}\), \(\frac{QR}{BC} = \frac{4}{10} = \frac{2}{5}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compare the ratios of corresponding sides of ΔABC and ΔPQR.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the ratio \(\frac{PQ}{AB}\):</p><p>\[</p><p>\frac{PQ}{AB} = \frac{3}{6} = \frac{1}{2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the ratio \(\frac{QR}{BC}\):</p><p>\[</p><p>\frac{QR}{BC} = \frac{4}{10} = \frac{2}{5}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Check if the ratios are equal:</p><p>\[</p><p>\frac{1}{2} \neq \frac{2}{5}</p><p>\]</p></div></div><div class="final-answer"><p>Since the corresponding sides are not proportional, ΔABC is not similar to ΔPQR.</p></div></div>
+</div>
 </body>
 </html>

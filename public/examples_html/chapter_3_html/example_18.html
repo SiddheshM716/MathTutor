@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.18</h3>
-
-
-<p>Simplify \(\frac{a}{(a-2)(a-3)} + \frac{1}{(a-2)(a-1)} - \frac{1}{(a-5)(a-3)}\)</p>
-<p>\(\frac{(a-1)(a-5) + (a-3)(a-5) - (a-1)(a-2)}{(a-1)(a-2)(a-3)(a-5)}\)</p>
-<p>\(\frac{(a^2 - 6a + 5) + (a^2 - 8a + 15) - (a^2 - 3a + 2)}{(a-1)(a-2)(a-3)(a-5)}\)</p>
-<p>\(\frac{a^2 - 6a + 5 + a^2 - 8a + 15 - a^2 + 3a - 2}{(a-1)(a-2)(a-3)(a-5)}\)</p>
-<p>\(\frac{a^2 - 11a + 18}{(a-1)(a-2)(a-3)(a-5)}\)</p>
-<p>\(\frac{(a-9)}{(a-1)(a-3)(a-5)}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Simplify \(\frac{a}{(a-2)(a-3)} + \frac{1}{(a-2)(a-1)} - \frac{1}{(a-5)(a-3)}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Combine the fractions by finding a common denominator. The common denominator is \((a-1)(a-2)(a-3)(a-5)\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Rewrite each fraction with the common denominator:</p><p>\[</p><p>\frac{a(a-1)(a-5) + 1(a-3)(a-5) - 1(a-1)(a-2)}{(a-1)(a-2)(a-3)(a-5)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Expand the numerators:</p><p>\[</p><p>\frac{(a^2 - 6a + 5) + (a^2 - 8a + 15) - (a^2 - 3a + 2)}{(a-1)(a-2)(a-3)(a-5)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Combine like terms in the numerator:</p><p>\[</p><p>\frac{a^2 - 11a + 18}{(a-1)(a-2)(a-3)(a-5)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Factor the numerator:</p><p>\[</p><p>\frac{(a-2)(a-9)}{(a-1)(a-2)(a-3)(a-5)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Cancel the common factor \((a-2)\):</p><p>\[</p><p>\frac{a-9}{(a-1)(a-3)(a-5)}</p><p>\]</p></div></div><div class="final-answer"><p>\(\frac{a-9}{(a-1)(a-3)(a-5)}\)</p></div></div>
+</div>
 </body>
 </html>

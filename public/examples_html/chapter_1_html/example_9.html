@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.9</h3>
-
-
-<p>Given \( f(z) = 2z - z^2 \), find</p>
-<p>(i) \( f(1) \)</p>
-<p>(ii) \( f(z+1) \)</p>
-<p>(iii) \( f(z) + f(1) \)</p>
-<p>Solution:</p>
-<p>(i) \( f(1) = 2(1) - (1)^2 = 2 - 1 = 1 \)</p>
-<p>(ii) \( f(z+1) = 2(z+1) - (z+1)^2 = 2z + 2 - (z^2 + 2z + 1) = -z^2 + 1 \)</p>
-<p>(iii) \( f(z) + f(1) = (2z - z^2) + 1 = -z^2 + 2z + 1 \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Given \( f(z) = 2z - z^2 \), find:</p><p>(i) \( f(1) \)</p><p>(ii) \( f(z+1) \)</p><p>(iii) \( f(z) + f(1) \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>To find \( f(1) \), substitute \( z = 1 \) into the function \( f(z) = 2z - z^2 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the substitution and simplify:</p><p>\[ f(1) = 2(1) - (1)^2 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the result:</p><p>\[ f(1) = 2 - 1 = 1 \]</p></div></div><div class="final-answer"><p>\( f(1) = \boxed{1} \)</p><p>---</p><p>Step 1: To find \( f(z+1) \), substitute \( z = z+1 \) into the function \( f(z) = 2z - z^2 \).</p><p>Step 2: Expand and simplify:</p><p>\[ f(z+1) = 2(z+1) - (z+1)^2 \]</p><p>\[ f(z+1) = 2z + 2 - (z^2 + 2z + 1) \]</p><p>Step 3: Combine like terms:</p><p>\[ f(z+1) = -z^2 + 1 \]</p></div><div class="final-answer"><p>\( f(z+1) = \boxed{-z^2 + 1} \)</p><p>---</p><p>Step 1: To find \( f(z) + f(1) \), add the expressions for \( f(z) \) and \( f(1) \).</p><p>Step 2: Substitute the known values:</p><p>\[ f(z) + f(1) = (2z - z^2) + 1 \]</p><p>Step 3: Simplify the expression:</p><p>\[ f(z) + f(1) = -z^2 + 2z + 1 \]</p></div><div class="final-answer"><p>\( f(z) + f(1) = \boxed{-z^2 + 2z + 1} \)</p></div></div>
+</div>
 </body>
 </html>

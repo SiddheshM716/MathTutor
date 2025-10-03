@@ -1,41 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 4.5</h3>
-
-    <p>In ΔCAB and ΔCED, ∠C is common, ∠A = ∠CED.</p>
-    <p>Therefore, ΔCAB ~ ΔCED (By AA similarity).</p>
-    <p>Hence, \(\frac{CA}{CE} = \frac{AB}{DE} = \frac{CB}{CD}\).</p>
-    <p>Given: DE = 8, CD = 12.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In ΔCAB and ΔCED, ∠C is common, ∠A = ∠CED. Therefore, ΔCAB ~ ΔCED (By AA similarity). Hence, \(\frac{CA}{CE} = \frac{AB}{DE} = \frac{CB}{CD}\). Given: DE = 8, CD = 12.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since ΔCAB ~ ΔCED by AA similarity, the corresponding sides are proportional.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The proportionality of corresponding sides is given by \(\frac{CA}{CE} = \frac{AB}{DE} = \frac{CB}{CD}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Given DE = 8 and CD = 12, we can write the ratio \(\frac{CB}{CD} = \frac{CB}{12}\).</p></div></div><div class="final-answer"><p>The ratio \(\frac{CB}{CD} = \frac{CB}{12}\) is derived from the similarity of the triangles.</p></div></div>
+</div>
 </body>
 </html>

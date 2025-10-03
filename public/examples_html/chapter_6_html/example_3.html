@@ -1,45 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 6.3</h3>
-
-    <p>Prove that \(\frac{1 + \cot^2 \theta}{\csc \theta + 1} = \csc \theta\)</p>
-    <p>Solution:</p>
-    <p>\[
-    \frac{1 + \cot^2 \theta}{\csc \theta + 1} = \frac{\csc^2 \theta - 1 + 1}{\csc \theta + 1} = \frac{\csc^2 \theta}{\csc \theta + 1}
-    \]</p>
-    <p>\[
-    = \frac{(\csc \theta + 1)(\csc \theta - 1)}{\csc \theta + 1} = \csc \theta - 1 + 1 = \csc \theta
-    \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that \(\frac{1 + \cot^2 \theta}{\csc \theta + 1} = \csc \theta\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Recall the Pythagorean identity \(1 + \cot^2 \theta = \csc^2 \theta\). Substitute this into the numerator.</p><p>\[</p><p>\frac{1 + \cot^2 \theta}{\csc \theta + 1} = \frac{\csc^2 \theta}{\csc \theta + 1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Factor the numerator using the difference of squares formula \(a^2 - b^2 = (a + b)(a - b)\).</p><p>\[</p><p>\frac{\csc^2 \theta}{\csc \theta + 1} = \frac{(\csc \theta + 1)(\csc \theta - 1)}{\csc \theta + 1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Cancel out the common factor \((\csc \theta + 1)\) in the numerator and denominator.</p><p>\[</p><p>\frac{(\csc \theta + 1)(\csc \theta - 1)}{\csc \theta + 1} = \csc \theta - 1 + 1 = \csc \theta</p><p>\]</p></div></div><div class="final-answer"><p>\(\csc \theta\)</p></div></div>
+</div>
 </body>
 </html>

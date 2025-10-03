@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.17</h3>
-
-  <p>Find:</p>
-  <p>\(\frac{x^2 + 20x + 36}{x^2 - 3x - 28} - \frac{x^2 + 12x + 4}{x^2 - 3x - 28}\)</p>
-
-  <h3>Solution:</h3>
-  <p>
-    \[\frac{x^2 + 20x + 36}{x^2 - 3x - 28} - \frac{x^2 + 12x + 4}{x^2 - 3x - 28} = \frac{(x^2 + 20x + 36) - (x^2 + 12x + 4)}{x^2 - 3x - 28}\]
-  </p>
-  <p>
-    \[= \frac{8x + 32}{x^2 - 3x - 28} = \frac{8(x + 4)}{(x - 7)(x + 4)} = \frac{8}{x - 7}\]
-  </p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find:</p><p>\[</p><p>\frac{x^2 + 20x + 36}{x^2 - 3x - 28} - \frac{x^2 + 12x + 4}{x^2 - 3x - 28}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since both fractions have the same denominator, subtract the numerators directly.</p><p>\[</p><p>\frac{(x^2 + 20x + 36) - (x^2 + 12x + 4)}{x^2 - 3x - 28}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the numerator by combining like terms.</p><p>\[</p><p>\frac{8x + 32}{x^2 - 3x - 28}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Factor the numerator and the denominator.</p><p>Numerator: \(8x + 32 = 8(x + 4)\)</p><p>Denominator: \(x^2 - 3x - 28 = (x - 7)(x + 4)\)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Cancel the common factor \((x + 4)\) from the numerator and denominator.</p><p>\[</p><p>\frac{8}{x - 7}</p><p>\]</p></div></div><div class="final-answer"><p>\(\frac{8}{x - 7}\)</p></div></div>
+</div>
 </body>
 </html>

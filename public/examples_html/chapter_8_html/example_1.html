@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.1</h3>
-
-
-<p>Find the range and coefficient of range of the following data: 25, 67, 48, 53, 18, 39, 44.</p>
-<p>Solution:</p>
-<p>Largest value \( L = 67 \); Smallest value \( S = 18 \)</p>
-<p>Range \( R = L - S = 67 - 18 = 49 \)</p>
-<p>Coefficient of range \( = \frac{L - S}{L + S} \)</p>
-<p>Coefficient of range \( = \frac{67 - 18}{67 + 18} = \frac{49}{85} \approx 0.576 \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the range and coefficient of range of the following data: 25, 67, 48, 53, 18, 39, 44.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the largest and smallest values in the data set.</p><p>Largest value \( L = 67 \); Smallest value \( S = 18 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the range using the formula:</p><p>Range \( R = L - S \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values and compute the range.</p><p>\( R = 67 - 18 = 49 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the coefficient of range using the formula:</p><p>Coefficient of range \( = \frac{L - S}{L + S} \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute the values and compute the coefficient of range.</p><p>\( \frac{67 - 18}{67 + 18} = \frac{49}{85} \approx 0.576 \).</p></div></div><div class="final-answer"><p>The range is \( 49 \), and the coefficient of range is approximately \( 0.576 \).</p></div></div>
+</div>
 </body>
 </html>

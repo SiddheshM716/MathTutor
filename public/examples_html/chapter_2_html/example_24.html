@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.24</h3>
-
-
-<p>Write an A.P. whose first term is 20 and common difference is 8.</p>
-<p>First term = a = 20; common difference = d = 8</p>
-<p>Arithmetic Progression is a, a + d, a + 2d, a + 3d...</p>
-<p>In this case, we get 20, 20 + 8, 20 + 2(8), 20 + 3(8)...</p>
-<p>So, the required A.P. is 20, 28, 36, 44, ...</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Write an A.P. whose first term is 20 and common difference is 8.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values.</p><p>First term \( a = 20 \), common difference \( d = 8 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the formula for an Arithmetic Progression (A.P.).</p><p>An A.P. is given by the sequence: \( a, a + d, a + 2d, a + 3d, \ldots \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the formula.</p><p>The sequence becomes: \( 20, 20 + 8, 20 + 2(8), 20 + 3(8), \ldots \).</p></div></div><div class="final-answer"><p>The required A.P. is \( 20, 28, 36, 44, \ldots \).</p></div></div>
+</div>
 </body>
 </html>

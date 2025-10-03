@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.7</h3>
-
-
-<p>From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of the same height and base is hollowed out. Find the total surface area of the remaining solid.</p>
-<p>Let \( h \) and \( r \) be the height and radius of the cone and cylinder. Let \( l \) be the slant height of the cone.</p>
-<p>Given that, \( h = 2.4 \) cm and \( d = 1.4 \) cm; \( r = 0.7 \) cm.</p>
-<p>Total surface area of the remaining solid = C.S.A. of the cylinder + C.S.A. of the cone + area of the bottom</p>
-<p>\[ = 2\pi rh + \pi rl + \pi r^2 \text{ sq. units} \]</p>
-<p>\[ = \pi r (2h + l + r) \text{ sq. units} \]</p>
-<p>Now, \( l = \sqrt{r^2 + h^2} = \sqrt{0.49 + 5.76} = \sqrt{6.25} = 2.5 \) cm</p>
-<p>Area of the remaining solid = \( \pi r (2h + l + r) \) sq. units</p>
-<p>\[ = \frac{22}{7} \times 0.7 \times \left( (2 \times 2.4) + 2.5 + 0.7 \right) \]</p>
-<p>\[ = 17.6 \]</p>
-<p>Therefore, total surface area of the remaining solid is 17.6 cm<sup>2</sup>.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of the same height and base is hollowed out. Find the total surface area of the remaining solid.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values. The height \( h \) of both the cylinder and cone is 2.4 cm, and the diameter \( d \) is 1.4 cm. Thus, the radius \( r = \frac{d}{2} = 0.7 \) cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The total surface area of the remaining solid consists of the curved surface area (C.S.A.) of the cylinder, the C.S.A. of the cone, and the area of the bottom. The formula is:</p><p>\[ \text{Total Surface Area} = 2\pi rh + \pi rl + \pi r^2 \]</p><p>where \( l \) is the slant height of the cone.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the slant height \( l \) of the cone using the Pythagorean theorem:</p><p>\[ l = \sqrt{r^2 + h^2} = \sqrt{0.7^2 + 2.4^2} = \sqrt{0.49 + 5.76} = \sqrt{6.25} = 2.5 \text{ cm} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute the values into the formula and simplify:</p><p>\[ \text{Total Surface Area} = \pi r (2h + l + r) \]</p><p>\[ = \frac{22}{7} \times 0.7 \times \left( (2 \times 2.4) + 2.5 + 0.7 \right) \]</p><p>\[ = 2.2 \times (4.8 + 2.5 + 0.7) \]</p><p>\[ = 2.2 \times 8.0 = 17.6 \text{ cm}^2 \]</p></div></div><div class="final-answer"><p>The total surface area of the remaining solid is \( 17.6 \text{ cm}^2 \).</p></div></div>
+</div>
 </body>
 </html>

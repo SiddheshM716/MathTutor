@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.13</h3>
-
-
-<p>Find the least positive value of x such that</p>
-<p>(i) 67 + x ≡ 1 (mod 4)</p>
-<p>67 + x - 1 = 4n, for some integer n</p>
-<p>66 + x = 4n</p>
-<p>66 + x is a multiple of 4.</p>
-<p>Therefore, the least positive value of x must be 2, since 68 is the nearest multiple of 4 more than 66.</p>
-<p>(ii) 98 ≡ (x + 4) (mod 5)</p>
-<p>98 - (x + 4) = 5n, for some integer n.</p>
-<p>94 - x = 5n</p>
-<p>94 - x is a multiple of 5.</p>
-<p>Therefore, the least positive value of x must be 4, since 94 - 4 = 90 is the nearest multiple of 5 less than 94.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the least positive value of \( x \) such that:</p><p>\( 67 + x \equiv 1 \ (\text{mod} \ 4) \)</p><p>\( 98 \equiv (x + 4) \ (\text{mod} \ 5) \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), rewrite the congruence equation \( 67 + x \equiv 1 \ (\text{mod} \ 4) \) as \( 67 + x - 1 = 4n \), where \( n \) is an integer.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the equation to \( 66 + x = 4n \). This means \( 66 + x \) must be a multiple of 4.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>The smallest positive \( x \) that satisfies this is \( x = 2 \), since \( 66 + 2 = 68 \), which is divisible by 4.</p><p>Final Answer (i): The least positive value of \( x \) is \( \boxed{2} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (ii), rewrite the congruence equation \( 98 \equiv (x + 4) \ (\text{mod} \ 5) \) as \( 98 - (x + 4) = 5n \), where \( n \) is an integer.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the equation to \( 94 - x = 5n \). This means \( 94 - x \) must be a multiple of 5.</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>The smallest positive \( x \) that satisfies this is \( x = 4 \), since \( 94 - 4 = 90 \), which is divisible by 5.</p><p>Final Answer (ii): The least positive value of \( x \) is \( \boxed{4} \).</p></div></div></div>
+</div>
 </body>
 </html>

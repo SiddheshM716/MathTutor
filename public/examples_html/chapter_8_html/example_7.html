@@ -1,75 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.7</h3>
-
-
-<p>The amount that the children have spent for purchasing some eatables in one day trip of a school are 5, 10, 15, 20, 25, 30, 35, 40. Using step deviation method, find the standard deviation of the amount they have spent.</p>
-<p>Solution: We note that all the observations are divisible by 5. Hence we can use the step deviation method. Let the Assumed mean A = 20, n = 8.</p>
-<table>
-  <tr>
-    <th>d = (x - A)</th>
-    <th>v = (x - A)/5</th>
-    <th>v²</th>
-  </tr>
-  <tr>
-    <td>-15</td>
-    <td>-3</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>-10</td>
-    <td>-2</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>-5</td>
-    <td>-1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>1</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>2</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>15</td>
-    <td>3</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>20</td>
-    <td>4</td>
-    <td>16</td>
-  </tr>
-</table>
-<p>Σv = 4, Σv² = 44</p>
-<p>Standard deviation = √(Σv²/n - (Σv/n)²) × 5 = √(44/8 - (4/8)²) × 5 = √(5.5 - 0.25) × 5 = √5.25 × 5 ≈ 2.29 × 5 ≈ 11.45</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The amount that the children have spent for purchasing some eatables in one day trip of a school are 5, 10, 15, 20, 25, 30, 35, 40. Using step deviation method, find the standard deviation of the amount they have spent.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Note that all observations are divisible by 5, so we can use the step deviation method. Let the assumed mean A = 20 and n = 8.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Create a table to calculate the deviations (d = x - A), step deviations (v = d/5), and their squares (v²).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>From the table, we find Σv = 4 and Σv² = 44.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The formula for standard deviation using step deviation method is:</p><p>\[ \sigma = \sqrt{\frac{\Sigma v^2}{n} - \left(\frac{\Sigma v}{n}\right)^2} \times h \]</p><p>where h = 5 (the common divisor).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute the values into the formula:</p><p>\[ \sigma = \sqrt{\frac{44}{8} - \left(\frac{4}{8}\right)^2} \times 5 \]</p><p>\[ \sigma = \sqrt{5.5 - 0.25} \times 5 \]</p><p>\[ \sigma = \sqrt{5.25} \times 5 \]</p><p>\[ \sigma \approx 2.29 \times 5 \]</p></div></div><div class="final-answer"><p>The standard deviation is approximately 11.45.</p></div></div>
+</div>
 </body>
 </html>

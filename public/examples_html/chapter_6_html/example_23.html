@@ -1,40 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.23</h3>
-
-<p> A TV tower stands vertically on a bank of a canal. The tower is watched from a point on the other bank directly opposite to it. The angle of elevation of the top of the tower is 58°. From another point 20 m away from this point on the line joining this point to the foot of the tower, the angle of elevation of the top of the tower is 30°. Find the height of the tower and the width of the canal. (tan 58° = 1.6003)</p>
-<p>Solution:</p>
-<p>Let AB be the height of the TV tower.</p>
-<p>Let BC be the width of the canal.</p>
-<p>In the right angled ΔABC, tan 58° = \(\frac{AB}{BC}\)</p>
-<p>1.6003 = \(\frac{AB}{BC}\) ...(1)</p>
-<p>In the right angled ΔABD, tan 30° = \(\frac{AB}{BD}\) = \(\frac{AB}{BC + 20}\)</p>
-<p>\(\frac{1}{\sqrt{3}} = \frac{AB}{BC + 20}\) ...(2)</p>
-<p>Dividing (1) by (2) we get, \(\frac{1.6003}{\frac{1}{\sqrt{3}}} = \frac{BC + 20}{BC}\)</p>
-<p>1.6003 * \(\sqrt{3}\) = \(\frac{BC + 20}{BC}\)</p>
-<p>1.6003 * 1.732 = \(\frac{BC + 20}{BC}\)</p>
-<p>2.7717 = \(\frac{BC + 20}{BC}\)</p>
-<p>2.7717 BC = BC + 20</p>
-<p>1.7717 BC = 20</p>
-<p>BC = \(\frac{20}{1.7717}\) ≈ 11.29 m</p>
-<p>From (1), AB = 1.6003 * BC ≈ 1.6003 * 11.29 ≈ 18.07 m</p>
-<p>Hence, the height of the tower is 18.07 m and the width of the canal is 11.29 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A TV tower stands vertically on a bank of a canal. The tower is watched from a point on the other bank directly opposite to it. The angle of elevation of the top of the tower is 58°. From another point 20 m away from this point on the line joining this point to the foot of the tower, the angle of elevation of the top of the tower is 30°. Find the height of the tower and the width of the canal. (tan 58° = 1.6003)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AB be the height of the TV tower and BC be the width of the canal.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In right triangle ABC, use the tangent formula for angle 58°:</p><p>\[ \tan 58° = \frac{AB}{BC} \]</p><p>Given \(\tan 58° = 1.6003\), we get:</p><p>\[ 1.6003 = \frac{AB}{BC} \quad \text{(1)} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>In right triangle ABD, use the tangent formula for angle 30°:</p><p>\[ \tan 30° = \frac{AB}{BD} = \frac{AB}{BC + 20} \]</p><p>\[ \frac{1}{\sqrt{3}} = \frac{AB}{BC + 20} \quad \text{(2)} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Divide equation (1) by equation (2):</p><p>\[ \frac{1.6003}{\frac{1}{\sqrt{3}}} = \frac{BC + 20}{BC} \]</p><p>\[ 1.6003 \times \sqrt{3} = \frac{BC + 20}{BC} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Calculate numerical value (\(\sqrt{3} \approx 1.732\)):</p><p>\[ 1.6003 \times 1.732 = 2.7717 \]</p><p>\[ 2.7717 = \frac{BC + 20}{BC} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve for BC:</p><p>\[ 2.7717 BC = BC + 20 \]</p><p>\[ 1.7717 BC = 20 \]</p><p>\[ BC = \frac{20}{1.7717} \approx 11.29 \, \text{m} \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Find AB using equation (1):</p><p>\[ AB = 1.6003 \times BC \approx 1.6003 \times 11.29 \approx 18.07 \, \text{m} \]</p></div></div><div class="final-answer"><p>The height of the tower is \(18.07 \, \text{m}\) and the width of the canal is \(11.29 \, \text{m}\).</p></div></div>
+</div>
 </body>
 </html>

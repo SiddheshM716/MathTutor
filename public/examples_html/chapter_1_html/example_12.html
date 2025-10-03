@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.12</h3>
-
-
-<p>Using horizontal line test, determine which of the following functions are one - one.</p>
-<p>The curves in Fig.1.35 (a) and Fig.1.35 (c) represent a one-one function as the horizontal lines meet the curves in only one point P.</p>
-<p>The curve in Fig. 1.35 (b) does not represent a one-one function, since, the horizontal line intersects the curve at two points P and Q.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Using horizontal line test, determine which of the following functions are one-to-one.</p><p>The curves in Fig.1.35 (a) and Fig.1.35 (c) represent a one-one function as the horizontal lines meet the curves in only one point P.</p><p>The curve in Fig. 1.35 (b) does not represent a one-one function, since, the horizontal line intersects the curve at two points P and Q.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Understand the horizontal line test. A function is one-to-one if and only if no horizontal line intersects its graph more than once.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Analyze Fig.1.35 (a) and Fig.1.35 (c). In both cases, any horizontal line intersects the curve at only one point P.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Analyze Fig.1.35 (b). Here, at least one horizontal line intersects the curve at two points P and Q.</p></div></div><div class="final-answer"><p>The functions represented by Fig.1.35 (a) and Fig.1.35 (c) are one-to-one, while the function represented by Fig.1.35 (b) is not one-to-one.</p></div></div>
+</div>
 </body>
 </html>

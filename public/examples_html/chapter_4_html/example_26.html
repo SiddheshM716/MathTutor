@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.26</h3>
-
-
-<p>In Fig.4.64, O is the centre of a circle. PQ is a chord and the tangent PR at P makes an angle of 50° with PQ. Find ∠POQ.</p>
-<p>Solution:</p>
-<p>∠OPQ = 90° - 50° = 40° (angle between the radius and tangent is 90°)</p>
-<p>OP = OQ (Radii of a circle are equal)</p>
-<p>∠OPQ = ∠OQP = 40° (△OPQ is isosceles)</p>
-<p>∠POQ = 180° - ∠OPQ - ∠OQP</p>
-<p>∠POQ = 180° - 40° - 40° = 100°</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In Fig.4.64, O is the centre of a circle. PQ is a chord and the tangent PR at P makes an angle of 50° with PQ. Find ∠POQ.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Determine ∠OPQ using the property that the angle between a tangent and radius is 90°.</p><p>Given ∠RPQ = 50°, we have:</p><p>\[</p><p>∠OPQ = 90° - 50° = 40°</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recognize that OP = OQ (both are radii of the circle), so △OPQ is an isosceles triangle.</p><p>Thus, the base angles are equal:</p><p>\[</p><p>∠OPQ = ∠OQP = 40°</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the angle sum property of a triangle to find ∠POQ.</p><p>\[</p><p>∠POQ = 180° - ∠OPQ - ∠OQP = 180° - 40° - 40° = 100°</p><p>\]</p></div></div><div class="final-answer"><p>\[</p><p>∠POQ = 100°</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

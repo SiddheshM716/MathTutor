@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.48</h3>
-
-
-<p>How many terms of the series 1 + 4 + 16 + ... make the sum 1365?</p>
-<p>Solution: Let n be the number of terms to be added to get the sum 1365.</p>
-<p>a = 1, r = 4 > 1</p>
-<p>S = 1365 ⇒ \(\frac{a(r^n - 1)}{r - 1} = 1365\)</p>
-<p>\(\frac{1(4^n - 1)}{4 - 1} = 1365\) ⇒ \((4^n - 1) = 4095\)</p>
-<p>\(4^n = 4096\) ⇒ \(4^n = 4^6\)</p>
-<p>n = 6</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>How many terms of the series \(1 + 4 + 16 + \dots\) make the sum 1365?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values. The first term \(a = 1\), common ratio \(r = 4\), and sum \(S = 1365\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the sum of a geometric series when \(r &gt; 1\):</p><p>\[</p><p>S = \frac{a(r^n - 1)}{r - 1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula and solve for \(n\):</p><p>\[</p><p>\frac{1(4^n - 1)}{4 - 1} = 1365</p><p>\]</p><p>\[</p><p>4^n - 1 = 4095</p><p>\]</p><p>\[</p><p>4^n = 4096</p><p>\]</p><p>\[</p><p>4^n = 4^6</p><p>\]</p><p>\[</p><p>n = 6</p><p>\]</p></div></div><div class="final-answer"><p>The number of terms required is \(\boxed{6}\).</p></div></div>
+</div>
 </body>
 </html>

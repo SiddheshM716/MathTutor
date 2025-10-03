@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.30</h3>
-
-
-<p>A man is watching a boat speeding away from the top of a tower. The boat makes an angle of depression of 60° with the man’s eye when at a distance of 200 m from the tower. After 10 seconds, the angle of depression becomes 45°. What is the approximate speed of the boat (in km/hr), assuming that it is sailing in still water? (√3 = 1.732)</p>
-<p>Let AB be the tower. Let C and D be the positions of the boat. From the diagram, ∠XAC = 60° = ∠ACB and ∠XAD = 45° = ∠ADB, BC = 200 m.</p>
-<p>In the right angled ΔABC, tan 60° = AB / 200, we get AB = 200√3 (1).</p>
-<p>In the right angled ΔABD, tan 45° = AB / BD, we get BD = 200√3 [by (1)].</p>
-<p>Now, CD = BD - BC, CD = 200√3 - 200 = 200(√3 - 1) = 146.4.</p>
-<p>It is given that the distance CD is covered in 10 seconds. That is, the distance of 146.4 m is covered in 10 seconds.</p>
-<p>Therefore, speed of the boat = distance / time = 146.4 / 10 = 14.64 m/s => 14.64 × 3600 / 1000 km/hr = 52.704 km/hr.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A man is watching a boat speeding away from the top of a tower. The boat makes an angle of depression of 60° with the man’s eye when at a distance of 200 m from the tower. After 10 seconds, the angle of depression becomes 45°. What is the approximate speed of the boat (in km/hr), assuming that it is sailing in still water? (√3 = 1.732)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AB be the tower, and C and D be the initial and final positions of the boat. The angle of depression from A to C is 60°, and after 10 seconds, it becomes 45° at point D. The horizontal distance BC is 200 m.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In right triangle ABC, use the tangent formula for angle 60°:</p><p>\[ \tan 60° = \frac{AB}{BC} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values:</p><p>\[ \sqrt{3} = \frac{AB}{200} \]</p><p>\[ AB = 200\sqrt{3} \, \text{m} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>In right triangle ABD, use the tangent formula for angle 45°:</p><p>\[ \tan 45° = \frac{AB}{BD} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute the value of AB:</p><p>\[ 1 = \frac{200\sqrt{3}}{BD} \]</p><p>\[ BD = 200\sqrt{3} \, \text{m} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Calculate the distance CD traveled by the boat:</p><p>\[ CD = BD - BC \]</p><p>\[ CD = 200\sqrt{3} - 200 \]</p><p>\[ CD = 200(\sqrt{3} - 1) \approx 146.4 \, \text{m} \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Compute the speed of the boat in m/s:</p><p>\[ \text{Speed} = \frac{\text{Distance}}{\text{Time}} = \frac{146.4}{10} = 14.64 \, \text{m/s} \]</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Convert the speed to km/hr:</p><p>\[ 14.64 \, \text{m/s} \times \frac{3600}{1000} = 52.704 \, \text{km/hr} \]</p></div></div><div class="final-answer"><p>The approximate speed of the boat is \( 52.704 \, \text{km/hr} \).</p></div></div>
+</div>
 </body>
 </html>

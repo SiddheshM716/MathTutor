@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.14</h3>
-
-
-<p>In the figure, DE || AC and DC || AP. Prove that \(\frac{BE}{EC} = \frac{BC}{CP}\).</p>
-<p>Solution: In \(\triangle BPA\), we have DC || AP. By Basic Proportionality Theorem, we have \(\frac{BC}{CP} = \frac{BD}{DA}\). (1)</p>
-<p>In \(\triangle BCA\), we have DE || AC. By Basic Proportionality Theorem, we have \(\frac{BE}{EC} = \frac{BD}{DA}\). (2)</p>
-<p>From (1) and (2) we get, \(\frac{BE}{EC} = \frac{BC}{CP}\). Hence proved.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In the figure, DE || AC and DC || AP. Prove that \(\frac{BE}{EC} = \frac{BC}{CP}\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Consider \(\triangle BPA\) where DC || AP.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the Basic Proportionality Theorem to \(\triangle BPA\) with DC || AP. The theorem states that \(\frac{BC}{CP} = \frac{BD}{DA}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Now consider \(\triangle BCA\) where DE || AC.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Apply the Basic Proportionality Theorem to \(\triangle BCA\) with DE || AC. The theorem states that \(\frac{BE}{EC} = \frac{BD}{DA}\).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>From the results of</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Step 2 and</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Step 4, we conclude that \(\frac{BE}{EC} = \frac{BC}{CP}\).</p></div></div><div class="final-answer"><p>\(\frac{BE}{EC} = \frac{BC}{CP}\) is proved.</p></div></div>
+</div>
 </body>
 </html>

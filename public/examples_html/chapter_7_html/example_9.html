@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.9</h3>
-
-<p> The radius of a spherical balloon increases from 12 cm to 16 cm as air is being pumped into it. Find the ratio of the surface area of the balloons in the two cases.</p>
-<p>Solution Let r<sub>1</sub> and r<sub>2</sub> be the radii of the balloons.</p>
-<p>Given that, r<sub>1</sub> = 12 cm, r<sub>2</sub> = 16 cm.</p>
-<p>Now, ratio of C.S.A. of balloons is:</p>
-<p>\(\frac{4\pi r_1^2}{4\pi r_2^2} = \frac{r_1^2}{r_2^2} = \frac{12^2}{16^2} = \frac{144}{256} = \frac{9}{16}\)</p>
-<p>Therefore, ratio of C.S.A. of balloons is 9:16.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The radius of a spherical balloon increases from 12 cm to 16 cm as air is being pumped into it. Find the ratio of the surface area of the balloons in the two cases.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given radii of the balloons.</p><p>Let \( r_1 = 12 \) cm and \( r_2 = 16 \) cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the formula for the curved surface area (C.S.A.) of a sphere.</p><p>The formula is \( 4\pi r^2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the ratio of the surface areas.</p><p>\[</p><p>\frac{4\pi r_1^2}{4\pi r_2^2} = \frac{r_1^2}{r_2^2} = \frac{12^2}{16^2} = \frac{144}{256} = \frac{9}{16}</p><p>\]</p></div></div><div class="final-answer"><p>The ratio of the surface areas is \( \frac{9}{16} \) or 9:16.</p></div></div>
+</div>
 </body>
 </html>

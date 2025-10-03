@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.31</h3>
-
-
-<p>Find the slope of the line which is</p>
-<p>(i) parallel to 3x - 7y = 11</p>
-<p>(ii) perpendicular to 2x - 3y + 8 = 0</p>
-<p>Solution:</p>
-<p>(i) Given straight line is 3x - 7y = 11</p>
-<p>=> 3x - 7y - 11 = 0</p>
-<p>Slope m = -3 / -7 = 3/7</p>
-<p>Since parallel lines have same slopes, slope of any line parallel to 3x - 7y = 11 is 3/7.</p>
-<p>(ii) Given straight line is 2x - 3y + 8 = 0</p>
-<p>Slope m = -2 / -3 = 2/3</p>
-<p>Since product of slopes is -1 for perpendicular lines, slope of any line perpendicular to 2x - 3y + 8 = 0 is -3/2.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the slope of the line which is</p><p>(i) parallel to \(3x - 7y = 11\)</p><p>(ii) perpendicular to \(2x - 3y + 8 = 0\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), the given line is \(3x - 7y = 11\). Rewrite it in standard form \(Ax + By + C = 0\).</p><p>\(3x - 7y - 11 = 0\)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The slope \(m\) of a line in the form \(Ax + By + C = 0\) is given by \(m = -\frac{A}{B}\).</p><p>For the line \(3x - 7y - 11 = 0\), \(A = 3\) and \(B = -7\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the slope.</p><p>\(m = -\frac{3}{-7} = \frac{3}{7}\)</p><p>Since parallel lines have the same slope, the slope of any line parallel to \(3x - 7y = 11\) is \(\frac{3}{7}\).</p><p>Final Answer (i): \(\frac{3}{7}\)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (ii), the given line is \(2x - 3y + 8 = 0\). Rewrite it in standard form \(Ax + By + C = 0\).</p><p>\(2x - 3y + 8 = 0\)</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The slope \(m\) of a line in the form \(Ax + By + C = 0\) is given by \(m = -\frac{A}{B}\).</p><p>For the line \(2x - 3y + 8 = 0\), \(A = 2\) and \(B = -3\).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Calculate the slope.</p><p>\(m = -\frac{2}{-3} = \frac{2}{3}\)</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>The slope of a line perpendicular to another is the negative reciprocal of the original slope.</p><p>Thus, the perpendicular slope is \(-\frac{3}{2}\).</p><p>Final Answer (ii): \(-\frac{3}{2}\)</p></div></div></div>
+</div>
 </body>
 </html>

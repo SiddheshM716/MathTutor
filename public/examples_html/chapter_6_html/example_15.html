@@ -1,49 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.15</h3>
-
-
-<p>Show that:</p>
-<p>\[
-\frac{1 + \cot^2 A}{1 - \cot A} = \frac{1 + \tan^2 A}{1 - \tan A}
-\]</p>
-<p>Solution:</p>
-<p>LHS = RHS</p>
-<p>\[
-\frac{1 + \tan^2 A}{\tan A} = \frac{1 - \tan A}{\tan A}
-\]</p>
-<p>\[
-\frac{1 + \tan^2 A}{\tan A} = \frac{1 - \tan A}{\tan A}
-\]</p>
-<p>From (1) and (2),</p>
-<p>\[
-\frac{1 + \tan^2 A}{1 - \tan A} = \frac{1 + \cot^2 A}{1 - \cot A}
-\]</p>
-<p>\[
-\frac{(1 + \cot A + \tan A)(\sin A - \cos A)}{\sec^2 A - \csc^2 A}
-\]</p>
-<p>\[
-\frac{(1 + \cot A + \tan A)(\sin A - \cos A)}{\sec^2 A - \csc^2 A}
-\]</p>
-<p>\[
-\frac{1 + \frac{\cos A}{\sin A} + \frac{\sin A}{\cos A}}{(\sec A - \csc A)(\sec^2 A + \sec A \csc A + \csc^2 A)}
-\]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that:</p><p>\[</p><p>\frac{1 + \cot^2 A}{1 - \cot A} = \frac{1 + \tan^2 A}{1 - \tan A}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the left-hand side (LHS) and express everything in terms of \(\tan A\).</p><p>\[</p><p>\cot A = \frac{1}{\tan A}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \(\cot A\) in the LHS.</p><p>\[</p><p>\text{LHS} = \frac{1 + \left(\frac{1}{\tan A}\right)^2}{1 - \frac{1}{\tan A}} = \frac{1 + \frac{1}{\tan^2 A}}{\frac{\tan A - 1}{\tan A}}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the numerator and denominator.</p><p>\[</p><p>\text{LHS} = \frac{\frac{\tan^2 A + 1}{\tan^2 A}}{\frac{\tan A - 1}{\tan A}} = \frac{\tan^2 A + 1}{\tan^2 A} \cdot \frac{\tan A}{\tan A - 1} = \frac{\tan^2 A + 1}{\tan A (\tan A - 1)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Recognize that \(\tan^2 A + 1 = \sec^2 A\) and rewrite the expression.</p><p>\[</p><p>\text{LHS} = \frac{\sec^2 A}{\tan A (\tan A - 1)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Now, consider the right-hand side (RHS).</p><p>\[</p><p>\text{RHS} = \frac{1 + \tan^2 A}{1 - \tan A} = \frac{\sec^2 A}{1 - \tan A}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Compare LHS and RHS.</p><p>\[</p><p>\frac{\sec^2 A}{\tan A (\tan A - 1)} = \frac{\sec^2 A}{1 - \tan A}</p><p>\]</p><p>Multiply numerator and denominator of LHS by \(-1\):</p><p>\[</p><p>\frac{\sec^2 A}{-\tan A (1 - \tan A)} = \frac{\sec^2 A}{1 - \tan A}</p><p>\]</p><p>Thus, LHS = RHS.</p></div></div><div class="final-answer"><p>\[</p><p>\frac{1 + \cot^2 A}{1 - \cot A} = \frac{1 + \tan^2 A}{1 - \tan A}</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

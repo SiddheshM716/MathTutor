@@ -1,51 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.50</h3>
-
-
-<p>Nishanth is the winner in a Marathon race of 12 km distance. He ran at the uniform speed of 12 km/hr and reached the destination in 1 hour. He was followed by Aradhana, Jeyanth, Sathya and Swetha with their respective speed of 6 km/hr, 4 km/hr, 3 km/hr and 2 km/hr. And, they covered the distance in 2 hrs, 3 hrs, 4 hrs and 6 hours respectively.</p>
-<p>Draw the speed-time graph and use it to find the time taken to Kaushik with his speed of 2.4 km/hr.</p>
-<p>Solution: Let us form the table with the given details.</p>
-<table>
-  <tr>
-    <th>Speed (km/hr)</th>
-    <td>12</td>
-    <td>6</td>
-    <td>4</td>
-    <td>3</td>
-    <td>2</td>
-  </tr>
-  <tr>
-    <th>Time (hours)</th>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>6</td>
-  </tr>
-</table>
-<p>From the table, we observe that as speed decreases, time increases. Hence, the type is inverse variation.</p>
-<p>Let \( y = \frac{k}{x} \), where \( k > 0 \) is called the constant of variation.</p>
-<p>From the table, \( k = 12 \times 1 = 6 \times 2 = 4 \times 3 = 3 \times 4 = 2 \times 6 = 12 \).</p>
-<p>Therefore, \( xy = 12 \).</p>
-<p>Plot the points (12,1), (6,2), (4,3), (3,4), (2,6) and join these points by a smooth curve (Rectangular Hyperbola).</p>
-<p>From the graph, we observe that Kaushik takes 5 hrs with a speed of 2.4 km/hr.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Nishanth is the winner in a Marathon race of 12 km distance. He ran at the uniform speed of 12 km/hr and reached the destination in 1 hour. He was followed by Aradhana, Jeyanth, Sathya and Swetha with their respective speed of 6 km/hr, 4 km/hr, 3 km/hr and 2 km/hr. And, they covered the distance in 2 hrs, 3 hrs, 4 hrs and 6 hours respectively.</p><p>Draw the speed-time graph and use it to find the time taken by Kaushik with his speed of 2.4 km/hr.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Form a table with the given speed and time data.</p><p>Speed (km/hr)</p><p>12</p><p>6</p><p>4</p><p>3</p><p>2</p><p>Time (hours)</p><p>1</p><p>2</p><p>3</p><p>4</p><p>6</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Observe that as speed decreases, time increases, indicating an inverse variation. The formula for inverse variation is \( y = \frac{k}{x} \), where \( k \) is the constant of variation.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the constant \( k \) using the given data points.</p><p>For Nishanth: \( k = 12 \times 1 = 12 \).</p><p>For Aradhana: \( k = 6 \times 2 = 12 \).</p><p>For Jeyanth: \( k = 4 \times 3 = 12 \).</p><p>For Sathya: \( k = 3 \times 4 = 12 \).</p><p>For Swetha: \( k = 2 \times 6 = 12 \).</p><p>Thus, the relationship is \( xy = 12 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Plot the points (12,1), (6,2), (4,3), (3,4), (2,6) and draw a smooth curve (Rectangular Hyperbola).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Using the graph, find the time taken by Kaushik when his speed is 2.4 km/hr.</p><p>From the inverse variation formula \( xy = 12 \), substitute \( x = 2.4 \):</p><p>\( 2.4 \times y = 12 \)</p><p>\( y = \frac{12}{2.4} = 5 \) hours.</p></div></div><div class="final-answer"><p>Kaushik takes 5 hours to complete the race at 2.4 km/hr.</p></div></div>
+</div>
 </body>
 </html>

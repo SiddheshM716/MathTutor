@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.1</h3>
-
-<p> A cylindrical drum has a height of 20 cm and base radius of 14 cm. Find its curved surface area and the total surface area.</p>
-<p>Solution Given that, height of the cylinder h = 20cm; radius r=14 cm</p>
-<p>Now, C.S.A. of the cylinder = 2πrh sq. units</p>
-<p>C.S.A. of the cylinder = 2 × π × 14 × 20 = 2 × 22/7 × 14 × 20 = 1760 cm²</p>
-<p>T.S.A. of the cylinder = 2πr(h + r) sq. units</p>
-<p>= 2 × π × 14 × (20 + 14) = 2 × 22/7 × 14 × 34</p>
-<p>= 2992 cm²</p>
-<p>Therefore, C.S.A. = 1760 cm² and T.S.A. = 2992 cm²</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A cylindrical drum has a height of 20 cm and base radius of 14 cm. Find its curved surface area and the total surface area.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the height \( h = 20 \) cm and radius \( r = 14 \) cm of the cylinder.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the curved surface area (C.S.A.) of a cylinder is \( 2\pi rh \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the C.S.A.:</p><p>\[</p><p>2 \times \pi \times 14 \times 20 = 2 \times \frac{22}{7} \times 14 \times 20 = 1760 \text{ cm}^2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The formula for the total surface area (T.S.A.) of a cylinder is \( 2\pi r(h + r) \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Calculate the T.S.A.:</p><p>\[</p><p>2 \times \pi \times 14 \times (20 + 14) = 2 \times \frac{22}{7} \times 14 \times 34 = 2992 \text{ cm}^2</p><p>\]</p></div></div><div class="final-answer"><p>Curved Surface Area = \( 1760 \text{ cm}^2 \), Total Surface Area = \( 2992 \text{ cm}^2 \).</p></div></div>
+</div>
 </body>
 </html>

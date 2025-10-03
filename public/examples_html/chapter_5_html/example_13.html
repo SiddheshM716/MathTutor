@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.13</h3>
-
-<p> Let A(1,—2), B(6,—2), C(5,1) and D(2,1) be four points</p>
-<p>(i) Find the slope of the line segments (a) AB (b) CD</p>
-<p>(ii) Find the slope of the line segments (a) BC (b) AD</p>
-<p>(iii) What can you deduce from your answer.</p>
-<p>Solution:</p>
-<p>(i) (a) Slope of AB = \(\frac{-2 - (-2)}{6 - 1} = 0\)</p>
-<p>(b) Slope of CD = \(\frac{1 - 1}{2 - 5} = 0\)</p>
-<p>(ii) (a) Slope of BC = \(\frac{1 - (-2)}{5 - 6} = -3\)</p>
-<p>(b) Slope of AD = \(\frac{1 - (-2)}{2 - 1} = 3\)</p>
-<p>(iii) The slope of AB and CD are equal so AB, CD are parallel.</p>
-<p>Similarly the lines AD and BC are not parallel, since their slopes are not equal.</p>
-<p>So, we can deduce that the quadrilateral ABCD is a trapezium.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Let A(1,—2), B(6,—2), C(5,1) and D(2,1) be four points.</p><p>(i) Find the slope of the line segments (a) AB (b) CD</p><p>(ii) Find the slope of the line segments (a) BC (b) AD</p><p>(iii) What can you deduce from your answer.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the slope of AB using the slope formula \( m = \frac{y_2 - y_1}{x_2 - x_1} \).</p><p>Slope of AB = \(\frac{-2 - (-2)}{6 - 1} = \frac{0}{5} = 0\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the slope of CD using the same formula.</p><p>Slope of CD = \(\frac{1 - 1}{2 - 5} = \frac{0}{-3} = 0\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the slope of BC.</p><p>Slope of BC = \(\frac{1 - (-2)}{5 - 6} = \frac{3}{-1} = -3\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Find the slope of AD.</p><p>Slope of AD = \(\frac{1 - (-2)}{2 - 1} = \frac{3}{1} = 3\).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Analyze the slopes.</p><p>Since the slopes of AB and CD are equal (both 0), AB and CD are parallel.</p><p>The slopes of AD and BC are not equal (3 and -3), so AD and BC are not parallel.</p></div></div><div class="final-answer"><p>The quadrilateral ABCD is a trapezium because it has one pair of parallel sides (AB and CD) and one pair of non-parallel sides (AD and BC).</p></div></div>
+</div>
 </body>
 </html>

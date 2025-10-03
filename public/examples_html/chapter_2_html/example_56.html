@@ -1,43 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.56</h3>
-
-  <p>Find the sum of:</p>
-  <p>(i) \(1^2 + 2^2 + \cdots + 19^2\)</p>
-  <p>(ii) \(5^2 + 10^2 + 15^2 + \cdots + 105^2\)</p>
-  <p>(iii) \(15^2 + 16^2 + 17^2 + \cdots + 28^2\)</p>
-
-  <h3>Solution:</h3>
-  <p>(i) 
-    \[1^2 + 2^2 + \cdots + 19^2 = \frac{19 \times (19 + 1)(2 \times 19 + 1)}{6} = \frac{19 \times 20 \times 39}{6} = 2470\]
-  </p>
-
-  <p>(ii) 
-    \[5^2 + 10^2 + 15^2 + \cdots + 105^2 = 5^2(1^2 + 2^2 + 3^2 + \cdots + 21^2)\]
-    \[ = 25 \times \frac{21 \times (21 + 1)(2 \times 21 + 1)}{6}\]
-    \[ = \frac{25 \times 21 \times 22 \times 43}{6} = 82775\]
-  </p>
-
-  <p>(iii) 
-    \[15^2 + 16^2 + 17^2 + \cdots + 28^2 = (1^2 + 2^2 + 3^2 + \cdots + 28^2) - (1^2 + 2^2 + 3^2 + \cdots + 14^2)\]
-    \[ = \frac{28 \times 29 \times 57}{6} - \frac{14 \times 15 \times 29}{6} = 7714 - 1015 = 6699\]
-  </p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum of:</p><p>(i) \(1^2 + 2^2 + \cdots + 19^2\)</p><p>(ii) \(5^2 + 10^2 + 15^2 + \cdots + 105^2\)</p><p>(iii) \(15^2 + 16^2 + 17^2 + \cdots + 28^2\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), use the formula for the sum of squares of the first \(n\) natural numbers:</p><p>\[ \sum_{k=1}^n k^2 = \frac{n(n + 1)(2n + 1)}{6} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \(n = 19\) into the formula:</p><p>\[ 1^2 + 2^2 + \cdots + 19^2 = \frac{19 \times 20 \times 39}{6} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the result:</p><p>\[ \frac{19 \times 20 \times 39}{6} = 2470 \]</p></div></div><div class="final-answer"><p>\(2470\)</p><p>---</p><p>Step 1: For part (ii), factor out \(5^2\) and rewrite the sum:</p><p>\[ 5^2 + 10^2 + \cdots + 105^2 = 5^2(1^2 + 2^2 + \cdots + 21^2) \]</p><p>Step 2: Apply the sum of squares formula with \(n = 21\):</p><p>\[ 25 \times \frac{21 \times 22 \times 43}{6} \]</p><p>Step 3: Compute the result:</p><p>\[ \frac{25 \times 21 \times 22 \times 43}{6} = 82775 \]</p></div><div class="final-answer"><p>\(82775\)</p><p>---</p><p>Step 1: For part (iii), express the sum as the difference of two sums:</p><p>\[ 15^2 + 16^2 + \cdots + 28^2 = (1^2 + 2^2 + \cdots + 28^2) - (1^2 + 2^2 + \cdots + 14^2) \]</p><p>Step 2: Apply the sum of squares formula for \(n = 28\) and \(n = 14\):</p><p>\[ \frac{28 \times 29 \times 57}{6} - \frac{14 \times 15 \times 29}{6} \]</p><p>Step 3: Simplify and compute:</p><p>\[ 7714 - 1015 = 6699 \]</p></div><div class="final-answer"><p>\(6699\)</p></div></div>
+</div>
 </body>
 </html>

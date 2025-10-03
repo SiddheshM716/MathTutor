@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.45</h3>
-
-
-<p>If \( \alpha \), \( \beta \) are the roots of the equation \( 3x^2 + 7x - 2 = 0 \), find the values of</p>
-<p>(i) \( \frac{\beta}{\alpha} + \frac{\alpha}{\beta} \)</p>
-<p>(ii) \( \left( \frac{\alpha}{\beta} + 1 \right) \left( \frac{\beta}{\alpha} + 1 \right) \)</p>
-<p>Solution:</p>
-<p>Given equation: \( 3x^2 + 7x - 2 = 0 \), where \( a = 3 \), \( b = 7 \), \( c = -2 \).</p>
-<p>Since \( \alpha \), \( \beta \) are the roots of the equation:</p>
-<p>\( \alpha + \beta = -\frac{b}{a} = -\frac{7}{3} \)</p>
-<p>\( \alpha \beta = \frac{c}{a} = -\frac{2}{3} \)</p>
-<p>(i) \( \frac{\beta}{\alpha} + \frac{\alpha}{\beta} = \frac{\alpha^2 + \beta^2}{\alpha \beta} = \frac{(\alpha + \beta)^2 - 2\alpha \beta}{\alpha \beta} = \frac{\left(-\frac{7}{3}\right)^2 - 2\left(-\frac{2}{3}\right)}{-\frac{2}{3}} = \frac{\frac{49}{9} + \frac{4}{3}}{-\frac{2}{3}} = \frac{\frac{49}{9} + \frac{12}{9}}{-\frac{2}{3}} = \frac{\frac{61}{9}}{-\frac{2}{3}} = -\frac{61}{6} \)</p>
-<p>(ii) \( \left( \frac{\alpha}{\beta} + 1 \right) \left( \frac{\beta}{\alpha} + 1 \right) = \frac{\alpha}{\beta} \cdot \frac{\beta}{\alpha} + \frac{\alpha}{\beta} + \frac{\beta}{\alpha} + 1 = 1 + \frac{\alpha}{\beta} + \frac{\beta}{\alpha} + 1 = 2 + \left( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} \right) = 2 + \left( -\frac{61}{6} \right) = 2 - \frac{61}{6} = \frac{12}{6} - \frac{61}{6} = -\frac{49}{6} \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( \alpha \), \( \beta \) are the roots of the equation \( 3x^2 + 7x - 2 = 0 \), find the values of</p><p>(i) \( \frac{\beta}{\alpha} + \frac{\alpha}{\beta} \)</p><p>(ii) \( \left( \frac{\alpha}{\beta} + 1 \right) \left( \frac{\beta}{\alpha} + 1 \right) \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the coefficients and root properties of the quadratic equation \( 3x^2 + 7x - 2 = 0 \). Here, \( a = 3 \), \( b = 7 \), \( c = -2 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the sum and product of roots formulas:</p><p>\[ \alpha + \beta = -\frac{b}{a} = -\frac{7}{3} \]</p><p>\[ \alpha \beta = \frac{c}{a} = -\frac{2}{3} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For part (i), rewrite the expression and simplify:</p><p>\[ \frac{\beta}{\alpha} + \frac{\alpha}{\beta} = \frac{\alpha^2 + \beta^2}{\alpha \beta} = \frac{(\alpha + \beta)^2 - 2\alpha \beta}{\alpha \beta} \]</p><p>Substitute the known values:</p><p>\[ \frac{\left(-\frac{7}{3}\right)^2 - 2\left(-\frac{2}{3}\right)}{-\frac{2}{3}} = \frac{\frac{49}{9} + \frac{4}{3}}{-\frac{2}{3}} \]</p><p>\[ = \frac{\frac{49}{9} + \frac{12}{9}}{-\frac{2}{3}} = \frac{\frac{61}{9}}{-\frac{2}{3}} = -\frac{61}{6} \]</p><p>Final Answer (i): \( -\frac{61}{6} \)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (ii), expand the expression and simplify:</p><p>\[ \left( \frac{\alpha}{\beta} + 1 \right) \left( \frac{\beta}{\alpha} + 1 \right) = 1 + \frac{\alpha}{\beta} + \frac{\beta}{\alpha} + 1 = 2 + \left( \frac{\alpha}{\beta} + \frac{\beta}{\alpha} \right) \]</p><p>Substitute the result from part (i):</p><p>\[ 2 + \left( -\frac{61}{6} \right) = 2 - \frac{61}{6} = \frac{12}{6} - \frac{61}{6} = -\frac{49}{6} \]</p><p>Final Answer (ii): \( -\frac{49}{6} \)</p></div></div></div>
+</div>
 </body>
 </html>

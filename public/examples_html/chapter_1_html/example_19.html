@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
-  <body>
-<h3>Example 1.19</h3>
-
-
-    <p>Find \( f \circ g \) and \( g \circ f \) when \( f(x) = 2x + 1 \) and \( g(x) = x^2 - 2 \).</p>
-    <p><strong>Solution:</strong></p>
-    <p>\( f(x) = 2x + 1 \), \( g(x) = x^2 - 2 \)</p>
-    <p>\( f \circ g(x) = f(g(x)) = f(x^2 - 2) = 2(x^2 - 2) + 1 = 2x^2 - 3 \)</p>
-    <p>\( g \circ f(x) = g(f(x)) = g(2x + 1) = (2x + 1)^2 - 2 = 4x^2 + 4x - 1 \)</p>
-    <p>Thus, \( f \circ g = 2x^2 - 3 \), \( g \circ f = 4x^2 + 4x - 1 \). From the above, we see that \( f \circ g \neq g \circ f \).</p>
-  </body>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find \( f \circ g \) and \( g \circ f \) when \( f(x) = 2x + 1 \) and \( g(x) = x^2 - 2 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the functions \( f(x) = 2x + 1 \) and \( g(x) = x^2 - 2 \), we need to find the compositions \( f \circ g \) and \( g \circ f \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>To find \( f \circ g(x) \), use the formula \( f \circ g(x) = f(g(x)) \).</p><p>Substitute \( g(x) \) into \( f \):</p><p>\( f(g(x)) = f(x^2 - 2) = 2(x^2 - 2) + 1 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the expression:</p><p>\( 2(x^2 - 2) + 1 = 2x^2 - 4 + 1 = 2x^2 - 3 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>To find \( g \circ f(x) \), use the formula \( g \circ f(x) = g(f(x)) \).</p><p>Substitute \( f(x) \) into \( g \):</p><p>\( g(f(x)) = g(2x + 1) = (2x + 1)^2 - 2 \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Expand and simplify the expression:</p><p>\( (2x + 1)^2 - 2 = 4x^2 + 4x + 1 - 2 = 4x^2 + 4x - 1 \).</p></div></div><div class="final-answer"><p>\( f \circ g(x) = 2x^2 - 3 \), \( g \circ f(x) = 4x^2 + 4x - 1 \).</p><p>Thus, \( f \circ g \neq g \circ f \).</p></div></div>
+</div>
+</body>
 </html>

@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.5</h3>
-
-
-<p>Find the greatest number that will divide 445 and 572 leaving remainders 4 and 5 respectively.</p>
-<p>Solution: Since the remainders are 4, 5 respectively the required number is the HCF of the number 445 − 4 = 441, 572 − 5 = 567.</p>
-<p>Hence, we will determine the HCF of 441 and 567. Using Euclid’s Division Algorithm, we have,</p>
-<p>567 = 441 × 1 + 126</p>
-<p>441 = 126 × 3 + 63</p>
-<p>126 = 63 × 2 + 0</p>
-<p>Therefore, HCF of 441, 567 = 63 and so the required number is 63.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the greatest number that will divide 445 and 572 leaving remainders 4 and 5 respectively.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Subtract the remainders from the given numbers to find the numbers that are exactly divisible by the required greatest number.</p><p>445 − 4 = 441</p><p>572 − 5 = 567</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The required greatest number is the HCF of 441 and 567. We will use Euclid’s Division Algorithm to find the HCF.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Apply Euclid’s Division Algorithm:</p><p>567 = 441 × 1 + 126</p><p>441 = 126 × 3 + 63</p><p>126 = 63 × 2 + 0</p><p>Since the remainder is now 0, the HCF is the last non-zero remainder, which is 63.</p></div></div><div class="final-answer"><p>The greatest number is \boxed{63}.</p></div></div>
+</div>
 </body>
 </html>

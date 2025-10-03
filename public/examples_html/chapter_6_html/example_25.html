@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.25</h3>
-
-
-<p>As shown in the figure, two trees are standing on flat ground. The angle of elevation of the top of both the trees from a point X on the ground is 40°. If the horizontal distance between X and the smaller tree is 8 m and the distance of the top of the two trees is 20 m, calculate</p>
-<p>(i) the distance between the point X and the top of the smaller tree.</p>
-<p>(ii) the horizontal distance between the two trees.</p>
-<p>(cos 40° = 0.7660)</p>
-<p>Solution:</p>
-<p>Let AB be the height of the bigger tree and CD be the height of the smaller tree and X is the point on the ground.</p>
-<p>(i) In the right angled triangle XCD,</p>
-<p>cos 40° = XD / CD</p>
-<p>XD = CD / cos 40° = 8 / 0.7660 = 10.44 m</p>
-<p>Therefore, the distance between X and top of the smaller tree = XD = 10.44 m</p>
-<p>(ii) In the right angled triangle XAB,</p>
-<p>cos 40° = AX / AB</p>
-<p>AX = AB * cos 40° = (20 + 10.44) * 0.7660 = 23.382 m</p>
-<p>Therefore, the horizontal distance between two trees = AC = AX - CX = 23.382 - 8 = 15.32 m</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>As shown in the figure, two trees are standing on flat ground. The angle of elevation of the top of both the trees from a point X on the ground is 40°. If the horizontal distance between X and the smaller tree is 8 m and the distance of the top of the two trees is 20 m, calculate:</p><p>(i) the distance between the point X and the top of the smaller tree.</p><p>(ii) the horizontal distance between the two trees.</p><p>(cos 40° = 0.7660)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AB be the height of the bigger tree and CD be the height of the smaller tree. X is the point on the ground.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), in the right-angled triangle XCD, we use the cosine formula:</p><p>\[ \cos 40° = \frac{\text{XD}}{\text{CD}} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rearranging the formula to find XD:</p><p>\[ \text{XD} = \frac{\text{CD}}{\cos 40°} = \frac{8}{0.7660} = 10.44 \text{ m} \]</p><p>Final Answer (i): The distance between X and the top of the smaller tree is \( 10.44 \) m.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (ii), in the right-angled triangle XAB, we again use the cosine formula:</p><p>\[ \cos 40° = \frac{\text{AX}}{\text{AB}} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The total distance from X to the top of the bigger tree (AB) is the sum of the distance between the tops of the two trees (20 m) and the distance from X to the top of the smaller tree (10.44 m):</p><p>\[ \text{AB} = 20 + 10.44 = 30.44 \text{ m} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Now, calculate AX:</p><p>\[ \text{AX} = \text{AB} \cdot \cos 40° = 30.44 \times 0.7660 = 23.382 \text{ m} \]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>The horizontal distance between the two trees is the difference between AX and CX (which is 8 m):</p><p>\[ \text{AC} = \text{AX} - \text{CX} = 23.382 - 8 = 15.382 \text{ m} \]</p><p>Final Answer (ii): The horizontal distance between the two trees is \( 15.38 \) m (rounded to two decimal places).</p></div></div></div>
+</div>
 </body>
 </html>

@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.33</h3>
-
-
-<p>From a window (h metres high above the ground) of a house in a street, the angles of elevation and depression of the top and the foot of another house on the opposite side of the street are θ and φ, respectively. Show that the height of the opposite house is h(1 + cotθ / cotφ).</p>
-<p>Solution: Let W be the point on the window where the angles of elevation and depression are measured. Let PQ be the house on the opposite side. Then WA is the width of the street.</p>
-<p>Height of the window = h metres = AQ (WR = AQ). Let PA = x metres.</p>
-<p>In the right angled ΔPAW, tanθ = AP / AW ⇒ tanθ = x / AW ⇒ AW = x / tanθ ⇒ AW = x cotθ ...(1)</p>
-<p>In the right angled ΔQAW, tanφ = AQ / AW ⇒ tanφ = h / AW ⇒ AW = h cotφ ...(2)</p>
-<p>From (1) and (2) we get, x cotθ = h cotφ ⇒ x = h cotφ / cotθ.</p>
-<p>Therefore, height of the opposite house = PA + AQ = x + h = h cotφ / cotθ + h = h(1 + cotθ / cotφ).</p>
-<p>Hence Proved.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>From a window (h metres high above the ground) of a house in a street, the angles of elevation and depression of the top and the foot of another house on the opposite side of the street are θ and φ, respectively. Show that the height of the opposite house is \( h(1 + \frac{\cotθ}{\cotφ}) \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let W be the point on the window where the angles of elevation and depression are measured. Let PQ be the house on the opposite side. Then WA is the width of the street. The height of the window is \( h \) metres, which is equal to AQ.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Let PA = \( x \) metres. In the right-angled triangle \( \Delta PAW \), we use the tangent formula for angle θ:</p><p>\[ \tanθ = \frac{AP}{AW} \]</p><p>\[ \tanθ = \frac{x}{AW} \]</p><p>\[ AW = \frac{x}{\tanθ} \]</p><p>\[ AW = x \cotθ \quad \text{(1)} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>In the right-angled triangle \( \Delta QAW \), we use the tangent formula for angle φ:</p><p>\[ \tanφ = \frac{AQ}{AW} \]</p><p>\[ \tanφ = \frac{h}{AW} \]</p><p>\[ AW = h \cotφ \quad \text{(2)} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Equate (1) and (2):</p><p>\[ x \cotθ = h \cotφ \]</p><p>\[ x = \frac{h \cotφ}{\cotθ} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The total height of the opposite house is the sum of PA and AQ:</p><p>\[ \text{Height} = x + h = \frac{h \cotφ}{\cotθ} + h \]</p><p>\[ \text{Height} = h \left(1 + \frac{\cotθ}{\cotφ}\right) \]</p></div></div><div class="final-answer"><p>The height of the opposite house is \( h \left(1 + \frac{\cotθ}{\cotφ}\right) \).</p></div></div>
+</div>
 </body>
 </html>

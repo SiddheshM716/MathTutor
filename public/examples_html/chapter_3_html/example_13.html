@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.13</h3>
-
-<p> Reduce the rational expressions to its lowest form</p>
-<p>(i) \(\frac{x^2 - 9}{x^2 - 16}\) (ii) \(\frac{x^2 + 8x + 16}{x - 3}\)</p>
-<p>Solution (i)</p>
-<p>\(\frac{x^2 - 9}{x^2 - 16} = \frac{(x + 3)(x - 3)}{(x + 4)(x - 4)}\)</p>
-<p>Solution (ii)</p>
-<p>\(\frac{x^2 + 8x + 16}{x - 3} = \frac{(x + 4)^2}{x - 3}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Reduce the rational expressions to their lowest form:</p><p>(i) \(\frac{x^2 - 9}{x^2 - 16}\)</p><p>(ii) \(\frac{x^2 + 8x + 16}{x - 3}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Factorize the numerator and denominator for part (i).</p><p>The numerator \(x^2 - 9\) is a difference of squares, and the denominator \(x^2 - 16\) is also a difference of squares.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply the difference of squares formula \(a^2 - b^2 = (a + b)(a - b)\).</p><p>For the numerator: \(x^2 - 9 = (x + 3)(x - 3)\).</p><p>For the denominator: \(x^2 - 16 = (x + 4)(x - 4)\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Write the simplified form.</p><p>\(\frac{x^2 - 9}{x^2 - 16} = \frac{(x + 3)(x - 3)}{(x + 4)(x - 4)}\).</p><p>Final Answer (i): \(\frac{(x + 3)(x - 3)}{(x + 4)(x - 4)}\).</p><p>---</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Factorize the numerator for part (ii).</p><p>The numerator \(x^2 + 8x + 16\) is a perfect square trinomial.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Apply the perfect square formula \(a^2 + 2ab + b^2 = (a + b)^2\).</p><p>For the numerator: \(x^2 + 8x + 16 = (x + 4)^2\).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Write the simplified form.</p><p>\(\frac{x^2 + 8x + 16}{x - 3} = \frac{(x + 4)^2}{x - 3}\).</p><p>Final Answer (ii): \(\frac{(x + 4)^2}{x - 3}\).</p></div></div></div>
+</div>
 </body>
 </html>

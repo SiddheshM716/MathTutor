@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.3</h3>
-
-<p> Show that the square of an odd integer is of the form 4q+1, for some integer q.</p>
-<p>Solution Let x be any odd integer. Since any odd integer is one more than an even integer, we have x = 2k + 1, for some integer k.</p>
-<p>x² = (2k + 1)²</p>
-<p> = 4k² + 4k + 1</p>
-<p> = 4k(k + 1) + 1</p>
-<p> = 4q + 1, where q = k(k + 1) is some integer.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that the square of an odd integer is of the form \(4q + 1\), for some integer \(q\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \(x\) be any odd integer. Since any odd integer is one more than an even integer, express \(x\) as \(x = 2k + 1\), where \(k\) is an integer.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Square both sides of the equation to find \(x^2\):</p><p>\[</p><p>x^2 = (2k + 1)^2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Expand the squared term:</p><p>\[</p><p>x^2 = 4k^2 + 4k + 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Factor out 4 from the first two terms:</p><p>\[</p><p>x^2 = 4k(k + 1) + 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Let \(q = k(k + 1)\), which is an integer since \(k\) is an integer. Substitute \(q\) into the equation:</p><p>\[</p><p>x^2 = 4q + 1</p><p>\]</p></div></div><div class="final-answer"><p>The square of an odd integer is of the form \(4q + 1\), where \(q\) is an integer.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.22</h3>
-
-
-<p>From a point on the ground, the angles of elevation of the bottom and top of a tower fixed at the top of a 30 m high building are 45° and 60° respectively. Find the height of the tower. (√3 = 1.732)</p>
-<p>Let AC be the height of the tower. Let AB be the height of the building. Then, AC = h metres, AB = 30 m.</p>
-<p>In the right angled ΔCBP, ∠CPB = 60°</p>
-<p>tan 60° = (BC) / (BP) ⇒ √3 = (30 + h) / BP</p>
-<p>In the right angled ΔABP, ∠APB = 45°</p>
-<p>tan 45° = (AB) / (BP) ⇒ 1 = 30 / BP ⇒ BP = 30</p>
-<p>Substituting BP = 30 in the first equation, we get √3 = (30 + h) / 30</p>
-<p>h = 30(√3 - 1) = 30(1.732 - 1) = 30(0.732) = 21.96</p>
-<p>Hence, the height of the tower is 21.96 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>From a point on the ground, the angles of elevation of the bottom and top of a tower fixed at the top of a 30 m high building are 45° and 60° respectively. Find the height of the tower. (√3 = 1.732)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let AC be the height of the tower and AB be the height of the building. Given AB = 30 m, and let AC = h metres.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In the right-angled ΔCBP, where ∠CPB = 60°, we use the tangent formula:</p><p>\[ \tan 60° = \frac{BC}{BP} \]</p><p>\[ \sqrt{3} = \frac{30 + h}{BP} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>In the right-angled ΔABP, where ∠APB = 45°, we again use the tangent formula:</p><p>\[ \tan 45° = \frac{AB}{BP} \]</p><p>\[ 1 = \frac{30}{BP} \]</p><p>\[ BP = 30 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute BP = 30 into the first equation:</p><p>\[ \sqrt{3} = \frac{30 + h}{30} \]</p><p>\[ 30 + h = 30\sqrt{3} \]</p><p>\[ h = 30\sqrt{3} - 30 \]</p><p>\[ h = 30(\sqrt{3} - 1) \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute √3 = 1.732 and calculate:</p><p>\[ h = 30(1.732 - 1) \]</p><p>\[ h = 30(0.732) \]</p><p>\[ h = 21.96 \]</p></div></div><div class="final-answer"><p>The height of the tower is \( 21.96 \) m.</p></div></div>
+</div>
 </body>
 </html>

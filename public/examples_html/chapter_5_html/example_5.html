@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.5</h3>
-
-
-<p>The floor of a hall is covered with identical tiles which are in the shapes of triangles. One such triangle has the vertices at (−3,2), (−1,−1) and (1,2). If the floor of the hall is completely covered by 110 tiles, find the area of the floor.</p>
-<p>Vertices of one triangular tile are at (−3,2), (−1,−1) and (1,2).</p>
-<p>Area of this tile = \(\frac{1}{2} \left| (−3)(−1 − 2) + (−1)(2 − 2) + 1(2 − (−1)) \right|\) sq.units</p>
-<p>\(= \frac{1}{2} \left| 9 + 0 + 3 \right| = 6\) sq.units</p>
-<p>Since the floor is covered by 110 triangle shaped identical tiles,</p>
-<p>Area of floor = \(110 \times 6 = 660\) sq.units</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The floor of a hall is covered with identical tiles which are in the shapes of triangles. One such triangle has the vertices at (−3,2), (−1,−1) and (1,2). If the floor of the hall is completely covered by 110 tiles, find the area of the floor.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the vertices of the triangular tile as (−3,2), (−1,−1), and (1,2).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the area of a triangle given its vertices \((x_1,y_1)\), \((x_2,y_2)\), \((x_3,y_3)\):</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \right|</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given vertices into the formula:</p><p>\[</p><p>\text{Area} = \frac{1}{2} \left| (-3)(-1 - 2) + (-1)(2 - 2) + 1(2 - (-1)) \right| = \frac{1}{2} \left| 9 + 0 + 3 \right| = 6 \text{ sq.units}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Multiply the area of one tile by the total number of tiles (110) to find the area of the floor:</p><p>\[</p><p>\text{Area of floor} = 110 \times 6 = 660 \text{ sq.units}</p><p>\]</p></div></div><div class="final-answer"><p>The area of the floor is \(\boxed{660}\) sq.units.</p></div></div>
+</div>
 </body>
 </html>

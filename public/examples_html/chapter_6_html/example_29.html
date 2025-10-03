@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.29</h3>
-
-<p> As observed from the top of a 60 m high lighthouse from the sea level, the angles of depression of two ships are 28° and 45°. If one ship is exactly behind the other on the same side of the lighthouse, find the distance between the two ships. (tan 28° = 0.5317)</p>
-<p>Solution:</p>
-<p>Let the observer on the lighthouse CD be at D.</p>
-<p>Height of the lighthouse CD = 60 m</p>
-<p>From the diagram,</p>
-<p>∠XDA = 28° = ∠DAC and</p>
-<p>∠XDB = 45° = ∠DBC</p>
-<p>In the right angled ΔDCB, tan 45° = CD/BC</p>
-<p>1 = 60/BC ⇒ BC = 60 m</p>
-<p>In the right angled ΔDCA, tan 28° = CD/AC</p>
-<p>0.5317 = 60/AC ⇒ AC = 60/0.5317 = 112.85 m</p>
-<p>Distance between the two ships AB = AC − BC = 52.85 m</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>As observed from the top of a 60 m high lighthouse from the sea level, the angles of depression of two ships are 28° and 45°. If one ship is exactly behind the other on the same side of the lighthouse, find the distance between the two ships. (tan 28° = 0.5317)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the observer on the lighthouse CD be at D. The height of the lighthouse CD is 60 m. From the diagram, the angles of depression are ∠XDA = 28° = ∠DAC and ∠XDB = 45° = ∠DBC.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In the right-angled ΔDCB, we use the formula tan θ = opposite/adjacent. Here, θ = 45°.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>tan 45° = CD/BC ⇒ 1 = 60/BC ⇒ BC = 60 m.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>In the right-angled ΔDCA, we again use tan θ = opposite/adjacent. Here, θ = 28° and tan 28° = 0.5317.</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>tan 28° = CD/AC ⇒ 0.5317 = 60/AC ⇒ AC = 60/0.5317 = 112.85 m.</p></div></div><div class="final-answer"><p>The distance between the two ships AB = AC − BC = 112.85 m − 60 m = 52.85 m.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.21</h3>
-
-
-<p>The volume of a solid hemisphere is 29106 cm<sup>3</sup>. Another hemisphere whose volume is two-third of the above is carved out. Find the radius of the new hemisphere.</p>
-<p>Solution: Let r be the radius of the hemisphere.</p>
-<p>Given that, volume of the hemisphere = 29106 cm<sup>3</sup>.</p>
-<p>Now, volume of new hemisphere = <sup>2</sup>&frasl;<sub>3</sub> (Volume of original hemisphere)</p>
-<p>= <sup>2</sup>&frasl;<sub>3</sub> × 29106</p>
-<p>Volume of new hemisphere = 19404 cm<sup>3</sup></p>
-<p><sup>2</sup>&frasl;<sub>3</sub> × <sup>2</sup>&frasl;<sub>3</sub>πr<sup>3</sup> = 19404</p>
-<p>r<sup>3</sup> = 19404 × <sup>3</sup>&frasl;<sub>2</sub> × <sup>7</sup>&frasl;<sub>22</sub></p>
-<p>r<sup>3</sup> = 9261</p>
-<p>r = 21 cm</p>
-<p>Therefore, r = 21 cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The volume of a solid hemisphere is 29106 cm</p><p>3</p><p>. Another hemisphere whose volume is two-third of the above is carved out. Find the radius of the new hemisphere.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the volume of the original hemisphere is 29106 cm</p><p>3</p><p>. The volume of the new hemisphere is two-thirds of the original hemisphere.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the volume of the new hemisphere using the formula:</p><p>\[ \text{Volume of new hemisphere} = \frac{2}{3} \times \text{Volume of original hemisphere} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given volume:</p><p>\[ \text{Volume of new hemisphere} = \frac{2}{3} \times 29106 = 19404 \, \text{cm}^3 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Use the formula for the volume of a hemisphere:</p><p>\[ \frac{2}{3} \pi r^3 = 19404 \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \( r^3 \):</p><p>\[ r^3 = 19404 \times \frac{3}{2} \times \frac{7}{22} \]</p><p>\[ r^3 = 9261 \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Take the cube root to find \( r \):</p><p>\[ r = \sqrt[3]{9261} = 21 \, \text{cm} \]</p></div></div><div class="final-answer"><p>The radius of the new hemisphere is \( 21 \, \text{cm} \).</p></div></div>
+</div>
 </body>
 </html>

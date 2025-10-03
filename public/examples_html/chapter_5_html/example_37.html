@@ -1,39 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.37</h3>
-
-
-<p>(i) The equation of the line AB, A(0,5) and B(4,1):</p>
-<p>\(\frac{y - 5}{1 - 5} = \frac{x - 0}{4 - 0}\)</p>
-<p>\(\frac{y - 5}{-4} = \frac{x}{4}\)</p>
-<p>\(y - 5 = -x\)</p>
-<p>\(x + y - 5 = 0\)</p>
-
-<p>(ii) The equation of a line which is perpendicular to the line AB: \(x + y - 5 = 0\) is \(x - y + k = 0\).</p>
-<p>Since it is passing through the point (4,4), we have:</p>
-<p>\(4 - 4 + k = 0 \Rightarrow k = 0\)</p>
-<p>The equation of a line which is perpendicular to AB and through C is \(x - y = 0\).</p>
-
-<p>(iii) The coordinate of the point of contact P of the tangent line AB with the circle is the point of intersection of lines:</p>
-<p>\(x + y - 5 = 0\) and \(x - y = 0\).</p>
-<p>Solving, we get \(x = \frac{5}{2}\) and \(y = \frac{5}{2}\).</p>
-<p>Therefore, the coordinate of the point of contact is \(\left(\frac{5}{2}, \frac{5}{2}\right)\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>(i) Find the equation of the line AB, where A(0,5) and B(4,1).</p><p>(ii) Find the equation of a line perpendicular to AB and passing through the point (4,4).</p><p>(iii) Find the coordinates of the point of contact P of the tangent line AB with the circle, given that P is the intersection of the lines from (i) and (ii).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the equation of line AB using the two-point form.</p><p>The two-point form is \(\frac{y - y_1}{y_2 - y_1} = \frac{x - x_1}{x_2 - x_1}\).</p><p>Substituting A(0,5) and B(4,1):</p><p>\[</p><p>\frac{y - 5}{1 - 5} = \frac{x - 0}{4 - 0}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the equation.</p><p>\[</p><p>\frac{y - 5}{-4} = \frac{x}{4}</p><p>\]</p><p>\[</p><p>y - 5 = -x</p><p>\]</p><p>\[</p><p>x + y - 5 = 0</p><p>\]</p><p>Final Answer for (i): The equation of line AB is \(x + y - 5 = 0\).</p><p>---</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the equation of a line perpendicular to AB.</p><p>A line perpendicular to \(x + y - 5 = 0\) has the form \(x - y + k = 0\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute the point (4,4) to find \(k\).</p><p>\[</p><p>4 - 4 + k = 0 \Rightarrow k = 0</p><p>\]</p><p>Final Answer for (ii): The equation of the perpendicular line is \(x - y = 0\).</p><p>---</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Find the intersection point P of the lines \(x + y - 5 = 0\) and \(x - y = 0\).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve the system of equations.</p><p>\[</p><p>x + y = 5</p><p>\]</p><p>\[</p><p>x - y = 0</p><p>\]</p><p>Adding the equations:</p><p>\[</p><p>2x = 5 \Rightarrow x = \frac{5}{2}</p><p>\]</p><p>Substituting \(x = \frac{5}{2}\) into \(x - y = 0\):</p><p>\[</p><p>\frac{5}{2} - y = 0 \Rightarrow y = \frac{5}{2}</p><p>\]</p><p>Final Answer for (iii): The coordinates of P are \(\left(\frac{5}{2}, \frac{5}{2}\right)\).</p></div></div></div>
+</div>
 </body>
 </html>

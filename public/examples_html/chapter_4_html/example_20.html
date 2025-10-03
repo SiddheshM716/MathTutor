@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.20</h3>
-
-
-<p>An insect 8 m away initially from the foot of a lamp post which is 6 m tall, crawls towards it moving through a distance. If its distance from the top of the lamp post is equal to the distance it has moved, how far is the insect away from the foot of the lamp post?</p>
-<p>Solution: Distance between the insect and the foot of the lamp post BD = 8m</p>
-<p>The height of the lamp post, AB = 6m</p>
-<p>After moving a distance of x m, let the insect be at C</p>
-<p>Let, AC = CD = z. Then BC = BD - CD = 8 - z</p>
-<p>In △ABC, ∠B = 90°</p>
-<p>AC² = AB² + BC² gives z² = 6² + (8 - z)²</p>
-<p>z² = 36 + 64 - 16z + z²</p>
-<p>16z = 100 then z = 6.25</p>
-<p>Then, BC = 8 - z = 8 - 6.25 = 1.75m</p>
-<p>Therefore the insect is 1.75 m away from the foot of the lamp post.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>An insect 8 m away initially from the foot of a lamp post which is 6 m tall, crawls towards it moving through a distance. If its distance from the top of the lamp post is equal to the distance it has moved, how far is the insect away from the foot of the lamp post?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values and variables.</p><p>The initial distance between the insect and the foot of the lamp post (BD) is 8 m. The height of the lamp post (AB) is 6 m. Let the distance moved by the insect be \( x \) m, and let the new position of the insect be C.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Define the relationships.</p><p>The distance from the top of the lamp post to the insect (AC) is equal to the distance moved by the insect (CD), so \( AC = CD = z \). The remaining distance from the insect to the foot of the lamp post is \( BC = BD - CD = 8 - z \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Apply the Pythagorean theorem to triangle ABC.</p><p>Since \( \triangle ABC \) is a right-angled triangle at B, we have:</p><p>\[ AC^2 = AB^2 + BC^2 \]</p><p>Substitute the known values:</p><p>\[ z^2 = 6^2 + (8 - z)^2 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Expand and simplify the equation.</p><p>\[ z^2 = 36 + 64 - 16z + z^2 \]</p><p>Cancel \( z^2 \) from both sides:</p><p>\[ 0 = 100 - 16z \]</p><p>Solve for \( z \):</p><p>\[ 16z = 100 \]</p><p>\[ z = 6.25 \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Calculate the remaining distance BC.</p><p>\[ BC = 8 - z = 8 - 6.25 = 1.75 \]</p></div></div><div class="final-answer"><p>The insect is \( 1.75 \) m away from the foot of the lamp post.</p></div></div>
+</div>
 </body>
 </html>

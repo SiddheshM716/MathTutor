@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.6</h3>
-
-
-<p>In Fig.4.21, QA and PB are perpendiculars to AB. If AO = 10 cm, BO = 6 cm and PB = 9 cm. Find AQ.</p>
-<p>Solution: In ΔAOQ and ΔBOP, ∠OAQ = ∠OBP = 90°</p>
-<p>∠AOQ = ∠BOP (Vertically opposite angles)</p>
-<p>Therefore, by AA Criterion of similarity, ΔAOQ ~ ΔBOP</p>
-<p>\(\frac{AQ}{BO} = \frac{AO}{BP}\)</p>
-<p>\(\frac{AQ}{6} = \frac{10}{9}\)</p>
-<p>\(AQ = \frac{10 \times 6}{9} = \frac{60}{9} = 6.\overline{6} \text{ cm}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In Fig.4.21, QA and PB are perpendiculars to AB. If AO = 10 cm, BO = 6 cm and PB = 9 cm. Find AQ.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the similar triangles. In ΔAOQ and ΔBOP, ∠OAQ = ∠OBP = 90° (both are perpendicular to AB) and ∠AOQ = ∠BOP (vertically opposite angles).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>By the AA Criterion of similarity, ΔAOQ ~ ΔBOP. Therefore, the corresponding sides are proportional.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Set up the proportion using the corresponding sides: \(\frac{AQ}{BO} = \frac{AO}{BP}\).</p><p>Substitute the given values: \(\frac{AQ}{6} = \frac{10}{9}\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve for AQ: \(AQ = \frac{10 \times 6}{9} = \frac{60}{9} = 6.\overline{6} \text{ cm}\).</p></div></div><div class="final-answer"><p>\(AQ = 6.\overline{6} \text{ cm}\)</p></div></div>
+</div>
 </body>
 </html>

@@ -1,43 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.6</h3>
-
-
-<p>Find the HCF of 396, 504, 636.</p>
-<p>To find HCF of three given numbers, first we have to find HCF of the first two numbers.</p>
-<p>To find HCF of 396 and 504:</p>
-<p>Using Euclid’s division algorithm we get 504 = 396 × 1 + 108</p>
-<p>The remainder is 108 ≠ 0</p>
-<p>Again applying Euclid’s division algorithm 396 = 108 × 3 + 72</p>
-<p>The remainder is 72 ≠ 0</p>
-<p>Again applying Euclid’s division algorithm 108 = 72 × 1 + 36</p>
-<p>The remainder is 36 ≠ 0</p>
-<p>Again applying Euclid’s division algorithm 72 = 36 × 2 + 0</p>
-<p>Here the remainder is zero. Therefore HCF of 396, 504 = 36.</p>
-<p>To find the HCF of 636 and 36:</p>
-<p>Using Euclid’s division algorithm we get 636 = 36 × 17 + 24</p>
-<p>The remainder is 24 ≠ 0</p>
-<p>Again applying Euclid’s division algorithm 36 = 24 × 1 + 12</p>
-<p>The remainder is 12 ≠ 0</p>
-<p>Again applying Euclid’s division algorithm 24 = 12 × 2 + 0</p>
-<p>Here the remainder is zero. Therefore HCF of 636, 36 = 12</p>
-<p>Therefore Highest Common Factor of 396, 504 and 636 is 12.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the HCF of 396, 504, 636.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the HCF of the first two numbers, 396 and 504, using Euclid’s division algorithm.</p><p>504 = 396 × 1 + 108 (remainder ≠ 0)</p><p>396 = 108 × 3 + 72 (remainder ≠ 0)</p><p>108 = 72 × 1 + 36 (remainder ≠ 0)</p><p>72 = 36 × 2 + 0 (remainder = 0)</p><p>The HCF of 396 and 504 is 36.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Now, find the HCF of the result (36) and the third number, 636, using Euclid’s division algorithm.</p><p>636 = 36 × 17 + 24 (remainder ≠ 0)</p><p>36 = 24 × 1 + 12 (remainder ≠ 0)</p><p>24 = 12 × 2 + 0 (remainder = 0)</p><p>The HCF of 636 and 36 is 12.</p></div></div><div class="final-answer"><p>The Highest Common Factor (HCF) of 396, 504, and 636 is 12.</p></div></div>
+</div>
 </body>
 </html>

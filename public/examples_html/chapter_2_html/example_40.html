@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.40</h3>
-
-
-<p>Which of the following sequences form a Geometric Progression?</p>
-<p>(i) 7, 14, 21, 28, ...</p>
-<p>Since the ratios between successive terms are not equal, the sequence 7, 14, 21, 28, ... is not a Geometric Progression.</p>
-<p>(ii) 1/2, 1, 2, 4, ...</p>
-<p>Here the ratios between successive terms are equal. Therefore the sequence 1/2, 1, 2, 4, ... is a Geometric Progression with common ratio r = 2.</p>
-<p>(iii) 5, 25, 50, 75, ...</p>
-<p>Since the ratios between successive terms are not equal, the sequence 5, 25, 50, 75, ... is not a Geometric Progression.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Which of the following sequences form a Geometric Progression?</p><p>(i) 7, 14, 21, 28, ...</p><p>(ii) \(\frac{1}{2}\), 1, 2, 4, ...</p><p>(iii) 5, 25, 50, 75, ...</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Check if the ratio between consecutive terms is constant for each sequence.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For sequence (i) 7, 14, 21, 28, ..., calculate the ratios:</p><p>\[ \frac{14}{7} = 2, \quad \frac{21}{14} = 1.5, \quad \frac{28}{21} \approx 1.333 \]</p><p>Since the ratios are not equal, this is not a Geometric Progression.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For sequence (ii) \(\frac{1}{2}\), 1, 2, 4, ..., calculate the ratios:</p><p>\[ \frac{1}{\frac{1}{2}} = 2, \quad \frac{2}{1} = 2, \quad \frac{4}{2} = 2 \]</p><p>Since the ratios are equal, this is a Geometric Progression with common ratio \( r = 2 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For sequence (iii) 5, 25, 50, 75, ..., calculate the ratios:</p><p>\[ \frac{25}{5} = 5, \quad \frac{50}{25} = 2, \quad \frac{75}{50} = 1.5 \]</p><p>Since the ratios are not equal, this is not a Geometric Progression.</p></div></div><div class="final-answer"><p>Only sequence (ii) \(\frac{1}{2}\), 1, 2, 4, ... is a Geometric Progression.</p></div></div>
+</div>
 </body>
 </html>

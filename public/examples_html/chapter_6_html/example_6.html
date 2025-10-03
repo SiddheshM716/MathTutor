@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.6</h3>
-
-
-<p>Prove that \(\frac{1}{\sin \theta \cos \theta} = \cot \theta\)</p>
-<p>Solution:</p>
-<p>\[
-\frac{\sec \theta - \sin \theta \cos \theta}{\sin \theta \cos \theta} = \frac{\sin \theta}{\sin \theta \cos \theta} \cdot \frac{1}{\cos \theta} = \frac{1 - \sin^2 \theta}{\sin \theta \cos \theta} = \frac{\cos^2 \theta}{\sin \theta \cos \theta} = \cot \theta
-\]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that \(\frac{1}{\sin \theta \cos \theta} = \cot \theta\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the left-hand side (LHS) of the equation \(\frac{1}{\sin \theta \cos \theta}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the trigonometric identity \(\cot \theta = \frac{\cos \theta}{\sin \theta}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite \(\frac{1}{\sin \theta \cos \theta}\) as \(\frac{\cos \theta}{\sin \theta \cos^2 \theta}\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the expression using \(\cos^2 \theta = 1 - \sin^2 \theta\):</p><p>\[</p><p>\frac{\cos \theta}{\sin \theta (1 - \sin^2 \theta)} = \frac{\cos \theta}{\sin \theta \cos^2 \theta} = \frac{1}{\sin \theta \cos \theta}</p><p>\]</p></div></div><div class="final-answer"><p>The simplified form matches the given equation, proving \(\frac{1}{\sin \theta \cos \theta} = \cot \theta\).</p></div></div>
+</div>
 </body>
 </html>

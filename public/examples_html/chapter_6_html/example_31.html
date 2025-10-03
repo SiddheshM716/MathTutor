@@ -1,55 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 6.31</h3>
-
-    <p>From the top of a 12 m high building, the angle of elevation of the top of a cable tower is 60° and the angle of depression of its foot is 30°. Determine the height of the tower.</p>
-    <p>Solution:</p>
-    <p>As shown in Fig.6.27, OA is the building, O is the point of observation on the top of the building OA. Then, OA = 12 m.</p>
-    <p>PP’ is the cable tower with P as the top and P' as the bottom.</p>
-    <p>Then the angle of elevation of P, ∠MOP = 60°.</p>
-    <p>And the angle of depression of P’, ∠MOP’ = 30°.</p>
-    <p>Suppose, height of the cable tower PP' = h metres.</p>
-    <p>Through O, draw OM ⊥ PP'.</p>
-    <p>MP = PP' − MP' = h − OA = h − 12</p>
-    <p>In the right angled △OMP, \(\frac{MP}{OM} = \tan 60°\)</p>
-    <p>\(\frac{h - 12}{OM} = \sqrt{3}\)</p>
-    <p>\(OM = \frac{h - 12}{\sqrt{3}}\) (1)</p>
-    <p>In the right angled △OMP’, \(\frac{MP'}{OM} = \tan 30°\)</p>
-    <p>\(\frac{12}{OM} = \frac{1}{\sqrt{3}}\)</p>
-    <p>\(OM = 12\sqrt{3}\) (2)</p>
-    <p>From (1) and (2) we have, \(\frac{h - 12}{\sqrt{3}} = 12\sqrt{3}\)</p>
-    <p>⇒ h − 12 = 12√3 × √3 we get, h = 48</p>
-    <p>Hence, the required height of the cable tower is 48 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>From the top of a 12 m high building, the angle of elevation of the top of a cable tower is 60° and the angle of depression of its foot is 30°. Determine the height of the tower.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let OA be the building with height 12 m, and PP' be the cable tower. O is the observation point on top of the building.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Draw OM perpendicular to PP'. The angle of elevation of P (top of tower) is ∠MOP = 60°, and the angle of depression of P' (bottom of tower) is ∠MOP' = 30°.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>In right triangle OMP, use the tangent formula for angle 60°:</p><p>\[ \frac{MP}{OM} = \tan 60° \]</p><p>\[ \frac{h - 12}{OM} = \sqrt{3} \]</p><p>\[ OM = \frac{h - 12}{\sqrt{3}} \quad (1) \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>In right triangle OMP', use the tangent formula for angle 30°:</p><p>\[ \frac{MP'}{OM} = \tan 30° \]</p><p>\[ \frac{12}{OM} = \frac{1}{\sqrt{3}} \]</p><p>\[ OM = 12\sqrt{3} \quad (2) \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Equate equations (1) and (2):</p><p>\[ \frac{h - 12}{\sqrt{3}} = 12\sqrt{3} \]</p><p>\[ h - 12 = 12\sqrt{3} \times \sqrt{3} \]</p><p>\[ h - 12 = 36 \]</p><p>\[ h = 48 \]</p></div></div><div class="final-answer"><p>The height of the cable tower is \(\boxed{48 \text{ m}}\).</p></div></div>
+</div>
 </body>
 </html>

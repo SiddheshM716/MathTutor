@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.11</h3>
-
-
-<p>The line p passes through the points (3,−2), (12,4) and the line q passes through the points (6,−2) and (12,2). Is p parallel to q?</p>
-<p>The slope of line p is \( m_p = \frac{4 - (-2)}{12 - 3} = \frac{6}{9} = \frac{2}{3} \).</p>
-<p>The slope of line q is \( m_q = \frac{2 - (-2)}{12 - 6} = \frac{4}{6} = \frac{2}{3} \).</p>
-<p>Thus, slope of line p = slope of line q.</p>
-<p>Therefore, line p is parallel to the line q.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The line p passes through the points (3,−2), (12,4) and the line q passes through the points (6,−2) and (12,2). Is p parallel to q?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the slope of line p using the formula \( m = \frac{y_2 - y_1}{x_2 - x_1} \).</p><p>The slope of line p is \( m_p = \frac{4 - (-2)}{12 - 3} = \frac{6}{9} = \frac{2}{3} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the slope of line q using the same formula.</p><p>The slope of line q is \( m_q = \frac{2 - (-2)}{12 - 6} = \frac{4}{6} = \frac{2}{3} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compare the slopes of both lines.</p><p>Since \( m_p = m_q = \frac{2}{3} \), the slopes are equal.</p></div></div><div class="final-answer"><p>Yes, line p is parallel to line q because their slopes are equal.</p></div></div>
+</div>
 </body>
 </html>

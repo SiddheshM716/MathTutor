@@ -1,73 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.64</h3>
-
-  
-  <p>Given matrices:</p>
-  <p>\[
-  A = \begin{pmatrix} 
-  5 & 4 & -2 \\ 
-  \frac{1}{2} & \frac{3}{4} & \sqrt{2} \\ 
-  1 & 9 & 4 
-  \end{pmatrix}, \quad 
-  B = \begin{pmatrix} 
-  -7 & 4 & -3 \\ 
-  \frac{1}{4} & \frac{7}{2} & 3 \\ 
-  5 & -6 & 9 
-  \end{pmatrix}
-  \]</p>
-  <p>Find \( 4A - 3B \).</p>
-
-  <h3>Solution</h3>
-  <p>Since \( A \) and \( B \) are both \( 3 \times 3 \) matrices, the operation \( 4A - 3B \) is defined:</p>
-  
-  <p>\[
-  4A - 3B = 4\begin{pmatrix} 
-  5 & 4 & -2 \\ 
-  \frac{1}{2} & \frac{3}{4} & \sqrt{2} \\ 
-  1 & 9 & 4 
-  \end{pmatrix} - 3\begin{pmatrix} 
-  -7 & 4 & -3 \\ 
-  \frac{1}{4} & \frac{7}{2} & 3 \\ 
-  5 & -6 & 9 
-  \end{pmatrix}
-  \]</p>
-  
-  <p>\[
-  = \begin{pmatrix} 
-  20 & 16 & -8 \\ 
-  2 & 3 & 4\sqrt{2} \\ 
-  4 & 36 & 16 
-  \end{pmatrix} + \begin{pmatrix} 
-  21 & -12 & 9 \\ 
-  -\frac{3}{4} & -\frac{21}{2} & -9 \\ 
-  -15 & 18 & -27 
-  \end{pmatrix}
-  \]</p>
-  
-  <p>\[
-  = \begin{pmatrix} 
-  41 & 4 & 1 \\ 
-  \frac{5}{4} & -\frac{15}{2} & 4\sqrt{2} - 9 \\ 
-  -11 & 54 & -11 
-  \end{pmatrix}
-  \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Given matrices:</p><p>\[</p><p>A = \begin{pmatrix}</p><p>5 &amp; 4 &amp; -2 \\</p><p>\frac{1}{2} &amp; \frac{3}{4} &amp; \sqrt{2} \\</p><p>1 &amp; 9 &amp; 4</p><p>\end{pmatrix}, \quad</p><p>B = \begin{pmatrix}</p><p>-7 &amp; 4 &amp; -3 \\</p><p>\frac{1}{4} &amp; \frac{7}{2} &amp; 3 \\</p><p>5 &amp; -6 &amp; 9</p><p>\end{pmatrix}</p><p>\]</p><p>Find \( 4A - 3B \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Verify that the matrices \( A \) and \( B \) have the same dimensions (\( 3 \times 3 \)), so the operation \( 4A - 3B \) is defined.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Apply scalar multiplication to each matrix separately. The formula for scalar multiplication is \( kM \), where each element of \( M \) is multiplied by \( k \).</p><p>\[</p><p>4A = 4\begin{pmatrix}</p><p>5 &amp; 4 &amp; -2 \\</p><p>\frac{1}{2} &amp; \frac{3}{4} &amp; \sqrt{2} \\</p><p>1 &amp; 9 &amp; 4</p><p>\end{pmatrix} = \begin{pmatrix}</p><p>20 &amp; 16 &amp; -8 \\</p><p>2 &amp; 3 &amp; 4\sqrt{2} \\</p><p>4 &amp; 36 &amp; 16</p><p>\end{pmatrix}</p><p>\]</p><p>\[</p><p>3B = 3\begin{pmatrix}</p><p>-7 &amp; 4 &amp; -3 \\</p><p>\frac{1}{4} &amp; \frac{7}{2} &amp; 3 \\</p><p>5 &amp; -6 &amp; 9</p><p>\end{pmatrix} = \begin{pmatrix}</p><p>-21 &amp; 12 &amp; -9 \\</p><p>\frac{3}{4} &amp; \frac{21}{2} &amp; 9 \\</p><p>15 &amp; -18 &amp; 27</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Subtract \( 3B \) from \( 4A \) by subtracting corresponding elements.</p><p>\[</p><p>4A - 3B = \begin{pmatrix}</p><p>20 &amp; 16 &amp; -8 \\</p><p>2 &amp; 3 &amp; 4\sqrt{2} \\</p><p>4 &amp; 36 &amp; 16</p><p>\end{pmatrix} - \begin{pmatrix}</p><p>-21 &amp; 12 &amp; -9 \\</p><p>\frac{3}{4} &amp; \frac{21}{2} &amp; 9 \\</p><p>15 &amp; -18 &amp; 27</p><p>\end{pmatrix} = \begin{pmatrix}</p><p>41 &amp; 4 &amp; 1 \\</p><p>\frac{5}{4} &amp; -\frac{15}{2} &amp; 4\sqrt{2} - 9 \\</p><p>-11 &amp; 54 &amp; -11</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="final-answer"><p>\[</p><p>4A - 3B = \begin{pmatrix}</p><p>41 &amp; 4 &amp; 1 \\</p><p>\frac{5}{4} &amp; -\frac{15}{2} &amp; 4\sqrt{2} - 9 \\</p><p>-11 &amp; 54 &amp; -11</p><p>\end{pmatrix}</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

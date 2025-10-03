@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.26</h3>
-
-
-<p>Find the intercepts made by the line \(4x - 9y + 36 = 0\) on the coordinate axes.</p>
-<p>Solution: Equation of the given line is \(4x - 9y + 36 = 0\).</p>
-<p>We write it as \(4x - 9y = -36\) (bringing it to the normal form).</p>
-<p>Dividing by \(-36\) we get, \(\frac{x}{-9} + \frac{y}{4} = 1\).</p>
-<p>Comparing with intercept form, we get \(x\)-intercept \(a = -9\); \(y\)-intercept \(b = 4\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the intercepts made by the line \(4x - 9y + 36 = 0\) on the coordinate axes.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the given equation of the line:</p><p>\[ 4x - 9y + 36 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Rearrange the equation to the standard intercept form \( \frac{x}{a} + \frac{y}{b} = 1 \). First, move the constant term to the other side:</p><p>\[ 4x - 9y = -36 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Divide the entire equation by \(-36\) to normalize it:</p><p>\[ \frac{x}{-9} + \frac{y}{4} = 1 \]</p></div></div><div class="final-answer"><p>Comparing with the intercept form, the \(x\)-intercept is \(a = -9\) and the \(y\)-intercept is \(b = 4\).</p></div></div>
+</div>
 </body>
 </html>

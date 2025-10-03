@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.37</h3>
-
-<p> A mosaic is designed in the shape of an equilateral triangle, 12 ft on each side. Each tile in the mosaic is in the shape of an equilateral triangle of 12 inch side. The tiles are alternate in colour as shown in the figure. Find the number of tiles of each colour and total number of tiles in the mosaic.</p>
-<p>Solution Since the mosaic is in the shape of an equilateral triangle of 12 feet, and the tile is in the shape of an equilateral triangle of 12 inch (1 feet), there will be 12 rows in the mosaic.</p>
-<p>From the figure, it is clear that number of white tiles in each row are 1, 2, 3, 4, ..., 12 which clearly forms an Arithmetic Progression.</p>
-<p>Similarly the number of blue tiles in each row are 0, 1, 2, 3, ..., 11 which is also an Arithmetic Progression.</p>
-<p>Number of white tiles = 1 + 2 + 3 + ... + 12 = 78</p>
-<p>Number of blue tiles = 0 + 1 + 2 + 3 + ... + 11 = 66</p>
-<p>The total number of tiles in the mosaic = 78 + 66 = 144</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A mosaic is designed in the shape of an equilateral triangle, 12 ft on each side. Each tile in the mosaic is in the shape of an equilateral triangle of 12 inch side. The tiles are alternate in colour as shown in the figure. Find the number of tiles of each colour and total number of tiles in the mosaic.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The mosaic is an equilateral triangle with side length 12 ft, and each tile is an equilateral triangle with side length 12 inches (1 ft). Therefore, the mosaic will have 12 rows.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The number of white tiles in each row forms an Arithmetic Progression (AP): 1, 2, 3, ..., 12. The sum of an AP is given by the formula:</p><p>\[</p><p>S_n = \frac{n}{2} \times (a_1 + a_n)</p><p>\]</p><p>where \( n \) is the number of terms, \( a_1 \) is the first term, and \( a_n \) is the last term.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For white tiles:</p><p>\[</p><p>S_{12} = \frac{12}{2} \times (1 + 12) = 6 \times 13 = 78</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The number of blue tiles in each row forms another AP: 0, 1, 2, ..., 11. Using the same formula:</p><p>\[</p><p>S_{12} = \frac{12}{2} \times (0 + 11) = 6 \times 11 = 66</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The total number of tiles is the sum of white and blue tiles:</p><p>\[</p><p>78 + 66 = 144</p><p>\]</p></div></div><div class="final-answer"><p>Number of white tiles = 78, Number of blue tiles = 66, Total number of tiles = 144.</p></div></div>
+</div>
 </body>
 </html>

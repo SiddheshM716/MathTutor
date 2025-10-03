@@ -1,75 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.14</h3>
-
-
-<p>Prove that</p>
-<p>
-\[
-\frac{\sin A \cos A}{\sec A + \tan A - 1} + \frac{\sin A \cos A}{\csc A + \cot A - 1} = \frac{\sin A (\csc A + \cot A - 1) + \cos A (\sec A + \tan A - 1)}{(\sec A + \tan A - 1)(\csc A + \cot A - 1)}
-\]
-</p>
-<p>
-\[
-= \frac{\sin A \csc A + \sin A \cot A - \sin A + \cos A \sec A + \cos A \tan A - \cos A}{(\sec A + \tan A - 1)(\csc A + \cot A - 1)}
-\]
-</p>
-<p>
-\[
-= \frac{1 + \cos A - \sin A + 1 + \sin A - \cos A}{\left(\frac{1}{\cos A} + \frac{\sin A}{\cos A} - 1\right)\left(\frac{1}{\sin A} + \frac{\cos A}{\sin A} - 1\right)}
-\]
-</p>
-<p>
-\[
-= \frac{2}{\left(\frac{1 + \sin A - \cos A}{\cos A}\right)\left(\frac{1 + \cos A - \sin A}{\sin A}\right)}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{(1 + \sin A - \cos A)(1 + \cos A - \sin A)}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{[1 + (\sin A - \cos A)][1 - (\sin A - \cos A)]}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{1 - (\sin A - \cos A)^2}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{1 - (\sin^2 A + \cos^2 A - 2 \sin A \cos A)}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{1 - 1 + 2 \sin A \cos A}
-\]
-</p>
-<p>
-\[
-= \frac{2 \sin A \cos A}{2 \sin A \cos A} = 1
-\]
-</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that</p><p>\[</p><p>\frac{\sin A \cos A}{\sec A + \tan A - 1} + \frac{\sin A \cos A}{\csc A + \cot A - 1} = 1</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Combine the two fractions on the left-hand side (LHS) into a single fraction.</p><p>\[</p><p>\frac{\sin A \cos A (\csc A + \cot A - 1) + \sin A \cos A (\sec A + \tan A - 1)}{(\sec A + \tan A - 1)(\csc A + \cot A - 1)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the numerator by expanding the terms.</p><p>\[</p><p>\sin A \cos A \csc A + \sin A \cos A \cot A - \sin A \cos A + \sin A \cos A \sec A + \sin A \cos A \tan A - \sin A \cos A</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use trigonometric identities to simplify further.</p><p>\[</p><p>\sin A \cos A \cdot \frac{1}{\sin A} + \sin A \cos A \cdot \frac{\cos A}{\sin A} - \sin A \cos A + \sin A \cos A \cdot \frac{1}{\cos A} + \sin A \cos A \cdot \frac{\sin A}{\cos A} - \sin A \cos A</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Cancel terms where possible.</p><p>\[</p><p>\cos A + \cos^2 A - \sin A \cos A + \sin A + \sin^2 A - \sin A \cos A</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Combine like terms and use the Pythagorean identity \(\sin^2 A + \cos^2 A = 1\).</p><p>\[</p><p>1 + \cos A + \sin A - 2 \sin A \cos A</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Simplify the denominator using common denominators.</p><p>\[</p><p>\left(\frac{1 + \sin A - \cos A}{\cos A}\right) \left(\frac{1 + \cos A - \sin A}{\sin A}\right)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Multiply the denominators and simplify.</p><p>\[</p><p>\frac{(1 + \sin A - \cos A)(1 + \cos A - \sin A)}{\sin A \cos A}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">8</div><div class="step-content"><p>Expand the denominator and simplify using the identity \(1 - (\sin A - \cos A)^2 = 2 \sin A \cos A\).</p><p>\[</p><p>\frac{2 \sin A \cos A}{2 \sin A \cos A} = 1</p><p>\]</p></div></div><div class="final-answer"><p>The given expression simplifies to \(1\).</p></div></div>
+</div>
 </body>
 </html>

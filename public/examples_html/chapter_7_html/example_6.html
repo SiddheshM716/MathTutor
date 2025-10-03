@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.6</h3>
-
-
-<p>If the total surface area of a cone of radius 7 cm is 704 cm², then find its slant height.</p>
-<p>Solution: Given that, radius \( r = 7 \) cm</p>
-<p>Now, total surface area of the cone \( = \pi r (l + r) \) sq. units</p>
-<p>\( T.S.A. = 704 \) cm²</p>
-<p>\( 704 = \pi \times 7 (l + 7) \)</p>
-<p>\( 32 = l + 7 \)</p>
-<p>\( l = 25 \) cm</p>
-<p>Therefore, slant height of the cone is 25 cm.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the total surface area of a cone of radius 7 cm is 704 cm², then find its slant height.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the radius \( r = 7 \) cm and total surface area \( T.S.A. = 704 \) cm².</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for the total surface area of a cone is:</p><p>\[ T.S.A. = \pi r (l + r) \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula:</p><p>\[ 704 = \pi \times 7 (l + 7) \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the equation (using \( \pi = \frac{22}{7} \)):</p><p>\[ 704 = \frac{22}{7} \times 7 (l + 7) \]</p><p>\[ 704 = 22 (l + 7) \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \( l \):</p><p>\[ \frac{704}{22} = l + 7 \]</p><p>\[ 32 = l + 7 \]</p><p>\[ l = 25 \]</p></div></div><div class="final-answer"><p>The slant height of the cone is \( 25 \) cm.</p></div></div>
+</div>
 </body>
 </html>

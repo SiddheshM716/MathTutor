@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.26</h3>
-
-<p> A flower is selected at random from a basket containing 80 yellow, 70 red, and 50 white flowers. Find the probability of selecting a yellow or red flower?</p>
-<p>Solution:</p>
-<p>Total number of flowers \( n(S) = 80 + 70 + 50 = 200 \)</p>
-<p>Number of yellow flowers \( n(Y) = 80 \)</p>
-<p>Number of red flowers \( n(R) = 70 \)</p>
-<p>Y and R are mutually exclusive \( P(Y \cup R) = P(Y) + P(R) \)</p>
-<p>Probability of drawing either a yellow or red flower \( P(Y \cup R) = \frac{80}{200} + \frac{70}{200} = \frac{150}{200} = \frac{3}{4} \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A flower is selected at random from a basket containing 80 yellow, 70 red, and 50 white flowers. Find the probability of selecting a yellow or red flower?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the total number of flowers in the basket.</p><p>Total flowers \( n(S) = 80 + 70 + 50 = 200 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Identify the number of yellow and red flowers.</p><p>Number of yellow flowers \( n(Y) = 80 \).</p><p>Number of red flowers \( n(R) = 70 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since yellow and red flowers are mutually exclusive, use the formula for the probability of mutually exclusive events.</p><p>Formula: \( P(Y \cup R) = P(Y) + P(R) \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the probability of selecting a yellow or red flower.</p><p>\( P(Y \cup R) = \frac{80}{200} + \frac{70}{200} = \frac{150}{200} = \frac{3}{4} \).</p></div></div><div class="final-answer"><p>The probability of selecting a yellow or red flower is \( \frac{3}{4} \).</p></div></div>
+</div>
 </body>
 </html>

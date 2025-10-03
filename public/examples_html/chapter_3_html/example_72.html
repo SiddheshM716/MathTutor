@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.72</h3>
-
-
-<p>If \( A = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \), \( B = \begin{bmatrix} 1 & 2 \\ -4 & 2 \end{bmatrix} \), and \( C = \begin{bmatrix} 7 & 6 \\ 3 & 2 \end{bmatrix} \), then:</p>
-<p>LHS = \( A(B + C) \)</p>
-<p>\( B + C = \begin{bmatrix} 1+7 & 2+6 \\ -4+3 & 2+2 \end{bmatrix} = \begin{bmatrix} 8 & 8 \\ -1 & 4 \end{bmatrix} \)</p>
-<p>\( A(B + C) = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 8 & 8 \\ -1 & 4 \end{bmatrix} = \begin{bmatrix} (-4)(8) + 2(-1) & (-4)(8) + 2(4) \\ (-7)(8) + 6(-1) & (-7)(8) + 6(4) \end{bmatrix} = \begin{bmatrix} -34 & -24 \\ -62 & -32 \end{bmatrix} \)</p>
-<p>RHS = \( AB + AC \)</p>
-<p>\( AB = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 1 & 2 \\ -4 & 2 \end{bmatrix} = \begin{bmatrix} (-4)(1) + 2(-4) & (-4)(2) + 2(2) \\ (-7)(1) + 6(-4) & (-7)(2) + 6(2) \end{bmatrix} = \begin{bmatrix} -12 & -4 \\ -31 & -2 \end{bmatrix} \)</p>
-<p>\( AC = \begin{bmatrix} -4 & 2 \\ -7 & 6 \end{bmatrix} \begin{bmatrix} 7 & 6 \\ 3 & 2 \end{bmatrix} = \begin{bmatrix} (-4)(7) + 2(3) & (-4)(6) + 2(2) \\ (-7)(7) + 6(3) & (-7)(6) + 6(2) \end{bmatrix} = \begin{bmatrix} -22 & -20 \\ -31 & -30 \end{bmatrix} \)</p>
-<p>\( AB + AC = \begin{bmatrix} -12 & -4 \\ -31 & -2 \end{bmatrix} + \begin{bmatrix} -22 & -20 \\ -31 & -30 \end{bmatrix} = \begin{bmatrix} -34 & -24 \\ -62 & -32 \end{bmatrix} \)</p>
-<p>From LHS and RHS, \( A(B + C) = AB + AC \). Hence proved.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A = \begin{bmatrix} -4 &amp; 2 \\ -7 &amp; 6 \end{bmatrix} \), \( B = \begin{bmatrix} 1 &amp; 2 \\ -4 &amp; 2 \end{bmatrix} \), and \( C = \begin{bmatrix} 7 &amp; 6 \\ 3 &amp; 2 \end{bmatrix} \), verify that \( A(B + C) = AB + AC \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute \( B + C \).</p><p>\( B + C = \begin{bmatrix} 1+7 &amp; 2+6 \\ -4+3 &amp; 2+2 \end{bmatrix} = \begin{bmatrix} 8 &amp; 8 \\ -1 &amp; 4 \end{bmatrix} \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute \( A(B + C) \) using matrix multiplication.</p><p>\( A(B + C) = \begin{bmatrix} -4 &amp; 2 \\ -7 &amp; 6 \end{bmatrix} \begin{bmatrix} 8 &amp; 8 \\ -1 &amp; 4 \end{bmatrix} = \begin{bmatrix} (-4)(8) + 2(-1) &amp; (-4)(8) + 2(4) \\ (-7)(8) + 6(-1) &amp; (-7)(8) + 6(4) \end{bmatrix} = \begin{bmatrix} -34 &amp; -24 \\ -62 &amp; -32 \end{bmatrix} \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute \( AB \) and \( AC \) separately.</p><p>\( AB = \begin{bmatrix} -4 &amp; 2 \\ -7 &amp; 6 \end{bmatrix} \begin{bmatrix} 1 &amp; 2 \\ -4 &amp; 2 \end{bmatrix} = \begin{bmatrix} (-4)(1) + 2(-4) &amp; (-4)(2) + 2(2) \\ (-7)(1) + 6(-4) &amp; (-7)(2) + 6(2) \end{bmatrix} = \begin{bmatrix} -12 &amp; -4 \\ -31 &amp; -2 \end{bmatrix} \)</p><p>\( AC = \begin{bmatrix} -4 &amp; 2 \\ -7 &amp; 6 \end{bmatrix} \begin{bmatrix} 7 &amp; 6 \\ 3 &amp; 2 \end{bmatrix} = \begin{bmatrix} (-4)(7) + 2(3) &amp; (-4)(6) + 2(2) \\ (-7)(7) + 6(3) &amp; (-7)(6) + 6(2) \end{bmatrix} = \begin{bmatrix} -22 &amp; -20 \\ -31 &amp; -30 \end{bmatrix} \)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Compute \( AB + AC \).</p><p>\( AB + AC = \begin{bmatrix} -12 &amp; -4 \\ -31 &amp; -2 \end{bmatrix} + \begin{bmatrix} -22 &amp; -20 \\ -31 &amp; -30 \end{bmatrix} = \begin{bmatrix} -34 &amp; -24 \\ -62 &amp; -32 \end{bmatrix} \)</p></div></div><div class="final-answer"><p>Since \( A(B + C) = \begin{bmatrix} -34 &amp; -24 \\ -62 &amp; -32 \end{bmatrix} \) and \( AB + AC = \begin{bmatrix} -34 &amp; -24 \\ -62 &amp; -32 \end{bmatrix} \), we have verified that \( A(B + C) = AB + AC \).</p></div></div>
+</div>
 </body>
 </html>

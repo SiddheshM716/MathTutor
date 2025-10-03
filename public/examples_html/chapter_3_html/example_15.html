@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.15</h3>
-
-<p></p>
-<p>(i) Multiply \(\frac{x}{y}\) by \(\frac{2y}{3}\)</p>
-<p>(ii) Multiply \(\frac{7}{ab^2}\) by \(\frac{a - 1}{a + x}\)</p>
-<p>Solution:</p>
-<p>(i) \(\frac{x}{y} \times \frac{2y}{3} = \frac{2xy}{3y} = \frac{2x}{3}\)</p>
-<p>(ii) \(\frac{7}{ab^2} \times \frac{a - 1}{a + x} = \frac{7(a - 1)}{ab^2(a + x)}\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>(i) Multiply \(\frac{x}{y}\) by \(\frac{2y}{3}\)</p><p>(ii) Multiply \(\frac{7}{ab^2}\) by \(\frac{a - 1}{a + x}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), multiply the numerators and denominators of the fractions \(\frac{x}{y}\) and \(\frac{2y}{3}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The multiplication formula for fractions is \(\frac{a}{b} \times \frac{c}{d} = \frac{a \times c}{b \times d}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Applying the formula, \(\frac{x}{y} \times \frac{2y}{3} = \frac{x \times 2y}{y \times 3} = \frac{2xy}{3y}\). Simplify by canceling \(y\): \(\frac{2x}{3}\).</p></div></div><div class="final-answer"><p>\(\frac{2x}{3}\)</p><p>Step 1: For part (ii), multiply the numerators and denominators of the fractions \(\frac{7}{ab^2}\) and \(\frac{a - 1}{a + x}\).</p><p>Step 2: Use the same multiplication formula \(\frac{a}{b} \times \frac{c}{d} = \frac{a \times c}{b \times d}\).</p><p>Step 3: Applying the formula, \(\frac{7}{ab^2} \times \frac{a - 1}{a + x} = \frac{7 \times (a - 1)}{ab^2 \times (a + x)} = \frac{7(a - 1)}{ab^2(a + x)}\). No further simplification is possible.</p></div><div class="final-answer"><p>\(\frac{7(a - 1)}{ab^2(a + x)}\)</p></div></div>
+</div>
 </body>
 </html>

@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.21</h3>
-
-<p> What is the probability that a leap year selected at random will contain 53 Saturdays?</p>
-<p>Solution: A leap year has 366 days. So it has 52 full weeks and 2 days. 52 Saturdays must be in 52 full weeks.</p>
-<p>The possible chances for the remaining two days will be the sample space.</p>
-<p>S = {Sun-Mon, Mon-Tue, Tue-Wed, Wed-Thu, Thu-Fri, Fri-Sat, Sat-Sun}</p>
-<p>n(S) = 7</p>
-<p>Let A be the event of getting 53rd Saturday. Then A = {Fri-Sat, Sat-Sun}; n(A) = 2</p>
-<p>Probability of getting 53 Saturdays in a leap year is P(A) = n(A)/n(S) = 2/7</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>What is the probability that a leap year selected at random will contain 53 Saturdays?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>A leap year has 366 days, which means it consists of 52 full weeks (364 days) plus 2 extra days. The 52 Saturdays are already included in the 52 full weeks.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The sample space S consists of all possible combinations for the remaining 2 days:</p><p>S = {Sun-Mon, Mon-Tue, Tue-Wed, Wed-Thu, Thu-Fri, Fri-Sat, Sat-Sun}</p><p>The number of outcomes in the sample space is n(S) = 7.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Let A be the event of getting a 53rd Saturday. This occurs when the extra days include a Saturday:</p><p>A = {Fri-Sat, Sat-Sun}</p><p>The number of favorable outcomes is n(A) = 2.</p><p>The probability is calculated using the formula:</p><p>P(A) = n(A)/n(S) = 2/7</p></div></div><div class="final-answer"><p>The probability is \(\boxed{\dfrac{2}{7}}\).</p></div></div>
+</div>
 </body>
 </html>

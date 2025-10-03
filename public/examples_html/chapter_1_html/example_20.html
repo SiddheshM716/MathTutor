@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
 <body>
-<h3>Example 1.20</h3>
-
-
-<p>Represent the function \( f(x) = 2x^2 - 5x + 3 \) as a composition of two functions.</p>
-<p>Solution: \( f_1(x) = 2x^2 - 5x + 3 \) and \( f_2(x) = \sqrt{x} \).</p>
-<p>\( f(x) = \sqrt{x^2 - 5x + 3} = \sqrt{f_1(x)} \)</p>
-<p>\( f(x) = f_2[f_1(x)] = f_1f_2(x) \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Represent the function \( f(x) = 2x^2 - 5x + 3 \) as a composition of two functions.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the inner function \( f_1(x) \) that can be composed with another function to form \( f(x) \). Here, we choose \( f_1(x) = 2x^2 - 5x + 3 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Identify the outer function \( f_2(x) \) such that \( f(x) = f_2(f_1(x)) \). For this case, we select \( f_2(x) = \sqrt{x} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Verify the composition by substituting \( f_1(x) \) into \( f_2(x) \):</p><p>\[ f(x) = f_2(f_1(x)) = \sqrt{2x^2 - 5x + 3} \]</p></div></div><div class="final-answer"><p>The function \( f(x) = 2x^2 - 5x + 3 \) can be represented as the composition \( f(x) = f_2(f_1(x)) \), where \( f_1(x) = 2x^2 - 5x + 3 \) and \( f_2(x) = \sqrt{x} \).</p></div></div>
+</div>
 </body>
 </html>

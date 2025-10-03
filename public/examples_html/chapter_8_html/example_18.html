@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.18</h3>
-
-
-<p>A bag contains 5 blue balls and 4 green balls. A ball is drawn at random from the bag. Find the probability that the ball drawn is (i) blue (ii) not blue.</p>
-<p>Solution: Total number of possible outcomes n(S) = 5 + 4 = 9</p>
-<p>(i) Let A be the event of getting a blue ball. Number of favourable outcomes for the event A. Therefore, n(A) = 5. Probability that the ball drawn is blue. Therefore, P(A) = 5/9.</p>
-<p>(ii) A will be the event of not getting a blue ball. So P(A) = 1 - P(A) = 1 - 5/9 = 4/9.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A bag contains 5 blue balls and 4 green balls. A ball is drawn at random from the bag. Find the probability that the ball drawn is (i) blue (ii) not blue.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the total number of possible outcomes.</p><p>Total balls = blue balls + green balls = 5 + 4 = 9.</p><p>Thus, \( n(S) = 9 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), find the probability of drawing a blue ball.</p><p>Let \( A \) be the event of drawing a blue ball.</p><p>Number of favorable outcomes \( n(A) = 5 \).</p><p>Probability formula: \( P(A) = \frac{n(A)}{n(S)} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values into the formula.</p><p>\( P(A) = \frac{5}{9} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (ii), find the probability of not drawing a blue ball.</p><p>The probability of the complement event is \( P(\overline{A}) = 1 - P(A) \).</p><p>Substitute \( P(A) = \frac{5}{9} \).</p><p>\( P(\overline{A}) = 1 - \frac{5}{9} = \frac{4}{9} \).</p></div></div><div class="final-answer"><p>(i) \( \frac{5}{9} \)</p><p>(ii) \( \frac{4}{9} \)</p></div></div>
+</div>
 </body>
 </html>

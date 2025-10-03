@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.29</h3>
-
-<p> Draw a circle of radius 3 cm. Take a point P on this circle and draw a tangent at P.</p>
-<p>Solution: Given, radius r = 3 cm</p>
-<p>Construction:</p>
-<ol>
-  <li>Draw a circle with centre at O of radius 3 cm.</li>
-  <li>Take a point P on the circle. Join OP.</li>
-  <li>Draw a perpendicular line TT' to OP which passes through P.</li>
-  <li>TT' is the required tangent.</li>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Draw a circle of radius 3 cm. Take a point P on this circle and draw a tangent at P.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the radius of the circle is 3 cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>To construct the tangent, first draw a circle with center O and radius 3 cm.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Mark a point P on the circumference of the circle and draw the line segment OP.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Construct a line TT' perpendicular to OP at point P. This line TT' is the required tangent at point P.</p></div></div><div class="final-answer"><p>The tangent TT' is successfully constructed at point P on the circle of radius 3 cm.</p></div></div>
+</div>
 </body>
 </html>

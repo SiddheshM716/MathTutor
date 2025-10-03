@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.24</h3>
-
-<p> A toy is in the shape of a cylinder surmounted by a hemisphere. The height of the toy is 25 cm. Find the total surface area of the toy if its common diameter is 12 cm.</p>
-<p>Solution: Let r and h be the radius and height of the cylinder respectively.</p>
-<p>Given that, diameter d = 12 cm, radius r = 6 cm.</p>
-<p>Total height of the toy is 25 cm.</p>
-<p>Therefore, height of the cylindrical portion = 25 - 6 = 19 cm.</p>
-<p>T.S.A. of the toy = C.S.A. of the cylinder + C.S.A. of the hemisphere + Base Area of the cylinder</p>
-<p>= 2πrh + 2πr² + πr²</p>
-<p>= πr(2h + 3r) sq. units</p>
-<p>= π × 6 × (38 + 18)</p>
-<p>= π × 6 × 56 = 1056</p>
-<p>Therefore, T.S.A. of the toy is 1056 cm².</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A toy is in the shape of a cylinder surmounted by a hemisphere. The height of the toy is 25 cm. Find the total surface area of the toy if its common diameter is 12 cm.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values and required quantities.</p><p>Given: Diameter \( d = 12 \) cm, total height of the toy = 25 cm.</p><p>We need to find the total surface area (T.S.A.) of the toy.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the radius and height of the cylindrical portion.</p><p>Radius \( r = \frac{d}{2} = \frac{12}{2} = 6 \) cm.</p><p>Height of the cylindrical portion \( h = 25 - 6 = 19 \) cm (since the hemisphere has radius 6 cm).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Write the formula for the total surface area of the toy.</p><p>T.S.A. = Curved Surface Area (C.S.A.) of the cylinder + C.S.A. of the hemisphere + Base Area of the cylinder.</p><p>T.S.A. = \( 2\pi rh + 2\pi r^2 + \pi r^2 \).</p><p>Simplify the expression:</p><p>T.S.A. = \( \pi r (2h + 3r) \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute the values and compute the result.</p><p>T.S.A. = \( \pi \times 6 \times (2 \times 19 + 3 \times 6) \).</p><p>T.S.A. = \( \pi \times 6 \times (38 + 18) \).</p><p>T.S.A. = \( \pi \times 6 \times 56 = 1056 \) cm².</p></div></div><div class="final-answer"><p>The total surface area of the toy is \( 1056 \) cm².</p></div></div>
+</div>
 </body>
 </html>

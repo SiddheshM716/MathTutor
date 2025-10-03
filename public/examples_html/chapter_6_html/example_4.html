@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.4</h3>
-
-
-<p>Prove that \(\sec \theta - \cos \theta = \tan \theta \sin \theta\)</p>
-<p>Solution:</p>
-<p>\[
-\sec \theta - \cos \theta = \frac{1}{\cos \theta} - \cos \theta = \frac{1 - \cos^2 \theta}{\cos \theta} = \frac{\sin^2 \theta}{\cos \theta}
-\]</p>
-<p>\[
-\frac{\sin^2 \theta}{\cos \theta} = \sin \theta \cdot \frac{\sin \theta}{\cos \theta} = \sin \theta \cdot \tan \theta = \tan \theta \sin \theta
-\]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that \(\sec \theta - \cos \theta = \tan \theta \sin \theta\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Express \(\sec \theta\) in terms of \(\cos \theta\):</p><p>\[</p><p>\sec \theta = \frac{1}{\cos \theta}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \(\sec \theta\) into the left-hand side (LHS) of the equation:</p><p>\[</p><p>\sec \theta - \cos \theta = \frac{1}{\cos \theta} - \cos \theta</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Combine the terms over a common denominator:</p><p>\[</p><p>\frac{1 - \cos^2 \theta}{\cos \theta}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Use the Pythagorean identity \(1 - \cos^2 \theta = \sin^2 \theta\):</p><p>\[</p><p>\frac{\sin^2 \theta}{\cos \theta}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Rewrite \(\frac{\sin^2 \theta}{\cos \theta}\) as \(\sin \theta \cdot \frac{\sin \theta}{\cos \theta}\):</p><p>\[</p><p>\sin \theta \cdot \tan \theta</p><p>\]</p></div></div><div class="final-answer"><p>\(\tan \theta \sin \theta\)</p></div></div>
+</div>
 </body>
 </html>

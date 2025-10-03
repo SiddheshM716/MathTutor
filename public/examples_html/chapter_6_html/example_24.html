@@ -1,53 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.24</h3>
-
-
-<p>An aeroplane sets off from G on a bearing of 24° towards H, a point 250 km away. At H it changes course and heads towards J deviates further by 55° and a distance of 180 km away.</p>
-
-<ol>
-  <li>How far is H to the North of G?</li>
-  <li>How far is H to the East of G?</li>
-  <li>How far is J to the North of H?</li>
-  <li>How far is J to the East of H?</li>
-</ol>
-
-<p>sin 24° = 0.4067, sin11° = 0.1908<br>
-cos24° = 0.9135, cos11° = 0.9816</p>
-
-<ol>
-  <li>In the right angled △GOH, cos24° = OG/GH<br>
-  0.9135 = OG/250, OG = 228.38 km<br>
-  Distance of H to the North of G = 228.38 km</li>
-
-  <li>In the right angled △GOH, sin24° = OH/GH<br>
-  0.4067 = OH/250, OH = 101.68 km<br>
-  Distance of H to the East of G = 101.68 km</li>
-
-  <li>In the right angled △HIJ, sin11° = IJ/HJ<br>
-  0.1908 = IJ/180, IJ = 34.34 km<br>
-  Distance of J to the North of H = 34.34 km</li>
-
-  <li>In the right angled △HIJ, cos11° = HI/HJ<br>
-  0.9816 = HI/180, HI = 176.69 km<br>
-  Distance of J to the East of H = 176.69 km</li>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>An aeroplane sets off from G on a bearing of 24° towards H, a point 250 km away. At H it changes course and heads towards J deviates further by 55° and a distance of 180 km away.</p><p>How far is H to the North of G?</p><p>How far is H to the East of G?</p><p>How far is J to the North of H?</p><p>How far is J to the East of H?</p><p>Given: $\sin 24° = 0.4067$, $\sin 11° = 0.1908$, $\cos 24° = 0.9135$, $\cos 11° = 0.9816$</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the distance of H to the North of G.</p><p>Using the formula $\cos \theta = \frac{\text{Adjacent}}{\text{Hypotenuse}}$ in right-angled triangle GOH:</p><p>$\cos 24° = \frac{OG}{GH}$</p><p>$0.9135 = \frac{OG}{250}$</p><p>$OG = 250 \times 0.9135 = 228.38 \text{ km}$</p></div></div><div class="final-answer"><p>The distance of H to the North of G is $\boxed{228.38 \text{ km}}$.</p><p>Step 2: Find the distance of H to the East of G.</p><p>Using the formula $\sin \theta = \frac{\text{Opposite}}{\text{Hypotenuse}}$ in right-angled triangle GOH:</p><p>$\sin 24° = \frac{OH}{GH}$</p><p>$0.4067 = \frac{OH}{250}$</p><p>$OH = 250 \times 0.4067 = 101.68 \text{ km}$</p></div><div class="final-answer"><p>The distance of H to the East of G is $\boxed{101.68 \text{ km}}$.</p><p>Step 3: Find the distance of J to the North of H.</p><p>Using the formula $\sin \theta = \frac{\text{Opposite}}{\text{Hypotenuse}}$ in right-angled triangle HIJ:</p><p>$\sin 11° = \frac{IJ}{HJ}$</p><p>$0.1908 = \frac{IJ}{180}$</p><p>$IJ = 180 \times 0.1908 = 34.34 \text{ km}$</p></div><div class="final-answer"><p>The distance of J to the North of H is $\boxed{34.34 \text{ km}}$.</p><p>Step 4: Find the distance of J to the East of H.</p><p>Using the formula $\cos \theta = \frac{\text{Adjacent}}{\text{Hypotenuse}}$ in right-angled triangle HIJ:</p><p>$\cos 11° = \frac{HI}{HJ}$</p><p>$0.9816 = \frac{HI}{180}$</p><p>$HI = 180 \times 0.9816 = 176.69 \text{ km}$</p></div><div class="final-answer"><p>The distance of J to the East of H is $\boxed{176.69 \text{ km}}$.</p></div></div>
+</div>
 </body>
 </html>

@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.10</h3>
-
-<Example 4.10> Construct a triangle similar to a given triangle PQR with its sides equal to 3/5 of the corresponding sides of the triangle PQR (scale factor = 3/5 < 1).</Example>
-<p>Solution: Given a triangle PQR, we are required to construct another triangle whose sides are 3/5 of the corresponding sides of the triangle PQR.</p>
-<p>Steps of construction:</p>
-<ol>
-  <li>Construct a △PQR with any measurement.</li>
-  <li>Draw a ray QX making an acute angle with QR on the side opposite to vertex P.</li>
-  <li>Locate 5 (the greater of 3 and 5 in 3/5) points Q₁, Q₂, Q₃, Q₄, and Q₅ on QX so that QQ₁ = Q₁Q₂ = Q₂Q₃ = Q₃Q₄ = Q₄Q₅.</li>
-  <li>Join Q₅R and draw a line through Q₃ (the third point, 3 being smaller of 3 and 5 in 3/5) parallel to Q₅R to intersect QR at R′.</li>
-  <li>Draw line through R′ parallel to the line RP to intersect QP at P′.</li>
-</ol>
-<p>Then, △P′QR′ is the required triangle each of whose sides is three-fifths of the corresponding sides of △PQR.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Construct a triangle similar to a given triangle \( PQR \) with its sides equal to \( \frac{3}{5} \) of the corresponding sides of the triangle \( PQR \) (scale factor \( = \frac{3}{5} &lt; 1 \)).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Draw the given triangle \( \triangle PQR \) with any arbitrary measurements.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>From vertex \( Q \), draw a ray \( QX \) making an acute angle with \( QR \) on the side opposite to vertex \( P \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>On the ray \( QX \), mark 5 equal segments \( QQ_1 = Q_1Q_2 = Q_2Q_3 = Q_3Q_4 = Q_4Q_5 \). (Here, 5 is the denominator of the scale factor \( \frac{3}{5} \)).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Join \( Q_5 \) to \( R \) and construct a line through \( Q_3 \) (since 3 is the numerator of the scale factor) parallel to \( Q_5R \), intersecting \( QR \) at \( R' \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Draw a line through \( R' \) parallel to \( RP \), intersecting \( QP \) at \( P' \).</p></div></div><div class="final-answer"><p>The resulting triangle \( \triangle P'QR' \) is the required triangle, with each side \( \frac{3}{5} \) of the corresponding sides of \( \triangle PQR \).</p></div></div>
+</div>
 </body>
 </html>

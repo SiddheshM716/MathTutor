@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.11</h3>
-
-
-<p>Find the remainders when 70004 and 778 is divided by 7.</p>
-<p>Since 70000 is divisible by 7</p>
-<p>70000 ≡ 0 (mod 7)</p>
-<p>70000 + 4 ≡ 0 + 4 (mod 7)</p>
-<p>70004 ≡ 4 (mod 7)</p>
-<p>Therefore, the remainder when 70004 is divided by 7 is 4.</p>
-<p>777 is divisible by 7</p>
-<p>777 ≡ 0 (mod 7)</p>
-<p>777 + 1 ≡ 0 + 1 (mod 7)</p>
-<p>778 ≡ 1 (mod 7)</p>
-<p>Therefore, the remainder when 778 is divided by 7 is 1.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the remainders when 70004 and 778 are divided by 7.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Analyze 70004 modulo 7.</p><p>Since 70000 is divisible by 7, we have \(70000 \equiv 0 \pmod{7}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add the remaining term.</p><p>\(70000 + 4 \equiv 0 + 4 \pmod{7}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the congruence.</p><p>\(70004 \equiv 4 \pmod{7}\).</p></div></div><div class="final-answer"><p>The remainder when 70004 is divided by 7 is \(\boxed{4}\).</p><p>Step 1: Analyze 778 modulo 7.</p><p>Since 777 is divisible by 7, we have \(777 \equiv 0 \pmod{7}\).</p><p>Step 2: Add the remaining term.</p><p>\(777 + 1 \equiv 0 + 1 \pmod{7}\).</p><p>Step 3: Simplify the congruence.</p><p>\(778 \equiv 1 \pmod{7}\).</p></div><div class="final-answer"><p>The remainder when 778 is divided by 7 is \(\boxed{1}\).</p></div></div>
+</div>
 </body>
 </html>

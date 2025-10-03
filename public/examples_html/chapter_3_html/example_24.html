@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.24</h3>
-
-
-<p>Write down the quadratic equation in general form for which sum and product of the roots are given below.</p>
-<p>(i) 9, 14</p>
-<p>(ii) -7/2, 5/2</p>
-<p>(iii) -3/5, -1/9</p>
-<p>Solution:</p>
-<p>(i) General form of the quadratic equation when the roots are given is</p>
-<p>x² - (sum of the roots)x + product of the roots = 0</p>
-<p>x² - 9x + 14 = 0</p>
-<p>(ii) x² - (-7/2)x + 5/2 = 0 ⇒ 2x² + 7x + 5 = 0</p>
-<p>(iii) x² - (-3/5)x + (-1/9) = 0 ⇒ 45x² + 27x - 5 = 0</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Write down the quadratic equation in general form for which sum and product of the roots are given below.</p><p>(i) 9, 14</p><p>(ii) -7/2, 5/2</p><p>(iii) -3/5, -1/9</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The general form of a quadratic equation when the sum and product of roots are known is:</p><p>\[ x^2 - (\text{sum of roots})x + (\text{product of roots}) = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), the sum of roots is 9 and the product is 14.</p><p>\[ x^2 - 9x + 14 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For part (ii), the sum of roots is \(-\frac{7}{2}\) and the product is \(\frac{5}{2}\).</p><p>\[ x^2 - \left(-\frac{7}{2}\right)x + \frac{5}{2} = 0 \]</p><p>Multiply through by 2 to eliminate fractions:</p><p>\[ 2x^2 + 7x + 5 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (iii), the sum of roots is \(-\frac{3}{5}\) and the product is \(-\frac{1}{9}\).</p><p>\[ x^2 - \left(-\frac{3}{5}\right)x + \left(-\frac{1}{9}\right) = 0 \]</p><p>Multiply through by 45 (the LCM of 5 and 9) to eliminate fractions:</p><p>\[ 45x^2 + 27x - 5 = 0 \]</p></div></div><div class="final-answer"><p>(i) \( x^2 - 9x + 14 = 0 \)</p><p>(ii) \( 2x^2 + 7x + 5 = 0 \)</p><p>(iii) \( 45x^2 + 27x - 5 = 0 \)</p></div></div>
+</div>
 </body>
 </html>

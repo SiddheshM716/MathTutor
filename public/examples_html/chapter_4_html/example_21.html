@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.21</h3>
-
-
-<p>P and Q are the mid-points of the sides CA and CB respectively of a ΔABC, right angled at C. Prove that 4(AQ² + BP²) = 5AB².</p>
-<p>Solution:</p>
-<p>ΔAQC is a right triangle at C, AQ² = AC² + QC² ... (1)</p>
-<p>ΔBPC is a right triangle at C, BP² = BC² + CP² ... (2)</p>
-<p>ΔABC is a right triangle at C, AB² = AC² + BC² ... (3)</p>
-<p>From (1) and (2), AQ² + BP² = AC² + QC² + BC² + CP²</p>
-<p>4(AQ² + BP²) = 4AC² + 4QC² + 4BC² + 4CP²</p>
-<p>= 4AC² + (2QC)² + 4BC² + (2CP)²</p>
-<p>= 4AC² + BC² + 4BC² + AC² (Since P and Q are mid points)</p>
-<p>= 5(AC² + BC²) (From equation (3))</p>
-<p>4(AQ² + BP²) = 5AB²</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>P and Q are the mid-points of the sides CA and CB respectively of a ΔABC, right angled at C. Prove that 4(AQ² + BP²) = 5AB².</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the right triangles and apply the Pythagorean theorem.</p><p>For ΔAQC (right-angled at C):</p><p>AQ² = AC² + QC² ... (1)</p><p>For ΔBPC (right-angled at C):</p><p>BP² = BC² + CP² ... (2)</p><p>For ΔABC (right-angled at C):</p><p>AB² = AC² + BC² ... (3)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add equations (1) and (2) to combine the terms.</p><p>AQ² + BP² = AC² + QC² + BC² + CP²</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Multiply both sides by 4 and simplify using mid-point properties (QC = CB/2, CP = CA/2).</p><p>4(AQ² + BP²) = 4AC² + 4QC² + 4BC² + 4CP²</p><p>= 4AC² + (2QC)² + 4BC² + (2CP)²</p><p>= 4AC² + BC² + 4BC² + AC²</p><p>= 5AC² + 5BC²</p><p>= 5(AC² + BC²)</p><p>From equation (3), substitute AB² for (AC² + BC²):</p><p>4(AQ² + BP²) = 5AB²</p></div></div><div class="final-answer"><p>4(AQ² + BP²) = 5AB²</p></div></div>
+</div>
 </body>
 </html>

@@ -1,55 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.25</h3>
-
-  <p>Find the sum and product of the roots for each of the following quadratic equations:</p>
-  
-  <h4>(i) \( x^2 + 8x - 65 = 0 \)</h4>
-  <p><strong>Solution:</strong></p>
-  <p>Let \(\alpha\) and \(\beta\) be the roots of the equation:</p>
-  <p>\( a = 1, \ b = 8, \ c = -65 \)</p>
-  <p>\[
-    \alpha + \beta = -\frac{b}{a} = -8 \quad \text{and} \quad \alpha\beta = \frac{c}{a} = -65
-  \]</p>
-  <p>\[
-    \alpha + \beta = -8; \quad \alpha\beta = -65
-  \]</p>
-
-  <h4>(ii) \( 2x^2 + 5x + 7 = 0 \)</h4>
-  <p><strong>Solution:</strong></p>
-  <p>\( a = 2, \ b = 5, \ c = 7 \)</p>
-  <p>\[
-    \alpha + \beta = -\frac{b}{a} = -\frac{5}{2} \quad \text{and} \quad \alpha\beta = \frac{c}{a} = \frac{7}{2}
-  \]</p>
-  <p>\[
-    \alpha + \beta = -\frac{5}{2}; \quad \alpha\beta = \frac{7}{2}
-  \]</p>
-
-  <h4>(iii) \( kx^2 - k^2x - 2k^3 = 0 \)</h4>
-  <p><strong>Solution:</strong></p>
-  <p>\( a = k, \ b = -k^2, \ c = -2k^3 \)</p>
-  <p>\[
-    \alpha + \beta = -\frac{b}{a} = -\frac{(-k^2)}{k} = k \quad \text{and} \quad \alpha\beta = \frac{c}{a} = \frac{-2k^3}{k} = -2k^2
-  \]</p>
-  <p>\[
-    \alpha + \beta = k; \quad \alpha\beta = -2k^2
-  \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum and product of the roots for each of the following quadratic equations:</p><p>(i) \( x^2 + 8x - 65 = 0 \)</p><p>(ii) \( 2x^2 + 5x + 7 = 0 \)</p><p>(iii) \( kx^2 - k^2x - 2k^3 = 0 \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For the equation \( x^2 + 8x - 65 = 0 \), identify the coefficients \( a = 1 \), \( b = 8 \), and \( c = -65 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formulas for sum and product of roots:</p><p>\[ \alpha + \beta = -\frac{b}{a} \quad \text{and} \quad \alpha\beta = \frac{c}{a} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the sum and product:</p><p>\[ \alpha + \beta = -\frac{8}{1} = -8 \]</p><p>\[ \alpha\beta = \frac{-65}{1} = -65 \]</p></div></div><div class="final-answer"><p>Sum of roots = \(-8\), Product of roots = \(-65\).</p><p>---</p><p>Step 1: For the equation \( 2x^2 + 5x + 7 = 0 \), identify the coefficients \( a = 2 \), \( b = 5 \), and \( c = 7 \).</p><p>Step 2: Use the formulas for sum and product of roots:</p><p>\[ \alpha + \beta = -\frac{b}{a} \quad \text{and} \quad \alpha\beta = \frac{c}{a} \]</p><p>Step 3: Calculate the sum and product:</p><p>\[ \alpha + \beta = -\frac{5}{2} \]</p><p>\[ \alpha\beta = \frac{7}{2} \]</p></div><div class="final-answer"><p>Sum of roots = \(-\frac{5}{2}\), Product of roots = \(\frac{7}{2}\).</p><p>---</p><p>Step 1: For the equation \( kx^2 - k^2x - 2k^3 = 0 \), identify the coefficients \( a = k \), \( b = -k^2 \), and \( c = -2k^3 \).</p><p>Step 2: Use the formulas for sum and product of roots:</p><p>\[ \alpha + \beta = -\frac{b}{a} \quad \text{and} \quad \alpha\beta = \frac{c}{a} \]</p><p>Step 3: Calculate the sum and product:</p><p>\[ \alpha + \beta = -\frac{-k^2}{k} = k \]</p><p>\[ \alpha\beta = \frac{-2k^3}{k} = -2k^2 \]</p></div><div class="final-answer"><p>Sum of roots = \(k\), Product of roots = \(-2k^2\).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.24</h3>
-
-<p> A game of chance consists of spinning an arrow which is equally likely to come to rest pointing to one of the numbers 1, 2, 3, ...12. What is the probability that it will point to (i) 7 (ii) a prime number (iii) a composite number?</p>
-<p>Solution: Sample space S = {1,2,3,4,5,6,7,8,9,10,11,12}; n(S) = 12</p>
-<p>(i) Let A be the event of resting in 7. n(A)=1</p>
-<p>P(A) = n(A)/n(S) = 1/12</p>
-<p>(ii) Let B be the event that the arrow will come to rest in a prime number. B = {2,3,5,7,11}; n(B) =5</p>
-<p>P(B) = n(B)/n(S) = 5/12</p>
-<p>(iii) Let C be the event that arrow will come to rest in a composite number. C = {4,6,8,9,10,12}; n(C) =6</p>
-<p>P(C) = n(C)/n(S) = 6/12 = 1/2</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A game of chance consists of spinning an arrow which is equally likely to come to rest pointing to one of the numbers 1, 2, 3, ...12. What is the probability that it will point to (i) 7 (ii) a prime number (iii) a composite number?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Define the sample space and its size.</p><p>Sample space \( S = \{1,2,3,4,5,6,7,8,9,10,11,12\} \), so \( n(S) = 12 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (i), define event \( A \) as the arrow resting on 7.</p><p>Event \( A = \{7\} \), so \( n(A) = 1 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the probability using the formula \( P(A) = \frac{n(A)}{n(S)} \).</p><p>\( P(A) = \frac{1}{12} \).</p></div></div><div class="final-answer"><p>(i) The probability of pointing to 7 is \( \frac{1}{12} \).</p><p>Step 1: For part (ii), define event \( B \) as the arrow resting on a prime number.</p><p>Prime numbers in \( S \) are \( \{2,3,5,7,11\} \), so \( n(B) = 5 \).</p><p>Step 2: Calculate the probability using the formula \( P(B) = \frac{n(B)}{n(S)} \).</p><p>\( P(B) = \frac{5}{12} \).</p></div><div class="final-answer"><p>(ii) The probability of pointing to a prime number is \( \frac{5}{12} \).</p><p>Step 1: For part (iii), define event \( C \) as the arrow resting on a composite number.</p><p>Composite numbers in \( S \) are \( \{4,6,8,9,10,12\} \), so \( n(C) = 6 \).</p><p>Step 2: Calculate the probability using the formula \( P(C) = \frac{n(C)}{n(S)} \).</p><p>\( P(C) = \frac{6}{12} = \frac{1}{2} \).</p></div><div class="final-answer"><p>(iii) The probability of pointing to a composite number is \( \frac{1}{2} \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,38 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.40</h3>
-
-
-<p>Determine the nature of roots for the following quadratic equations:</p>
-<p>(i) \(x^2 - x - 20 = 0\)</p>
-<p>Here, \(a = 1\), \(b = -1\), \(c = -20\)</p>
-<p>Now, \(\Delta = b^2 - 4ac\)</p>
-<p>\(\Delta = (-1)^2 - 4(1)(-20) = 81\)</p>
-<p>Here, \(\Delta = 81 > 0\). So, the equation will have real and unequal roots.</p>
-<p>(ii) \(9x^2 - 24x + 16 = 0\)</p>
-<p>Here, \(a = 9\), \(b = -24\), \(c = 16\)</p>
-<p>Now, \(\Delta = b^2 - 4ac = (-24)^2 - 4(9)(16) = 0\)</p>
-<p>Here, \(\Delta = 0\). So, the equation will have real and equal roots.</p>
-<p>(iii) \(2x^2 - 2x + 9 = 0\)</p>
-<p>Here, \(a = 2\), \(b = -2\), \(c = 9\)</p>
-<p>Now, \(\Delta = b^2 - 4ac = (-2)^2 - 4(2)(9) = -68\)</p>
-<p>Here, \(\Delta = -68 < 0\). So, the equation will have no real roots.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Determine the nature of roots for the following quadratic equations:</p><p>(i) \(x^2 - x - 20 = 0\)</p><p>(ii) \(9x^2 - 24x + 16 = 0\)</p><p>(iii) \(2x^2 - 2x + 9 = 0\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For equation (i) \(x^2 - x - 20 = 0\), identify coefficients \(a = 1\), \(b = -1\), \(c = -20\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the discriminant formula \(\Delta = b^2 - 4ac\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate \(\Delta = (-1)^2 - 4(1)(-20) = 1 + 80 = 81\).</p></div></div><div class="final-answer"><p>Since \(\Delta = 81 &gt; 0\), the equation has real and unequal roots.</p><p>Step 1: For equation (ii) \(9x^2 - 24x + 16 = 0\), identify coefficients \(a = 9\), \(b = -24\), \(c = 16\).</p><p>Step 2: Use the discriminant formula \(\Delta = b^2 - 4ac\).</p><p>Step 3: Calculate \(\Delta = (-24)^2 - 4(9)(16) = 576 - 576 = 0\).</p></div><div class="final-answer"><p>Since \(\Delta = 0\), the equation has real and equal roots.</p><p>Step 1: For equation (iii) \(2x^2 - 2x + 9 = 0\), identify coefficients \(a = 2\), \(b = -2\), \(c = 9\).</p><p>Step 2: Use the discriminant formula \(\Delta = b^2 - 4ac\).</p><p>Step 3: Calculate \(\Delta = (-2)^2 - 4(2)(9) = 4 - 72 = -68\).</p></div><div class="final-answer"><p>Since \(\Delta = -68 &lt; 0\), the equation has no real roots.</p></div></div>
+</div>
 </body>
 </html>

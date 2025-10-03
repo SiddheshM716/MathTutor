@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.26</h3>
-
-
-<p>Solve \(2x^2 - 2\sqrt{6}x + 3 = 0\)</p>
-<p>Solution:</p>
-<p>\(2x^2 - 2\sqrt{6}x + 3 = 2x^2 - \sqrt{6}x - \sqrt{6}x + 3\) (by splitting the middle term)</p>
-<p>Now, equating the factors to zero we get,</p>
-<p>\((\sqrt{2}x - \sqrt{3})(\sqrt{2}x - \sqrt{3}) = 0\)</p>
-<p>\(\sqrt{2}x - \sqrt{3} = 0\)</p>
-<p>\(\sqrt{2}x = \sqrt{3}\)</p>
-<p>Therefore, the solution is \(x = \frac{\sqrt{3}}{\sqrt{2}}\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \(2x^2 - 2\sqrt{6}x + 3 = 0\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Split the middle term of the quadratic equation.</p><p>The given equation is \(2x^2 - 2\sqrt{6}x + 3 = 0\). We can rewrite it as:</p><p>\[ 2x^2 - \sqrt{6}x - \sqrt{6}x + 3 = 0. \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Factor the equation.</p><p>Group the terms and factor:</p><p>\[ (\sqrt{2}x - \sqrt{3})(\sqrt{2}x - \sqrt{3}) = 0. \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \(x\).</p><p>Set each factor equal to zero:</p><p>\[ \sqrt{2}x - \sqrt{3} = 0. \]</p><p>Solve for \(x\):</p><p>\[ \sqrt{2}x = \sqrt{3}, \]</p><p>\[ x = \frac{\sqrt{3}}{\sqrt{2}}. \]</p></div></div><div class="final-answer"><p>The solution is \(x = \frac{\sqrt{3}}{\sqrt{2}}\).</p></div></div>
+</div>
 </body>
 </html>

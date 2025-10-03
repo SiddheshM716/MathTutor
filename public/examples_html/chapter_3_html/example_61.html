@@ -1,69 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.61</h3>
-
-  
-  <p>Two examinations were conducted for three groups of students (Group 1, Group 2, Group 3) and their average marks for Tamil, English, Science, and Mathematics are given below as matrices A and B. Find the total marks of both examinations for all groups.</p>
-
-  <h4>First Examination (Matrix A):</h4>
-  <p>\[
-  A = \begin{pmatrix}
-  22 & 15 & 14 & 23 \\
-  50 & 62 & 21 & 30 \\
-  53 & 80 & 32 & 40
-  \end{pmatrix}
-  \]</p>
-  <p>Where rows represent groups (1-3) and columns represent subjects (Tamil, English, Science, Mathematics).</p>
-
-  <h4>Second Examination (Matrix B):</h4>
-  <p>\[
-  B = \begin{pmatrix}
-  20 & 38 & 15 & 40 \\
-  18 & 12 & 17 & 80 \\
-  81 & 47 & 52 & 18
-  \end{pmatrix}
-  \]</p>
-
-  <h3>Solution</h3>
-  <p>The total marks is the matrix sum A + B:</p>
-  <p>\[
-  A + B = \begin{pmatrix}
-  22+20 & 15+38 & 14+15 & 23+40 \\
-  50+18 & 62+12 & 21+17 & 30+80 \\
-  53+81 & 80+47 & 32+52 & 40+18
-  \end{pmatrix}
-  = \begin{pmatrix}
-  42 & 53 & 29 & 63 \\
-  68 & 74 & 38 & 110 \\
-  134 & 127 & 84 & 58
-  \end{pmatrix}
-  \]</p>
-
-  <h4>Interpretation:</h4>
-  <p>The resulting matrix shows the combined marks across both exams:</p>
-  <p>\[
-  \begin{pmatrix}
-  \text{Group 1} & 42 (\text{Tamil}) & 53 (\text{English}) & 29 (\text{Science}) & 63 (\text{Math}) \\
-  \text{Group 2} & 68 & 74 & 38 & 110 \\
-  \text{Group 3} & 134 & 127 & 84 & 58
-  \end{pmatrix}
-  \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Two examinations were conducted for three groups of students (Group 1, Group 2, Group 3) and their average marks for Tamil, English, Science, and Mathematics are given below as matrices A and B. Find the total marks of both examinations for all groups.</p><p>First Examination (Matrix A):</p><p>\[</p><p>A = \begin{pmatrix}</p><p>22 &amp; 15 &amp; 14 &amp; 23 \\</p><p>50 &amp; 62 &amp; 21 &amp; 30 \\</p><p>53 &amp; 80 &amp; 32 &amp; 40</p><p>\end{pmatrix}</p><p>\]</p><p>Where rows represent groups (1-3) and columns represent subjects (Tamil, English, Science, Mathematics).</p><p>Second Examination (Matrix B):</p><p>\[</p><p>B = \begin{pmatrix}</p><p>20 &amp; 38 &amp; 15 &amp; 40 \\</p><p>18 &amp; 12 &amp; 17 &amp; 80 \\</p><p>81 &amp; 47 &amp; 52 &amp; 18</p><p>\end{pmatrix}</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>To find the total marks of both examinations, we add the corresponding elements of matrices A and B.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The formula for matrix addition is \( A + B = \begin{pmatrix} a_{11}+b_{11} &amp; a_{12}+b_{12} &amp; \dots \\ \vdots &amp; \ddots &amp; \vdots \end{pmatrix} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Performing the addition for each element:</p><p>\[</p><p>A + B = \begin{pmatrix}</p><p>22+20 &amp; 15+38 &amp; 14+15 &amp; 23+40 \\</p><p>50+18 &amp; 62+12 &amp; 21+17 &amp; 30+80 \\</p><p>53+81 &amp; 80+47 &amp; 32+52 &amp; 40+18</p><p>\end{pmatrix}</p><p>= \begin{pmatrix}</p><p>42 &amp; 53 &amp; 29 &amp; 63 \\</p><p>68 &amp; 74 &amp; 38 &amp; 110 \\</p><p>134 &amp; 127 &amp; 84 &amp; 58</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="final-answer"><p>The total marks matrix is:</p><p>\[</p><p>\begin{pmatrix}</p><p>42 &amp; 53 &amp; 29 &amp; 63 \\</p><p>68 &amp; 74 &amp; 38 &amp; 110 \\</p><p>134 &amp; 127 &amp; 84 &amp; 58</p><p>\end{pmatrix}</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

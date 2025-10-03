@@ -1,51 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.8</h3>
-
-
-<p>Solve:</p>
-<p>\(\frac{1}{2x} + \frac{1}{4y} + \frac{1}{3z} = \frac{1}{4}\)</p>
-<p>\(\frac{1}{5x} - \frac{1}{8y} + \frac{1}{5z} = \frac{2}{15}\)</p>
-<p>\(\frac{1}{x} + \frac{1}{y} = 1\)</p>
-<p>Solution:</p>
-<p>Let \(\frac{1}{x} = p\), \(\frac{1}{y} = q\), \(\frac{1}{z} = r\)</p>
-<p>The given equations are written as:</p>
-<p>\(\frac{1}{2}p + \frac{1}{4}q + \frac{1}{3}r = \frac{1}{4}\)</p>
-<p>\(\frac{1}{5}p - \frac{1}{8}q + \frac{1}{5}r = \frac{2}{15}\)</p>
-<p>\(p + q = 1\)</p>
-<p>By simplifying we get:</p>
-<p>\(6p + 3q - 4r = 3\) (1)</p>
-<p>\(15p - 3q + 60r = 32\) (3)</p>
-<p>Substituting (2) in (1) and (3) we get:</p>
-<p>\(15p - 4r = 3\) (4)</p>
-<p>\(6p + 60r = 32\) reduces to \(3p + 30r = 16\) (5)</p>
-<p>Solving (4) and (5):</p>
-<p>\(11p - 4r = 3\)</p>
-<p>\(15p + 150r = 80\)</p>
-<p>Subtracting, we get:</p>
-<p>\(-154r = -77\)</p>
-<p>Thus, \(r = \frac{1}{2}\)</p>
-<p>Substituting \(r = \frac{1}{2}\) in (4) we get:</p>
-<p>\(15p - 2 = 3\)</p>
-<p>Thus, \(p = \frac{1}{3}\)</p>
-<p>From (2), \(q = 3p\) we get \(q = 1\)</p>
-<p>Therefore, \(x = \frac{1}{p} = 3\), \(y = \frac{1}{q} = 1\), \(z = \frac{1}{r} = 2\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve the system of equations:</p><p>\[</p><p>\frac{1}{2x} + \frac{1}{4y} + \frac{1}{3z} = \frac{1}{4}</p><p>\]</p><p>\[</p><p>\frac{1}{5x} - \frac{1}{8y} + \frac{1}{5z} = \frac{2}{15}</p><p>\]</p><p>\[</p><p>\frac{1}{x} + \frac{1}{y} = 1</p><p>\]</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \(\frac{1}{x} = p\), \(\frac{1}{y} = q\), and \(\frac{1}{z} = r\). Rewrite the equations in terms of \(p\), \(q\), and \(r\):</p><p>\[</p><p>\frac{1}{2}p + \frac{1}{4}q + \frac{1}{3}r = \frac{1}{4}</p><p>\]</p><p>\[</p><p>\frac{1}{5}p - \frac{1}{8}q + \frac{1}{5}r = \frac{2}{15}</p><p>\]</p><p>\[</p><p>p + q = 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the equations by eliminating denominators. Multiply the first equation by 12 and the second equation by 120 to clear fractions:</p><p>\[</p><p>6p + 3q + 4r = 3 \quad (1)</p><p>\]</p><p>\[</p><p>24p - 15q + 24r = 16 \quad (2)</p><p>\]</p><p>\[</p><p>p + q = 1 \quad (3)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve equation (3) for \(q\): \(q = 1 - p\). Substitute \(q = 1 - p\) into equations (1) and (2):</p><p>\[</p><p>6p + 3(1 - p) + 4r = 3 \implies 3p + 4r = 0 \quad (4)</p><p>\]</p><p>\[</p><p>24p - 15(1 - p) + 24r = 16 \implies 39p + 24r = 31 \quad (5)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve equation (4) for \(p\): \(p = -\frac{4}{3}r\). Substitute \(p = -\frac{4}{3}r\) into equation (5):</p><p>\[</p><p>39\left(-\frac{4}{3}r\right) + 24r = 31 \implies -52r + 24r = 31 \implies -28r = 31 \implies r = -\frac{31}{28}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute \(r = -\frac{31}{28}\) back into equation (4) to find \(p\):</p><p>\[</p><p>3p + 4\left(-\frac{31}{28}\right) = 0 \implies 3p = \frac{31}{7} \implies p = \frac{31}{21}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Substitute \(p = \frac{31}{21}\) into equation (3) to find \(q\):</p><p>\[</p><p>q = 1 - \frac{31}{21} = -\frac{10}{21}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">7</div><div class="step-content"><p>Recover \(x\), \(y\), and \(z\) from \(p\), \(q\), and \(r\):</p><p>\[</p><p>x = \frac{1}{p} = \frac{21}{31}, \quad y = \frac{1}{q} = -\frac{21}{10}, \quad z = \frac{1}{r} = -\frac{28}{31}</p><p>\]</p></div></div><div class="final-answer"><p>The solution is \(x = \frac{21}{31}\), \(y = -\frac{21}{10}\), and \(z = -\frac{28}{31}\).</p></div></div>
+</div>
 </body>
 </html>

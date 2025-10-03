@@ -1,62 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.52</h3>
-
-<p> Draw the graph of y = 2x² and hence solve 2x² - x - 6 = 0</p>
-<p>Solution Step 1: Draw the graph of y = 2x² by preparing the table of values as below</p>
-<table>
-  <tr>
-    <th>x</th>
-    <th>-1</th>
-    <th>0</th>
-    <th>1</th>
-    <th>2</th>
-  </tr>
-  <tr>
-    <td>y</td>
-    <td>2</td>
-    <td>0</td>
-    <td>2</td>
-    <td>8</td>
-  </tr>
-</table>
-<p>Step 2: To solve 2x² - x - 6 = 0, subtract 2x² - x - 6 = 0 from y = 2x²</p>
-<p>y = 2x²</p>
-<p>0 = 2x² - x - 6</p>
-<p>y = x + 6</p>
-<p>The equation y = x + 6 represents a straight line. Draw the graph of y = x + 6 by forming table of values as below</p>
-<table>
-  <tr>
-    <th>x</th>
-    <th>0</th>
-    <th>1</th>
-    <th>2</th>
-  </tr>
-  <tr>
-    <td>y</td>
-    <td>6</td>
-    <td>7</td>
-    <td>8</td>
-  </tr>
-</table>
-<p>Step 3: Mark the points of intersection of the curve y = 2x² and the line y = x + 6. That is, (-1.5, 4.5) and (2, 8)</p>
-<p>Step 4: The x coordinates of the respective points forms the solution set {-1.5, 2} for 2x² - x - 6 = 0</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Draw the graph of \( y = 2x^2 \) and hence solve \( 2x^2 - x - 6 = 0 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Draw the graph of \( y = 2x^2 \) by preparing the table of values:</p><p>\( x \)</p><p>-1</p><p>0</p><p>1</p><p>2</p><p>\( y \)</p><p>2</p><p>0</p><p>2</p><p>8</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>To solve \( 2x^2 - x - 6 = 0 \), rewrite it as \( y = x + 6 \) by subtracting \( 2x^2 - x - 6 = 0 \) from \( y = 2x^2 \).</p><p>The equation \( y = x + 6 \) represents a straight line. Draw its graph using the table of values:</p><p>\( x \)</p><p>0</p><p>1</p><p>2</p><p>\( y \)</p><p>6</p><p>7</p><p>8</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Find the points of intersection of the curve \( y = 2x^2 \) and the line \( y = x + 6 \). The points are \( (-1.5, 4.5) \) and \( (2, 8) \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The \( x \)-coordinates of the intersection points give the solution set for \( 2x^2 - x - 6 = 0 \).</p></div></div><div class="final-answer"><p>\( \{-1.5, 2\} \)</p></div></div>
+</div>
 </body>
 </html>

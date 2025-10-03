@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.13</h3>
-
-
-<p>The slant height of a frustum of a cone is 5 cm and the radii of its ends are 4 cm and 1 cm. Find its curved surface area.</p>
-<p>Solution: Let \( l \), \( R \), and \( r \) be the slant height, top radius, and bottom radius of the frustum. Given that, \( l = 5 \) cm, \( R = 4 \) cm, \( r = 1 \) cm.</p>
-<p>Now, C.S.A. of the frustum \( = \pi (R + r) l \) sq. units</p>
-<p>\( = \frac{22}{7} \times (4 + 1) \times 5 \)</p>
-<p>\( = \frac{22}{7} \times 5 \times 5 \)</p>
-<p>\( = \frac{550}{7} \)</p>
-<p>Therefore, C.S.A. \( = 78.57 \) cm²</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>The slant height of a frustum of a cone is 5 cm and the radii of its ends are 4 cm and 1 cm. Find its curved surface area.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values. Let \( l \), \( R \), and \( r \) be the slant height, top radius, and bottom radius of the frustum. Here, \( l = 5 \) cm, \( R = 4 \) cm, \( r = 1 \) cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the curved surface area (C.S.A.) of a frustum of a cone:</p><p>\[ \text{C.S.A.} = \pi (R + r) l \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the formula and calculate:</p><p>\[ \text{C.S.A.} = \frac{22}{7} \times (4 + 1) \times 5 \]</p><p>\[ \text{C.S.A.} = \frac{22}{7} \times 5 \times 5 \]</p><p>\[ \text{C.S.A.} = \frac{550}{7} \]</p></div></div><div class="final-answer"><p>The curved surface area is \( 78.57 \) cm².</p></div></div>
+</div>
 </body>
 </html>

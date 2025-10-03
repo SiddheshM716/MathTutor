@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.29</h3>
-
-
-<p>(a) (i) East Avenue is the straight line joining C(0,2) and B(7,2). Thus the equation of East Avenue is obtained by using two-point form which is</p>
-<p>\(\frac{y-2}{2-2} = \frac{x-0}{7-0}\)</p>
-<p>\(\frac{y-2}{0} = \frac{x}{7}\)</p>
-<p>\(y = 2\)</p>
-<p>(ii) Since the point D lies vertically above C(0,2). The x-coordinate of D is 0. Since any point on North Street has x-coordinate value 0, the equation of North Street is \(x = 0\).</p>
-<p>(iii) To find the equation of Cross Road. Center of circular garden M is at (7,7), A is (3,10). We first find the slope of MA, which we call \(m_1\). Thus \(m_1 = \frac{10-7}{3-7} = -\frac{3}{4}\). Since the Cross Road is perpendicular to MA, if \(m_2\) is the slope of the Cross Road then, \(m_1m_2 = -1\) gives \(-\frac{3}{4}m_2 = -1\) so \(m_2 = \frac{4}{3}\). Now, the Cross Road has slope \(\frac{4}{3}\) and it passes through the point A(3,10). The equation of the Cross Road is \(y - 10 = \frac{4}{3}(x - 3)\).</p>
-<p>\(3y - 30 = 4x - 12\)</p>
-<p>Hence, \(4x - 3y + 18 = 0\)</p>
-<p>(b) (i) If D is (0,k) then D is a point on the Cross Road. Therefore, substituting \(x=0\), \(y=k\) in the equation of Cross Road, we get, \(0 - 3k + 18 = 0\). Value of \(k=6\). Therefore, D is (0,6).</p>
-<p>(ii) To find E, let E be (q,2). Put \(y = 2\) in the equation of the Cross Road, we get, \(4q - 6 + 18 = 0\). \(4q = -12\) gives \(q = -3\). Therefore, the point E is (-3,2).</p>
-<p>Thus the Cross Road meets the North Street at D(0,6) and East Avenue at E(-3,2).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>(a) (i) East Avenue is the straight line joining C(0,2) and B(7,2). Find the equation of East Avenue.</p><p>(ii) If point D lies vertically above C(0,2), find the equation of North Street.</p><p>(iii) The center of a circular garden M is at (7,7), and point A is at (3,10). Find the equation of Cross Road, which is perpendicular to MA and passes through A.</p><p>(b) (i) If D is a point on the Cross Road with x-coordinate 0, find the coordinates of D.</p><p>(ii) Find the coordinates of E where the Cross Road meets East Avenue.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (a)(i), use the two-point form of a line equation for points C(0,2) and B(7,2).</p><p>The two-point form is \(\frac{y-y_1}{y_2-y_1} = \frac{x-x_1}{x_2-x_1}\).</p><p>Substituting the points: \(\frac{y-2}{2-2} = \frac{x-0}{7-0}\).</p><p>Simplifying: \(\frac{y-2}{0} = \frac{x}{7}\), which gives \(y = 2\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>For part (a)(ii), since D lies vertically above C(0,2), its x-coordinate is 0.</p><p>Thus, North Street is the vertical line \(x = 0\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>For part (a)(iii), first find the slope of MA, where M is (7,7) and A is (3,10).</p><p>Slope \(m_1 = \frac{10-7}{3-7} = -\frac{3}{4}\).</p><p>Since Cross Road is perpendicular to MA, its slope \(m_2\) satisfies \(m_1m_2 = -1\).</p><p>Solving: \(-\frac{3}{4}m_2 = -1\) gives \(m_2 = \frac{4}{3}\).</p><p>Using point-slope form for Cross Road passing through A(3,10): \(y - 10 = \frac{4}{3}(x - 3)\).</p><p>Simplifying: \(3y - 30 = 4x - 12\), so \(4x - 3y + 18 = 0\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>For part (b)(i), substitute \(x = 0\) into the Cross Road equation \(4x - 3y + 18 = 0\).</p><p>This gives \(0 - 3k + 18 = 0\), so \(k = 6\).</p><p>Thus, D is (0,6).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>For part (b)(ii), substitute \(y = 2\) into the Cross Road equation \(4x - 3y + 18 = 0\).</p><p>This gives \(4q - 6 + 18 = 0\), so \(4q = -12\) and \(q = -3\).</p><p>Thus, E is (-3,2).</p></div></div><div class="final-answer"><p>(a)(i) \(y = 2\)</p><p>(a)(ii) \(x = 0\)</p><p>(a)(iii) \(4x - 3y + 18 = 0\)</p><p>(b)(i) D is (0,6)</p><p>(b)(ii) E is (-3,2)</p></div></div>
+</div>
 </body>
 </html>

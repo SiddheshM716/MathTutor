@@ -1,36 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.1</h3>
-
-<p> If A = {1,3,5} and B = {2,3} then</p>
-<p>(i) find A × B and B × A.</p>
-<p>(ii) Is A × B = B × A? If not why?</p>
-<p>(iii) Show that n(A × B) = n(B × A) = n(A) × n(B)</p>
-<p>Solution: Given that A = {1,3,5} and B = {2,3}</p>
-<p>(i) A × B = {1,3,5} × {2,3} = {(1,2), (1,3), (3,2), (3,3), (5,2), (5,3)} ...(1)</p>
-<p>B × A = {2,3} × {1,3,5} = {(2,1), (2,3), (2,5), (3,1), (3,3), (3,5)} ...(2)</p>
-<p>(ii) From (1) and (2) we conclude that A × B ≠ B × A as (1,2) ≠ (2,1) and (1,3) ≠ (3,1), etc.</p>
-<p>(iii) n(A) = 3; n(B) = 2.</p>
-<p>From (1) and (2) we observe that, n(A × B) = n(B × A) = 6;</p>
-<p>we see that, n(A) × n(B) = 3 × 2 = 6 and n(B) × n(A) = 2 × 3 = 6</p>
-<p>Hence, n(A × B) = n(B × A) = n(A) × n(B) = 6.</p>
-<p>Thus, n(A × B) = n(B × A) = n(A) × n(B).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A = \{1, 3, 5\} \) and \( B = \{2, 3\} \), then:</p><p>(i) Find \( A \times B \) and \( B \times A \).</p><p>(ii) Is \( A \times B = B \times A \)? If not, why?</p><p>(iii) Show that \( n(A \times B) = n(B \times A) = n(A) \times n(B) \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute \( A \times B \) (Cartesian product of A and B).</p><p>\[ A \times B = \{1, 3, 5\} \times \{2, 3\} = \{(1, 2), (1, 3), (3, 2), (3, 3), (5, 2), (5, 3)\} \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute \( B \times A \) (Cartesian product of B and A).</p><p>\[ B \times A = \{2, 3\} \times \{1, 3, 5\} = \{(2, 1), (2, 3), (2, 5), (3, 1), (3, 3), (3, 5)\} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compare \( A \times B \) and \( B \times A \).</p><p>The ordered pairs \((1, 2)\) and \((2, 1)\) are different, and similarly for others. Hence, \( A \times B \neq B \times A \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Verify the cardinality relationship.</p><p>Given \( n(A) = 3 \) and \( n(B) = 2 \), compute:</p><p>\[ n(A \times B) = 6 \]</p><p>\[ n(B \times A) = 6 \]</p><p>\[ n(A) \times n(B) = 3 \times 2 = 6 \]</p></div></div><div class="final-answer"><p>(i) \( A \times B = \{(1, 2), (1, 3), (3, 2), (3, 3), (5, 2), (5, 3)\} \), \( B \times A = \{(2, 1), (2, 3), (2, 5), (3, 1), (3, 3), (3, 5)\} \)</p><p>(ii) No, \( A \times B \neq B \times A \) because the ordered pairs are different.</p><p>(iii) \( n(A \times B) = n(B \times A) = n(A) \times n(B) = 6 \).</p></div></div>
+</div>
 </body>
 </html>

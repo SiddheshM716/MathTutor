@@ -1,37 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.33</h3>
-
-
-<p>Solve \(2x^2 - 3x - 3 = 0\) by formula method.</p>
-<p>Compare \(2x^2 - 3x - 3 = 0\) with the standard form \(ax^2 + bx + c = 0\)</p>
-<p>\(a = 2\), \(b = -3\), \(c = -3\)</p>
-<p>\[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]</p>
-<p>Substituting the values of \(a\), \(b\) and \(c\) in the formula we get,</p>
-<p>\[
-x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4(2)(-3)}}{2(2)} = \frac{3 \pm \sqrt{33}}{4}
-\]</p>
-<p>\[
-x = \frac{3 + \sqrt{33}}{4}, \quad x = \frac{3 - \sqrt{33}}{4}
-\]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \(2x^2 - 3x - 3 = 0\) by formula method.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compare the given equation \(2x^2 - 3x - 3 = 0\) with the standard quadratic form \(ax^2 + bx + c = 0\).</p><p>Here, \(a = 2\), \(b = -3\), and \(c = -3\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the quadratic formula for solving equations of the form \(ax^2 + bx + c = 0\):</p><p>\[</p><p>x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values of \(a\), \(b\), and \(c\) into the formula:</p><p>\[</p><p>x = \frac{-(-3) \pm \sqrt{(-3)^2 - 4(2)(-3)}}{2(2)} = \frac{3 \pm \sqrt{9 + 24}}{4} = \frac{3 \pm \sqrt{33}}{4}</p><p>\]</p></div></div><div class="final-answer"><p>The solutions are \(x = \frac{3 + \sqrt{33}}{4}\) and \(x = \frac{3 - \sqrt{33}}{4}\).</p></div></div>
+</div>
 </body>
 </html>

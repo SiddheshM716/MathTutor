@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.54</h3>
-
-
-<p>Find the value of</p>
-<p>(i) 1 + 2 + 3 + 4 + ... + 50</p>
-<p>Using, 1 + 2 + 3 + ... + n = \(\frac{n(n + 1)}{2}\)</p>
-<p>1 + 2 + 3 + ... + 50 = \(\frac{50 \times (50 + 1)}{2}\) = 1275</p>
-<p>(ii) 16 + 17 + 18 + ... + 75</p>
-<p>16 + 17 + 18 + ... + 75 = (1 + 2 + 3 + ... + 75) - (1 + 2 + 3 + ... + 15)</p>
-<p>= \(\frac{75 \times (75 + 1)}{2} - \frac{15 \times (15 + 1)}{2}\)</p>
-<p>= 2850 - 120 = 2730</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the value of:</p><p>(i) \(1 + 2 + 3 + 4 + \dots + 50\)</p><p>(ii) \(16 + 17 + 18 + \dots + 75\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), use the formula for the sum of the first \(n\) natural numbers:</p><p>\[</p><p>1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \(n = 50\) into the formula:</p><p>\[</p><p>1 + 2 + 3 + \dots + 50 = \frac{50 \times (50 + 1)}{2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the result:</p><p>\[</p><p>\frac{50 \times 51}{2} = \frac{2550}{2} = 1275</p><p>\]</p></div></div><div class="final-answer"><p>\(1275\)</p><p>Step 1: For part (ii), express the sum as the difference of two sums:</p><p>\[</p><p>16 + 17 + 18 + \dots + 75 = (1 + 2 + 3 + \dots + 75) - (1 + 2 + 3 + \dots + 15)</p><p>\]</p><p>Step 2: Apply the sum formula to both terms:</p><p>\[</p><p>= \frac{75 \times (75 + 1)}{2} - \frac{15 \times (15 + 1)}{2}</p><p>\]</p><p>Step 3: Calculate each term and subtract:</p><p>\[</p><p>= \frac{75 \times 76}{2} - \frac{15 \times 16}{2} = 2850 - 120 = 2730</p><p>\]</p></div><div class="final-answer"><p>\(2730\)</p></div></div>
+</div>
 </body>
 </html>

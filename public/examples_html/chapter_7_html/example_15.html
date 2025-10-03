@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.15</h3>
-
-
-<p>Find the volume of a cylinder whose height is 2 m and whose base area is 250 m².</p>
-<p>Solution: Let r and h be the radius and height of the cylinder respectively.</p>
-<p>Given that, height h = 2 m, base area = 250 m²</p>
-<p>Now, volume of a cylinder = πr²h cu. units</p>
-<p>= base area x h</p>
-<p>= 250 x 2 = 500 m³</p>
-<p>Therefore, volume of the cylinder = 500 m³</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the volume of a cylinder whose height is 2 m and whose base area is 250 m².</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values. The height \( h \) of the cylinder is 2 m, and the base area is 250 m².</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall the formula for the volume of a cylinder. The volume \( V \) is given by:</p><p>\[ V = \pi r^2 h \]</p><p>where \( r \) is the radius and \( h \) is the height.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since the base area \( \pi r^2 \) is already given as 250 m², we can simplify the volume formula to:</p><p>\[ V = \text{base area} \times h \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute the given values into the formula:</p><p>\[ V = 250 \times 2 = 500 \, \text{m}^3 \]</p></div></div><div class="final-answer"><p>The volume of the cylinder is \( 500 \, \text{m}^3 \).</p></div></div>
+</div>
 </body>
 </html>

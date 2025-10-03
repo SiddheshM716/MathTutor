@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.13</h3>
-
-
-<p>Let \( A = \{1, 2, 3\} \), \( B = \{4, 5, 6, 7\} \) and \( f = \{(1, 4), (2, 5), (3, 6)\} \) be a function from \( A \) to \( B \). Show that \( f \) is one-one but not onto function.</p>
-<p>Solution: \( A = \{1, 2, 3\} \), \( B = \{4, 5, 6, 7\} \); \( f = \{(1, 4), (2, 5), (3, 6)\} \).</p>
-<p>Then \( f \) is a function from \( A \) to \( B \) and for different elements in \( A \), there are different images in \( B \). Hence \( f \) is one-one function. Note that the element 7 in the co-domain does not have any pre-image in the domain. Hence \( f \) is not onto.</p>
-<p>Therefore, \( f \) is one-one but not an onto function.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Let \( A = \{1, 2, 3\} \), \( B = \{4, 5, 6, 7\} \) and \( f = \{(1, 4), (2, 5), (3, 6)\} \) be a function from \( A \) to \( B \). Show that \( f \) is one-one but not onto function.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the sets \( A = \{1, 2, 3\} \), \( B = \{4, 5, 6, 7\} \) and the function \( f = \{(1, 4), (2, 5), (3, 6)\} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>To show \( f \) is one-one, we check if distinct elements in \( A \) have distinct images in \( B \). Here, \( f(1) = 4 \), \( f(2) = 5 \), and \( f(3) = 6 \), all outputs are unique.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>To check if \( f \) is onto, verify if every element in \( B \) has a pre-image in \( A \). The element \( 7 \in B \) has no pre-image in \( A \), so \( f \) is not onto.</p></div></div><div class="final-answer"><p>\( f \) is one-one but not an onto function.</p></div></div>
+</div>
 </body>
 </html>

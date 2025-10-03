@@ -1,57 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
 <body>
-<h3>Example 3.54</h3>
-<p>Draw the graph of \( y = x^2 + x - 2 \) and hence solve \( x^2 + x - 2 = 0 \).</p>
-
-<h4><span style="color:blue;">Solution</span></h4>
-
-<p><b>Step 1:</b> Draw the graph of \( y = x^2 + x - 2 \) by preparing the table of values as below.</p>
-
-<table border="1" cellpadding="6" cellspacing="0">
-  <tr style="background-color:#fdd;">
-    <th>\( x \)</th><td>-3</td><td>-2</td><td>-1</td><td>0</td><td>1</td><td>2</td>
-  </tr>
-  <tr style="background-color:#fee;">
-    <th>\( y \)</th><td>4</td><td>0</td><td>-2</td><td>-2</td><td>0</td><td>4</td>
-  </tr>
-</table>
-
-<p><b>Step 2:</b> To solve \( x^2 + x - 2 = 0 \), subtract \( x^2 + x - 2 = 0 \) from \( y = x^2 + x - 2 \).</p>
-
-<p>
-That is, <br>
-\[
-y = x^2 + x - 2
-\]
-\[
-0 = x^2 + x - 2
-\]
-\[
-y = 0
-\]
-</p>
-
-<p>The equation \( y = 0 \) represents the X-axis.</p>
-
-<p><b>Step 3:</b> Mark the point of intersection of the curve \( y = x^2 + x - 2 \) with the X-axis. That is, \((-2, 0)\) and \( (1, 0) \).</p>
-
-<p><b>Step 4:</b> The \( x \)-coordinates of the respective points form the solution set \( \{-2, 1\} \) for \( x^2 + x - 2 = 0 \).</p>
-
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Draw the graph of \( y = x^2 + x - 2 \) and hence solve \( x^2 + x - 2 = 0 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Prepare a table of values for the function \( y = x^2 + x - 2 \):</p><p>\( x \)</p><p>-3</p><p>-2</p><p>-1</p><p>0</p><p>1</p><p>2</p><p>\( y \)</p><p>4</p><p>0</p><p>-2</p><p>-2</p><p>0</p><p>4</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The equation to solve is \( x^2 + x - 2 = 0 \). This is equivalent to finding where the graph of \( y = x^2 + x - 2 \) intersects the X-axis (\( y = 0 \)).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>From the table, the points of intersection with the X-axis are \((-2, 0)\) and \((1, 0)\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>The solutions are the \( x \)-coordinates of these points.</p></div></div><div class="final-answer"><p>The solution set is \( \{-2, 1\} \).</p></div></div>
+</div>
 </body>
 </html>

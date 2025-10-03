@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.27</h3>
-
-
-<p>Determine the general term of an A.P. whose 7<sup>th</sup> term is -1 and 16<sup>th</sup> term is 17.</p>
-<p>Let the A.P. be t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub>, t<sub>4</sub>, ...</p>
-<p>It is given that t<sub>7</sub> = -1 and t<sub>16</sub> = 17.</p>
-<p>a + (7 - 1)d = -1 and a + (16 - 1)d = 17</p>
-<p>a + 6d = -1 (1)</p>
-<p>a + 15d = 17 (2)</p>
-<p>Subtracting equation (1) from equation (2), we get 9d = 18 ⇒ d = 2</p>
-<p>Putting d = 2 in equation (1), we get a + 12 = -1 ⇒ a = -13</p>
-<p>Hence, general term t<sub>n</sub> = a + (n - 1)d</p>
-<p>= -13 + (n - 1) × 2 = 2n - 15</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Determine the general term of an A.P. whose 7</p><p>th</p><p>term is -1 and 16</p><p>th</p><p>term is 17.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the A.P. have first term \( a \) and common difference \( d \). The \( n \)-th term of an A.P. is given by \( t_n = a + (n-1)d \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Given \( t_7 = -1 \) and \( t_{16} = 17 \), we write the equations:</p><p>\[</p><p>a + 6d = -1 \quad \text{(1)}</p><p>\]</p><p>\[</p><p>a + 15d = 17 \quad \text{(2)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Subtract equation (1) from equation (2):</p><p>\[</p><p>(a + 15d) - (a + 6d) = 17 - (-1)</p><p>\]</p><p>\[</p><p>9d = 18 \implies d = 2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \( d = 2 \) into equation (1):</p><p>\[</p><p>a + 6(2) = -1 \implies a + 12 = -1 \implies a = -13</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The general term \( t_n \) is:</p><p>\[</p><p>t_n = a + (n-1)d = -13 + (n-1) \times 2 = 2n - 15</p><p>\]</p></div></div><div class="final-answer"><p>The general term of the A.P. is \( \boxed{2n - 15} \).</p></div></div>
+</div>
 </body>
 </html>

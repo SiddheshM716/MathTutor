@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.26</h3>
-
-
-<p>Find the number of terms in the A.P. 3, 6, 9, 12,..., 111.</p>
-<p>First term \( a = 3 \); common difference \( d = 6 - 3 = 3 \); last term \( l = 111 \).</p>
-<p>We know that, \( n = \frac{l - a}{d} + 1 \).</p>
-<p>\( n = \frac{111 - 3}{3} + 1 = 37 \).</p>
-<p>Thus the A.P. contains 37 terms.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the number of terms in the A.P. 3, 6, 9, 12,..., 111.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values from the arithmetic progression (A.P.).</p><p>First term \( a = 3 \), common difference \( d = 6 - 3 = 3 \), and last term \( l = 111 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the number of terms \( n \) in an A.P.:</p><p>\[ n = \frac{l - a}{d} + 1 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula and calculate:</p><p>\[ n = \frac{111 - 3}{3} + 1 = \frac{108}{3} + 1 = 36 + 1 = 37 \]</p></div></div><div class="final-answer"><p>The A.P. contains \(\boxed{37}\) terms.</p></div></div>
+</div>
 </body>
 </html>

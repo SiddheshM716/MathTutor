@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.14</h3>
-
-
-<p>Find the excluded values of the following expressions (if any).</p>
-<p>(i) \(\frac{x + 10}{8x}\)</p>
-<p>The expression \(\frac{x + 10}{8x}\) is undefined when \(8x = 0\) or \(x = 0\). Hence the excluded value is 0.</p>
-<p>(ii) \(\frac{7p + 2}{8p^2 + 13p + 5}\)</p>
-<p>The expression \(\frac{7p + 2}{8p^2 + 13p + 5}\) is undefined when \(8p^2 + 13p + 5 = 0\), that is, \((8p + 5)(p + 1) = 0\). Therefore, \(p = -\frac{5}{8}\) or \(p = -1\). The excluded values are \(-\frac{5}{8}\) and \(-1\).</p>
-<p>(iii) \(\frac{1}{x^2 + 1}\)</p>
-<p>Here \(x^2 \geq 0\) for all \(x\). Therefore, \(x^2 + 1 \geq 0 + 1 = 1\). Hence, \(x^2 + 1 \neq 0\) for any \(x\). Therefore, there can be no real excluded values for the given rational expression \(\frac{1}{x^2 + 1}\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the excluded values of the following expressions (if any).</p><p>(i) \(\frac{x + 10}{8x}\)</p><p>(ii) \(\frac{7p + 2}{8p^2 + 13p + 5}\)</p><p>(iii) \(\frac{1}{x^2 + 1}\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For \(\frac{x + 10}{8x}\), the expression is undefined when the denominator equals zero.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Set the denominator \(8x = 0\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \(x\): \(x = 0\).</p></div></div><div class="final-answer"><p>The excluded value is \(0\).</p><p>---</p><p>Step 1: For \(\frac{7p + 2}{8p^2 + 13p + 5}\), the expression is undefined when the denominator equals zero.</p><p>Step 2: Factor the denominator: \(8p^2 + 13p + 5 = (8p + 5)(p + 1)\).</p><p>Step 3: Set each factor to zero: \(8p + 5 = 0\) gives \(p = -\frac{5}{8}\), and \(p + 1 = 0\) gives \(p = -1\).</p></div><div class="final-answer"><p>The excluded values are \(-\frac{5}{8}\) and \(-1\).</p><p>---</p><p>Step 1: For \(\frac{1}{x^2 + 1}\), the expression is undefined when the denominator equals zero.</p><p>Step 2: Analyze \(x^2 + 1\). Since \(x^2 \geq 0\) for all \(x\), \(x^2 + 1 \geq 1\).</p><p>Step 3: The denominator \(x^2 + 1\) is never zero for any real \(x\).</p></div><div class="final-answer"><p>There are no real excluded values.</p></div></div>
+</div>
 </body>
 </html>

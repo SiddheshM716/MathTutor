@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.24</h3>
-
-
-<p>Find the length of the tangent drawn from a point whose distance from the centre of a circle is 5 cm and radius of the circle is 3 cm.</p>
-<p>Given OP = 5 cm, radius r = 3 cm.</p>
-<p>To find the length of tangent PT.</p>
-<p>In right angled ΔOTP,</p>
-<p>OP² = OT² + PT² (by Pythagoras theorem)</p>
-<p>5² = 3² + PT² gives PT² = 25 - 9 = 16</p>
-<p>Length of the tangent PT = 4 cm</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the length of the tangent drawn from a point whose distance from the centre of a circle is 5 cm and radius of the circle is 3 cm.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the distance from the point to the center of the circle \( OP = 5 \) cm and the radius \( r = 3 \) cm.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The tangent \( PT \) is perpendicular to the radius \( OT \) at the point of contact. Using the Pythagoras theorem in right-angled \( \Delta OTP \):</p><p>\[ OP^2 = OT^2 + PT^2 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values:</p><p>\[ 5^2 = 3^2 + PT^2 \]</p><p>\[ 25 = 9 + PT^2 \]</p><p>\[ PT^2 = 25 - 9 = 16 \]</p><p>\[ PT = \sqrt{16} = 4 \text{ cm} \]</p></div></div><div class="final-answer"><p>The length of the tangent \( PT \) is \( 4 \) cm.</p></div></div>
+</div>
 </body>
 </html>

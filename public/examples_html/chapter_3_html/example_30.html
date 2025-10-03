@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.30</h3>
-
-
-<p>Solve \( x^2 - 3x - 2 = 0 \)</p>
-<p>Solution:</p>
-<p>\( x^2 - 3x = 2 \) (Shifting the Constant to RHS)</p>
-<p>\( x^2 - 3x + \left(\frac{3}{2}\right)^2 = 2 + \left(\frac{3}{2}\right)^2 \) (Add \(\left(\frac{3}{2}\right)^2\) [coefficient of \(x\)] to both sides)</p>
-<p>\( \left(x - \frac{3}{2}\right)^2 = \frac{17}{4} \) (Writing the LHS as complete square)</p>
-<p>\( x - \frac{3}{2} = \pm \frac{\sqrt{17}}{2} \) (Taking the square root on both sides)</p>
-<p>\( x = \frac{3}{2} + \frac{\sqrt{17}}{2} \) or \( x = \frac{3}{2} - \frac{\sqrt{17}}{2} \)</p>
-<p>Therefore, \( x = \frac{3 + \sqrt{17}}{2}, \frac{3 - \sqrt{17}}{2} \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \( x^2 - 3x - 2 = 0 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Shift the constant term to the right-hand side (RHS).</p><p>\( x^2 - 3x = 2 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add the square of half the coefficient of \( x \) to both sides.</p><p>The coefficient of \( x \) is \(-3\), so half of it is \(-\frac{3}{2}\), and its square is \(\left(\frac{3}{2}\right)^2\).</p><p>\( x^2 - 3x + \left(\frac{3}{2}\right)^2 = 2 + \left(\frac{3}{2}\right)^2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite the left-hand side (LHS) as a perfect square and simplify the RHS.</p><p>\( \left(x - \frac{3}{2}\right)^2 = \frac{17}{4} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Take the square root of both sides.</p><p>\( x - \frac{3}{2} = \pm \frac{\sqrt{17}}{2} \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \( x \).</p><p>\( x = \frac{3}{2} + \frac{\sqrt{17}}{2} \) or \( x = \frac{3}{2} - \frac{\sqrt{17}}{2} \).</p></div></div><div class="final-answer"><p>\( x = \frac{3 + \sqrt{17}}{2}, \frac{3 - \sqrt{17}}{2} \).</p></div></div>
+</div>
 </body>
 </html>

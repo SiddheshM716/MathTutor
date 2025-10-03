@@ -1,32 +1,24 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.57</h3>
-
-
-<ol>
-  <li>Find the sum of \(1^2 + 2^2 + 3^2 + \dots + 16^2\)</li>
-  <p>Solution: \(1^2 + 2^2 + 3^2 + \dots + 16^2 = \frac{16 \times (16 + 1) \times (2 \times 16 + 1)}{6} = 1496\)</p>
-  
-  <li>Find the sum of \(9^2 + 10^2 + \dots + 21^2\)</li>
-  <p>Solution: \(9^2 + 10^2 + \dots + 21^2 = \left(1^2 + 2^2 + \dots + 21^2\right) - \left(1^2 + 2^2 + \dots + 8^2\right)\)</p>
-  <p>\(\left(\frac{21 \times (21 + 1) \times (2 \times 21 + 1)}{6}\right) - \left(\frac{8 \times (8 + 1) \times (2 \times 8 + 1)}{6}\right) = 3311 - 204 = 3107\)</p>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum of \(1^2 + 2^2 + 3^2 + \dots + 16^2\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Use the formula for the sum of squares of the first \(n\) natural numbers: \(\sum_{k=1}^n k^2 = \frac{n(n + 1)(2n + 1)}{6}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \(n = 16\) into the formula.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the sum:</p><p>\[</p><p>\frac{16 \times (16 + 1) \times (2 \times 16 + 1)}{6} = \frac{16 \times 17 \times 33}{6} = 1496.</p><p>\]</p></div></div><div class="final-answer"><p>\(1496\).</p></div></div>
+<div class="question"><div class="question-box"><p>Find the sum of \(9^2 + 10^2 + \dots + 21^2\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Express the sum as the difference of two sums:</p><p>\[</p><p>9^2 + 10^2 + \dots + 21^2 = \left(1^2 + 2^2 + \dots + 21^2\right) - \left(1^2 + 2^2 + \dots + 8^2\right).</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the sum of squares formula for both terms:</p><p>\[</p><p>\sum_{k=1}^n k^2 = \frac{n(n + 1)(2n + 1)}{6}.</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the first sum (\(n = 21\)):</p><p>\[</p><p>\frac{21 \times 22 \times 43}{6} = 3311.</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the second sum (\(n = 8\)):</p><p>\[</p><p>\frac{8 \times 9 \times 17}{6} = 204.</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Subtract the second sum from the first:</p><p>\[</p><p>3311 - 204 = 3107.</p><p>\]</p></div></div><div class="final-answer"><p>\(3107\).</p></div></div>
+</div>
 </body>
 </html>

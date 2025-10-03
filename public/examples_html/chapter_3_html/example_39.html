@@ -1,37 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.39</h3>
-
-<p> A passenger train takes 1 hr more than an express train to travel a distance of 240 km from Chennai to Virudhachalam. The speed of the express train is more than that of the passenger train by 20 km per hour. Find the average speed of both the trains.</p>
-<p>Solution Let the average speed of passenger train be x km/hr.</p>
-<p>Then the average speed of express train will be (x + 20) km/hr</p>
-<p>Time taken by the passenger train to cover distance of 240 km = 240/x hr</p>
-<p>Time taken by express train to cover distance of 240 km = 240/(x + 20) hr</p>
-<p>Given, 240/x - 240/(x + 20) = 1</p>
-<p>240(x + 20) - 240x = x(x + 20)</p>
-<p>4800 = x² + 20x</p>
-<p>x² + 20x - 4800 = 0</p>
-<p>(x + 80)(x - 60) = 0</p>
-<p>we get, x = -80 or 60.</p>
-<p>Therefore x = 60 (Rejecting -80 as speed cannot be negative)</p>
-<p>Average speed of the passenger train is 60 km/hr</p>
-<p>Average speed of the express train is 80 km/hr.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A passenger train takes 1 hr more than an express train to travel a distance of 240 km from Chennai to Virudhachalam. The speed of the express train is more than that of the passenger train by 20 km per hour. Find the average speed of both the trains.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let the average speed of the passenger train be \( x \) km/hr. Then, the average speed of the express train will be \( (x + 20) \) km/hr.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The time taken by the passenger train to cover 240 km is \( \frac{240}{x} \) hr, and the time taken by the express train is \( \frac{240}{x + 20} \) hr.</p><p>Given that the passenger train takes 1 hour more, we set up the equation:</p><p>\[</p><p>\frac{240}{x} - \frac{240}{x + 20} = 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Multiply both sides by \( x(x + 20) \) to eliminate denominators:</p><p>\[</p><p>240(x + 20) - 240x = x(x + 20)</p><p>\]</p><p>Simplify the equation:</p><p>\[</p><p>240x + 4800 - 240x = x^2 + 20x</p><p>\]</p><p>\[</p><p>4800 = x^2 + 20x</p><p>\]</p><p>Rearrange into standard quadratic form:</p><p>\[</p><p>x^2 + 20x - 4800 = 0</p><p>\]</p><p>Factor the quadratic equation:</p><p>\[</p><p>(x + 80)(x - 60) = 0</p><p>\]</p><p>Solve for \( x \):</p><p>\[</p><p>x = -80 \quad \text{or} \quad x = 60</p><p>\]</p><p>Since speed cannot be negative, we reject \( x = -80 \). Thus, \( x = 60 \).</p></div></div><div class="final-answer"><p>The average speed of the passenger train is \( 60 \) km/hr, and the average speed of the express train is \( 80 \) km/hr.</p></div></div>
+</div>
 </body>
 </html>

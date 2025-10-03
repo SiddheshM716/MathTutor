@@ -1,63 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.56</h3>
-
-  
-  <p>Consider the following information regarding the number of men and women workers in three factories I, II and III.</p>
-
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>Factory</th>
-      <th>Men</th>
-      <th>Women</th>
-    </tr>
-    <tr>
-      <td>I</td>
-      <td>23</td>
-      <td>18</td>
-    </tr>
-    <tr>
-      <td>II</td>
-      <td>47</td>
-      <td>36</td>
-    </tr>
-    <tr>
-      <td>III</td>
-      <td>15</td>
-      <td>16</td>
-    </tr>
-  </table>
-
-  <p>Represent the above information in the form of a matrix. What does the entry in the second row and first column represent?</p>
-
-  <h3>Solution:</h3>
-  <p>The information is represented in the form of a \( 3 \times 2 \) matrix as follows:</p>
-  
-  <p>\[
-    A = \begin{pmatrix}
-    23 & 18 \\
-    47 & 36 \\
-    15 & 16
-    \end{pmatrix}
-  \]</p>
-  
-  <p>The entry in the second row and first column represents that there are <strong>47 men workers in factory II</strong>.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Consider the following information regarding the number of men and women workers in three factories I, II and III.</p><p>Factory</p><p>Men</p><p>Women</p><p>I</p><p>23</p><p>18</p><p>II</p><p>47</p><p>36</p><p>III</p><p>15</p><p>16</p><p>Represent the above information in the form of a matrix. What does the entry in the second row and first column represent?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The given data can be represented as a matrix with 3 rows (factories) and 2 columns (men and women workers).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The matrix \( A \) will have the form:</p><p>\[</p><p>A = \begin{pmatrix}</p><p>\text{Factory I data} \\</p><p>\text{Factory II data} \\</p><p>\text{Factory III data}</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substituting the values from the table:</p><p>\[</p><p>A = \begin{pmatrix}</p><p>23 &amp; 18 \\</p><p>47 &amp; 36 \\</p><p>15 &amp; 16</p><p>\end{pmatrix}</p><p>\]</p></div></div><div class="final-answer"><p>The entry in the second row and first column (47) represents the number of men workers in factory II.</p></div></div>
+</div>
 </body>
 </html>

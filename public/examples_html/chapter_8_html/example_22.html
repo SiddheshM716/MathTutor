@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.22</h3>
-
-<p> A die is rolled and a coin is tossed simultaneously. Find the probability that the die shows an odd number and the coin shows a head.</p>
-<p>Solution:</p>
-<p>Sample space:</p>
-<p>S = {1H, 1T, 2H, 2T, 3H, 3T, 4H, 4T, 5H, 5T, 6H, 6T}</p>
-<p>n(S) = 12</p>
-<p>Let A be the event of getting an odd number and a head.</p>
-<p>A = {1H, 3H, 5H}</p>
-<p>n(A) = 3</p>
-<p>P(A) = n(A)/n(S) = 3/12 = 1/4</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A die is rolled and a coin is tossed simultaneously. Find the probability that the die shows an odd number and the coin shows a head.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Determine the sample space (S) for the experiment where a die is rolled and a coin is tossed.</p><p>S = {1H, 1T, 2H, 2T, 3H, 3T, 4H, 4T, 5H, 5T, 6H, 6T}</p><p>n(S) = 12</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Define event A as the die showing an odd number and the coin showing a head.</p><p>A = {1H, 3H, 5H}</p><p>n(A) = 3</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the probability using the formula P(A) = n(A)/n(S).</p><p>P(A) = 3/12 = 1/4</p></div></div><div class="final-answer"><p>\(\frac{1}{4}\)</p></div></div>
+</div>
 </body>
 </html>

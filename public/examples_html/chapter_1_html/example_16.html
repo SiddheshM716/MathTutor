@@ -1,35 +1,24 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.16</h3>
-
-
-<ol>
-  <li>Verify the function h is one-one or not.</li>
-  <li>Find the height of a person if the length of his thigh bone is 50 cm.</li>
-  <li>Find the length of the thigh bone if the height of a person is 147.96 cm.</li>
-</ol>
-<p>Solution:</p>
-<ol>
-  <li>To check if h is one-one, we assume that h(b₁) = h(b₂). Then we get, 2.47b₁ + 54.10 = 2.47b₂ + 54.10 ⇒ 2.47b₁ = 2.47b₂ ⇒ b₁ = b₂. Thus, h(b₁) = h(b₂) ⇒ b₁ = b₂. So, the function h is one-one.</li>
-  <li>If the length of the thigh bone b = 50, then the height is h(50) = (2.47 × 50) + 54.10 = 177.6 cm.</li>
-  <li>If the height of a person is 147.96 cm, then h(b) = 147.96 and so the length of the thigh bone is given by 2.47b + 54.10 = 147.96 ⇒ 2.47b = 147.96 − 54.10 = 93.86 ⇒ b = 93.86 / 2.47 = 38. Therefore, the length of the thigh bone is 38 cm.</li>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Verify the function \( h \) is one-one or not.</p><p>Find the height of a person if the length of his thigh bone is 50 cm.</p><p>Find the length of the thigh bone if the height of a person is 147.96 cm.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>To check if \( h \) is one-one, assume \( h(b_1) = h(b_2) \).</p><p>Given \( h(b) = 2.47b + 54.10 \), we have:</p><p>\( 2.47b_1 + 54.10 = 2.47b_2 + 54.10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the equation:</p><p>Subtract 54.10 from both sides:</p><p>\( 2.47b_1 = 2.47b_2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Divide both sides by 2.47:</p><p>\( b_1 = b_2 \).</p><p>Thus, \( h \) is one-one.</p></div></div><div class="final-answer"><p>The function \( h \) is one-one.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the length of the thigh bone \( b = 50 \) cm, use the function \( h(b) = 2.47b + 54.10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \( b = 50 \) into the formula:</p><p>\( h(50) = 2.47 \times 50 + 54.10 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the height:</p><p>\( h(50) = 123.5 + 54.10 = 177.6 \) cm.</p></div></div><div class="final-answer"><p>The height of the person is 177.6 cm.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Given the height \( h(b) = 147.96 \) cm, use the function \( h(b) = 2.47b + 54.10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Set up the equation:</p><p>\( 2.47b + 54.10 = 147.96 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \( b \):</p><p>Subtract 54.10 from both sides:</p><p>\( 2.47b = 147.96 - 54.10 = 93.86 \).</p><p>Divide both sides by 2.47:</p><p>\( b = \frac{93.86}{2.47} = 38 \).</p></div></div><div class="final-answer"><p>The length of the thigh bone is 38 cm.</p></div></div>
+</div>
 </body>
 </html>

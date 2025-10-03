@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.33</h3>
-
-
-<p>Show that the straight lines \( x - 2y + 3 = 0 \) and \( 6x + 3y + 8 = 0 \) are perpendicular.</p>
-<p>Slope of the straight line \( x - 2y + 3 = 0 \) is</p>
-<p>\[ m_1 = \frac{1}{2} \]</p>
-<p>Slope of the straight line \( 6x + 3y + 8 = 0 \) is</p>
-<p>\[ m_2 = -2 \]</p>
-<p>Now, \( m_1 \times m_2 = \frac{1}{2} \times (-2) = -1 \)</p>
-<p>Hence, the two straight lines are perpendicular.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that the straight lines \( x - 2y + 3 = 0 \) and \( 6x + 3y + 8 = 0 \) are perpendicular.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the slope of the first line \( x - 2y + 3 = 0 \).</p><p>The slope \( m_1 \) of a line in the form \( ax + by + c = 0 \) is given by \( m_1 = -\frac{a}{b} \).</p><p>For \( x - 2y + 3 = 0 \), \( a = 1 \) and \( b = -2 \).</p><p>Thus, \( m_1 = -\frac{1}{-2} = \frac{1}{2} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the slope of the second line \( 6x + 3y + 8 = 0 \).</p><p>Using the same formula, for \( 6x + 3y + 8 = 0 \), \( a = 6 \) and \( b = 3 \).</p><p>Thus, \( m_2 = -\frac{6}{3} = -2 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Check if the product of the slopes equals \(-1\), which is the condition for perpendicularity.</p><p>Calculate \( m_1 \times m_2 = \frac{1}{2} \times (-2) = -1 \).</p></div></div><div class="final-answer"><p>Since \( m_1 \times m_2 = -1 \), the two straight lines are perpendicular.</p></div></div>
+</div>
 </body>
 </html>

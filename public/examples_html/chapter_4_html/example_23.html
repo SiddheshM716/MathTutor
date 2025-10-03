@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.23</h3>
-
-
-<p>An aeroplane after take off from an airport and flies due north at a speed of 1000 km/hr. At the same time, another aeroplane takes off from the same airport and flies due west at a speed of 1200 km/hr. How far apart will be the two planes after 1.5 hours?</p>
-<p>Solution: Let the first aeroplane starts from O and goes up to A towards north, where OA = 1000 × 1.5 km = 1500 km.</p>
-<p>Let the second aeroplane starts from O at the same time and goes up to B towards west, where OB = 1200 × 1.5 = 1800 km.</p>
-<p>The required distance to be found is BA. In right angled triangle AOB, AB² = OA² + OB².</p>
-<p>AB² = (1500)² + (1800)² = 100² (15² + 18²) = 100² × 549 = 100² × 9 × 61.</p>
-<p>AB = 100 × 3 × √61 = 300√61 km.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>An aeroplane after take off from an airport and flies due north at a speed of 1000 km/hr. At the same time, another aeroplane takes off from the same airport and flies due west at a speed of 1200 km/hr. How far apart will be the two planes after 1.5 hours?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the distance covered by the first aeroplane (northbound).</p><p>Distance = Speed × Time = 1000 km/hr × 1.5 hr = 1500 km.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the distance covered by the second aeroplane (westbound).</p><p>Distance = Speed × Time = 1200 km/hr × 1.5 hr = 1800 km.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the Pythagorean theorem to find the distance between the two planes.</p><p>Formula: \( AB^2 = OA^2 + OB^2 \), where \( OA = 1500 \) km and \( OB = 1800 \) km.</p><p>Calculation:</p><p>\( AB^2 = (1500)^2 + (1800)^2 = 2,250,000 + 3,240,000 = 5,490,000 \).</p><p>\( AB = \sqrt{5,490,000} = \sqrt{100^2 \times 549} = 100 \times \sqrt{549} \).</p><p>Simplify \( \sqrt{549} \):</p><p>\( \sqrt{549} = \sqrt{9 \times 61} = 3\sqrt{61} \).</p></div></div><div class="final-answer"><p>The distance between the two planes is \( 300\sqrt{61} \) km.</p></div></div>
+</div>
 </body>
 </html>

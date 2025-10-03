@@ -1,49 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.15</h3>
-
-
-<ol>
-  <li>Let \( f \) be a function \( f : \mathbb{N} \rightarrow \mathbb{N} \) defined by \( f(x) = 3x + 2, x \in \mathbb{N} \).</li>
-  <ol type="i">
-    <li>Find the images of 1, 2, 3.</li>
-    <li>Find the pre-images of 29, 53.</li>
-    <li>Identify the type of function.</li>
-  </ol>
-  <li>Solution: The function \( f: \mathbb{N} \rightarrow \mathbb{N} \) is defined by \( f(x) = 3x + 2 \).</li>
-  <ol type="i">
-    <li>If \( x = 1 \), \( f(1) = 3(1) + 2 = 5 \).<br>
-        If \( x = 2 \), \( f(2) = 3(2) + 2 = 8 \).<br>
-        If \( x = 3 \), \( f(3) = 3(3) + 2 = 11 \).<br>
-        The images of 1, 2, 3 are 5, 8, 11 respectively.</li>
-    <li>If \( x \) is the pre-image of 29, then \( f(x) = 29 \). Hence \( 3x + 2 = 29 \),<br>
-        \( 3x = 27 \Rightarrow x = 9 \).<br>
-        Similarly, if \( x \) is the pre-image of 53, then \( f(x) = 53 \). Hence \( 3x + 2 = 53 \),<br>
-        \( 3x = 51 \Rightarrow x = 17 \).<br>
-        Thus the pre-images of 29 and 53 are 9 and 17 respectively.</li>
-    <li>Since different elements of \( \mathbb{N} \) have different images in the co-domain, the function \( f \) is one-one function.<br>
-        The co-domain of \( f \) is \( \mathbb{N} \).<br>
-        But the range of \( f = \{5, 8, 11, 14, 17, \dots\} \) is a proper subset of \( \mathbb{N} \).<br>
-        Therefore, \( f \) is not an onto function. That is, \( f \) is an into function.<br>
-        Thus \( f \) is one-one and into function.</li>
-  </ol>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Let \( f \) be a function \( f : \mathbb{N} \rightarrow \mathbb{N} \) defined by \( f(x) = 3x + 2, x \in \mathbb{N} \).</p><p>i) Find the images of 1, 2, 3.</p><p>ii) Find the pre-images of 29, 53.</p><p>iii) Identify the type of function.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the images of 1, 2, 3 using the function \( f(x) = 3x + 2 \).</p><p>For \( x = 1 \), \( f(1) = 3(1) + 2 = 5 \).</p><p>For \( x = 2 \), \( f(2) = 3(2) + 2 = 8 \).</p><p>For \( x = 3 \), \( f(3) = 3(3) + 2 = 11 \).</p><p>Final Answer (i): The images of 1, 2, 3 are 5, 8, 11 respectively.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the pre-images of 29 and 53 by solving \( f(x) = 29 \) and \( f(x) = 53 \).</p><p>For \( f(x) = 29 \), \( 3x + 2 = 29 \).</p><p>Subtract 2 from both sides: \( 3x = 27 \).</p><p>Divide by 3: \( x = 9 \).</p><p>For \( f(x) = 53 \), \( 3x + 2 = 53 \).</p><p>Subtract 2 from both sides: \( 3x = 51 \).</p><p>Divide by 3: \( x = 17 \).</p><p>Final Answer (ii): The pre-images of 29 and 53 are 9 and 17 respectively.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Identify the type of function.</p><p>Since different elements of \( \mathbb{N} \) have different images, \( f \) is one-one.</p><p>The range of \( f = \{5, 8, 11, 14, 17, \dots\} \) is a proper subset of \( \mathbb{N} \), so \( f \) is not onto (it is into).</p><p>Final Answer (iii): The function \( f \) is one-one and into.</p></div></div></div>
+</div>
 </body>
 </html>

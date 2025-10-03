@@ -1,80 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.9</h3>
-
-  
-  <p>Find the standard deviation of the data: 2, 3, 5, 7, 8. Then multiply each data by 4 and find the new standard deviation.</p>
-
-  <h3>Solution</h3>
-  <h4>Part 1: Original Data</h4>
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>xᵢ</th>
-      <th>xᵢ²</th>
-    </tr>
-    <tr><td>2</td><td>4</td></tr>
-    <tr><td>3</td><td>9</td></tr>
-    <tr><td>5</td><td>25</td></tr>
-    <tr><td>7</td><td>49</td></tr>
-    <tr><td>8</td><td>64</td></tr>
-    <tr>
-      <td><strong>Σxᵢ = 25</strong></td>
-      <td><strong>Σxᵢ² = 151</strong></td>
-    </tr>
-  </table>
-
-  <p>Standard deviation calculation:</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\Sigma x_i^2}{n} - \left(\frac{\Sigma x_i}{n}\right)^2} = \sqrt{\frac{151}{5} - \left(\frac{25}{5}\right)^2}
-  \]</p>
-  <p>\[
-  = \sqrt{30.2 - 25} = \sqrt{5.2} \approx 2.28
-  \]</p>
-
-  <h4>Part 2: Data Multiplied by 4</h4>
-  <p>New data values: 8, 12, 20, 28, 32</p>
-  <table border="1" style="border-collapse: collapse; margin: 1em 0;">
-    <tr>
-      <th>xᵢ</th>
-      <th>xᵢ²</th>
-    </tr>
-    <tr><td>8</td><td>64</td></tr>
-    <tr><td>12</td><td>144</td></tr>
-    <tr><td>20</td><td>400</td></tr>
-    <tr><td>28</td><td>784</td></tr>
-    <tr><td>32</td><td>1024</td></tr>
-    <tr>
-      <td><strong>Σxᵢ = 100</strong></td>
-      <td><strong>Σxᵢ² = 2416</strong></td>
-    </tr>
-  </table>
-
-  <p>Standard deviation calculation:</p>
-  <p>\[
-  \sigma = \sqrt{\frac{2416}{5} - \left(\frac{100}{5}\right)^2} = \sqrt{483.2 - 400} = \sqrt{83.2}
-  \]</p>
-  <p>\[
-  = \sqrt{16 \times 5.2} = 4\sqrt{5.2} \approx 9.12
-  \]</p>
-
-  <h3>Conclusion</h3>
-  <p>When each data point is multiplied by 4, the standard deviation is also multiplied by 4 (from ≈2.28 to ≈9.12).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the standard deviation of the data: 2, 3, 5, 7, 8. Then multiply each data by 4 and find the new standard deviation.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the standard deviation for the original data (2, 3, 5, 7, 8).</p><p>First, compute the sum of the data values and their squares:</p><p>\[</p><p>\Sigma x_i = 2 + 3 + 5 + 7 + 8 = 25</p><p>\]</p><p>\[</p><p>\Sigma x_i^2 = 2^2 + 3^2 + 5^2 + 7^2 + 8^2 = 4 + 9 + 25 + 49 + 64 = 151</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the standard deviation formula:</p><p>\[</p><p>\sigma = \sqrt{\frac{\Sigma x_i^2}{n} - \left(\frac{\Sigma x_i}{n}\right)^2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values and compute:</p><p>\[</p><p>\sigma = \sqrt{\frac{151}{5} - \left(\frac{25}{5}\right)^2} = \sqrt{30.2 - 25} = \sqrt{5.2} \approx 2.28</p><p>\]</p></div></div><div class="final-answer"><p>The standard deviation of the original data is approximately \( 2.28 \).</p><p>Step 1: Multiply each data point by 4 to get the new data: 8, 12, 20, 28, 32.</p><p>Compute the sum of the new data values and their squares:</p><p>\[</p><p>\Sigma x_i = 8 + 12 + 20 + 28 + 32 = 100</p><p>\]</p><p>\[</p><p>\Sigma x_i^2 = 8^2 + 12^2 + 20^2 + 28^2 + 32^2 = 64 + 144 + 400 + 784 + 1024 = 2416</p><p>\]</p><p>Step 2: Use the standard deviation formula again:</p><p>\[</p><p>\sigma = \sqrt{\frac{\Sigma x_i^2}{n} - \left(\frac{\Sigma x_i}{n}\right)^2}</p><p>\]</p><p>Step 3: Substitute the new values and compute:</p><p>\[</p><p>\sigma = \sqrt{\frac{2416}{5} - \left(\frac{100}{5}\right)^2} = \sqrt{483.2 - 400} = \sqrt{83.2} = 4\sqrt{5.2} \approx 9.12</p><p>\]</p></div><div class="final-answer"><p>The standard deviation of the scaled data is approximately \( 9.12 \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.11</h3>
-
-
-<p>Construct a triangle similar to a given triangle PQR with its sides equal to \(\frac{3}{4}\) of the corresponding sides of the triangle PQR (scale factor \(\frac{3}{4} < 1\)).</p>
-<p>Steps of construction:</p>
-<ol>
-  <li>Construct a triangle PQR with any measurement.</li>
-  <li>Draw a ray QX making an acute angle with QR on the side opposite to vertex P.</li>
-  <li>Locate 4 points \(Q_1, Q_2, Q_3, Q_4\) on QX so that \(QQ_1 = Q_1Q_2 = Q_2Q_3 = Q_3Q_4\).</li>
-  <li>Join \(Q_4\) to R and draw a line through \(Q_3\) parallel to \(Q_4R\), intersecting the extended line segment QR at \(R'\).</li>
-  <li>Draw a line through \(R'\) parallel to RP intersecting the extended line segment QP at \(P'\).</li>
-  <li>Then \(\triangle P'QR'\) is the required triangle each of whose sides is \(\frac{3}{4}\) of the corresponding sides of \(\triangle PQR\).</li>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Construct a triangle similar to a given triangle PQR with its sides equal to \(\frac{3}{4}\) of the corresponding sides of the triangle PQR (scale factor \(\frac{3}{4} &lt; 1\)).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Construct a triangle PQR with any measurement.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Draw a ray QX making an acute angle with QR on the side opposite to vertex P.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Locate 4 points \(Q_1, Q_2, Q_3, Q_4\) on QX so that \(QQ_1 = Q_1Q_2 = Q_2Q_3 = Q_3Q_4\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Join \(Q_4\) to R and draw a line through \(Q_3\) parallel to \(Q_4R\), intersecting the extended line segment QR at \(R'\).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Draw a line through \(R'\) parallel to RP intersecting the extended line segment QP at \(P'\).</p></div></div><div class="final-answer"><p>\(\triangle P'QR'\) is the required triangle, with each side \(\frac{3}{4}\) of the corresponding sides of \(\triangle PQR\).</p></div></div>
+</div>
 </body>
 </html>

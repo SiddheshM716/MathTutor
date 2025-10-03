@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.32</h3>
-
-
-<p>Show that the straight lines \(2x + 3y - 8 = 0\) and \(4x + 6y + 18 = 0\) are parallel.</p>
-<p>Solution: Slope of the straight line \(2x + 3y - 8 = 0\) is</p>
-<p>\[
-m_1 = -\frac{\text{coefficient of } x}{\text{coefficient of } y} = -\frac{2}{3}
-\]</p>
-<p>Slope of the straight line \(4x + 6y + 18 = 0\) is</p>
-<p>\[
-m_2 = -\frac{\text{coefficient of } x}{\text{coefficient of } y} = -\frac{4}{6} = -\frac{2}{3}
-\]</p>
-<p>Here, \(m_1 = m_2\). Therefore, the slopes are equal. Hence, the two straight lines are parallel.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that the straight lines \(2x + 3y - 8 = 0\) and \(4x + 6y + 18 = 0\) are parallel.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Find the slope of the first line \(2x + 3y - 8 = 0\).</p><p>The slope \(m\) of a line in the form \(ax + by + c = 0\) is given by \(m = -\frac{a}{b}\).</p><p>For \(2x + 3y - 8 = 0\), the slope \(m_1\) is:</p><p>\[</p><p>m_1 = -\frac{2}{3}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Find the slope of the second line \(4x + 6y + 18 = 0\).</p><p>Using the same formula, the slope \(m_2\) is:</p><p>\[</p><p>m_2 = -\frac{4}{6} = -\frac{2}{3}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compare the slopes \(m_1\) and \(m_2\).</p><p>Since \(m_1 = m_2 = -\frac{2}{3}\), the two lines have equal slopes.</p></div></div><div class="final-answer"><p>The lines \(2x + 3y - 8 = 0\) and \(4x + 6y + 18 = 0\) are parallel because their slopes are equal.</p></div></div>
+</div>
 </body>
 </html>

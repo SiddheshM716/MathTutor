@@ -1,41 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 7.28</h3>
-
-<p> A hemispherical section is cut out from one face of a cubical block such that the diameter of the hemisphere is equal to side length of the cube. Determine the surface area of the remaining solid.</p>
-<p>Solution Let \( r \) be the radius of the hemisphere.</p>
-<p>Given that, diameter of the hemisphere = side of the cube = \( 2r \).</p>
-<p>Radius of the hemisphere = \( r \).</p>
-<p>TSA of the remaining solid = Surface area of the cubical part + C.S.A. of the hemispherical part - Area of the base of the hemispherical part</p>
-<p>\[
-= 6 \times (\text{Edge})^2 + 2\pi r^2 - \pi r^2
-\]</p>
-<p>\[
-= 6 \times (2r)^2 + \pi r^2
-\]</p>
-<p>\[
-= 6 \times 4r^2 + \pi r^2
-\]</p>
-<p>\[
-= 24r^2 + \pi r^2
-\]</p>
-<p>Total surface area of the remaining solid = \( 24r^2 + \pi r^2 \) sq. units.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A hemispherical section is cut out from one face of a cubical block such that the diameter of the hemisphere is equal to the side length of the cube. Determine the surface area of the remaining solid.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \( r \) be the radius of the hemisphere. Given that the diameter of the hemisphere equals the side length of the cube, we have:</p><p>\[</p><p>\text{Diameter} = 2r = \text{Side of the cube}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The total surface area (TSA) of the remaining solid consists of:</p><p>\[</p><p>\text{TSA} = \text{Surface area of the cubical part} + \text{Curved Surface Area (C.S.A.) of the hemisphere} - \text{Area of the base of the hemisphere}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate each component:</p><p>\[</p><p>\text{Surface area of the cubical part} = 6 \times (\text{Edge})^2 = 6 \times (2r)^2 = 24r^2</p><p>\]</p><p>\[</p><p>\text{C.S.A. of the hemisphere} = 2\pi r^2</p><p>\]</p><p>\[</p><p>\text{Area of the base of the hemisphere} = \pi r^2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Combine the components:</p><p>\[</p><p>\text{TSA} = 24r^2 + 2\pi r^2 - \pi r^2 = 24r^2 + \pi r^2</p><p>\]</p></div></div><div class="final-answer"><p>The total surface area of the remaining solid is \( 24r^2 + \pi r^2 \) square units.</p></div></div>
+</div>
 </body>
 </html>

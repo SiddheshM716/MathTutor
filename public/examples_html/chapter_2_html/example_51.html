@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.51</h3>
-
-
-<p>Find the sum to n terms of the series 5 + 55 + 555 + ---</p>
-<p>Solution The series is neither Arithmetic nor Geometric series. So it can be split into two series and then find the sum.</p>
-<p>5 + 55 + 555 + --- + n terms = 5[1 + 11 + 111 + --- + n terms]</p>
-<p>= \(\frac{5}{9}\)[9 + 99 + 999 + --- + n terms]</p>
-<p>= \(\frac{5}{9}\)[(10 - 1) + (100 - 1) + (1000 - 1) + --- + n terms]</p>
-<p>= \(\frac{5}{9}\)[(10 + 100 + 1000 + --- + n terms) - n]</p>
-<p>= \(\frac{5}{9}\left[\frac{10(10^n - 1)}{10 - 1} - n\right]\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum to n terms of the series \(5 + 55 + 555 + \dots\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The series is neither arithmetic nor geometric. We can factor out 5 and rewrite the series as:</p><p>\[ 5 + 55 + 555 + \dots + n \text{ terms} = 5[1 + 11 + 111 + \dots + n \text{ terms}] \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Multiply and divide by 9 to express the terms in a different form:</p><p>\[ = \frac{5}{9}[9 + 99 + 999 + \dots + n \text{ terms}] \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite each term as a power of 10 minus 1:</p><p>\[ = \frac{5}{9}[(10 - 1) + (100 - 1) + (1000 - 1) + \dots + n \text{ terms}] \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Separate the terms into two parts:</p><p>\[ = \frac{5}{9}[(10 + 100 + 1000 + \dots + n \text{ terms}) - n] \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>The first part is a geometric series. Use the formula for the sum of a geometric series:</p><p>\[ 10 + 100 + 1000 + \dots + n \text{ terms} = \frac{10(10^n - 1)}{10 - 1} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Substitute the geometric series sum back into the expression:</p><p>\[ = \frac{5}{9}\left[\frac{10(10^n - 1)}{9} - n\right] \]</p></div></div><div class="final-answer"><p>The sum to \(n\) terms of the series is:</p><p>\[ \frac{5}{9}\left[\frac{10(10^n - 1)}{9} - n\right] \]</p></div></div>
+</div>
 </body>
 </html>

@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.21</h3>
-
-<p> If \( f(a) = 3a - 2 \), \( g(x) = 2x + k \) and if \( f \circ g = g \circ f \), then find the value of \( k \).</p>
-<p>Solution:</p>
-<p>\( f(x) = 3x - 2 \), \( g(x) = 2x + k \)</p>
-<p>\( f \circ g(x) = f(g(x)) = f(2x + k) = 3(2x + k) - 2 = 6x + 3k - 2 \)</p>
-<p>\( g \circ f(x) = g(f(x)) = g(3x - 2) = 2(3x - 2) + k = 6x - 4 + k \)</p>
-<p>Given that \( f \circ g = g \circ f \),</p>
-<p>\( 6x + 3k - 2 = 6x - 4 + k \)</p>
-<p>\( 6x - 6x + 3k - k = -4 + 2 \)</p>
-<p>\( 2k = -2 \)</p>
-<p>\( k = -1 \)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( f(a) = 3a - 2 \), \( g(x) = 2x + k \) and if \( f \circ g = g \circ f \), then find the value of \( k \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Write down the given functions \( f(x) \) and \( g(x) \).</p><p>\( f(x) = 3x - 2 \), \( g(x) = 2x + k \)</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute \( f \circ g(x) \) by substituting \( g(x) \) into \( f(x) \).</p><p>\( f \circ g(x) = f(g(x)) = f(2x + k) = 3(2x + k) - 2 = 6x + 3k - 2 \)</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute \( g \circ f(x) \) by substituting \( f(x) \) into \( g(x) \).</p><p>\( g \circ f(x) = g(f(x)) = g(3x - 2) = 2(3x - 2) + k = 6x - 4 + k \)</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Set \( f \circ g(x) \) equal to \( g \circ f(x) \) and solve for \( k \).</p><p>\( 6x + 3k - 2 = 6x - 4 + k \)</p><p>Simplify the equation:</p><p>\( 3k - k = -4 + 2 \)</p><p>\( 2k = -2 \)</p></div></div><div class="final-answer"><p>\( k = -1 \)</p></div></div>
+</div>
 </body>
 </html>

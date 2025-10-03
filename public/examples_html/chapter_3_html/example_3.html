@@ -1,40 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.3</h3>
-
-
-<p>Solve the following system of linear equations in three variables:</p>
-<p>3x - 2y + z = 2 ...(1)</p>
-<p>2x + 3y - z = 5 ...(2)</p>
-<p>x + y + z = 6 ...(3)</p>
-<p>Adding (1) and (2), 3x - 2y + z = 2</p>
-<p>2x + 3y - z = 5</p>
-<p>5x + y = 7 ...(4)</p>
-<p>Adding (2) and (3), 2x + 3y - z = 5</p>
-<p>x + y + z = 6</p>
-<p>3x + 4y = 11 ...(5)</p>
-<p>4 × (4) - (5), 20x + 4y = 28</p>
-<p>3x + 4y = 11</p>
-<p>17x = 17 ⇒ x = 1</p>
-<p>Substituting x = 1 in (4), 5 + y = 7 ⇒ y = 2</p>
-<p>Substituting x = 1, y = 2 in (3), 1 + 2 + z = 6 ⇒ z = 3</p>
-<p>Therefore, x = 1, y = 2, z = 3</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve the following system of linear equations in three variables:</p><p>\(3x - 2y + z = 2\) ...(1)</p><p>\(2x + 3y - z = 5\) ...(2)</p><p>\(x + y + z = 6\) ...(3)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Add equations (1) and (2) to eliminate \(z\):</p><p>\[</p><p>3x - 2y + z = 2</p><p>\]</p><p>\[</p><p>2x + 3y - z = 5</p><p>\]</p><p>\[</p><p>5x + y = 7 \quad \text{(4)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add equations (2) and (3) to eliminate \(z\) again:</p><p>\[</p><p>2x + 3y - z = 5</p><p>\]</p><p>\[</p><p>x + y + z = 6</p><p>\]</p><p>\[</p><p>3x + 4y = 11 \quad \text{(5)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve the system of equations (4) and (5). Multiply equation (4) by 4 and subtract equation (5):</p><p>\[</p><p>4 \times (5x + y) = 4 \times 7 \implies 20x + 4y = 28</p><p>\]</p><p>\[</p><p>3x + 4y = 11</p><p>\]</p><p>\[</p><p>17x = 17 \implies x = 1</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \(x = 1\) into equation (4):</p><p>\[</p><p>5(1) + y = 7 \implies y = 2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Substitute \(x = 1\) and \(y = 2\) into equation (3):</p><p>\[</p><p>1 + 2 + z = 6 \implies z = 3</p><p>\]</p></div></div><div class="final-answer"><p>\(x = 1\), \(y = 2\), \(z = 3\).</p></div></div>
+</div>
 </body>
 </html>

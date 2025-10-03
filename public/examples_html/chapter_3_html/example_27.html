@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.27</h3>
-
-
-<p>Solve \(2m^2 + 19m + 30 = 0\)</p>
-<p>Solution:</p>
-<p>\(2m^2 + 19m + 30 = 2m^2 + 4m + 15m + 30 = 2m(m + 2) + 15(m + 2)\)</p>
-<p>\(= (m + 2)(2m + 15)\)</p>
-<p>Equating the factors to zero we get,</p>
-<p>\((m + 2)(2m + 15) = 0\)</p>
-<p>\(\Rightarrow m + 2 = 0 \Rightarrow m = -2\) or \(2m + 15 = 0 \Rightarrow m = -\frac{15}{2}\)</p>
-<p>Therefore the roots are \(-2, -\frac{15}{2}\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Solve \(2m^2 + 19m + 30 = 0\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Factor the quadratic equation \(2m^2 + 19m + 30\) by splitting the middle term.</p><p>\(2m^2 + 19m + 30 = 2m^2 + 4m + 15m + 30\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Group the terms and factor out common terms.</p><p>\(2m^2 + 4m + 15m + 30 = 2m(m + 2) + 15(m + 2)\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Factor out the common binomial \((m + 2)\).</p><p>\((m + 2)(2m + 15) = 0\).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Set each factor equal to zero and solve for \(m\).</p><p>\(m + 2 = 0 \Rightarrow m = -2\)</p><p>\(2m + 15 = 0 \Rightarrow m = -\frac{15}{2}\).</p></div></div><div class="final-answer"><p>The roots are \(m = -2\) and \(m = -\frac{15}{2}\).</p></div></div>
+</div>
 </body>
 </html>

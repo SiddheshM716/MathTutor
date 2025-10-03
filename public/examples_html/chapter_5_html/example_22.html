@@ -1,36 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.22</h3>
-
-
-<p>Find the equation of a line passing through the point A(1,4) and perpendicular to the line joining points (2,5) and (4,7).</p>
-<p>Let the given points be A(1,4), B(2,5) and C(4,7).</p>
-<p>Slope of line BC = (7 - 5)/(4 - 2) = 2/2 = 1</p>
-<p>Let m be the slope of the required line.</p>
-<p>Since the required line is perpendicular to BC,</p>
-<p>m * 1 = -1</p>
-<p>m = -1</p>
-<p>The required line also passes through the point A(1,4).</p>
-<p>The equation of the required straight line is y - y<sub>1</sub> = m(x - x<sub>1</sub>)</p>
-<p>y - 4 = -1(x - 1)</p>
-<p>y - 4 = -x + 1</p>
-<p>We get, x + y - 5 = 0</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the equation of a line passing through the point A(1,4) and perpendicular to the line joining points (2,5) and (4,7).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given points and find the slope of line BC joining points B(2,5) and C(4,7).</p><p>Slope of line BC = \(\frac{7 - 5}{4 - 2} = \frac{2}{2} = 1\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Since the required line is perpendicular to BC, the product of their slopes must be -1.</p><p>Let \(m\) be the slope of the required line. Then, \(m \times 1 = -1\), so \(m = -1\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Use the point-slope form of the line equation with point A(1,4) and slope \(m = -1\).</p><p>The equation is \(y - y_1 = m(x - x_1)\).</p><p>Substituting the values: \(y - 4 = -1(x - 1)\).</p><p>Simplify: \(y - 4 = -x + 1\).</p><p>Rearrange: \(x + y - 5 = 0\).</p></div></div><div class="final-answer"><p>The equation of the line is \(\boxed{x + y - 5 = 0}\).</p></div></div>
+</div>
 </body>
 </html>

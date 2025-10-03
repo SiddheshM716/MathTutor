@@ -1,28 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.17</h3>
-
-
-<p>Find the equation of a straight line passing through (5,7) and is (i) parallel to X axis (ii) parallel to Y axis.</p>
-<p>Solution:</p>
-<p>(i) The equation of any straight line parallel to X axis is y=b. Since it passes through (5,7), b= 7. Therefore, the required equation of the line is y=7.</p>
-<p>(ii) The equation of any straight line parallel to Y axis is x=c. Since it passes through (5,7), c =5. Therefore, the required equation of the line is x=5.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the equation of a straight line passing through (5,7) and is (i) parallel to X axis (ii) parallel to Y axis.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), recall that any line parallel to the X-axis has the form \( y = b \), where \( b \) is a constant.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Since the line passes through the point (5,7), substitute \( y = 7 \) into the equation \( y = b \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>This gives \( b = 7 \), so the equation of the line is \( y = 7 \).</p></div></div><div class="final-answer"><p>(i) The equation of the line is \( y = 7 \).</p><p>Step 1: For part (ii), recall that any line parallel to the Y-axis has the form \( x = c \), where \( c \) is a constant.</p><p>Step 2: Since the line passes through the point (5,7), substitute \( x = 5 \) into the equation \( x = c \).</p><p>Step 3: This gives \( c = 5 \), so the equation of the line is \( x = 5 \).</p></div><div class="final-answer"><p>(ii) The equation of the line is \( x = 5 \).</p></div></div>
+</div>
 </body>
 </html>

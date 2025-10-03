@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.43</h3>
-
-
-<p>If the difference between the roots of the equation \(x^2 - 13x + k = 0\) is 17, find \(k\).</p>
-<p>Let \(\alpha\), \(\beta\) be the roots of the equation. Then:</p>
-<p>\(\alpha + \beta = 13\) ...(1)</p>
-<p>\(\alpha - \beta = 17\) ...(2)</p>
-<p>Adding (1) and (2), we get \(2\alpha = 30 \Rightarrow \alpha = 15\).</p>
-<p>Therefore, \(15 + \beta = 13\) (from (1)) \(\Rightarrow \beta = -2\).</p>
-<p>But, \(\alpha \beta = k = 15 \times (-2) \Rightarrow k = -30\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the difference between the roots of the equation \(x^2 - 13x + k = 0\) is 17, find \(k\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let \(\alpha\) and \(\beta\) be the roots of the equation. From the quadratic equation properties, we know:</p><p>\[</p><p>\alpha + \beta = 13 \quad \text{(1)}</p><p>\]</p><p>\[</p><p>\alpha - \beta = 17 \quad \text{(2)}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Add equations (1) and (2) to eliminate \(\beta\):</p><p>\[</p><p>2\alpha = 30</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Solve for \(\alpha\):</p><p>\[</p><p>\alpha = 15</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Substitute \(\alpha = 15\) into equation (1) to find \(\beta\):</p><p>\[</p><p>15 + \beta = 13 \implies \beta = -2</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Use the property of quadratic equations \(\alpha \beta = k\) to find \(k\):</p><p>\[</p><p>k = 15 \times (-2) = -30</p><p>\]</p></div></div><div class="final-answer"><p>\(k = -30\)</p></div></div>
+</div>
 </body>
 </html>

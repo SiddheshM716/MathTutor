@@ -1,30 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.34</h3>
-
-
-<p>Find the equation of a straight line which is parallel to the line 3x — 7y = 12 and passing through the point (6,4).</p>
-<p>Solution: Equation of the straight line, parallel to 3x —7y —12 =0 is 3x —7y +k =0</p>
-<p>Since it passes through the point (6,4)</p>
-<p>3(6) —7(4) +k =0</p>
-<p>k=28-18 =10</p>
-<p>Therefore, equation of the required straight line is 3x —7y +10=0.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the equation of a straight line which is parallel to the line \(3x - 7y = 12\) and passing through the point \((6,4)\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>The given line is \(3x - 7y = 12\). A line parallel to this will have the same coefficients for \(x\) and \(y\), so its equation will be of the form \(3x - 7y + k = 0\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Since the line passes through the point \((6,4)\), substitute \(x = 6\) and \(y = 4\) into the equation to find \(k\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substituting the values:</p><p>\[3(6) - 7(4) + k = 0\]</p><p>\[18 - 28 + k = 0\]</p><p>\[-10 + k = 0\]</p><p>\[k = 10\]</p></div></div><div class="final-answer"><p>The equation of the required line is \(3x - 7y + 10 = 0\).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,35 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.4</h3>
-
-
-<p>If the Highest Common Factor of 210 and 55 is expressible in the form 55x — 325, find x.</p>
-<p>Using Euclid’s Division Algorithm, let us find the HCF of given numbers:</p>
-<p>210 = 55 × 3 + 45</p>
-<p>55 = 45 × 1 + 10</p>
-<p>45 = 10 × 4 + 5</p>
-<p>10 = 5 × 2 + 0</p>
-<p>The remainder is zero.</p>
-<p>So, the last divisor 5 is the Highest Common Factor (HCF) of 210 and 55.</p>
-<p>HCF is expressible in the form 55x — 325 = 5</p>
-<p>=> 55x = 330</p>
-<p>x = 6</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If the Highest Common Factor of 210 and 55 is expressible in the form \(55x - 325\), find \(x\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Use Euclid’s Division Algorithm to find the HCF of 210 and 55.</p><p>\[ 210 = 55 \times 3 + 45 \]</p><p>\[ 55 = 45 \times 1 + 10 \]</p><p>\[ 45 = 10 \times 4 + 5 \]</p><p>\[ 10 = 5 \times 2 + 0 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>The remainder is zero, so the last divisor (5) is the HCF of 210 and 55.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Express the HCF in the given form and solve for \(x\).</p><p>\[ 55x - 325 = 5 \]</p><p>\[ 55x = 5 + 325 \]</p><p>\[ 55x = 330 \]</p><p>\[ x = \frac{330}{55} \]</p></div></div><div class="final-answer"><p>\(x = 6\)</p></div></div>
+</div>
 </body>
 </html>

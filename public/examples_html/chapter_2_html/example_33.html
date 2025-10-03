@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.33</h3>
-
-
-<p>How many terms of the series 1 + 5 + 9 + ... must be taken so that their sum is 190?</p>
-<p>Solution: Here we have to find the value of n, such that S<sub>n</sub> = 190.</p>
-<p>First term a = 1, common difference d = 5 - 1 = 4.</p>
-<p>Sum of first n terms of an A.P.</p>
-<p>S<sub>n</sub> = n/2 [2a + (n - 1)d] = 190</p>
-<p>n/2 [2 × 1 + (n - 1) × 4] = 190</p>
-<p>n [4n - 2] = 380</p>
-<p>2n<sup>2</sup> - n - 190 = 0</p>
-<p>(n - 10)(2n + 19) = 0</p>
-<p>But, n = 10 as n = -19/2 is impossible. Therefore, n = 10.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>How many terms of the series \(1 + 5 + 9 + \dots\) must be taken so that their sum is 190?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given values.</p><p>First term \(a = 1\), common difference \(d = 5 - 1 = 4\).</p><p>We need to find \(n\) such that the sum \(S_n = 190\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the sum of the first \(n\) terms of an arithmetic progression:</p><p>\[ S_n = \frac{n}{2} \left[ 2a + (n - 1)d \right] \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values into the formula and solve for \(n\):</p><p>\[ \frac{n}{2} \left[ 2 \times 1 + (n - 1) \times 4 \right] = 190 \]</p><p>\[ n \left[ 4n - 2 \right] = 380 \]</p><p>\[ 2n^2 - n - 190 = 0 \]</p><p>Factor the quadratic equation:</p><p>\[ (n - 10)(2n + 19) = 0 \]</p><p>Since \(n\) must be a positive integer, we discard \(n = -\frac{19}{2}\) and take \(n = 10\).</p></div></div><div class="final-answer"><p>\(10\) terms must be taken for the sum to be 190.</p></div></div>
+</div>
 </body>
 </html>

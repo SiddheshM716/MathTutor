@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 6.5</h3>
-
-
-<p>Prove that \(\frac{1 + \cos \theta}{1 - \cos \theta} = \csc \theta + \cot \theta\)</p>
-<p>Solution:</p>
-<p>\(\frac{1 + \cos \theta}{1 - \cos \theta} = \left(\frac{1 + \cos \theta}{1 - \cos \theta}\right) \times \left(\frac{1 + \cos \theta}{1 + \cos \theta}\right)\) [multiply numerator and denominator by the conjugate of \(1 - \cos \theta\)]</p>
-<p>\(= \frac{(1 + \cos \theta)^2}{1 - \cos^2 \theta} = \frac{1 + 2\cos \theta + \cos^2 \theta}{\sin^2 \theta}\) [since \(\sin^2 \theta + \cos^2 \theta = 1\)]</p>
-<p>\(= \frac{1}{\sin^2 \theta} + \frac{2\cos \theta}{\sin^2 \theta} + \frac{\cos^2 \theta}{\sin^2 \theta} = \csc^2 \theta + 2\csc \theta \cot \theta + \cot^2 \theta\)</p>
-<p>\(= (\csc \theta + \cot \theta)^2\)</p>
-<p>Therefore, \(\frac{1 + \cos \theta}{1 - \cos \theta} = \csc \theta + \cot \theta\)</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that \(\frac{1 + \cos \theta}{1 - \cos \theta} = \csc \theta + \cot \theta\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Multiply the numerator and denominator by the conjugate of \(1 - \cos \theta\), which is \(1 + \cos \theta\).</p><p>\[</p><p>\frac{1 + \cos \theta}{1 - \cos \theta} = \left(\frac{1 + \cos \theta}{1 - \cos \theta}\right) \times \left(\frac{1 + \cos \theta}{1 + \cos \theta}\right)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Simplify the denominator using the identity \(\sin^2 \theta + \cos^2 \theta = 1\).</p><p>\[</p><p>\frac{(1 + \cos \theta)^2}{1 - \cos^2 \theta} = \frac{1 + 2\cos \theta + \cos^2 \theta}{\sin^2 \theta}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Rewrite the expression in terms of \(\csc \theta\) and \(\cot \theta\).</p><p>\[</p><p>\frac{1}{\sin^2 \theta} + \frac{2\cos \theta}{\sin^2 \theta} + \frac{\cos^2 \theta}{\sin^2 \theta} = \csc^2 \theta + 2\csc \theta \cot \theta + \cot^2 \theta</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Recognize the expression as a perfect square.</p><p>\[</p><p>(\csc \theta + \cot \theta)^2</p><p>\]</p></div></div><div class="final-answer"><p>Taking the square root of both sides (and considering the positive root for the given identity), we have:</p><p>\[</p><p>\frac{1 + \cos \theta}{1 - \cos \theta} = \csc \theta + \cot \theta</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

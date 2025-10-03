@@ -1,27 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.49</h3>
-
-
-<p>Find the sum of the infinite G.P. 3 + 1 + <sup>1</sup>&frasl;<sub>3</sub> + ...</p>
-<p>Solution: Here, a = 3, r = <sup>1</sup>&frasl;<sub>3</sub>. The sum of infinite terms is given by:</p>
-<p>S = <sup>a</sup>&frasl;<sub>1 - r</sub> = <sup>3</sup>&frasl;<sub>1 - <sup>1</sup>&frasl;<sub>3</sub></sub> = <sup>9</sup>&frasl;<sub>2</sub></p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the sum of the infinite G.P. \( 3 + 1 + \frac{1}{3} + \dots \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the first term (\( a \)) and common ratio (\( r \)) of the geometric progression.</p><p>Here, \( a = 3 \) and \( r = \frac{1}{3} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the sum of an infinite geometric series:</p><p>\[ S = \frac{a}{1 - r} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the values of \( a \) and \( r \) into the formula and simplify:</p><p>\[ S = \frac{3}{1 - \frac{1}{3}} = \frac{3}{\frac{2}{3}} = \frac{9}{2} \]</p></div></div><div class="final-answer"><p>The sum of the infinite G.P. is \( \frac{9}{2} \).</p></div></div>
+</div>
 </body>
 </html>

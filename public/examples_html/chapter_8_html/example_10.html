@@ -1,68 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 8.10</h3>
-
-  
-  <p>Find the mean and variance of the first n natural numbers.</p>
-
-  <h3>Solution</h3>
-  
-  <h4>1. Calculating the Mean</h4>
-  <p>\[
-  \text{Mean } \bar{x} = \frac{\text{Sum of numbers}}{\text{Count}} = \frac{1 + 2 + 3 + \cdots + n}{n} = \frac{\frac{n(n+1)}{2}}{n} = \frac{n+1}{2}
-  \]</p>
-
-  <h4>2. Calculating the Variance</h4>
-  <p>Using the variance formula:</p>
-  <p>\[
-  \sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2
-  \]</p>
-  
-  <p>First term:</p>
-  <p>\[
-  \frac{\sum x_i^2}{n} = \frac{1^2 + 2^2 + \cdots + n^2}{n} = \frac{\frac{n(n+1)(2n+1)}{6}}{n} = \frac{(n+1)(2n+1)}{6}
-  \]</p>
-  
-  <p>Second term:</p>
-  <p>\[
-  \left(\frac{\sum x_i}{n}\right)^2 = \left(\frac{n+1}{2}\right)^2 = \frac{(n+1)^2}{4}
-  \]</p>
-  
-  <p>Combine terms:</p>
-  <p>\[
-  \sigma^2 = \frac{2n^2 + 3n + 1}{6} - \frac{n^2 + 2n + 1}{4} = \frac{4n^2 + 6n + 2 - 3n^2 - 6n - 3}{12} = \frac{n^2 - 1}{12}
-  \]</p>
-
-  <h3>Final Results</h3>
-  <p>\[
-  \text{Mean} = \frac{n+1}{2}, \quad \text{Variance} = \frac{n^2 - 1}{12}
-  \]</p>
-
-  <h3>Additional: Standard Deviation for Grouped Data</h3>
-  <p>For frequency distribution:</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\sum f_i(x_i - \bar{x})^2}{N}} \quad \text{where } N = \sum f_i
-  \]</p>
-  <p>Using deviations \( d_i = x_i - \bar{x} \):</p>
-  <p>\[
-  \sigma = \sqrt{\frac{\sum f_i d_i^2}{N}}
-  \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the mean and variance of the first n natural numbers.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the mean of the first n natural numbers.</p><p>The mean is given by the sum of numbers divided by the count of numbers:</p><p>\[</p><p>\bar{x} = \frac{1 + 2 + 3 + \cdots + n}{n}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula for the sum of the first n natural numbers:</p><p>\[</p><p>\sum_{i=1}^n i = \frac{n(n+1)}{2}</p><p>\]</p><p>Substitute this into the mean formula:</p><p>\[</p><p>\bar{x} = \frac{\frac{n(n+1)}{2}}{n} = \frac{n+1}{2}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the variance using the formula:</p><p>\[</p><p>\sigma^2 = \frac{\sum x_i^2}{n} - \left(\frac{\sum x_i}{n}\right)^2</p><p>\]</p><p>First, compute the sum of squares of the first n natural numbers:</p><p>\[</p><p>\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}</p><p>\]</p><p>Substitute into the variance formula:</p><p>\[</p><p>\frac{\sum x_i^2}{n} = \frac{\frac{n(n+1)(2n+1)}{6}}{n} = \frac{(n+1)(2n+1)}{6}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Compute the second term of the variance formula using the mean:</p><p>\[</p><p>\left(\frac{\sum x_i}{n}\right)^2 = \left(\frac{n+1}{2}\right)^2 = \frac{(n+1)^2}{4}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Combine the terms to find the variance:</p><p>\[</p><p>\sigma^2 = \frac{(n+1)(2n+1)}{6} - \frac{(n+1)^2}{4}</p><p>\]</p><p>Simplify the expression:</p><p>\[</p><p>\sigma^2 = \frac{2n^2 + 3n + 1}{6} - \frac{n^2 + 2n + 1}{4} = \frac{n^2 - 1}{12}</p><p>\]</p></div></div><div class="final-answer"><p>\[</p><p>\text{Mean} = \frac{n+1}{2}, \quad \text{Variance} = \frac{n^2 - 1}{12}</p><p>\]</p></div></div>
+</div>
 </body>
 </html>

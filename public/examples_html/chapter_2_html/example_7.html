@@ -1,30 +1,23 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.7</h3>
-
-
-<p>In the given factorisation, find the numbers m and n.</p>
-<p>Value of the first box from bottom = 5 × 2 = 10</p>
-<p>Value of n = 5 × 10 = 50</p>
-<p>Value of the second box from bottom = 3 × 50 = 150</p>
-<p>Value of m = 2 × 150 = 300</p>
-<p>Thus, the required numbers are m = 300, n = 50.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In the given factorisation, find the numbers m and n.</p></div></div>
+<div class="question"><div class="question-box"><p>Value of the first box from bottom = 5 × 2 = 10</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the value of the first box from the bottom.</p><p>The first box value is given by \( 5 \times 2 = 10 \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the value of \( n \).</p><p>The value of \( n \) is given by \( 5 \times 10 = 50 \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Calculate the value of the second box from the bottom.</p><p>The second box value is given by \( 3 \times 50 = 150 \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the value of \( m \).</p><p>The value of \( m \) is given by \( 2 \times 150 = 300 \).</p></div></div><div class="final-answer"><p>The required numbers are \( m = 300 \) and \( n = 50 \).</p></div></div>
+</div>
 </body>
 </html>

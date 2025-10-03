@@ -1,49 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 6.26</h3>
-
-    <p>A player sitting on the top of a tower of height 20 m observes the angle of depression of a ball lying on the ground as 60°. Find the distance between the foot of the tower and the ball. (√3 = 1.732)</p>
-    <p>Solution: Let BC be the height of the tower and A be the position of the ball lying on the ground. Then,</p>
-    <p>BC = 20 m and ∠CAB = 60°</p>
-    <p>Let AB = x metres.</p>
-    <p>In the right angled ΔABC,</p>
-    <p>tan 60° = BC / AB</p>
-    <p>√3 = 20 / x</p>
-    <p>x = 20 / √3</p>
-    <p>x = (20 × √3) / 3</p>
-    <p>x = (20 × 1.732) / 3</p>
-    <p>x = 11.55 m</p>
-    <p>Hence, the distance between the foot of the tower and the ball is 11.55 m.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A player sitting on the top of a tower of height 20 m observes the angle of depression of a ball lying on the ground as 60°. Find the distance between the foot of the tower and the ball. (√3 = 1.732)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Let BC be the height of the tower and A be the position of the ball lying on the ground. Given:</p><p>- BC = 20 m</p><p>- ∠CAB = 60°</p><p>- Let AB = x metres (distance between foot of tower and ball).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>In the right-angled ΔABC, we use the tangent formula:</p><p>\[ \tan 60° = \frac{\text{opposite side}}{\text{adjacent side}} = \frac{BC}{AB} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the known values:</p><p>\[ \sqrt{3} = \frac{20}{x} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Solve for x:</p><p>\[ x = \frac{20}{\sqrt{3}} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Rationalize the denominator:</p><p>\[ x = \frac{20 \times \sqrt{3}}{3} \]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Substitute √3 = 1.732 and calculate:</p><p>\[ x = \frac{20 \times 1.732}{3} = \frac{34.64}{3} = 11.55 \, \text{m} \]</p></div></div><div class="final-answer"><p>The distance between the foot of the tower and the ball is \(\boxed{11.55 \, \text{m}}\).</p></div></div>
+</div>
 </body>
 </html>

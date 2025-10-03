@@ -1,39 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.1</h3>
-
-
-<ol>
-  <li>
-    <p>Show that ΔPST ~ ΔPQR</p>
-    <p>In ΔPST and ΔPQR,</p>
-    <p>\(\frac{PS}{PQ} = \frac{2}{2+1} = \frac{2}{3}\), \(\frac{PT}{PR} = \frac{4}{4+2} = \frac{2}{3}\)</p>
-    <p>Thus, \(\frac{PS}{PQ} = \frac{PT}{PR}\) and ∠P is common.</p>
-    <p>Therefore, by SAS similarity, ΔPST ~ ΔPQR.</p>
-  </li>
-  <li>
-    <p>In ΔPST and ΔPQR,</p>
-    <p>\(\frac{PS}{PQ} = \frac{2}{2+3} = \frac{2}{5}\), \(\frac{PT}{PR} = \frac{2}{2+3} = \frac{2}{5}\)</p>
-    <p>Thus, \(\frac{PS}{PQ} = \frac{PT}{PR}\) and ∠P is common.</p>
-    <p>Therefore, by SAS similarity, ΔPST ~ ΔPQR.</p>
-  </li>
-</ol>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that ΔPST ~ ΔPQR in the following cases:</p><p>In ΔPST and ΔPQR, \(\frac{PS}{PQ} = \frac{2}{2+1} = \frac{2}{3}\), \(\frac{PT}{PR} = \frac{4}{4+2} = \frac{2}{3}\).</p><p>In ΔPST and ΔPQR, \(\frac{PS}{PQ} = \frac{2}{2+3} = \frac{2}{5}\), \(\frac{PT}{PR} = \frac{2}{2+3} = \frac{2}{5}\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (1), verify the given ratios \(\frac{PS}{PQ} = \frac{2}{3}\) and \(\frac{PT}{PR} = \frac{2}{3}\).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Note that ∠P is common to both ΔPST and ΔPQR.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since \(\frac{PS}{PQ} = \frac{PT}{PR}\) and ∠P is common, by the SAS similarity criterion, ΔPST ~ ΔPQR.</p></div></div><div class="final-answer"><p>ΔPST ~ ΔPQR (proved for part 1).</p><p>Step 1: For part (2), verify the given ratios \(\frac{PS}{PQ} = \frac{2}{5}\) and \(\frac{PT}{PR} = \frac{2}{5}\).</p><p>Step 2: Note that ∠P is common to both ΔPST and ΔPQR.</p><p>Step 3: Since \(\frac{PS}{PQ} = \frac{PT}{PR}\) and ∠P is common, by the SAS similarity criterion, ΔPST ~ ΔPQR.</p></div><div class="final-answer"><p>ΔPST ~ ΔPQR (proved for part 2).</p></div></div>
+</div>
 </body>
 </html>

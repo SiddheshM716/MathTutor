@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.12</h3>
-
-
-<p>In &#x25B3;ABC, if DE || BC, AD=2, DB=x-2, AE=x+2 and EC=2-1 then find the lengths of the sides AB and AC.</p>
-<p>Solution: In &#x25B3;ABC we have DE || BC.</p>
-<p>By Thales theorem, we have \(\frac{AD}{DB} = \frac{AE}{EC}\).</p>
-<p>\(\frac{2}{x-2} = \frac{x+2}{2-1}\)</p>
-<p>Hence, \(2 \times 1 = (x - 2)(x + 2)\)</p>
-<p>So, \(2 = x^2 - 4\)</p>
-<p>Therefore, \(x^2 = 6\) and \(x = \sqrt{6}\).</p>
-<p>When \(x = \sqrt{6}\), AD=2, DB=\(\sqrt{6}-2\), AE=\(\sqrt{6}+2\), EC=1.</p>
-<p>Hence, AB=AD+DB=2+\(\sqrt{6}-2\)=\(\sqrt{6}\), AC=AE+EC=\(\sqrt{6}+2\)+1=\(\sqrt{6}+3\).</p>
-<p>Therefore, AB=\(\sqrt{6}\), AC=\(\sqrt{6}+3\).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>In △ABC, if DE || BC, AD=2, DB=x-2, AE=x+2 and EC=1 then find the lengths of the sides AB and AC.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Since DE is parallel to BC in △ABC, we can apply Thales' theorem, which states that the ratio of corresponding sides is equal.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>According to Thales' theorem, \(\frac{AD}{DB} = \frac{AE}{EC}\).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the given values into the equation:</p><p>\[</p><p>\frac{2}{x-2} = \frac{x+2}{1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Simplify the equation:</p><p>\[</p><p>2 \times 1 = (x - 2)(x + 2)</p><p>\]</p><p>\[</p><p>2 = x^2 - 4</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Solve for \(x\):</p><p>\[</p><p>x^2 = 6 \implies x = \sqrt{6}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Calculate AB and AC using \(x = \sqrt{6}\):</p><p>\[</p><p>AB = AD + DB = 2 + (\sqrt{6} - 2) = \sqrt{6}</p><p>\]</p><p>\[</p><p>AC = AE + EC = (\sqrt{6} + 2) + 1 = \sqrt{6} + 3</p><p>\]</p></div></div><div class="final-answer"><p>AB = \(\sqrt{6}\), AC = \(\sqrt{6} + 3\).</p></div></div>
+</div>
 </body>
 </html>

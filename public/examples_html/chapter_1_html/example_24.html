@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 1.24</h3>
-
-
-    <p>Find x if g ∘ f ∘ f(x) = f ∘ g ∘ g(x), given f(x) = 3x + 1 and g(x) = x + 3.</p>
-    <p>Solution:</p>
-    <p>g ∘ f ∘ f(x) = g ∘ f(f(x))</p>
-    <p>= g ∘ f(3x + 1) = g(3(3x + 1) + 1) = g(9x + 4)</p>
-    <p>g(9x + 4) = (9x + 4) + 3 = 9x + 7</p>
-    <p>f ∘ g ∘ g(x) = f ∘ g(g(x))</p>
-    <p>= f ∘ g(x + 3) = f((x + 3) + 3) = f(x + 6)</p>
-    <p>f(x + 6) = 3(x + 6) + 1 = 3x + 19</p>
-    <p>These two quantities being equal, we get 9x + 7 = 3x + 19. Solving this equation we obtain x = 2.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find \( x \) if \( g \circ f \circ f(x) = f \circ g \circ g(x) \), given \( f(x) = 3x + 1 \) and \( g(x) = x + 3 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute \( g \circ f \circ f(x) \).</p><p>First, find \( f \circ f(x) \):</p><p>\[ f \circ f(x) = f(f(x)) = f(3x + 1) = 3(3x + 1) + 1 = 9x + 4 \]</p><p>Next, apply \( g \) to the result:</p><p>\[ g \circ f \circ f(x) = g(9x + 4) = (9x + 4) + 3 = 9x + 7 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute \( f \circ g \circ g(x) \).</p><p>First, find \( g \circ g(x) \):</p><p>\[ g \circ g(x) = g(g(x)) = g(x + 3) = (x + 3) + 3 = x + 6 \]</p><p>Next, apply \( f \) to the result:</p><p>\[ f \circ g \circ g(x) = f(x + 6) = 3(x + 6) + 1 = 3x + 19 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Set the two expressions equal and solve for \( x \).</p><p>\[ 9x + 7 = 3x + 19 \]</p><p>\[ 9x - 3x = 19 - 7 \]</p><p>\[ 6x = 12 \]</p><p>\[ x = 2 \]</p></div></div><div class="final-answer"><p>\( x = 2 \)</p></div></div>
+</div>
 </body>
 </html>

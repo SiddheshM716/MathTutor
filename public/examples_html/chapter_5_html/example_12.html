@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.12</h3>
-
-
-<p>Show that the points (−2,5), (6,−1) and (2,2) are collinear.</p>
-<p>Solution: The vertices are A(−2,5), B(6,−1) and C(2,2).</p>
-<p>Slope of AB = \(\frac{−1 − 5}{6 − (−2)} = \frac{−6}{8} = −\frac{3}{4}\)</p>
-<p>Slope of BC = \(\frac{2 − (−1)}{2 − 6} = \frac{3}{−4} = −\frac{3}{4}\)</p>
-<p>We get, Slope of AB = Slope of BC</p>
-<p>Therefore, the points A, B, C lie in the same straight line.</p>
-<p>Hence the points A, B and C are collinear.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Show that the points (−2,5), (6,−1) and (2,2) are collinear.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given points as A(−2,5), B(6,−1), and C(2,2).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Calculate the slope of AB using the formula:</p><p>\[ \text{Slope} = \frac{y_2 - y_1}{x_2 - x_1} \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the coordinates of A and B into the slope formula:</p><p>\[ \text{Slope of AB} = \frac{−1 − 5}{6 − (−2)} = \frac{−6}{8} = −\frac{3}{4} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Calculate the slope of BC using the same formula:</p><p>\[ \text{Slope of BC} = \frac{2 − (−1)}{2 − 6} = \frac{3}{−4} = −\frac{3}{4} \]</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Compare the slopes of AB and BC. Since they are equal, the points lie on the same straight line.</p></div></div><div class="final-answer"><p>The points (−2,5), (6,−1), and (2,2) are collinear.</p></div></div>
+</div>
 </body>
 </html>

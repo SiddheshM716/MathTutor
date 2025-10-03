@@ -1,31 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 4.4</h3>
-
-
-<p>A boy of height 90 cm is walking away from the base of a lamp post at a speed of 1.2 m/sec. If the lamppost is 3.6 m above the ground, find the length of his shadow cast after 4 seconds.</p>
-<p>Solution: Given, speed = 1.2 m/s, time = 4 seconds</p>
-<p>Distance = speed × time = 1.2 × 4 = 4.8 m</p>
-<p>Let x be the length of the shadow after 4 seconds.</p>
-<p>Since, ΔABE ~ ΔCDB, \(\frac{BE}{DB} = \frac{AE}{CD}\) gives \(\frac{4.8 + x}{x} = \frac{3.6}{0.9}\) (since 90 cm = 0.9 m)</p>
-<p>\(\frac{4.8 + x}{x} = 4\) gives \(4.8 + x = 4x\) so, \(3x = 4.8\) and \(x = 1.6\) m</p>
-<p>The length of his shadow DE = 1.6 m</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>A boy of height 90 cm is walking away from the base of a lamp post at a speed of 1.2 m/sec. If the lamppost is 3.6 m above the ground, find the length of his shadow cast after 4 seconds.</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Calculate the distance the boy walks in 4 seconds.</p><p>Given speed = 1.2 m/s and time = 4 seconds.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the formula Distance = Speed × Time.</p><p>Distance = 1.2 × 4 = 4.8 m.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Let \( x \) be the length of the shadow.</p><p>Since triangles \( \Delta ABE \) and \( \Delta CDB \) are similar, the ratio of corresponding sides is equal.</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Set up the proportion \( \frac{BE}{DB} = \frac{AE}{CD} \).</p><p>Substitute the given values: \( \frac{4.8 + x}{x} = \frac{3.6}{0.9} \).</p></div></div><div class="step-box"><div class="step-bullet">5</div><div class="step-content"><p>Simplify the equation.</p><p>\( \frac{4.8 + x}{x} = 4 \) leads to \( 4.8 + x = 4x \).</p></div></div><div class="step-box"><div class="step-bullet">6</div><div class="step-content"><p>Solve for \( x \).</p><p>\( 3x = 4.8 \) gives \( x = 1.6 \) m.</p></div></div><div class="final-answer"><p>The length of his shadow is \( \boxed{1.6 \text{ m}} \).</p></div></div>
+</div>
 </body>
 </html>

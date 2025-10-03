@@ -1,51 +1,22 @@
-<html>
-<head>
-<meta charset="UTF-8">
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-</head>
+<!DOCTYPE html>
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\(', '\)'], ['$', '$']],
-    displayMath: [['\[', '\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 6.9</h3>
-
-    <p>Prove that \((\csc \theta - \sin \theta) (\sec \theta - \cos \theta) (\tan \theta + \cot \theta) = 1\)</p>
-    <p>Solution:</p>
-    <p>\[
-        (\csc \theta - \sin \theta) (\sec \theta - \cos \theta) (\tan \theta + \cot \theta)
-    \]</p>
-    <p>\[
-        = \left( \frac{1 - \sin^2 \theta}{\sin \theta} \right) \left( \frac{1 - \cos^2 \theta}{\cos \theta} \right) \left( \frac{\sin \theta}{\cos \theta} + \frac{\cos \theta}{\sin \theta} \right)
-    \]</p>
-    <p>\[
-        = \left( \frac{\cos^2 \theta}{\sin \theta} \right) \left( \frac{\sin^2 \theta}{\cos \theta} \right) \left( \frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta} \right)
-    \]</p>
-    <p>\[
-        = \frac{\cos^2 \theta \sin^2 \theta \cdot 1}{\sin^2 \theta \cos^2 \theta} = 1
-    \]</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Prove that \((\csc \theta - \sin \theta) (\sec \theta - \cos \theta) (\tan \theta + \cot \theta) = 1\)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Rewrite each trigonometric function in terms of sine and cosine.</p><p>\[</p><p>(\csc \theta - \sin \theta) = \left( \frac{1}{\sin \theta} - \sin \theta \right) = \frac{1 - \sin^2 \theta}{\sin \theta}</p><p>\]</p><p>\[</p><p>(\sec \theta - \cos \theta) = \left( \frac{1}{\cos \theta} - \cos \theta \right) = \frac{1 - \cos^2 \theta}{\cos \theta}</p><p>\]</p><p>\[</p><p>(\tan \theta + \cot \theta) = \left( \frac{\sin \theta}{\cos \theta} + \frac{\cos \theta}{\sin \theta} \right) = \frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute the simplified forms back into the original expression.</p><p>\[</p><p>\left( \frac{1 - \sin^2 \theta}{\sin \theta} \right) \left( \frac{1 - \cos^2 \theta}{\cos \theta} \right) \left( \frac{\sin^2 \theta + \cos^2 \theta}{\sin \theta \cos \theta} \right)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Simplify the expression using trigonometric identities.</p><p>\[</p><p>1 - \sin^2 \theta = \cos^2 \theta \quad \text{and} \quad 1 - \cos^2 \theta = \sin^2 \theta \quad \text{and} \quad \sin^2 \theta + \cos^2 \theta = 1</p><p>\]</p><p>\[</p><p>= \left( \frac{\cos^2 \theta}{\sin \theta} \right) \left( \frac{\sin^2 \theta}{\cos \theta} \right) \left( \frac{1}{\sin \theta \cos \theta} \right)</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Multiply the terms and simplify.</p><p>\[</p><p>= \frac{\cos^2 \theta \sin^2 \theta \cdot 1}{\sin^2 \theta \cos^2 \theta} = 1</p><p>\]</p></div></div><div class="final-answer"><p>\(\boxed{1}\)</p></div></div>
+</div>
 </body>
 </html>

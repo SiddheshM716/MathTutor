@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.19</h3>
-
-  <p>Find the square root of the following expressions:</p>
-  <p>(i) \( 256(x - a)^8 (x - b)^4 (x - c)^{16} (x - d)^{20} \)</p>
-  <p>(ii) \( \frac{144 \, a^8 \, b^{12} \, c^{16}}{81 \, f^{12} \, g^4 \, h^{14}} \)</p>
-
-  <h3>Solution:</h3>
-  <p>(i) 
-    \( \sqrt{256(x - a)^8 (x - b)^4 (x - c)^{16} (x - d)^{20}} = 16 |(x - a)^4 (x - b)^2 (x - c)^8 (x - d)^{10}| \)
-  </p>
-  <p>(ii) 
-    \( \sqrt{\frac{144a^8b^{12}c^{16}}{81f^{12}g^4h^{14}}} = \frac{4}{3} \left| \frac{a^4b^6c^8}{f^6g^2h^7} \right| \)
-  </p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the square root of the following expressions:</p><p>(i) \( 256(x - a)^8 (x - b)^4 (x - c)^{16} (x - d)^{20} \)</p><p>(ii) \( \frac{144 \, a^8 \, b^{12} \, c^{16}}{81 \, f^{12} \, g^4 \, h^{14}} \)</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For part (i), separate the constant and variable terms inside the square root.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the property \( \sqrt{A \cdot B} = \sqrt{A} \cdot \sqrt{B} \) and \( \sqrt{x^n} = |x^{n/2}| \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Apply the square root to each component:</p><p>- \( \sqrt{256} = 16 \)</p><p>- \( \sqrt{(x - a)^8} = |(x - a)^4| \)</p><p>- \( \sqrt{(x - b)^4} = |(x - b)^2| \)</p><p>- \( \sqrt{(x - c)^{16}} = |(x - c)^8| \)</p><p>- \( \sqrt{(x - d)^{20}} = |(x - d)^{10}| \)</p></div></div><div class="final-answer"><p>\( 16 |(x - a)^4 (x - b)^2 (x - c)^8 (x - d)^{10}| \)</p><p>Step 1: For part (ii), separate the numerator and denominator inside the square root.</p><p>Step 2: Use the property \( \sqrt{\frac{A}{B}} = \frac{\sqrt{A}}{\sqrt{B}} \) and \( \sqrt{x^n} = |x^{n/2}| \).</p><p>Step 3: Apply the square root to each component:</p><p>- \( \sqrt{144} = 12 \), \( \sqrt{81} = 9 \)</p><p>- \( \sqrt{a^8} = |a^4| \), \( \sqrt{b^{12}} = |b^6| \), \( \sqrt{c^{16}} = |c^8| \)</p><p>- \( \sqrt{f^{12}} = |f^6| \), \( \sqrt{g^4} = |g^2| \), \( \sqrt{h^{14}} = |h^7| \)</p></div><div class="final-answer"><p>\( \frac{4}{3} \left| \frac{a^4b^6c^8}{f^6g^2h^7} \right| \)</p></div></div>
+</div>
 </body>
 </html>

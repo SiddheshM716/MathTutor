@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 1.22</h3>
-
-
-<p>Find \( k \) if \( f \circ f(k) = 5 \) where \( f(k) = 2k - 1 \).</p>
-<p>Solution:</p>
-<p>\( f \circ f(k) = f(f(k)) \)</p>
-<p>\( = 2(2k - 1) - 1 = 4k - 3 \).</p>
-<p>\( f \circ f(k) = 4k - 3 \)</p>
-<p>But, \( f \circ f(k) = 5 \)</p>
-<p>\( 4k - 3 = 5 \)</p>
-<p>\( 4k = 8 \)</p>
-<p>\( k = 2 \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find \( k \) if \( f \circ f(k) = 5 \) where \( f(k) = 2k - 1 \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Understand the composition \( f \circ f(k) \), which means \( f(f(k)) \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Substitute \( f(k) = 2k - 1 \) into \( f(f(k)) \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Apply the function \( f \) again to \( f(k) \):</p><p>\[ f(f(k)) = 2(2k - 1) - 1 = 4k - 2 - 1 = 4k - 3 \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Set the composition equal to 5 and solve for \( k \):</p><p>\[ 4k - 3 = 5 \]</p><p>\[ 4k = 8 \]</p><p>\[ k = 2 \]</p></div></div><div class="final-answer"><p>\( k = 2 \)</p></div></div>
+</div>
 </body>
 </html>

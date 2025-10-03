@@ -1,29 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 5.19</h3>
-
-<p> Calculate the slope and y intercept of the straight line 8x − 7y + 6 = 0</p>
-<p>Solution: Equation of the given straight line is 8x − 7y + 6 = 0</p>
-<p>7y = 8x + 6</p>
-<p>y = (8/7)x + (6/7) ...(1)</p>
-<p>Comparing (1) with y = mx + c</p>
-<p>Slope m = 8/7 and y intercept c = 6/7</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Calculate the slope and y-intercept of the straight line \(8x − 7y + 6 = 0\).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Start with the given equation of the straight line:</p><p>\[ 8x - 7y + 6 = 0 \]</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Rearrange the equation to solve for \(y\) in the slope-intercept form \(y = mx + c\):</p><p>\[ 7y = 8x + 6 \]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Divide both sides by 7 to isolate \(y\):</p><p>\[ y = \frac{8}{7}x + \frac{6}{7} \]</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Compare the equation with the slope-intercept form \(y = mx + c\) to identify the slope \(m\) and y-intercept \(c\):</p><p>\[ m = \frac{8}{7}, \quad c = \frac{6}{7} \]</p></div></div><div class="final-answer"><p>The slope is \(\frac{8}{7}\) and the y-intercept is \(\frac{6}{7}\).</p></div></div>
+</div>
 </body>
 </html>

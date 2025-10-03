@@ -1,34 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
-  <body>
-<h3>Example 5.24</h3>
-
-
-    <p>Two buildings of different heights are located at opposite sides of each other. If a heavy rod is attached joining the terrace of the buildings from (6,10) to (14,12), find the equation of the rod joining the buildings?</p>
-    <p>Let A(6,10), B(14,12) be the points denoting the terrace of the buildings.</p>
-    <p>The equation of the rod is the equation of the straight line passing through A(6,10) and B(14,12).</p>
-    <p>\[
-      \frac{y - y_1}{y_2 - y_1} = \frac{x - x_1}{x_2 - x_1} \\
-      \frac{y - 10}{12 - 10} = \frac{x - 6}{14 - 6} \\
-      \frac{y - 10}{2} = \frac{x - 6}{8} \\
-      x - 4y + 34 = 0
-    \]</p>
-    <p>Hence, equation of the rod is \(x - 4y + 34 = 0\).</p>
-  </body>
+<body>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Two buildings of different heights are located at opposite sides of each other. If a heavy rod is attached joining the terrace of the buildings from (6,10) to (14,12), find the equation of the rod joining the buildings?</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Identify the given points as A(6,10) and B(14,12). The equation of the rod is the equation of the straight line passing through these two points.</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Use the two-point form of the equation of a line:</p><p>\[</p><p>\frac{y - y_1}{y_2 - y_1} = \frac{x - x_1}{x_2 - x_1}</p><p>\]</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Substitute the coordinates of points A and B into the formula:</p><p>\[</p><p>\frac{y - 10}{12 - 10} = \frac{x - 6}{14 - 6}</p><p>\]</p><p>\[</p><p>\frac{y - 10}{2} = \frac{x - 6}{8}</p><p>\]</p><p>Simplify and rearrange to get the final equation:</p><p>\[</p><p>x - 4y + 34 = 0</p><p>\]</p></div></div><div class="final-answer"><p>The equation of the rod is \(x - 4y + 34 = 0\).</p></div></div>
+</div>
+</body>
 </html>

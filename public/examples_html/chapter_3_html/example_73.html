@@ -1,32 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-<h3>Example 3.73</h3>
-
-
-<p>If \( A = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix} \) and \( B = \begin{bmatrix} -1 & 4 \\ 1 & 1 \end{bmatrix} \), show that \( (AB)^T = B^T A^T \).</p>
-<p>Solution:</p>
-<p>LHS = \( (AB)^T \)</p>
-<p>RHS = \( B^T A^T \)</p>
-<p>\( AB = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix} \begin{bmatrix} -1 & 4 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 1 \times (-1) + 2 \times 1 & 1 \times 4 + 2 \times 1 \\ 0 \times (-1) + 2 \times 1 & 0 \times 4 + 2 \times 1 \end{bmatrix} = \begin{bmatrix} 1 & 6 \\ 2 & 2 \end{bmatrix} \)</p>
-<p>\( (AB)^T = \begin{bmatrix} 1 & 2 \\ 6 & 2 \end{bmatrix} \)</p>
-<p>\( B^T = \begin{bmatrix} -1 & 1 \\ 4 & 1 \end{bmatrix} \)</p>
-<p>\( A^T = \begin{bmatrix} 1 & 0 \\ 2 & 2 \end{bmatrix} \)</p>
-<p>\( B^T A^T = \begin{bmatrix} -1 & 1 \\ 4 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 \\ 2 & 2 \end{bmatrix} = \begin{bmatrix} -1 \times 1 + 1 \times 2 & -1 \times 0 + 1 \times 2 \\ 4 \times 1 + 1 \times 2 & 4 \times 0 + 1 \times 2 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 6 & 2 \end{bmatrix} \)</p>
-<p>From (1) and (2), \( (AB)^T = B^T A^T \).</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A = \begin{bmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{bmatrix} \) and \( B = \begin{bmatrix} -1 &amp; 4 \\ 1 &amp; 1 \end{bmatrix} \), show that \( (AB)^T = B^T A^T \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Compute the product \( AB \).</p><p>The formula for matrix multiplication is \( (AB)_{ij} = \sum_{k} A_{ik} B_{kj} \).</p><p>\( AB = \begin{bmatrix} 1 &amp; 2 \\ 0 &amp; 2 \end{bmatrix} \begin{bmatrix} -1 &amp; 4 \\ 1 &amp; 1 \end{bmatrix} = \begin{bmatrix} 1 \times (-1) + 2 \times 1 &amp; 1 \times 4 + 2 \times 1 \\ 0 \times (-1) + 2 \times 1 &amp; 0 \times 4 + 2 \times 1 \end{bmatrix} = \begin{bmatrix} 1 &amp; 6 \\ 2 &amp; 2 \end{bmatrix} \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Compute the transpose of \( AB \), denoted \( (AB)^T \).</p><p>The transpose of a matrix swaps its rows and columns.</p><p>\( (AB)^T = \begin{bmatrix} 1 &amp; 2 \\ 6 &amp; 2 \end{bmatrix} \).</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Compute the transposes \( A^T \) and \( B^T \).</p><p>\( A^T = \begin{bmatrix} 1 &amp; 0 \\ 2 &amp; 2 \end{bmatrix} \).</p><p>\( B^T = \begin{bmatrix} -1 &amp; 1 \\ 4 &amp; 1 \end{bmatrix} \).</p></div></div><div class="step-box"><div class="step-bullet">4</div><div class="step-content"><p>Compute the product \( B^T A^T \).</p><p>Using matrix multiplication again:</p><p>\( B^T A^T = \begin{bmatrix} -1 &amp; 1 \\ 4 &amp; 1 \end{bmatrix} \begin{bmatrix} 1 &amp; 0 \\ 2 &amp; 2 \end{bmatrix} = \begin{bmatrix} -1 \times 1 + 1 \times 2 &amp; -1 \times 0 + 1 \times 2 \\ 4 \times 1 + 1 \times 2 &amp; 4 \times 0 + 1 \times 2 \end{bmatrix} = \begin{bmatrix} 1 &amp; 2 \\ 6 &amp; 2 \end{bmatrix} \).</p></div></div><div class="final-answer"><p>Since \( (AB)^T = \begin{bmatrix} 1 &amp; 2 \\ 6 &amp; 2 \end{bmatrix} \) and \( B^T A^T = \begin{bmatrix} 1 &amp; 2 \\ 6 &amp; 2 \end{bmatrix} \), we have shown that \( (AB)^T = B^T A^T \).</p></div></div>
+</div>
 </body>
 </html>

@@ -1,33 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 2.20</h3>
-
-<p> Find the general term for the following sequences</p>
-<p>(i) 3,6,9,...</p>
-<p>Solution (i) 3,6,9,...</p>
-<p>Here the terms are multiples of 3. So the general term is</p>
-<p>a<sub>n</sub> = 3n</p>
-<p>(ii) 1/2, 2/3, 3/4,...</p>
-<p>We see that the numerator of n<sup>th</sup> term is n, and the denominator is one more than the numerator. Hence, a<sub>n</sub> = n/(n+1), n ∈ N.</p>
-<p>(iii) 5,−25,125,...</p>
-<p>The terms of the sequence have + and − sign alternatively and also they are in powers of 5.</p>
-<p>So the general term a<sub>n</sub> = (−1)<sup>n+1</sup>5<sup>n</sup>, n ∈ N.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>Find the general term for the following sequences:</p><p>(i) 3, 6, 9, ...</p><p>(ii) 1/2, 2/3, 3/4, ...</p><p>(iii) 5, −25, 125, ...</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>For sequence (i) 3, 6, 9, ..., observe that each term is a multiple of 3.</p><p>The general term formula for a sequence where each term is a multiple of a constant is \( a_n = kn \).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Here, \( k = 3 \), so the general term is \( a_n = 3n \).</p></div></div><div class="final-answer"><p>(i) \( a_n = 3n \)</p><p>---</p><p>Step 1: For sequence (ii) 1/2, 2/3, 3/4, ..., notice the pattern in the numerator and denominator.</p><p>The numerator of the \( n \)-th term is \( n \), and the denominator is \( n + 1 \).</p><p>Step 2: The general term formula is \( a_n = \frac{n}{n + 1} \).</p></div><div class="final-answer"><p>(ii) \( a_n = \frac{n}{n + 1} \)</p><p>---</p><p>Step 1: For sequence (iii) 5, −25, 125, ..., observe the alternating signs and powers of 5.</p><p>The terms can be written as \( 5^1, -5^2, 5^3, \dots \).</p><p>Step 2: The general term formula for alternating signs is \( a_n = (-1)^{n+1} \cdot 5^n \).</p></div><div class="final-answer"><p>(iii) \( a_n = (-1)^{n+1} \cdot 5^n \)</p></div></div>
+</div>
 </body>
 </html>

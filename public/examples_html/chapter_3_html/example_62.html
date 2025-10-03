@@ -1,26 +1,22 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
+<title>Math Solution</title>
+<link href="../style.css" rel="stylesheet"/>
 <script>
-MathJax = {
-  tex: {
-    inlineMath: [['\\(', '\\)'], ['$', '$']],
-    displayMath: [['\\[', '\\]']]
-  },
-  svg: {
-    fontCache: 'global'
-  }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+      MathJax = {
+        tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+        svg: {fontCache: 'global'}
+      };
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-
-
 <body>
-<h3>Example 3.62</h3>
-
-
-<p>If \( A = \begin{bmatrix} 5 & -4 & 6 \\ -3 & 2 & 9 \end{bmatrix} \), \( B = \begin{bmatrix} 3 & 4 \\ 9 & 6 \end{bmatrix} \), find \( A + B \).</p>
-<p>Solution: It is not possible to add \( A \) and \( B \) because they have different orders.</p>
+<div class="mathjax">
+<div class="question"><div class="question-box"><p>If \( A = \begin{bmatrix} 5 &amp; -4 &amp; 6 \\ -3 &amp; 2 &amp; 9 \end{bmatrix} \), \( B = \begin{bmatrix} 3 &amp; 4 \\ 9 &amp; 6 \end{bmatrix} \), find \( A + B \).</p></div></div>
+<div class="answer"><div class="step-box"><div class="step-bullet">1</div><div class="step-content"><p>Check the dimensions of matrices \( A \) and \( B \).</p><p>Matrix \( A \) has dimensions \( 2 \times 3 \) (2 rows and 3 columns).</p><p>Matrix \( B \) has dimensions \( 2 \times 2 \) (2 rows and 2 columns).</p></div></div><div class="step-box"><div class="step-bullet">2</div><div class="step-content"><p>Recall that matrix addition is only possible if both matrices have the same dimensions.</p></div></div><div class="step-box"><div class="step-bullet">3</div><div class="step-content"><p>Since \( A \) and \( B \) have different dimensions (\( 2 \times 3 \) vs \( 2 \times 2 \)), they cannot be added.</p></div></div><div class="final-answer"><p>The operation \( A + B \) is not possible because the matrices have different orders.</p></div></div>
+</div>
 </body>
 </html>
